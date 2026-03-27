@@ -298,3 +298,32 @@ Any legal footer text, organisation location detail, or future rights language t
 #### Placeholder for human-selected visual content
 
 The final approved icon set and any footer-specific brand asset treatment that best fits the later UI system.
+
+## 4.8 Contact Page Copy for a Simple Email Enquiry Form
+
+### Form Intro
+
+Somewhere for everyone to come, and hopefully feel they belong.
+
+### Form Helper Copy
+
+We want this to be a space for everyone to feel like that little kid again, a safe place where you feel you belong.
+
+### Form Reassurance Copy
+
+We hope that others find our space to be somewhere they feel empowered and inspired, rather than small and unmotivated.
+
+### Source Notes
+
+- The form intro and helper lines are taken directly from the founder-story and belonging language in `assets/YARD.pdf`.
+- The reassurance line is taken directly from the closing founder-story language in `assets/YARD.pdf`.
+
+### Recommended Placeholders
+
+#### Placeholder for human-developed text
+
+Actual form labels, consent wording, response-time wording, and any submission confirmation copy once the contact workflow is approved in implementation.
+
+#### Placeholder for human-developed text
+
+Any extra explanation needed for parents, players, or partners so the form stays clear about what information is being requested and why.
