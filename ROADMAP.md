@@ -265,7 +265,7 @@ Goal: convert the current baseline site into a structured design system.
 
 Sub-phases:
 - [x] 5.1 layout primitives
-- [ ] 5.2 shared section components
+- [x] 5.2 shared section components
 - [ ] 5.3 button system
 - [ ] 5.4 card system
 - [ ] 5.5 form styles
@@ -302,7 +302,7 @@ Human review steps:
 
 Completion notes:
 - `5.1` complete: restored the static baseline files from `origin/main` and rebuilt them around reusable layout primitives in `index.html`, `styles.css`, and `script.js`, including a shared container, section-shell, stack, grid, and story-layout system grounded in the approved logo assets, Phase 3 typography, and Phase 4 PDF-sourced homepage copy.
-- `5.2` pending.
+- `5.2` complete: added reusable section-level UI patterns in `index.html` and `styles.css`, including a statement grid, shared story band, and full-width quote treatment that can be reused across later core pages without tying the system too early to button, card, or form-specific component logic.
 - `5.3` pending.
 - `5.4` pending.
 - `5.5` pending.

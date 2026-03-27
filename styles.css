@@ -266,6 +266,32 @@ h3 {
   gap: var(--space-5);
 }
 
+.statement-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-5);
+}
+
+.statement-panel {
+  min-height: 100%;
+  padding: var(--space-5);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-lg);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.2)),
+    rgba(255, 255, 255, 0.18);
+  box-shadow: var(--shadow-soft);
+}
+
+.statement-title {
+  font-family: "Barlow Condensed", Impact, sans-serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  line-height: 0.98;
+  text-transform: uppercase;
+  color: var(--color-field-depth);
+}
+
 .story-layout {
   display: grid;
   grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
@@ -277,6 +303,36 @@ h3 {
     linear-gradient(145deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.08)),
     rgba(46, 100, 23, 0.08);
   box-shadow: var(--shadow-soft);
+}
+
+.quote-band {
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-lg);
+  background:
+    linear-gradient(135deg, rgba(46, 100, 23, 0.88), rgba(46, 100, 23, 0.72)),
+    var(--color-field-depth);
+  box-shadow: var(--shadow-soft);
+}
+
+.quote-band .section-kicker,
+.quote-text,
+.quote-support {
+  color: var(--color-chalk);
+}
+
+.quote-text {
+  max-width: 44rem;
+  font-family: "Barlow Condensed", Impact, sans-serif;
+  font-size: clamp(2rem, 5vw, 3.6rem);
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.quote-support {
+  max-width: 30rem;
+  font-size: 1.05rem;
 }
 
 .surface-block {
@@ -323,6 +379,7 @@ h3 {
 @media (max-width: 60rem) {
   .hero-layout,
   .content-grid,
+  .statement-grid,
   .story-layout {
     grid-template-columns: 1fr;
   }
