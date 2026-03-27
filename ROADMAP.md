@@ -13,7 +13,7 @@ Sub-phases:
 - [x] 0.5 early approach for how multiple logo-based themes could influence colour, typography, layout emphasis, and graphic treatments
 - [x] 0.6 early approach for how light and dark mode should behave across those themes
 - [x] 0.7 rough section ordering for key journeys
-- [ ] 0.8 notes on how existing artifacts should influence UI decisions
+- [x] 0.8 notes on how existing artifacts should influence UI decisions
 
 Completion notes:
 - `0.1` complete: reviewed `assets/YARD.pdf`, the `assets/Logos/` family, and the supporting football-ball mark; removed the stale remote scaffold so Phase 0 can proceed from the supplied brand assets instead of an outdated landing page.
@@ -23,6 +23,8 @@ Completion notes:
 - `0.5` complete: defined an early theme model where approved logos drive tokens and emphasis changes while structure, clarity, and conversion patterns remain fixed.
 - `0.6` complete: set the shared rules and per-theme-family light/dark behaviour so mode switching remains intentional, legible, and brand-consistent.
 - `0.7` complete: documented rough section order for homepage, community, elite, partner, and contact journeys so later IA and content work can stay coherent.
+- `0.8` complete: documented how `assets/YARD.pdf`, `assets/Logos/`, and `assets/yardfc_ball_transparent.png` should shape future UI decisions.
+- All Phase 0 sub-phases are now complete. Human review steps remain required before Phase 0 can be considered fully signed off against its exit criteria.
 
 This phase should draw on existing artifacts in the `assets/` folder, including:
 - logo files

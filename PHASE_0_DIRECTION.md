@@ -259,3 +259,32 @@ Switching modes should not swap the brand personality out for a generic operatin
 3. Minimal form
 4. Follow-up expectations
 5. Alternate contact methods and social links
+
+## 0.8 Notes on How Existing Artifacts Should Influence UI Decisions
+
+### `assets/YARD.pdf`
+
+- The PDF should influence the hero proportion, section pacing, and emotional tone more than literal page-by-page recreation.
+- Founder story, memory, quote, and belonging language should be treated as structural content cues, not optional decoration.
+- Oversized logo moments and quiet backgrounds should guide the homepage and key landing pages.
+- The cover proves that one strong focal shape can carry the page, so future layouts should resist over-cluttering the hero.
+
+### `assets/Logos/`
+
+- The logo library should define the theme vocabulary for future implementation.
+- Individual logo variants should be mapped to approved theme presets rather than chosen randomly per page.
+- Differences across logo variants should inspire accent and emphasis changes, not structural fragmentation.
+- Any added theme should remain recognisably part of the existing hand-drawn Yard family.
+
+### `assets/yardfc_ball_transparent.png`
+
+- The ball mark should be treated as a supporting graphic device, not a replacement for the primary logo.
+- It can help with separators, background moments, or section accents where a football cue is useful.
+- It should appear sparingly so the interface stays calm and credible.
+
+### Decision Rules Carried Forward
+
+- Start every major UI choice by checking whether it is supported by the supplied assets.
+- If a proposed design move feels generic, use the PDF and logos to pull it back toward football memory, hand-made character, and grounded contrast.
+- If a proposed design move feels noisy, reduce it until the supplied assets remain the strongest voice in the page.
+- Future phases should extend these artifact signals, not compete with them.
