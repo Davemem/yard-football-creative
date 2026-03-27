@@ -361,3 +361,63 @@ The image system should make Yard feel:
 - grounded in real people and environments
 
 It turns imagery into a trust layer, not decoration.
+
+## 3.6 Tone of Voice Rules
+
+### Voice Principle
+
+Yard should sound like people who know football, care about people, and do not need hype to prove either.
+The voice should balance warmth, credibility, and clarity so players, families, and partners all understand the organisation quickly.
+
+### Core Voice Traits
+
+- `Grounded`
+  Speak from lived football reality rather than abstract brand language.
+- `Warm`
+  Invite people in without sounding soft or vague.
+- `Direct`
+  Say what Yard is, who it is for, and what happens next in plain language.
+- `Credible`
+  Let specificity, experience, and clear explanation do the trust-building.
+- `Hopeful`
+  Keep a sense of possibility and growth without drifting into empty motivation-speech.
+
+### Sentence-Level Rules
+
+- Prefer short-to-medium sentences over long promotional paragraphs.
+- Lead with the point before expanding with story.
+- Use football language when it helps clarity, but avoid insider jargon that blocks new visitors.
+- Write calls to action in everyday terms such as `Explore Programs`, `Contact Yard`, or `Send Enquiry`.
+
+### Emotional Range
+
+- Community copy should feel welcoming, safe, and open.
+- Elite copy should feel ambitious and credible without becoming exclusionary.
+- Founder and story-led copy may become more reflective, but should still remain readable and purposeful.
+- Contact and practical copy should become even plainer and more action-oriented.
+
+### What the Voice Should Avoid
+
+- startup-style disruption language
+- empty empowerment slogans with no football substance
+- exaggerated elite claims or academy-style bravado
+- corporate partnership jargon that sounds detached from the mission
+- overuse of exclamation marks, rhetorical questions, or dramatic sales phrasing
+
+### Repeated Website Writing Rules
+
+- answer `what is this?` early
+- answer `who is it for?` clearly
+- answer `what should I do next?` on every page
+- keep trust and safeguarding language plain when relevant
+- preserve the emotional truth of `assets/YARD.pdf` without copying its long passages everywhere
+
+### Phase 3 Voice Outcome
+
+The Yard voice should feel:
+- modern but not trendy
+- emotionally real but not sentimental
+- ambitious but not intimidating
+- welcoming but not vague
+
+It should sound like a football organisation with purpose, not a template brand trying on football language.
