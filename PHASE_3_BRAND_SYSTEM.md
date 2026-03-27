@@ -421,3 +421,64 @@ The Yard voice should feel:
 - welcoming but not vague
 
 It should sound like a football organisation with purpose, not a template brand trying on football language.
+
+## 3.7 Copy Examples
+
+### Purpose of These Examples
+
+These examples demonstrate the approved Phase 3 brand voice.
+They are not the full Phase 4 page drafts and should be treated as style references for later content work.
+
+### Homepage Hero Example
+
+- headline: `Football environments for girls and women to belong, grow, and dream big.`
+- support line: `Yard Football Creative creates meaningful community and elite experiences through storytelling, connection, and development.`
+- primary CTA: `Explore Programs`
+- secondary CTA: `Contact Yard`
+
+### About Intro Example
+
+- section heading: `What Yard Is Built On`
+- body example: `Yard Football Creative grew from the backyard feeling that football could be joyful, safe, expressive, and deeply connected. We are building environments where girls and women can feel that again, whether they are joining for community, challenge, or both.`
+
+### Programs Intro Example
+
+- section heading: `A Place for Community and Progression`
+- body example: `Our programs are designed to meet players where they are. Some come for belonging, confidence, and connection. Others come looking for challenge, development, and the next step in their football journey. Yard makes space for both.`
+
+### Events Intro Example
+
+- section heading: `Current Activity`
+- body example: `From gala days and workshops to creative football experiences, Yard events are designed to feel active, thoughtful, and grounded in real community.`
+
+### Contact Intro Example
+
+- section heading: `Start the Conversation`
+- body example: `If you would like to ask about a program, event, collaboration, or future opportunity, send us an enquiry and we will point you in the right direction.`
+
+### CTA Example Set
+
+- `Explore Programs`
+- `Find Your Pathway`
+- `View Events`
+- `Contact Yard`
+- `Send Enquiry`
+- `Follow Yard on Instagram`
+
+### Copy Behaviour Notes
+
+- Headlines should make one promise clearly.
+- Support copy should explain rather than decorate.
+- CTAs should stay literal.
+- Community and elite references should remain welcoming and non-competing.
+- Story-led language should feel human, but still move the user toward orientation or action.
+
+### Phase 3 Copy Outcome
+
+These examples show the intended Yard writing style:
+- clear first
+- football-native
+- emotionally grounded
+- conversion-aware without sounding salesy
+
+They provide a tone model for Phase 4 without pre-empting the full content draft work.
