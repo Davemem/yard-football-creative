@@ -195,7 +195,7 @@ Deliverables:
 - FAQs
 - contact copy
 - placeholder testimonials or proof sections
-- footer copy and header social link labels for Instagram and Facebook
+- footer copy and header social icon plan for Instagram and Facebook
 - contact page copy for a simple email enquiry form
 - contact page copy aligned to `contact@yardfc.com`
 - homepage Instagram section copy and CTA linking to the `@yardfc` account
@@ -219,7 +219,7 @@ Deliverables:
 - form styles
 - responsive navigation
 - footer component
-- social icon link treatment for the header
+- icon-only social link treatment for the header
 - homepage social feed section pattern
 - theme tokens or styling architecture that can support toggleable logo-based themes
 - a safe default theme and a repeatable pattern for adding more themes from approved files in `assets/Logos/`

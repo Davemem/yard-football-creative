@@ -79,7 +79,7 @@ The footer must:
 - repeat the five core page links clearly
 - offer pathway shortcuts into the `Programs` page without introducing extra standalone pages
 
-Header social links should be easy to recognise and should not compete with the primary page CTAs.
+Header social links should be icon-only, easy to recognise, and should not compete with the primary page CTAs.
 Instagram should be the primary social proof destination, and Facebook should remain a secondary supporting link.
 If a Facebook production URL is not yet approved, do not invent one in implementation.
 

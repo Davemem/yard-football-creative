@@ -68,7 +68,7 @@ The primary site navigation for v1 should be:
 - `Contact` should be visually treated as the clearest action in the header because enquiry is one of the first conversion goals.
 - The header should stay restrained while still allowing space for the approved social links.
 - Navigation labels should remain short, literal, and easy to scan on mobile.
-- Instagram and Facebook should appear as secondary header links, with Instagram receiving stronger emphasis than Facebook.
+- Instagram and Facebook should appear as icon-only secondary header links, with Instagram receiving stronger emphasis than Facebook.
 
 ### Program Navigation Rule
 
@@ -252,17 +252,17 @@ It should reinforce trust, provide quick discovery, and make contact and social 
 
 - Header social links should reinforce legitimacy and current activity, not compete with the main page CTA.
 - Only Instagram and Facebook should appear in the Phase 2 header social plan.
-- Social labels should stay literal and recognisable.
+- Social icons should stay literal and recognisable.
 - The Instagram link should be given stronger emphasis because it is already established as a priority trust surface for the website.
 
 ### Header Social Plan
 
 1. `Instagram`
-   - label: `Instagram`
+   - presentation: icon only
    - role: primary social proof link
    - expected destination: the official Yard FC Instagram account at `@yardfc`
 2. `Facebook`
-   - label: `Facebook`
+   - presentation: icon only
    - role: secondary social presence link
    - expected destination: the official Yard Football Creative Facebook presence once its approved production URL is confirmed
 
@@ -270,5 +270,5 @@ It should reinforce trust, provide quick discovery, and make contact and social 
 
 - Social links should live together as a dedicated secondary header group.
 - The Instagram and Facebook links should sit beside or after the core page links, while remaining visually weaker than the Contact CTA.
-- Social icons may be used later, but each link should still include a clear text label.
+- Social links should render as icons only, while still carrying non-visible accessible labels in implementation.
 - If the Facebook production URL is not yet confirmed at build time, the header should keep the planned Facebook slot in documentation but should not invent a destination.

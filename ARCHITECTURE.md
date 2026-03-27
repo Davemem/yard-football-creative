@@ -67,7 +67,7 @@ It is intentionally lightweight and should be expanded in Phase 2 when sitemap, 
 - The logo should always return users to Home.
 - Contact should remain the clearest header CTA.
 - Navigation labels should stay literal and short.
-- Instagram and Facebook should appear as clear secondary header links.
+- Instagram and Facebook should appear as icon-only secondary header links.
 - Social links should stay visually subordinate to the core page navigation and Contact CTA.
 
 ### Pathway Structure Rule
