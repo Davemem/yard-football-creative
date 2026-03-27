@@ -108,8 +108,8 @@ Sub-phases:
 - [x] 2.3 page list
 - [x] 2.4 page purposes
 - [x] 2.5 CTA map
-- [ ] 2.6 footer structure
-- [ ] 2.7 footer social link plan for Instagram and Facebook
+- [x] 2.6 footer structure
+- [x] 2.7 footer social link plan for Instagram and Facebook
 
 Deliverables:
 - sitemap
@@ -151,6 +151,8 @@ Completion notes:
 - `2.4` complete: defined a single clear job for each planned page in `PHASE_2_INFORMATION_ARCHITECTURE.md` and aligned `CONTENT_STRATEGY.md` to the same five-page model so later content and UI work can separate overview, events, and contact roles without introducing extra pages.
 - `2.5` complete: defined the page-by-page CTA map in `PHASE_2_INFORMATION_ARCHITECTURE.md` and aligned `ARCHITECTURE.md` to the same conversion structure so each page now has a clear primary action, supporting fallback, and route into either the `Programs` page, `Events`, or the approved `contact@yardfc.com` enquiry flow.
 - `2.6` complete: defined the shared footer structure in `PHASE_2_INFORMATION_ARCHITECTURE.md`, `ARCHITECTURE.md`, and `CONTENT_STRATEGY.md`, keeping the footer anchored to the five-page site map while using in-page pathway links inside `Programs` instead of extra standalone pages.
+- `2.7` complete: defined the Instagram and Facebook footer social plan in `PHASE_2_INFORMATION_ARCHITECTURE.md`, aligned the same rules in `ARCHITECTURE.md` and `CONTENT_STRATEGY.md`, and added `PHASE_2_INFORMATION_ARCHITECTURE.md` to the documented governance set in `README.md` and `CONTRIBUTING.md`.
+- All Phase 2 sub-phases are now complete. The information architecture baseline now covers the five-page v1 sitemap, navigation, page jobs, CTA map, footer structure, and Instagram/Facebook footer plan.
 
 ## Phase 3 — Brand System
 Goal: define how the site should feel and speak.

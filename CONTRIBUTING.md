@@ -26,6 +26,7 @@ The repository governance set is:
 - `CONTENT_STRATEGY.md` for page jobs and content rules
 - `PHASE_0_DIRECTION.md` for asset-led design direction
 - `PHASE_1_FOUNDATION.md` for mission, audiences, programs, and conversion goals
+- `PHASE_2_INFORMATION_ARCHITECTURE.md` for the five-page v1 sitemap, navigation, page-purpose, CTA, and footer baseline
 
 Contributors should keep these documents aligned when making foundational changes.
 

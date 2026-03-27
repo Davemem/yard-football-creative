@@ -246,3 +246,30 @@ It should reinforce trust, provide quick discovery, and make contact and social 
 - Pathway links in the footer should point into `Programs` sections rather than separate pages.
 - Contact details should be easy to scan and clearly separated from social links.
 - The footer should appear on every page and preserve the same structure site-wide.
+
+## 2.7 Footer Social Link Plan for Instagram and Facebook
+
+### Social Plan Principles
+
+- Footer social links should reinforce legitimacy and current activity, not compete with the main page CTA.
+- Only Instagram and Facebook should appear in the Phase 2 footer plan.
+- Social labels should stay literal and recognisable.
+- The Instagram link should be given stronger emphasis because it is already established as a priority trust surface for the website.
+
+### Footer Social Plan
+
+1. `Instagram`
+   - label: `Instagram`
+   - role: primary social proof link
+   - expected destination: the official Yard FC Instagram account at `@yardfc`
+2. `Facebook`
+   - label: `Facebook`
+   - role: secondary social presence link
+   - expected destination: the official Yard Football Creative Facebook presence once its approved production URL is confirmed
+
+### Placement and Behaviour Rules
+
+- Social links should live together in a dedicated footer block.
+- The Instagram and Facebook links should appear after the main site links and contact details, not before them.
+- Social icons may be used later, but each link should still include a clear text label.
+- If the Facebook production URL is not yet confirmed at build time, the footer should keep the planned Facebook slot in documentation but should not invent a destination.

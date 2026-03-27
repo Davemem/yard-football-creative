@@ -79,6 +79,7 @@ It is intentionally lightweight and should be expanded in Phase 2 when sitemap, 
 
 - Instagram and Facebook should live in the footer and contact surfaces rather than the primary navigation.
 - The footer should reinforce discovery and contact, while the header stays focused on orientation and action.
+- Instagram should be treated as the primary social proof link, with Facebook as the secondary social destination.
 
 ## CTA Structure Baseline
 
@@ -94,3 +95,4 @@ It is intentionally lightweight and should be expanded in Phase 2 when sitemap, 
 - Footer pathway links should point to community and elite sections inside Programs rather than separate pages.
 - The footer should include brand context, contact access, and social links in a stable shared structure.
 - Instagram and Facebook should remain the only planned footer social destinations in Phase 2.
+- Social links should include text labels even if icons are added later.
