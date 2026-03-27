@@ -106,7 +106,7 @@ Sub-phases:
 - [x] 2.1 sitemap
 - [x] 2.2 navigation structure
 - [x] 2.3 page list
-- [ ] 2.4 page purposes
+- [x] 2.4 page purposes
 - [ ] 2.5 CTA map
 - [ ] 2.6 footer structure
 - [ ] 2.7 footer social link plan for Instagram and Facebook
@@ -147,6 +147,7 @@ Completion notes:
 - `2.1` complete: defined the v1 sitemap in `PHASE_2_INFORMATION_ARCHITECTURE.md`, keeping the primary structure to Home, About, Programs, Events, and Contact while reserving future expansion pages without promoting them into the first-release navigation too early.
 - `2.2` complete: defined the primary navigation structure in `PHASE_2_INFORMATION_ARCHITECTURE.md` and expanded `ARCHITECTURE.md` with the Phase 2 navigation baseline, keeping the header focused on Home, About, Programs, Events, and Contact while routing deeper pathway detail into page content instead of header sprawl.
 - `2.3` complete: defined the full planned page inventory in `PHASE_2_INFORMATION_ARCHITECTURE.md`, clarifying that Community and Elite are required supporting pages in the v1 architecture even though they should sit below the top-level header rather than competing with it.
+- `2.4` complete: defined a single clear job for each planned page in `PHASE_2_INFORMATION_ARCHITECTURE.md` and aligned `CONTENT_STRATEGY.md` to the same page-purpose model so the later content and UI phases can separate overview, pathway, events, and contact roles cleanly.
 
 ## Phase 3 — Brand System
 Goal: define how the site should feel and speak.

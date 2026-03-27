@@ -141,3 +141,55 @@ The planned first-release page inventory is:
 5. `Elite`
 6. `Events`
 7. `Contact`
+
+## 2.4 Page Purposes
+
+### Home
+
+- introduce Yard Football Creative in one sentence
+- orient first-time visitors quickly
+- route people into community, elite, events, or contact journeys
+- build early trust through story, mission, and current activity
+
+### About
+
+- explain the mission, vision, values, and founder truth
+- preserve the backyard-memory narrative and source credibility from `assets/YARD.pdf`
+- help families, players, and partners understand who is behind the organisation
+
+### Programs
+
+- act as the structured overview page for the full offer model
+- explain the difference between major program categories
+- direct visitors toward the right deeper pathway or enquiry action
+
+### Community
+
+- explain who the community pathway is for
+- describe the environment, belonging, and developmental experience
+- remove hesitation for players and families looking for a welcoming entry point
+
+### Elite
+
+- explain who the elite pathway is for
+- describe progression intent, challenge level, and football credibility
+- support confident expression of interest for higher-ambition players and families
+
+### Events
+
+- present current activity, gala days, collaborations, and featured football moments
+- reinforce that Yard is active, visible, and connected to real football environments
+- channel visitors toward attendance, collaboration, or future-event enquiries
+
+### Contact
+
+- provide the clearest conversion point for program, event, and partner enquiries
+- explain what the form is for
+- set expectations for a simple follow-up flow to `contact@yardfc.com`
+
+### Non-Overlap Rules
+
+- `Programs` explains the whole offer model; it should not replace the deeper audience-specific jobs of `Community` or `Elite`.
+- `Community` and `Elite` focus on audience fit and pathway clarity; they should not become generic duplicate program listings.
+- `Events` handles current activity and event-led storytelling; it should not become the catch-all page for every offer.
+- `Contact` is for action and follow-up; it should not be overloaded with long-form brand explanation already handled elsewhere.

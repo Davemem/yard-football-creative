@@ -38,6 +38,33 @@ Program pages must:
 - explain outcomes or goals
 - explain how to enquire or register
 
+## Programs Overview Page Job
+The programs overview page must:
+- explain the overall Yard offer model in one place
+- show the major program categories without overwhelming visitors
+- help users choose between community, elite, event, and broader program directions
+- route visitors to the right deeper page or enquiry action
+
+## Community Page Jobs
+The community page must:
+- explain who the community pathway is for
+- make the environment feel welcoming, safe, and developmental
+- help players and families understand what participation can look like
+- create a low-friction next step for enquiry or interest
+
+## Elite Page Jobs
+The elite page must:
+- explain who the elite pathway is for
+- communicate challenge, progression, and football credibility clearly
+- distinguish elite development from the broader program overview
+- direct higher-ambition players toward the right enquiry or interest action
+
+## Events Page Jobs
+The events page must:
+- highlight current activity, gala days, collaborations, and featured football moments
+- show that Yard is active and connected to real environments
+- support attendance, collaboration, and future-event enquiries without becoming a dense calendar product
+
 ## Initial Program Category Model
 
 The first website structure should work from these program categories:
