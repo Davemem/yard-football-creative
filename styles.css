@@ -186,6 +186,37 @@ h3 {
   cursor: pointer;
 }
 
+.header-social {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-left: var(--space-3);
+  padding-left: var(--space-3);
+  border-left: 1px solid rgba(46, 100, 23, 0.2);
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid rgba(46, 100, 23, 0.2);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.42);
+  color: var(--color-field-depth);
+}
+
+.social-link svg {
+  width: 1.15rem;
+  height: 1.15rem;
+  fill: currentColor;
+}
+
+.social-link-disabled {
+  opacity: 0.48;
+}
+
 .hero-layout {
   display: grid;
   grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
@@ -289,6 +320,7 @@ h3 {
 .button:focus-visible,
 .menu-toggle:focus-visible,
 .main-nav a:focus-visible,
+.social-link:focus-visible,
 .contact-link:focus-visible {
   outline: 3px solid rgba(255, 222, 88, 0.9);
   outline-offset: 3px;
@@ -536,6 +568,12 @@ h3 {
     border-radius: var(--radius-md);
     background: var(--color-panel-strong);
     box-shadow: var(--shadow-soft);
+  }
+
+  .header-social {
+    margin-left: 0;
+    padding-left: 0;
+    border-left: 0;
   }
 
   .main-nav.open {
