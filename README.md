@@ -26,6 +26,7 @@ The website should:
 
 - `ROADMAP.md` — staged build plan
 - `LAWS.md` — non-negotiable development rules
+- `ARCHITECTURE.md` — early structural direction and future page layout baseline
 - `PHASE_0_DIRECTION.md` — early visual and structural direction captured from the supplied assets
 - `BRAND.md` — tone, positioning, and visual direction
 - `CONTENT_STRATEGY.md` — page goals and content rules

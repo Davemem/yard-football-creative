@@ -77,3 +77,24 @@ it introduces the organisation, proves that it is grounded in real football cult
 - Community and elite pathways should appear before deeper supporting sections so visitors can orient fast.
 - The homepage should feel poster-like and spacious, not packed with competing cards.
 - Every section needs one clear job; no filler banding or generic metrics blocks.
+
+## 0.3 Initial Page Layout Direction for Core Pages
+
+### Page Families to Carry Forward
+
+- `Home` should behave like a clear front gate with strong atmosphere and fast orientation.
+- `About` should turn the founder backstory into trust, values, and organisational clarity.
+- `Pathway overview pages` should group offers cleanly without burying the audience fit.
+- `Pathway detail pages` should stay practical, outcome-led, and conversion-ready.
+- `Events or current activity pages` should feel editorial and current, not like a complicated event platform.
+- `Contact pages` should be plain-language, minimal, and direct.
+
+### Structural Direction
+
+- Core pages should use the same broad frame: hero, explanation, trust layer, action layer.
+- Page openings should use short headlines and a small amount of support copy before any deeper story.
+- Mid-page sections should prefer stacked narrative blocks and simple cards over complicated multi-column systems.
+- Long pages should break rhythm with quote bands, image-led moments, or pathway split sections drawn from the PDF mood.
+- Contact actions should stay visible and repeatable across every page type.
+
+The companion layout baseline now lives in `ARCHITECTURE.md` and should be expanded, not replaced, in Phase 2.
