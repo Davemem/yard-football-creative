@@ -102,6 +102,15 @@ Completion notes:
 ## Phase 2 — Information Architecture
 Goal: design the structure of the site before deep UI work.
 
+Sub-phases:
+- [x] 2.1 sitemap
+- [ ] 2.2 navigation structure
+- [ ] 2.3 page list
+- [ ] 2.4 page purposes
+- [ ] 2.5 CTA map
+- [ ] 2.6 footer structure
+- [ ] 2.7 footer social link plan for Instagram and Facebook
+
 Deliverables:
 - sitemap
 - navigation structure
@@ -133,6 +142,9 @@ Human review steps:
 - review sitemap and navigation with a human stakeholder
 - review whether page structure feels clear on mobile first
 - confirm that core pages do not overlap or compete
+
+Completion notes:
+- `2.1` complete: defined the v1 sitemap in `PHASE_2_INFORMATION_ARCHITECTURE.md`, keeping the primary structure to Home, About, Programs, Events, and Contact while reserving future expansion pages without promoting them into the first-release navigation too early.
 
 ## Phase 3 — Brand System
 Goal: define how the site should feel and speak.
