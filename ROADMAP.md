@@ -102,6 +102,15 @@ Completion notes:
 ## Phase 2 — Information Architecture
 Goal: design the structure of the site before deep UI work.
 
+Sub-phases:
+- [x] 2.1 sitemap
+- [x] 2.2 navigation structure
+- [x] 2.3 page list
+- [x] 2.4 page purposes
+- [x] 2.5 CTA map
+- [x] 2.6 footer structure
+- [x] 2.7 header social link plan for Instagram and Facebook
+
 Deliverables:
 - sitemap
 - navigation structure
@@ -109,11 +118,12 @@ Deliverables:
 - page purposes
 - CTA map
 - footer structure
-- footer social link plan for Instagram and Facebook
+- header social link plan for Instagram and Facebook
 
 Suggested core pages:
 - Home
 - About
+- Programs
 - Events
 - Contact 
 
@@ -133,6 +143,16 @@ Human review steps:
 - review sitemap and navigation with a human stakeholder
 - review whether page structure feels clear on mobile first
 - confirm that core pages do not overlap or compete
+
+Completion notes:
+- `2.1` complete: defined the v1 sitemap in `PHASE_2_INFORMATION_ARCHITECTURE.md`, keeping the primary structure to Home, About, Programs, Events, and Contact while reserving future expansion pages without promoting them into the first-release navigation too early.
+- `2.2` complete: defined the primary navigation structure in `PHASE_2_INFORMATION_ARCHITECTURE.md` and expanded `ARCHITECTURE.md` with the Phase 2 navigation baseline, keeping the header focused on Home, About, Programs, Events, and Contact while routing deeper pathway detail into page content instead of header sprawl.
+- `2.3` complete: defined the full planned page inventory in `PHASE_2_INFORMATION_ARCHITECTURE.md`, confirming that the first-release site is limited to Home, About, Programs, Events, and Contact, with community and elite handled as pathway content rather than separate pages.
+- `2.4` complete: defined a single clear job for each planned page in `PHASE_2_INFORMATION_ARCHITECTURE.md` and aligned `CONTENT_STRATEGY.md` to the same five-page model so later content and UI work can separate overview, events, and contact roles without introducing extra pages.
+- `2.5` complete: defined the page-by-page CTA map in `PHASE_2_INFORMATION_ARCHITECTURE.md` and aligned `ARCHITECTURE.md` to the same conversion structure so each page now has a clear primary action, supporting fallback, and route into either the `Programs` page, `Events`, or the approved `contact@yardfc.com` enquiry flow.
+- `2.6` complete: defined the shared footer structure in `PHASE_2_INFORMATION_ARCHITECTURE.md`, `ARCHITECTURE.md`, and `CONTENT_STRATEGY.md`, keeping the footer anchored to the five-page site map while using in-page pathway links inside `Programs` instead of extra standalone pages.
+- `2.7` complete: defined the Instagram and Facebook header social plan in `PHASE_2_INFORMATION_ARCHITECTURE.md`, aligned the same rules in `ARCHITECTURE.md` and `CONTENT_STRATEGY.md`, and added `PHASE_2_INFORMATION_ARCHITECTURE.md` to the documented governance set in `README.md` and `CONTRIBUTING.md`.
+- All Phase 2 sub-phases are now complete. The information architecture baseline now covers the five-page v1 sitemap, navigation, page jobs, CTA map, footer structure, and Instagram/Facebook header social plan.
 
 ## Phase 3 — Brand System
 Goal: define how the site should feel and speak.
@@ -175,7 +195,7 @@ Deliverables:
 - FAQs
 - contact copy
 - placeholder testimonials or proof sections
-- footer copy and social link labels for Instagram and Facebook
+- footer copy and header social link labels for Instagram and Facebook
 - contact page copy for a simple email enquiry form
 - contact page copy aligned to `contact@yardfc.com`
 - homepage Instagram section copy and CTA linking to the `@yardfc` account
@@ -199,7 +219,7 @@ Deliverables:
 - form styles
 - responsive navigation
 - footer component
-- social icon link treatment for the footer
+- social icon link treatment for the header
 - homepage social feed section pattern
 - theme tokens or styling architecture that can support toggleable logo-based themes
 - a safe default theme and a repeatable pattern for adding more themes from approved files in `assets/Logos/`
@@ -225,10 +245,9 @@ Deliverables:
 - home page complete
 - about page complete
 - programs overview complete
-- community page complete
-- elite page complete
+- programs page pathway sections complete
 - contact / expression of interest page complete
-- footer with Instagram and Facebook icon links complete
+- header with Instagram and Facebook links complete
 - email contact form complete
 - email contact form directed to `contact@yardfc.com`
 - homepage Instagram integration linking to the Yard FC Instagram account
@@ -270,7 +289,7 @@ Exit criteria:
 Human review steps:
 - review trust sections, forms, and staff/program presentation with a human reviewer
 - confirm the site feels credible to players, families, and partners
-- confirm the footer social links and contact form feel useful, visible, and trustworthy
+- confirm the header social links and contact form feel useful, visible, and trustworthy
 
 ## Phase 8 — Technical Hardening
 Goal: make the site robust before scaling.

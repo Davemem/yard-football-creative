@@ -38,6 +38,20 @@ Program pages must:
 - explain outcomes or goals
 - explain how to enquire or register
 
+## Programs Overview Page Job
+The programs overview page must:
+- explain the overall Yard offer model in one place
+- show the major program categories without overwhelming visitors
+- help users choose between community, elite, event, and broader program directions
+- hold distinct community and elite pathway sections within the page itself
+- route visitors to the right in-page pathway section or enquiry action
+
+## Events Page Jobs
+The events page must:
+- highlight current activity, gala days, collaborations, and featured football moments
+- show that Yard is active and connected to real environments
+- support attendance, collaboration, and future-event enquiries without becoming a dense calendar product
+
 ## Initial Program Category Model
 
 The first website structure should work from these program categories:
@@ -60,11 +74,14 @@ The contact page must:
 
 ## Footer Content Jobs
 The footer must:
-- provide quick access to Instagram and Facebook
 - reinforce trust with clear contact access
 - help users reach the contact page or enquiry form from anywhere on the site
+- repeat the five core page links clearly
+- offer pathway shortcuts into the `Programs` page without introducing extra standalone pages
 
-Social links should be easy to recognise and should not compete with the primary page CTAs.
+Header social links should be easy to recognise and should not compete with the primary page CTAs.
+Instagram should be the primary social proof destination, and Facebook should remain a secondary supporting link.
+If a Facebook production URL is not yet approved, do not invent one in implementation.
 
 ## FAQ Strategy
 FAQs should remove hesitation.
