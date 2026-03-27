@@ -94,3 +94,18 @@ It is intentionally lightweight and should be expanded in Phase 2 when sitemap, 
 - The footer should repeat the five-page site map: Home, About, Programs, Events, Contact.
 - Footer pathway links should point to community and elite sections inside Programs rather than separate pages.
 - The footer should include brand context and contact access in a stable shared structure.
+
+## Deployment Baseline
+
+- The first-release site should target Render Static Sites as the default hosting platform.
+- The initial deployment should be compatible with a free Render Hobby workspace where possible.
+- `yardfc.com` should remain registered with Namecheap.
+- Custom-domain DNS records should be managed in Namecheap using Render's published domain settings.
+- `www.yardfc.com` should either redirect to the preferred canonical domain or be handled consistently with the final SEO and redirect plan.
+
+## Backend Boundary for v1
+
+- The preferred v1 architecture is static-first.
+- If forms, Instagram API access, or other integrations require server-side behaviour, add the smallest possible backend layer.
+- A lightweight Render web service is acceptable if required, but should not be introduced before the static-site path is proven insufficient.
+- Avoid adding persistent backend complexity until real product needs justify it.

@@ -373,15 +373,15 @@ Human review steps:
 ## Deployment Direction
 
 Recommended v1 deployment approach:
-- use Cloudflare as the primary deployment platform for frontend hosting
-- use Cloudflare Workers only if lightweight backend behaviour is needed for forms, integrations, or simple server-side logic
+- use Render Static Sites as the primary deployment platform for frontend hosting
+- use a minimal Render web service only if lightweight backend behaviour is needed for forms, integrations, or simple server-side logic
 - keep `yardfc.com` registered with Namecheap
-- move DNS management to Cloudflare for production by updating the domain nameservers at Namecheap
+- keep DNS management at Namecheap unless Render-specific DNS requirements make a later change necessary
 
 Why this is the current recommended path:
 - it is well suited to static and frontend-first sites
-- it supports custom domains, SSL, preview deployments, and lightweight backend functions in one workflow
-- it is a more cost-effective paid path than the previously considered Vercel setup
+- it supports custom domains, SSL, preview deploys, and straightforward GitHub-based deployment workflows
+- it can remain free for a static-site v1 on a new Render Hobby workspace
 - it keeps the initial stack simple while leaving room for future growth
 
 Deployment scope to cover before launch:
@@ -396,16 +396,16 @@ Deployment scope to cover before launch:
 
 Suggested DNS approach for `yardfc.com`:
 - keep registrar ownership at Namecheap
-- add `yardfc.com` to Cloudflare
-- update the Namecheap nameservers to the Cloudflare-assigned nameservers
+- create the production site in the new Render account
+- add `yardfc.com` and `www.yardfc.com` as the allowed custom domains in Render
+- add the required DNS records in Namecheap based on Render's domain instructions
 - connect the apex domain `yardfc.com` to the production project
-- connect `www.yardfc.com` and redirect it to the preferred canonical domain
-- manage production DNS records from Cloudflare once the zone is active
+- connect `www.yardfc.com` and redirect it to the preferred canonical domain if needed
 
 Backend guidance for v1:
 - prefer no separate backend if the site is primarily content-led
 - if forms or integrations require server-side logic, use a minimal serverless layer first
-- only introduce a separate backend platform when workflows, data storage, or admin requirements clearly justify it
+- only introduce a separate always-on backend platform when workflows, data storage, or admin requirements clearly justify it
 
 ## Phase 10 — Post-Launch Growth
 Goal: expand intentionally, not randomly.
