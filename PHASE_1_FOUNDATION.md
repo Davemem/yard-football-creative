@@ -9,11 +9,19 @@ It carries forward the emotional and structural direction established in `PHASE_
 
 Yard Football Creative is a football-based organisation that creates meaningful community and elite experiences for girls and women through storytelling, connection, and development.
 
-### Source Vision and Mission from `assets/YARD.pdf`
+### Source Vision and Mission Block from `assets/YARD.pdf`
 
-- Vision: "TO EMPOWER AND INSPIRE OTHERS."
+- Vision: "TO EMPOWER AND INSPIRE."
 - Mission: "TO USE FOOTBALL AS THE TOOL OF BRINGING PEOPLE TOGETHER."
-- Source support statement: "WE AIM TO CREATE EXPERIENCES THAT WILL ALLOW OTHERS TO FEEL INSPIRED AND EMPOWERED, BY ENSURING STORYTELLING AND CONNECTION ARE AT THE HEART OF EVERYTHING WE DO."
+- "WE AIM TO CREATE EXPERIENCES THAT WILL ALLOW OTHERS TO FEEL INSPIRED AND EMPOWERED, BY ENSURING STORYTELLING AND CONNECTION ARE AT THE HEART OF EVERYTHING WE DO."
+- "YARD FOOTBALL CREATIVE WAS DEVELOPED FROM THE IDEA OF TAKING FOOTBALL BACK TO THAT FEELING OF PLAYING IN OUR BACKYARD."
+- "LIKE MOST OF US, AS KIDS, FOOTBALL WAS FIRST DISCOVERED IN OUR BACKYARD AND THIS IS WHERE WE FOUND THE PURE JOY THAT CAN COME FROM THE SIMPLICITY OF A SINGLE BALL."
+- "HOURS AND HOURS WERE SPENT IN THE YARD WITH FAMILY AND FRIENDS, PLAYING UNTIL DARKNESS NO LONGER ALLOWED US."
+- "NO PRESSURE, NO EXPECTATIONS, NO DISTRACTIONS... JUST FREEDOM TO EXPRESS OURSELVES AND UNAPOLOGETICALLY DREAM BIG."
+- "WE WANT THIS TO BE A SPACE FOR EVERYONE TO FEEL LIKE THAT LITTLE KID AGAIN, A SAFE PLACE WHERE YOU FEEL YOU BELONG."
+- "WE BELIEVE THAT THROUGH CONNECTION, YOU FEEL BELONGING, AND THROUGH BELONGING YOU FEEL EMPOWERED AND SAFE TO CREATE... WHICH CAN TURN INTO SOMETHING PRETTY SPECIAL."
+- "WE’VE SPENT YEARS TRYING TO FIND A PLATFORM THAT FEELS MEANINGFUL TO US AND THROUGH YARD FC WE FEEL THAT."
+- "IT’S A PLACE WHERE WE CAN BE BIG DREAMERS, AND ALLOW IDEAS TO CREATE OPPORTUNITIES FOR OTHERS TO CONNECT, SHARE AND DREAM BIG WITH US."
 
 ### Website-Ready Mission Framing
 
@@ -21,7 +29,7 @@ Yard Football Creative uses football to bring people together and build environm
 
 ### Why This Is the Phase 1 Baseline
 
-- It includes the exact vision and mission wording from `assets/YARD.pdf`.
+- It includes the full mission block from `assets/YARD.pdf`, with the requested vision wording update.
 - It stays faithful to the source language in `assets/YARD.pdf`, especially the emphasis on connection, belonging, inspiration, and empowerment.
 - It clarifies that the organisation serves both community and elite spaces without turning the brand into an elite-only academy.
 - It gives the website a direct answer to the first homepage question: what is this?
