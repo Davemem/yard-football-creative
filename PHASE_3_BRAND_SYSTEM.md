@@ -482,3 +482,85 @@ These examples show the intended Yard writing style:
 - conversion-aware without sounding salesy
 
 They provide a tone model for Phase 4 without pre-empting the full content draft work.
+
+## 3.8 Theme System Rules for Multiple Logo-Driven Visual Variants
+
+### Theme Principle
+
+Themes should change emphasis, not identity.
+Every approved theme must still feel like one Yard Football Creative product with the same structure, tone, and conversion behaviour.
+
+### Approved Theme Families
+
+#### Core Field
+
+- purpose: default site theme and most neutral Yard expression
+- primary asset direction: green-led logos most closely aligned to the PDF cover
+- dominant colours: `Ground Mist`, `Field Depth`, `Acid Grass`, `Warm Whistle`
+- role: the most stable and dependable expression for first-release use
+
+#### Lime Signal
+
+- purpose: brighter campaign or youth-energy variant
+- primary asset direction: approved light lime logo variants such as `LOGO-1_light`
+- dominant colours: `Lime Flood`, `Field Depth`, `Backyard Rust`, `Chalk White`
+- role: a more energetic but still controlled variant for selected moments
+
+#### Lavender Night
+
+- purpose: alternate expressive theme already legitimised by the supplied dark logo set
+- primary asset direction: approved purple variants such as `LOGO-5_dark` and `LOGO-10_dark`
+- dominant colours: `Lavender Night`, `Violet Outline`, `Ink`, `Chalk White`
+- role: an evening, poster-led expression that still respects the Yard system
+
+### Theme Assignment Rules
+
+- Every theme must map to a real supplied logo asset family.
+- Theme names should describe the experience, but implementation must still tie back to the approved logo files.
+- No theme may be created just to introduce a new colour idea without asset support.
+- Themes should be implemented through tokens, not page forks or duplicated layouts.
+
+### Shared Invariants Across All Themes
+
+- page structure
+- navigation model
+- CTA hierarchy
+- typography system
+- spacing system
+- voice and content clarity
+- accessibility thresholds
+- safeguarding-aware trust signals
+
+### Theme Variation Scope
+
+Themes may vary:
+- logo choice
+- accent colours
+- supporting background tints
+- border or outline emphasis
+- selective graphic-device usage
+
+Themes must not vary:
+- page purpose
+- information architecture
+- interaction model
+- core content order
+- the meaning of the brand
+
+### Theme Governance Rule
+
+The default website build should begin with `Core Field`.
+Other approved themes should only be activated when:
+- the contrast remains strong
+- the page still feels calm
+- the logo choice is appropriate to the mode and context
+- a human review confirms the result still feels like Yard
+
+### Phase 3 Theme Outcome
+
+The Yard theme system now has a clear rule set:
+- one default grounded theme
+- one brighter lime-led variant
+- one purple-led alternate family already supported by supplied logos
+
+That gives the project real visual flexibility without inventing brand drift.
