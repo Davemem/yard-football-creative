@@ -160,3 +160,74 @@ This typography system gives the site:
 - a clear separation between asset-led brand expression and website reading comfort
 
 It keeps the site distinct without making the interface harder to use.
+
+## 3.3 Button Styles
+
+### Button Principle
+
+Buttons should feel direct, grounded, and unmistakably intentional.
+They should borrow from the rounded label moments in `assets/YARD.pdf` without turning every CTA into a playful novelty chip.
+
+The system should stay small:
+- one strong primary button
+- one quieter secondary button
+- one low-emphasis text action
+
+### Primary Button
+
+- shape: rounded capsule with generous horizontal padding
+- default treatment: dark surface with bright accent text or border-led emphasis, depending on theme contrast needs
+- typography: `Barlow Condensed` in uppercase or title case, medium-to-bold weight
+- use case: the main page action such as `Explore Programs`, `Contact Yard`, or `Send Enquiry`
+
+Primary buttons should read as the clearest action on the screen without requiring oversized scale or decorative icons.
+
+### Secondary Button
+
+- shape: same rounded capsule structure as the primary button
+- treatment: quieter surface or outline treatment that sits below the primary action
+- typography: same button typography as primary for consistency
+- use case: supporting actions such as `View Events` or secondary pathway jumps
+
+Secondary buttons should feel related to the primary action, not like a different component family.
+
+### Text Action
+
+- shape: no capsule container
+- treatment: text plus optional underline, arrow, or directional cue
+- typography: `Barlow Condensed` for short directional actions, `Public Sans` only where a link sits inside paragraph copy
+- use case: tertiary actions, footer links, and in-flow support links
+
+Text actions should remain obviously clickable but visually subordinate to real CTAs.
+
+### Size and Rhythm Rules
+
+- Buttons should have enough height for comfortable thumb use on mobile.
+- Horizontal padding should make short labels feel calm rather than cramped.
+- A page should rarely introduce more than one primary button in the same viewport.
+- Button groups should stack cleanly on mobile before expanding horizontally on wider screens.
+
+### State Rules
+
+- hover and focus states should increase clarity, not invent extra colour noise
+- focus indication must be obvious and accessible
+- disabled states should remain readable while clearly non-interactive
+- pressed states may slightly deepen surface tone or border contrast, but should not shift to unrelated colours
+
+### What to Avoid
+
+- sharp-cornered enterprise-style buttons that break the softer asset rhythm
+- ghost buttons so faint that CTA priority disappears
+- icon-heavy buttons that make the site feel app-like instead of editorial and football-native
+- multiple competing bright CTA colours on the same screen
+- overly decorative shadows or gradients that were not established by the supplied assets
+
+### Phase 3 Button Outcome
+
+The Yard button system should feel:
+- rounded but not childish
+- bold but not noisy
+- consistent across every page and theme
+- trustworthy enough for critical contact and enquiry flows
+
+It gives future UI work a strong CTA hierarchy without adding unnecessary component complexity.
