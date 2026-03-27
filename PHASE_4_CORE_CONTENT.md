@@ -327,3 +327,28 @@ Actual form labels, consent wording, response-time wording, and any submission c
 #### Placeholder for human-developed text
 
 Any extra explanation needed for parents, players, or partners so the form stays clear about what information is being requested and why.
+
+## 4.9 Contact Page Copy Aligned to `contact@yardfc.com`
+
+### Contact Email Lead-In
+
+Dream Big With Us.
+
+### Contact Email Support Copy
+
+We hope to show others how football can fuel connection in the most positive of ways.
+
+### Contact Email Destination
+
+`contact@yardfc.com`
+
+### Source Notes
+
+- The lead-in and support lines are taken directly from the closing call and founder-story copy in `assets/YARD.pdf`.
+- `contact@yardfc.com` is included here because Phase 1, Phase 2, and the Phase 4 roadmap explicitly require the v1 contact workflow to align to that address.
+
+### Recommended Placeholders
+
+#### Placeholder for human-developed text
+
+Any approved note about expected response window, the main contact owner, or whether the same address handles programs, events, and partnerships together.
