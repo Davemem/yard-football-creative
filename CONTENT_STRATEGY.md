@@ -38,6 +38,18 @@ Program pages must:
 - explain outcomes or goals
 - explain how to enquire or register
 
+## Initial Program Category Model
+
+The first website structure should work from these program categories:
+- community football experiences
+- elite pathway development
+- workshops and education
+- events and gala days
+- all-abilities and inclusive football
+- storytelling, art, and creative projects
+
+These categories should stay simple and descriptive until later phases define page architecture and full program copy in more detail.
+
 ## Contact Page Jobs
 The contact page must:
 - reduce friction

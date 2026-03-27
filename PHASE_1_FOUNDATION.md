@@ -48,3 +48,32 @@ Yard Football Creative uses football to bring people together and build environm
 - They align with the clearest groups named across `BRAND.md`, the original scaffold, and `assets/YARD.pdf`.
 - They match the early website jobs of explaining the organisation, clarifying community and elite pathways, and creating clear enquiry paths.
 - They define the first decision points the site has to support before any later expansion into media, campaigns, or deeper program pages.
+
+## 1.3 Service and Program Categories
+
+### Core Offer Categories
+
+1. `Community football experiences`
+   Sessions, gatherings, and football environments designed to build belonging, confidence, and connection.
+2. `Elite pathway development`
+   Higher-ambition environments for players seeking challenge, progression, and credible football guidance.
+3. `Workshops and education`
+   Learning-led sessions covering development, wellbeing, leadership, and practical football topics.
+4. `Events and gala days`
+   Football-centred activations that bring clubs, schools, communities, or partners together.
+5. `All-abilities and inclusive football`
+   Experiences designed to widen access and create meaningful participation.
+6. `Storytelling, art, and creative projects`
+   Football-led cultural experiences that use story, reflection, and creative expression to deepen connection.
+
+### Supporting Offer Signals from the Current Materials
+
+- `assets/YARD.pdf` names workshops, gala days, all-abilities football, art, storytelling, and ideas as early program signals.
+- The original static scaffold introduces education, wellbeing, research translation, community collaboration, and football memory sessions.
+- Together, those materials support a service model that blends participation, development, and cultural storytelling rather than behaving like a standard academy-only offer stack.
+
+### Category Rules for Later Phases
+
+- Community and elite pathways should stay visible as the two primary audience lenses.
+- Program categories should remain simple enough for fast navigation and mobile scanning.
+- No later page or CTA should contradict the idea that Yard is both football-development-led and connection-led.
