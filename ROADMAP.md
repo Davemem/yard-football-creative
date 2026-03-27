@@ -166,7 +166,7 @@ Sub-phases:
 - [x] 3.6 tone of voice rules
 - [x] 3.7 copy examples
 - [x] 3.8 theme system rules for multiple logo-driven visual variants
-- [ ] 3.9 guidelines for which visual elements may change per theme and which must remain fixed
+- [x] 3.9 guidelines for which visual elements may change per theme and which must remain fixed
 - [ ] 3.10 light mode and dark mode rules for each approved theme family
 - [ ] 3.11 earthy background palette guidance that allows content and CTAs to stand out clearly
 
@@ -206,6 +206,7 @@ Completion notes:
 - `3.6` complete: defined the tone-of-voice rules in `PHASE_3_BRAND_SYSTEM.md`, establishing a grounded, warm, direct, and credible writing standard that preserves the emotional truth of `assets/YARD.pdf` while keeping page-level copy clear for players, families, and partners.
 - `3.7` complete: added brand-voice copy examples to `PHASE_3_BRAND_SYSTEM.md`, including sample hero, about, programs, events, contact, and CTA language that demonstrates the approved tone without jumping ahead into the full Phase 4 page-drafting scope.
 - `3.8` complete: defined the multi-theme system in `PHASE_3_BRAND_SYSTEM.md`, establishing the `Core Field`, `Lime Signal`, and `Lavender Night` families, tying each to supplied logo directions, and locking the requirement that themes operate through shared tokens instead of duplicated page structures or invented brand variants.
+- `3.9` complete: defined the fixed-versus-variable theme contract in `PHASE_3_BRAND_SYSTEM.md`, making page structure, typography, spacing, CTA hierarchy, accessibility, and content logic non-negotiable while limiting theme variation to approved logo choice, palette emphasis, and restrained atmospheric treatments.
 
 ## Phase 4 — Core Content Drafting
 Goal: write the website before over-designing it.

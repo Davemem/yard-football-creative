@@ -564,3 +564,67 @@ The Yard theme system now has a clear rule set:
 - one purple-led alternate family already supported by supplied logos
 
 That gives the project real visual flexibility without inventing brand drift.
+
+## 3.9 Guidelines for Which Visual Elements May Change Per Theme and Which Must Remain Fixed
+
+### Fixed System Elements
+
+The following elements must remain fixed across all approved themes:
+- page structure and section order logic
+- sitemap and navigation labels
+- CTA wording hierarchy
+- typography families and reading behaviour
+- spacing scale and layout rhythm
+- semantic HTML and accessibility expectations
+- form simplicity and contact-flow clarity
+- tone of voice and content purpose
+
+These are the core product rules, not theme choices.
+
+### Theme-Variable Elements
+
+The following elements may change by approved theme:
+- selected logo file
+- accent colour assignment
+- background tint family
+- border, underline, or outline emphasis
+- supporting graphic motif intensity
+- card and button surface contrast balance
+
+Any variation must still preserve readability, hierarchy, and trust.
+
+### Partial-Flex Elements
+
+Some elements may shift in emphasis, but not in fundamental behaviour:
+- hero composition may become more circular, more poster-like, or more restrained
+- quote and story blocks may lean warmer or cooler by theme
+- decorative separators may simplify or gain stronger contrast
+- button fill versus outline balance may adjust when required by palette contrast
+
+These adjustments must remain recognisably part of one shared design system.
+
+### Non-Negotiable Restrictions
+
+- Themes may not introduce new page templates just to look different.
+- Themes may not swap to unrelated typefaces.
+- Themes may not invent new logos, icon sets, or illustrations outside the approved asset language.
+- Themes may not reduce contrast or soften CTA hierarchy in the name of visual variety.
+- Themes may not erase the football-native grounding of the brand.
+
+### Decision Test for Future Theme Changes
+
+Before approving a theme-specific variation, the project should ask:
+- does this improve clarity or just add difference?
+- is the change supported by approved assets?
+- does the page still feel like Yard at a glance?
+- would the same content still work without rewriting the layout?
+
+If the answer becomes unclear, the element should stay fixed.
+
+### Phase 3 Variation Outcome
+
+The Yard system now has a clear boundary:
+- themes may shift atmosphere
+- themes may not shift product meaning
+
+That boundary is what prevents multi-theme support from becoming brand fragmentation.
