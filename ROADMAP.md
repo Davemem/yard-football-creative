@@ -264,7 +264,7 @@ Completion notes:
 Goal: convert the current baseline site into a structured design system.
 
 Sub-phases:
-- [ ] 5.1 layout primitives
+- [x] 5.1 layout primitives
 - [ ] 5.2 shared section components
 - [ ] 5.3 button system
 - [ ] 5.4 card system
@@ -301,7 +301,7 @@ Human review steps:
 - review whether the light/dark toggle feels useful, legible, and coherent across themes
 
 Completion notes:
-- `5.1` pending.
+- `5.1` complete: restored the static baseline files from `origin/main` and rebuilt them around reusable layout primitives in `index.html`, `styles.css`, and `script.js`, including a shared container, section-shell, stack, grid, and story-layout system grounded in the approved logo assets, Phase 3 typography, and Phase 4 PDF-sourced homepage copy.
 - `5.2` pending.
 - `5.3` pending.
 - `5.4` pending.
