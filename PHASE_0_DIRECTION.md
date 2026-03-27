@@ -178,3 +178,34 @@ The page structure, content order, CTA treatment, and trust signals should remai
 - Tie each approved theme to a specific supplied logo asset rather than abstract naming alone.
 - Let the logo choice decide accent colour and decorative style, but not the page skeleton.
 - Add new themes only when a human review confirms the result still feels like one Yard product.
+
+## 0.6 Early Approach for Light and Dark Mode Across Themes
+
+### Mode Principle
+
+Light and dark mode should feel like two deliberate readings of the same poster system.
+Switching modes should not swap the brand personality out for a generic operating-system look.
+
+### Shared Rules
+
+- Text contrast must remain strong enough for long-form reading in both modes.
+- Backgrounds should stay earthy and calm rather than becoming pure white or pure black.
+- Accent colours should be slightly restrained in dark mode so lime and yellow moments still feel premium instead of glowing noisily.
+- Cards, forms, and CTA surfaces should preserve the same hierarchy in both modes.
+- The chosen logo variant must match the mode rather than being force-tinted.
+
+### Mode Behaviour by Theme Family
+
+- `Core`
+  Light mode should use muted stone or cement surfaces with deep green structure. Dark mode should move to field-green and charcoal surfaces with acid-lime highlights reserved for emphasis.
+- `Lime`
+  Light mode can let lime carry more energy across hero and accent moments. Dark mode should reduce the amount of bright lime on full surfaces and use it mainly for headings, borders, and action cues.
+- `Story`
+  Light mode should lean on warm clay, paper, and dusty yellow notes. Dark mode should shift toward deep olive, bark, and muted rust while keeping body copy comfortable and calm.
+
+### Practical Guardrails for Later Build Work
+
+- Mode switching should happen through shared theme tokens instead of separate component forks.
+- Decorative graphics should simplify in dark mode before text contrast is compromised.
+- The hero should remain recognisable in both modes even when the surface balance changes.
+- Human review is required before any theme ships if its dark mode feels louder than its light mode.
