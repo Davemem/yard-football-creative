@@ -628,3 +628,81 @@ The Yard system now has a clear boundary:
 - themes may not shift product meaning
 
 That boundary is what prevents multi-theme support from becoming brand fragmentation.
+
+## 3.10 Light Mode and Dark Mode Rules for Each Approved Theme Family
+
+### Shared Mode Principle
+
+Light and dark mode should feel like two deliberate readings of the same Yard poster system.
+Mode switching must not replace the chosen theme with a generic operating-system palette.
+
+### Shared Rules for Every Theme
+
+- text contrast must remain strong in both modes
+- logos must use approved supplied variants appropriate to the mode
+- long-form reading surfaces must stay calm rather than ultra-bright or pure black
+- CTA hierarchy must remain equally obvious in both modes
+- decorative graphics should simplify before readability is compromised
+
+### Core Field Mode Rules
+
+#### Light Mode
+
+- base surfaces: `Ground Mist`, `Chalk White`, soft green-tinted neutrals
+- key structure: `Field Depth`
+- accents: `Acid Grass` with selective `Warm Whistle`
+- overall feel: grounded daytime poster system with strong orientation
+
+#### Dark Mode
+
+- base surfaces: deep field green, charcoal, restrained dark neutrals
+- key structure: `Chalk White` and softened lime emphasis
+- accents: `Acid Grass` used more selectively, with yellow reduced to highlight moments only
+- overall feel: rich and football-native, never glowing or synthetic
+
+### Lime Signal Mode Rules
+
+#### Light Mode
+
+- base surfaces: pale stone, off-white, or light grey foundations
+- key structure: `Field Depth`
+- accents: stronger use of `Lime Flood` with careful `Backyard Rust` support
+- overall feel: energetic, youthful, and training-ground bright without losing calm
+
+#### Dark Mode
+
+- base surfaces: dark olive, charcoal, or muted field tones
+- key structure: `Chalk White`
+- accents: `Lime Flood` reduced to headings, strokes, and CTAs rather than large filled surfaces
+- overall feel: controlled energy instead of neon overload
+
+### Lavender Night Mode Rules
+
+#### Light Mode
+
+- base surfaces: pale lavender-grey, chalky off-white, and soft neutral support tones
+- key structure: `Violet Outline` and `Ink`
+- accents: purple-led emphasis with limited supporting green or clay moments where the logo family allows
+- overall feel: poster-like, expressive, and still highly readable
+
+#### Dark Mode
+
+- base surfaces: deep violet-charcoal and muted night neutrals
+- key structure: `Chalk White`
+- accents: `Lavender Night` and `Violet Outline` balanced carefully so the page does not become candy-coloured
+- overall feel: atmospheric evening expression with clear football seriousness
+
+### Mode Implementation Guardrails
+
+- Dark mode should never become brighter or busier than the matching light mode.
+- If a theme requires excessive accent colour to remain legible, the palette needs revision before shipping.
+- Illustrative or decorative assets should be reduced in contrast before body-copy surfaces are compromised.
+- System behaviour should rely on shared tokens, not separate component logic by mode.
+
+### Phase 3 Mode Outcome
+
+The project now has mode rules that:
+- preserve readability
+- respect the approved logo families
+- keep dark mode intentional rather than fashionable
+- allow each theme to remain recognisable in both light and dark contexts
