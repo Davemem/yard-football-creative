@@ -107,7 +107,7 @@ Sub-phases:
 - [x] 2.2 navigation structure
 - [x] 2.3 page list
 - [x] 2.4 page purposes
-- [ ] 2.5 CTA map
+- [x] 2.5 CTA map
 - [ ] 2.6 footer structure
 - [ ] 2.7 footer social link plan for Instagram and Facebook
 
@@ -148,6 +148,7 @@ Completion notes:
 - `2.2` complete: defined the primary navigation structure in `PHASE_2_INFORMATION_ARCHITECTURE.md` and expanded `ARCHITECTURE.md` with the Phase 2 navigation baseline, keeping the header focused on Home, About, Programs, Events, and Contact while routing deeper pathway detail into page content instead of header sprawl.
 - `2.3` complete: defined the full planned page inventory in `PHASE_2_INFORMATION_ARCHITECTURE.md`, clarifying that Community and Elite are required supporting pages in the v1 architecture even though they should sit below the top-level header rather than competing with it.
 - `2.4` complete: defined a single clear job for each planned page in `PHASE_2_INFORMATION_ARCHITECTURE.md` and aligned `CONTENT_STRATEGY.md` to the same page-purpose model so the later content and UI phases can separate overview, pathway, events, and contact roles cleanly.
+- `2.5` complete: defined the page-by-page CTA map in `PHASE_2_INFORMATION_ARCHITECTURE.md` and aligned `ARCHITECTURE.md` to the same conversion structure so each page now has a clear primary action, supporting fallback, and route into the approved `contact@yardfc.com` enquiry flow.
 
 ## Phase 3 — Brand System
 Goal: define how the site should feel and speak.

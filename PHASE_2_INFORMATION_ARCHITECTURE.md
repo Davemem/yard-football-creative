@@ -193,3 +193,60 @@ The planned first-release page inventory is:
 - `Community` and `Elite` focus on audience fit and pathway clarity; they should not become generic duplicate program listings.
 - `Events` handles current activity and event-led storytelling; it should not become the catch-all page for every offer.
 - `Contact` is for action and follow-up; it should not be overloaded with long-form brand explanation already handled elsewhere.
+
+## 2.5 CTA Map
+
+### CTA Principles
+
+- Every primary page should have one dominant next step.
+- CTAs should use clear enquiry language rather than vague marketing prompts.
+- Contact should remain the universal fallback conversion route.
+- Instagram should support trust and current-activity proof, not replace the primary site CTA structure.
+
+### Page-by-Page CTA Map
+
+#### Home
+
+- primary CTA: `Explore Programs`
+- secondary CTA: `Contact Yard`
+- supporting CTA: `View Events`
+
+#### About
+
+- primary CTA: `Explore Programs`
+- secondary CTA: `Contact Yard`
+
+#### Programs
+
+- primary CTA: `Find Your Pathway`
+- secondary CTA: `Contact Yard`
+- supporting CTAs: `Explore Community`, `Explore Elite`, `View Events`
+
+#### Community
+
+- primary CTA: `Enquire About Community Football`
+- secondary CTA: `Contact Yard`
+
+#### Elite
+
+- primary CTA: `Register Elite Interest`
+- secondary CTA: `Contact Yard`
+
+#### Events
+
+- primary CTA: `Enquire About Events`
+- secondary CTA: `Contact Yard`
+- supporting CTA: `Follow Yard on Instagram`
+
+#### Contact
+
+- primary CTA: `Send Enquiry`
+- secondary CTA: `Email contact@yardfc.com`
+
+### CTA Routing Rules
+
+- `Explore Programs` should route to the `Programs` overview page.
+- `Find Your Pathway` should anchor or route visitors directly to the pathway split inside `Programs`.
+- `Explore Community` and `Explore Elite` should route to their dedicated supporting pages.
+- `Contact Yard`, `Send Enquiry`, and direct email actions should all reinforce the approved contact workflow to `contact@yardfc.com`.
+- Social CTAs should appear where current activity is relevant, but they should remain subordinate to programme and enquiry actions.

@@ -79,3 +79,12 @@ It is intentionally lightweight and should be expanded in Phase 2 when sitemap, 
 
 - Instagram and Facebook should live in the footer and contact surfaces rather than the primary navigation.
 - The footer should reinforce discovery and contact, while the header stays focused on orientation and action.
+
+## CTA Structure Baseline
+
+- Home should lead with `Explore Programs` and support `Contact Yard`.
+- About should guide visitors back into Programs or Contact.
+- Programs should funnel users into Community, Elite, Events, or Contact based on fit.
+- Community and Elite pages should use pathway-specific enquiry actions.
+- Events should support event-specific enquiry plus Instagram as a proof layer.
+- Contact should remain the final conversion destination for direct outreach to `contact@yardfc.com`.
