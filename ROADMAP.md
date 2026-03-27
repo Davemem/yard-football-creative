@@ -157,6 +157,19 @@ Completion notes:
 ## Phase 3 — Brand System
 Goal: define how the site should feel and speak.
 
+Sub-phases:
+- [x] 3.1 colour palette
+- [ ] 3.2 typography choices
+- [ ] 3.3 button styles
+- [ ] 3.4 spacing system
+- [ ] 3.5 image direction
+- [ ] 3.6 tone of voice rules
+- [ ] 3.7 copy examples
+- [ ] 3.8 theme system rules for multiple logo-driven visual variants
+- [ ] 3.9 guidelines for which visual elements may change per theme and which must remain fixed
+- [ ] 3.10 light mode and dark mode rules for each approved theme family
+- [ ] 3.11 earthy background palette guidance that allows content and CTAs to stand out clearly
+
 Deliverables:
 - colour palette
 - typography choices
@@ -183,6 +196,9 @@ Human review steps:
 - review whether multiple theme variants still feel like one coherent Yard Football Creative product
 - review light and dark mode behaviour against accessibility and brand tone
 - review whether subtle earthy backgrounds help the content pop rather than flattening the interface
+
+Completion notes:
+- `3.1` complete: created `PHASE_3_BRAND_SYSTEM.md` and defined the initial colour system from `assets/YARD.pdf`, the approved logo family, and `assets/yardfc_ball_transparent.png`, establishing grounded neutrals, green-led default accents, warm supporting tones, and an approved purple alternate family without inventing new logo behaviour.
 
 ## Phase 4 — Core Content Drafting
 Goal: write the website before over-designing it.
