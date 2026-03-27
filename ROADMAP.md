@@ -271,7 +271,7 @@ Sub-phases:
 - [x] 5.5 form styles
 - [x] 5.6 responsive navigation with icon-only social links
 - [x] 5.7 footer component and homepage social feed section pattern
-- [ ] 5.8 theme tokens, default theme, and light/dark mode support
+- [x] 5.8 theme tokens, default theme, and light/dark mode support
 
 Deliverables:
 - layout primitives
@@ -308,7 +308,8 @@ Completion notes:
 - `5.5` complete: added the baseline form styling system in `index.html` and `styles.css`, including shared field groups, labels, inputs, textarea treatment, and accessible focus states inside a contact-form shell so later enquiry implementation can inherit a stable visual pattern instead of styling forms ad hoc.
 - `5.6` complete: upgraded the header in `index.html`, `styles.css`, and `script.js` to a cleaner responsive navigation pattern and added the icon-only social treatment required by Phase 2, with Instagram linked to `@yardfc` and Facebook intentionally held as a non-linked reserved icon so no unapproved production URL is invented.
 - `5.7` complete: added the first shared footer component and homepage Instagram-section pattern in `index.html` and `styles.css`, using the Phase 4 footer lines, the approved `@yardfc` CTA, and a reusable feed-preview layout that can later receive real Instagram tiles without changing the page structure.
-- `5.8` pending.
+- `5.8` complete: converted the UI framework to a token-driven theme and mode architecture in `index.html`, `styles.css`, and `script.js`, with `core-field` as the safe default theme, repeatable `lime-signal` and `lavender-night` theme slots, and stored light/dark mode support so later toggles can be added without duplicating structures or rewriting components.
+- All Phase 5 sub-phases are now complete. The repository now has a reusable baseline UI framework ready to support the first full page-build pass in Phase 6.
 
 ## Phase 6 — Core Page Build
 Goal: complete the first usable public version.
