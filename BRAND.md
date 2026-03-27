@@ -23,11 +23,20 @@ It should speak with confidence, warmth, clarity, and credibility.
 - vague empowerment language without substance
 
 ## Audience Groups
-1. Girls and women interested in football development
-2. Parents and families
-3. Players seeking community participation
-4. Players seeking elite progression
-5. Coaches, collaborators, and partners
+1. Girls and young women looking for a welcoming football environment
+2. Players seeking community participation, confidence, and belonging
+3. Players seeking elite progression, challenge, and higher-performance support
+4. Parents and families assessing safety, fit, and trust
+5. Coaches, clubs, schools, councils, collaborators, and partners seeking football-led programs or events
+
+## First Audiences for the Website
+
+The first release of the website should prioritise:
+- girls and women considering a Yard program or experience
+- parents and families helping make that decision
+- clubs, schools, and partners exploring collaboration
+
+These audiences should shape navigation clarity, proof, tone, and calls to action before later growth work is added.
 
 ## Tone of Voice
 - clear

@@ -67,7 +67,7 @@ Goal: define the organisation before polishing the website.
 
 Sub-phases:
 - [x] 1.1 mission statement
-- [ ] 1.2 audience definitions
+- [x] 1.2 audience definitions
 - [ ] 1.3 service/program categories
 - [ ] 1.4 brand direction
 - [ ] 1.5 website success goals
@@ -92,6 +92,7 @@ Human review steps:
 
 Completion notes:
 - `1.1` complete: defined the one-sentence organisation description and mission statement in `PHASE_1_FOUNDATION.md`, aligned to the connection, belonging, inspiration, and empowerment language established in `assets/YARD.pdf`.
+- `1.2` complete: defined the primary audiences, first-user priority order, and audience-specific website needs in `PHASE_1_FOUNDATION.md` and aligned `BRAND.md` to the same audience model.
 
 ## Phase 2 — Information Architecture
 Goal: design the structure of the site before deep UI work.
