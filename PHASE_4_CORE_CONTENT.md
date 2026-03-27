@@ -198,3 +198,59 @@ A clearer explanation of how community, elite, events, workshops, and creative w
 #### Placeholder for human-selected visual content
 
 Program photography showing training, community environments, events, all-abilities participation, and creative-storytelling moments.
+
+## 4.5 FAQs
+
+### FAQ 1
+
+#### Question
+
+What is Yard Football Creative?
+
+#### Answer
+
+Yard Football Creative was developed from the idea of taking football back to the backyard.
+
+As kids, football was first discovered in our backyard and this is where we found the pure joy that can come from the simplicity of a single ball.
+
+We want this to be a space for everyone to feel like that little kid again, a safe place where you feel you belong.
+
+### FAQ 2
+
+#### Question
+
+How are we different?
+
+#### Answer
+
+Basically - creating meaningful events and experiences through football (it's a work in progress)!!
+
+### FAQ 3
+
+#### Question
+
+Who is behind the brand?
+
+#### Answer
+
+We're two sisters who grew up on a small farm, spending our nights kicking a ball around and fantasising about the life we'd make for ourselves.
+
+We experienced the highs and lows of life as female footballers, coaches and females working in the sporting industry.
+
+And that's why we've created this.
+
+### Source Notes
+
+- `What is Yard Football Creative?` appears as a heading in `assets/YARD.pdf` and is answered with page-3 copy.
+- `How are we different?` appears directly on the program signal page in `assets/YARD.pdf`.
+- The founder answer is taken from the `Behind the Brand...` section in `assets/YARD.pdf`.
+
+### Recommended Placeholders
+
+#### Placeholder for human-developed text
+
+Operational answers covering age groups, experience levels, costs, locations, what to bring, selection or trial expectations, and response times.
+
+#### Placeholder for human-developed text
+
+Safeguarding, inclusion, and accessibility answers that families and partners may reasonably expect before enquiring.
