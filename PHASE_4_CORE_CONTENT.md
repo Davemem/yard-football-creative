@@ -142,3 +142,59 @@ Location-specific or environment-specific detail explaining where Yard currently
 #### Placeholder for human-selected visual content
 
 Founder portraits, backyard or training-ground photography, and one approved image that connects the early memory narrative to present-day football environments.
+
+## 4.4 Program Descriptions
+
+### Programs Page Intro
+
+Basically - creating meaningful events and experiences through football (it's a work in progress)!!
+
+### Program List
+
+#### Yard FC
+
+Creating meaningful events and experiences through football.
+
+#### Workshops
+
+Creating meaningful events and experiences through football.
+
+#### Gala Days
+
+Creating meaningful events and experiences through football.
+
+#### All Abilities Football
+
+Creating meaningful events and experiences through football.
+
+#### Art
+
+Creating meaningful events and experiences through football.
+
+#### Storytelling
+
+Creating meaningful events and experiences through football.
+
+#### Ideas
+
+Creating meaningful events and experiences through football.
+
+### Source Notes
+
+- The category names are taken directly from the program signal page in `assets/YARD.pdf`.
+- The intro line is taken directly from the `How are we different?` note in `assets/YARD.pdf`.
+- The repeated supporting sentence uses the same PDF wording without adding new claims that are not yet supported by the source materials.
+
+### Recommended Placeholders
+
+#### Placeholder for human-developed text
+
+Program-by-program detail on age groups, audience fit, session format, duration, locations, and how each offer currently operates.
+
+#### Placeholder for human-developed text
+
+A clearer explanation of how community, elite, events, workshops, and creative work relate to one another in the live offer model.
+
+#### Placeholder for human-selected visual content
+
+Program photography showing training, community environments, events, all-abilities participation, and creative-storytelling moments.

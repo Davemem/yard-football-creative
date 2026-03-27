@@ -218,7 +218,7 @@ Sub-phases:
 - [x] 4.1 headline and subheadline for home page
 - [x] 4.2 value proposition blocks
 - [x] 4.3 about copy
-- [ ] 4.4 program descriptions
+- [x] 4.4 program descriptions
 - [ ] 4.5 FAQs
 - [ ] 4.6 contact copy
 - [ ] 4.7 placeholder testimonials or proof sections
@@ -252,6 +252,7 @@ Completion notes:
 - `4.1` complete: added `PHASE_4_CORE_CONTENT.md`, defined the homepage headline and subheadline directly from `assets/YARD.pdf`, and documented the copy-preservation rule for the remaining Phase 4 drafting work.
 - `4.2` complete: added three homepage value proposition blocks to `PHASE_4_CORE_CONTENT.md`, using only the vision, mission, belonging, and safety language carried directly from `assets/YARD.pdf`.
 - `4.3` complete: drafted the About page copy in `PHASE_4_CORE_CONTENT.md` using the backyard origin, belonging statement, and `Behind the Brand...` founder story from `assets/YARD.pdf`.
+- `4.4` complete: added the initial program descriptions to `PHASE_4_CORE_CONTENT.md`, preserving the exact program labels and the only broad program-description language currently present in `assets/YARD.pdf` while documenting the additional operational detail that will need human input later.
 
 ## Phase 5 — Baseline UI Framework
 Goal: convert the current baseline site into a structured design system.
