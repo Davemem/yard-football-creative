@@ -183,6 +183,7 @@ h3 {
   border: 1px solid var(--color-line);
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
 }
 
 .hero-layout {
@@ -250,6 +251,70 @@ h3 {
 .lead-copy {
   max-width: 32rem;
   font-size: clamp(1.15rem, 2.2vw, 1.5rem);
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3.25rem;
+  padding: 0.8rem 1.35rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  font-family: "Barlow Condensed", Impact, sans-serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+.button:focus-visible,
+.menu-toggle:focus-visible,
+.main-nav a:focus-visible,
+.contact-link:focus-visible {
+  outline: 3px solid rgba(255, 222, 88, 0.9);
+  outline-offset: 3px;
+}
+
+.button-primary {
+  background: var(--color-field-depth);
+  color: var(--color-chalk);
+  box-shadow: var(--shadow-soft);
+}
+
+.button-secondary {
+  border-color: var(--color-field-depth);
+  background: rgba(255, 255, 255, 0.36);
+  color: var(--color-field-depth);
+}
+
+.button-text {
+  min-height: auto;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  color: var(--color-field-depth);
+  justify-content: flex-start;
+  text-decoration: underline;
+  text-underline-offset: 0.22em;
 }
 
 .section-heading {
@@ -446,6 +511,15 @@ h3 {
 
   .hero-mark {
     min-height: 16rem;
+  }
+
+  .button-row,
+  .button {
+    width: 100%;
+  }
+
+  .button-text {
+    width: auto;
   }
 }
 
