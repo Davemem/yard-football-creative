@@ -91,3 +91,72 @@ This palette keeps the website anchored to the real asset system:
 - approved purple as a real alternate family already present in the supplied logos
 
 The result is distinct enough to avoid generic sports-site drift while still calm enough to support content-led page design.
+
+## 3.2 Typography Choices
+
+### Typography Principle
+
+Yard typography should feel clean, human, and football-native.
+It should let the supplied logos carry the rough hand-drawn brand edge while the website text system stays highly readable, mobile-safe, and repeatable.
+
+The website should therefore use a restrained two-family system:
+- one condensed family for headings, labels, and directional emphasis
+- one highly legible sans family for body copy, forms, and interface text
+
+### Approved Website Typeface Roles
+
+- `Heading and navigation family` — `Barlow Condensed`
+  Use for page titles, section headings, navigation labels, buttons, and short emphasis blocks.
+  Its condensed structure supports football-poster energy without relying on fake handwritten effects.
+- `Body and interface family` — `Public Sans`
+  Use for paragraphs, list copy, form labels, helper text, and longer informational blocks.
+  It keeps the system readable and contemporary without feeling like a startup template default.
+
+### Brand Display Rule
+
+- The supplied Yard logos are the primary hand-drawn display expression of the brand.
+- Their lettering must not be recreated as typed web headings or imitated with novelty fonts.
+- Handwritten feeling on the website should come from the approved assets, short accent treatments, and layout rhythm, not from forcing all text into faux-marker typography.
+
+### Hierarchy Model
+
+1. `Display moments`
+   Use the approved logos, hero lockups, and occasional oversized `Barlow Condensed` headings for the main atmosphere-setting moments.
+2. `Section headings`
+   Use `Barlow Condensed` at bold weights with strong size contrast and restrained line counts.
+3. `Body copy`
+   Use `Public Sans` at regular or medium weight with comfortable line-height for long-form readability.
+4. `Microcopy`
+   Use `Public Sans` for labels, captions, helper text, and form explanation copy so the interface remains calm and clear.
+
+### Typographic Behaviour Rules
+
+- Headlines should stay short, direct, and easy to scan in one or two lines where possible.
+- All-caps may be used for short labels, nav items, or eyebrow text, but should be avoided for long headings and body copy.
+- Paragraph width should stay moderate so story-led sections remain comfortable on mobile and desktop.
+- Large heading scale shifts are encouraged, but only when the surrounding layout stays simple.
+- Text alignment may vary by section, but centre alignment should be reserved for short poster-style moments rather than long reading blocks.
+
+### Weight and Rhythm Guidance
+
+- `Barlow Condensed` should generally use semibold, bold, or black weights for clarity and confidence.
+- `Public Sans` should generally use regular, medium, and semibold weights.
+- Long-form copy should prioritise generous line-height over tight magazine-style density.
+- Lists, FAQs, and practical information should favour clean vertical spacing rather than decorative typography.
+
+### What to Avoid
+
+- default system-font styling that makes the site feel unfinished
+- trendy display fonts that compete with the supplied logos
+- overly geometric sans families that feel too corporate or tech-led
+- serif-heavy editorial styling that weakens the football energy
+- excessive font mixing beyond the approved two-family website system
+
+### Phase 3 Typography Outcome
+
+This typography system gives the site:
+- strong condensed headings with football-poster energy
+- calm, trustworthy body copy for parents, players, and partners
+- a clear separation between asset-led brand expression and website reading comfort
+
+It keeps the site distinct without making the interface harder to use.

@@ -159,7 +159,7 @@ Goal: define how the site should feel and speak.
 
 Sub-phases:
 - [x] 3.1 colour palette
-- [ ] 3.2 typography choices
+- [x] 3.2 typography choices
 - [ ] 3.3 button styles
 - [ ] 3.4 spacing system
 - [ ] 3.5 image direction
@@ -199,6 +199,7 @@ Human review steps:
 
 Completion notes:
 - `3.1` complete: created `PHASE_3_BRAND_SYSTEM.md` and defined the initial colour system from `assets/YARD.pdf`, the approved logo family, and `assets/yardfc_ball_transparent.png`, establishing grounded neutrals, green-led default accents, warm supporting tones, and an approved purple alternate family without inventing new logo behaviour.
+- `3.2` complete: defined the website typography system in `PHASE_3_BRAND_SYSTEM.md`, choosing `Barlow Condensed` for headings and directional UI emphasis, `Public Sans` for body and interface reading, and clarifying that the supplied Yard logos remain the only hand-drawn brand display source.
 
 ## Phase 4 — Core Content Drafting
 Goal: write the website before over-designing it.
