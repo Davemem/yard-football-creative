@@ -56,7 +56,7 @@ The contact page must:
 - make action easy
 - explain what users can contact the organisation about
 - keep forms simple and relevant
-- support a straightforward email enquiry flow
+- support a straightforward email enquiry flow to `contact@yardfc.com`
 
 ## Footer Content Jobs
 The footer must:
@@ -107,3 +107,4 @@ Do not rewrite the source into different marketing language or remove its core m
 - ask only for the information needed to respond
 - explain what the enquiry form is for
 - set clear expectations for follow-up where possible
+- direct contact and enquiry form submissions to `contact@yardfc.com` unless a later approved workflow replaces it

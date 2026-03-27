@@ -177,6 +177,7 @@ Deliverables:
 - placeholder testimonials or proof sections
 - footer copy and social link labels for Instagram and Facebook
 - contact page copy for a simple email enquiry form
+- contact page copy aligned to `contact@yardfc.com`
 - homepage Instagram section copy and CTA linking to the `@yardfc` account
 
 Exit criteria:
@@ -229,6 +230,7 @@ Deliverables:
 - contact / expression of interest page complete
 - footer with Instagram and Facebook icon links complete
 - email contact form complete
+- email contact form directed to `contact@yardfc.com`
 - homepage Instagram integration linking to the Yard FC Instagram account
 - homepage display of the most recent Instagram tiles, if supported by the approved integration path
 - initial implementation of a toggleable theme experience if approved for v1, or a prepared foundation if deferred
@@ -254,6 +256,7 @@ Deliverables:
 - enquiry forms
 - registration interest form
 - email enquiry form connected to the agreed contact workflow
+- email enquiry form connected to `contact@yardfc.com` unless a later workflow is explicitly approved
 - coach/staff bios
 - testimonials or social proof
 - safeguarding / values content if needed

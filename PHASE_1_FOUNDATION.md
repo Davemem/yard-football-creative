@@ -12,16 +12,7 @@ Yard Football Creative is a football-based organisation that creates meaningful 
 ### Source Vision and Mission Block from `assets/YARD.pdf`
 
 - Vision: "TO EMPOWER AND INSPIRE."
-- Mission: "TO USE FOOTBALL AS THE TOOL OF BRINGING PEOPLE TOGETHER."
-- "WE AIM TO CREATE EXPERIENCES THAT WILL ALLOW OTHERS TO FEEL INSPIRED AND EMPOWERED, BY ENSURING STORYTELLING AND CONNECTION ARE AT THE HEART OF EVERYTHING WE DO."
-- "YARD FOOTBALL CREATIVE WAS DEVELOPED FROM THE IDEA OF TAKING FOOTBALL BACK TO THAT FEELING OF PLAYING IN OUR BACKYARD."
-- "LIKE MOST OF US, AS KIDS, FOOTBALL WAS FIRST DISCOVERED IN OUR BACKYARD AND THIS IS WHERE WE FOUND THE PURE JOY THAT CAN COME FROM THE SIMPLICITY OF A SINGLE BALL."
-- "HOURS AND HOURS WERE SPENT IN THE YARD WITH FAMILY AND FRIENDS, PLAYING UNTIL DARKNESS NO LONGER ALLOWED US."
-- "NO PRESSURE, NO EXPECTATIONS, NO DISTRACTIONS... JUST FREEDOM TO EXPRESS OURSELVES AND UNAPOLOGETICALLY DREAM BIG."
-- "WE WANT THIS TO BE A SPACE FOR EVERYONE TO FEEL LIKE THAT LITTLE KID AGAIN, A SAFE PLACE WHERE YOU FEEL YOU BELONG."
-- "WE BELIEVE THAT THROUGH CONNECTION, YOU FEEL BELONGING, AND THROUGH BELONGING YOU FEEL EMPOWERED AND SAFE TO CREATE... WHICH CAN TURN INTO SOMETHING PRETTY SPECIAL."
-- "WE’VE SPENT YEARS TRYING TO FIND A PLATFORM THAT FEELS MEANINGFUL TO US AND THROUGH YARD FC WE FEEL THAT."
-- "IT’S A PLACE WHERE WE CAN BE BIG DREAMERS, AND ALLOW IDEAS TO CREATE OPPORTUNITIES FOR OTHERS TO CONNECT, SHARE AND DREAM BIG WITH US."
+- Mission: "TO CREATE MEANINGFUL EXPERIENCES, BY ENSURING STORYTELLING AND CONNECTION ARE AT THE HEART OF EVERYTHING WE DO."
 
 ### Website-Ready Mission Framing
 
@@ -136,7 +127,7 @@ The first website succeeds when a new visitor can quickly understand what Yard F
 
 - enquire about a program, event, or collaboration
 - register interest in a community or elite opportunity
-- contact Yard directly for follow-up
+- contact Yard directly for follow-up at `contact@yardfc.com`
 - visit the official Instagram presence to confirm current activity and brand legitimacy
 
 ### What Success Should Not Depend On
@@ -185,3 +176,7 @@ For later website phases:
 
 Wording may only change for minor grammar, spelling, punctuation, or formatting cleanup.
 The meaning, voice, and substance of the PDF content must be preserved.
+
+## Contact Workflow Baseline
+
+Until a different workflow is explicitly approved, all website contact and enquiry forms should direct submissions to `contact@yardfc.com`.
