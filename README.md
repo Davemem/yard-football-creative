@@ -32,6 +32,7 @@ The website should:
 - `PHASE_1_FOUNDATION.md` — organisation definition, mission, audiences, programs, and website success goals
 - `PHASE_2_INFORMATION_ARCHITECTURE.md` — sitemap, navigation, page-purpose, CTA, and footer decisions for the five-page v1 site
 - `PHASE_3_BRAND_SYSTEM.md` — colour, typography, component, tone, and theme-system rules for the brand layer
+- `PHASE_4_CORE_CONTENT.md` — sequential Phase 4 website copy drafting grounded in `assets/YARD.pdf`
 - `BRAND.md` — tone, positioning, and visual direction
 - `CONTENT_STRATEGY.md` — page goals and content rules
 - `CONTRIBUTING.md` — workflow for future collaborators

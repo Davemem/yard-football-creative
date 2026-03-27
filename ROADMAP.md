@@ -214,6 +214,19 @@ Completion notes:
 ## Phase 4 — Core Content Drafting
 Goal: write the website before over-designing it.
 
+Sub-phases:
+- [x] 4.1 headline and subheadline for home page
+- [ ] 4.2 value proposition blocks
+- [ ] 4.3 about copy
+- [ ] 4.4 program descriptions
+- [ ] 4.5 FAQs
+- [ ] 4.6 contact copy
+- [ ] 4.7 placeholder testimonials or proof sections
+- [ ] 4.8 footer copy and header social icon plan for Instagram and Facebook
+- [ ] 4.9 contact page copy for a simple email enquiry form
+- [ ] 4.10 contact page copy aligned to `contact@yardfc.com`
+- [ ] 4.11 homepage Instagram section copy and CTA linking to the `@yardfc` account
+
 Deliverables:
 - headline and subheadline for home page
 - value proposition blocks
@@ -234,6 +247,9 @@ Exit criteria:
 Human review steps:
 - review draft copy against page purpose and CTA intent
 - confirm the copy supports the proposed page structure
+
+Completion notes:
+- `4.1` complete: added `PHASE_4_CORE_CONTENT.md`, defined the homepage headline and subheadline directly from `assets/YARD.pdf`, and documented the copy-preservation rule for the remaining Phase 4 drafting work.
 
 ## Phase 5 — Baseline UI Framework
 Goal: convert the current baseline site into a structured design system.
