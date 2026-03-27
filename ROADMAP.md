@@ -224,7 +224,7 @@ Sub-phases:
 - [x] 4.7 footer copy and header social icon plan for Instagram and Facebook
 - [x] 4.8 contact page copy for a simple email enquiry form
 - [x] 4.9 contact page copy aligned to `contact@yardfc.com`
-- [ ] 4.10 homepage Instagram section copy and CTA linking to the `@yardfc` account
+- [x] 4.10 homepage Instagram section copy and CTA linking to the `@yardfc` account
 
 Deliverables:
 - headline and subheadline for home page
@@ -257,6 +257,8 @@ Completion notes:
 - `4.7` complete: added footer copy and the header social icon plan to `PHASE_4_CORE_CONTENT.md`, keeping the footer wording directly sourced from `assets/YARD.pdf` while carrying forward the approved Instagram/Facebook icon-only header rules from Phase 2.
 - `4.8` complete: added the simple email-enquiry form copy to `PHASE_4_CORE_CONTENT.md`, using only founder-story and belonging language from `assets/YARD.pdf` while leaving field labels, consent, and response-time wording as explicit human-developed placeholders.
 - `4.9` complete: aligned the contact copy in `PHASE_4_CORE_CONTENT.md` to `contact@yardfc.com`, using PDF-sourced surrounding language while documenting the remaining operational email-detail gaps for later human confirmation.
+- `4.10` complete: added the homepage Instagram section copy and `@yardfc` CTA to `PHASE_4_CORE_CONTENT.md`, using the final PDF storytelling line plus source-faithful support copy and documenting the visual/feed content that still needs human curation.
+- All active Phase 4 sub-phases are now complete. The Phase 4 content set intentionally excludes FAQs after the user's direction on 2026-03-27.
 
 ## Phase 5 — Baseline UI Framework
 Goal: convert the current baseline site into a structured design system.

@@ -352,3 +352,33 @@ We hope to show others how football can fuel connection in the most positive of 
 #### Placeholder for human-developed text
 
 Any approved note about expected response window, the main contact owner, or whether the same address handles programs, events, and partnerships together.
+
+## 4.10 Homepage Instagram Section Copy and CTA Linking to the `@yardfc` Account
+
+### Instagram Section Heading
+
+An afternoon of storytelling...
+
+### Instagram Section Supporting Copy
+
+We hope to show others how football can fuel connection in the most positive of ways.
+
+### Instagram Section CTA
+
+`@yardfc`
+
+### Source Notes
+
+- `An afternoon of storytelling...` is taken directly from page 7 of `assets/YARD.pdf`.
+- The supporting line is taken directly from the founder-story closing language in `assets/YARD.pdf`.
+- The CTA uses the `@yardfc` account reference required by the Phase 4 roadmap.
+
+### Recommended Placeholders
+
+#### Placeholder for human-selected visual content
+
+Curated recent Instagram tiles or approved stills that show real Yard activity without making the homepage feel noisy.
+
+#### Placeholder for human-developed text
+
+Any human-approved caption or context line that explains what visitors should expect to see on the Instagram account right now.
