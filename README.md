@@ -41,3 +41,10 @@ The website should:
 3. Make it easy to register interest
 4. Create a foundation for future program landing pages
 5. Support long-term growth into media, events, education, and partnerships
+
+## First Conversion Actions
+
+- enquire about a program, event, or collaboration
+- register interest in a community or elite opportunity
+- contact Yard directly for follow-up
+- visit the official Instagram presence to confirm current activity

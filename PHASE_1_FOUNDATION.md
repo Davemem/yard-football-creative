@@ -102,3 +102,31 @@ Yard Football Creative should present as a grounded, football-native organisatio
 - Headlines should stay short, direct, and rooted in real football language.
 - Credibility should come from lived experience, program clarity, and useful detail rather than inflated claims.
 - The homepage and core pages should lead with identity, audience fit, and action before expanding into deeper story.
+
+## 1.5 Website Success Goals
+
+### Core Success Definition for v1
+
+The first website succeeds when a new visitor can quickly understand what Yard Football Creative is, recognise whether it is relevant to them, and take a confident next step without confusion.
+
+### Primary Success Goals
+
+1. Explain the organisation clearly in one sentence above the fold.
+2. Help visitors self-identify into community, elite, or collaboration pathways.
+3. Build trust through founder truth, football credibility, and clear program framing.
+4. Make enquiry and expression-of-interest actions easy to find and easy to understand.
+5. Create a calm foundation that can grow into future pages, programs, events, and media without restructuring the brand.
+
+### First Conversion Actions
+
+- enquire about a program, event, or collaboration
+- register interest in a community or elite opportunity
+- contact Yard directly for follow-up
+- visit the official Instagram presence to confirm current activity and brand legitimacy
+
+### What Success Should Not Depend On
+
+- high-complexity features
+- dense navigation
+- inflated marketing claims
+- collecting more user data than needed for a response
