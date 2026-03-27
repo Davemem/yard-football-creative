@@ -168,7 +168,7 @@ Sub-phases:
 - [x] 3.8 theme system rules for multiple logo-driven visual variants
 - [x] 3.9 guidelines for which visual elements may change per theme and which must remain fixed
 - [x] 3.10 light mode and dark mode rules for each approved theme family
-- [ ] 3.11 earthy background palette guidance that allows content and CTAs to stand out clearly
+- [x] 3.11 earthy background palette guidance that allows content and CTAs to stand out clearly
 
 Deliverables:
 - colour palette
@@ -208,6 +208,8 @@ Completion notes:
 - `3.8` complete: defined the multi-theme system in `PHASE_3_BRAND_SYSTEM.md`, establishing the `Core Field`, `Lime Signal`, and `Lavender Night` families, tying each to supplied logo directions, and locking the requirement that themes operate through shared tokens instead of duplicated page structures or invented brand variants.
 - `3.9` complete: defined the fixed-versus-variable theme contract in `PHASE_3_BRAND_SYSTEM.md`, making page structure, typography, spacing, CTA hierarchy, accessibility, and content logic non-negotiable while limiting theme variation to approved logo choice, palette emphasis, and restrained atmospheric treatments.
 - `3.10` complete: defined light- and dark-mode rules for `Core Field`, `Lime Signal`, and `Lavender Night` in `PHASE_3_BRAND_SYSTEM.md`, preserving strong contrast, mode-appropriate supplied logos, calm long-form surfaces, and theme continuity without falling back to generic system-dark styling.
+- `3.11` complete: defined the earthy background system in `PHASE_3_BRAND_SYSTEM.md`, establishing calm grey, chalk, field, clay, and approved lavender support surfaces plus clear CTA-contrast rules so atmosphere remains subordinate to readability and action.
+- All Phase 3 sub-phases are now complete. The repository now includes a documented brand system covering colour, typography, button hierarchy, spacing, imagery, voice, sample copy, theme rules, fixed-versus-variable theme boundaries, per-theme mode behaviour, and earthy background guidance.
 
 ## Phase 4 — Core Content Drafting
 Goal: write the website before over-designing it.

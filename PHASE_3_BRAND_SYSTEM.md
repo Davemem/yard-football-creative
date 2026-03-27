@@ -706,3 +706,63 @@ The project now has mode rules that:
 - respect the approved logo families
 - keep dark mode intentional rather than fashionable
 - allow each theme to remain recognisable in both light and dark contexts
+
+## 3.11 Earthy Background Palette Guidance That Allows Content and CTAs to Stand Out Clearly
+
+### Background Principle
+
+Backgrounds should support the content, not compete with it.
+The Yard website should feel earthy and atmospheric, but the surfaces behind headings, copy, and CTAs must remain calm enough for clarity and trust.
+
+### Approved Background Families
+
+- `Mist Grey`
+  The default long-form background family based on `Ground Mist` and softer related neutrals.
+- `Field Neutral`
+  Deep green-led background family for dark structural sections and footer surfaces.
+- `Soft Chalk`
+  Off-white and pale mineral backgrounds for relief, forms, and readable content blocks.
+- `Muted Clay`
+  Warm earthy backgrounds for story-led sections, used sparingly.
+- `Lavender Dust`
+  Soft purple-grey support backgrounds for the approved alternate theme family only.
+
+### Background Usage Rules
+
+- Long-form reading sections should usually sit on `Mist Grey` or `Soft Chalk`.
+- High-emphasis hero and footer moments may move into `Field Neutral` or other theme-appropriate dark surfaces.
+- Warm or purple-tinted backgrounds should be used as section accents, not the dominant page default.
+- Background shifts should help users recognise section change and content priority, not create visual patchwork.
+
+### CTA Contrast Rules
+
+- Primary CTAs must always sit on surfaces where they remain the strongest visual action.
+- If a background colour makes the primary button feel weaker than surrounding decoration, the background is too strong.
+- CTA groups should usually sit on quieter surfaces than hero artwork or expressive brand blocks.
+- Form surfaces and enquiry actions should prioritise calm contrast over theme theatrics.
+
+### Content-Surface Pairing Guidance
+
+- `Mist Grey` plus dark text is the safest default for narrative and informational sections.
+- `Soft Chalk` plus dark text works well for forms, FAQs, and denser practical content.
+- `Field Neutral` plus light text is best reserved for short, strong sections with selective bright accents.
+- `Muted Clay` and `Lavender Dust` should usually hold short blocks, quotes, or image-adjacent content rather than long dense copy.
+
+### What to Avoid
+
+- full-page saturated backgrounds
+- bright lime as the dominant reading surface
+- alternating too many tinted bands on one page
+- dark backgrounds with insufficient text contrast
+- decorative textured backgrounds directly behind long-form copy
+
+### Phase 3 Background Outcome
+
+The final background guidance keeps the Yard system:
+- earthy
+- calm
+- content-first
+- CTA-clear
+- flexible across the approved theme families
+
+It completes the Phase 3 brand system by making atmosphere serve readability instead of competing with it.
