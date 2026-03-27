@@ -51,3 +51,31 @@ It is intentionally lightweight and should be expanded in Phase 2 when sitemap, 
 - Story-led sections should use editorial pacing and generous spacing instead of dashboard-like density.
 - Logo, colour, and atmosphere may shift by approved theme, but page structure should remain stable across themes.
 - Early implementation may begin from a green-led baseline, but the structural docs should not be treated as locking the eventual Phase 3 palette to green.
+
+## Phase 2 Navigation Baseline
+
+### Primary Navigation
+
+- Home
+- About
+- Programs
+- Events
+- Contact
+
+### Header Rules
+
+- The logo should always return users to Home.
+- Contact should remain the clearest header CTA.
+- Navigation labels should stay literal and short.
+- Social links should not compete with core navigation in the header.
+
+### Pathway Structure Rule
+
+- Community and elite pathways should stay highly visible in page content and CTA flows.
+- They should not become separate top-level navigation items in the first-release header.
+- Programs should remain the top-level container that explains both pathways and the wider offer model.
+
+### Footer Relationship
+
+- Instagram and Facebook should live in the footer and contact surfaces rather than the primary navigation.
+- The footer should reinforce discovery and contact, while the header stays focused on orientation and action.

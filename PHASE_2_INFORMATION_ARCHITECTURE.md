@@ -49,3 +49,50 @@ The following pages may be added later when content depth and operational need j
 - `Camps / Clinics` landing pages
 
 These remain future expansion paths and should not be elevated into the Phase 2 v1 sitemap yet.
+
+## 2.2 Navigation Structure
+
+### Primary Navigation
+
+The primary site navigation for v1 should be:
+
+1. `Home`
+2. `About`
+3. `Programs`
+4. `Events`
+5. `Contact`
+
+### Header Behaviour
+
+- The approved Yard logo should anchor the left side of the header and always link to `Home`.
+- `Contact` should be visually treated as the clearest action in the header because enquiry is one of the first conversion goals.
+- The header should stay restrained and avoid secondary utility clutter in the primary row.
+- Navigation labels should remain short, literal, and easy to scan on mobile.
+
+### Program Navigation Rule
+
+- `Programs` should be the only top-level pathway bucket in v1.
+- Community and elite pathways should be introduced immediately within the `Programs` page content and linked from homepage sections or CTA blocks.
+- Community and elite should not become separate top-level navigation items in Phase 2 because that would over-fragment the first-release header.
+
+### Mobile Navigation Rule
+
+- Mobile navigation should expose the same top-level destinations as desktop.
+- No mobile-only page should exist.
+- The first visible actions in the mobile menu should still make `Programs`, `Events`, and `Contact` easy to reach quickly.
+- Contact details and social links belong in the footer or contact page, not as header clutter.
+
+### Navigation Exclusions for v1
+
+The following items should not appear as primary navigation links in Phase 2:
+
+- `Partnerships`
+- `Player Stories`
+- `Gallery / Media`
+- `Blog / Journal`
+- individual program categories as top-level items
+- direct social links in the main header
+
+### Navigation Outcome
+
+This structure keeps the first-release navigation simple, recognisable, and aligned to the audience priorities defined in Phase 1 while leaving room for deeper program pathways inside the page-level content.

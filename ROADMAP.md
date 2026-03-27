@@ -104,7 +104,7 @@ Goal: design the structure of the site before deep UI work.
 
 Sub-phases:
 - [x] 2.1 sitemap
-- [ ] 2.2 navigation structure
+- [x] 2.2 navigation structure
 - [ ] 2.3 page list
 - [ ] 2.4 page purposes
 - [ ] 2.5 CTA map
@@ -145,6 +145,7 @@ Human review steps:
 
 Completion notes:
 - `2.1` complete: defined the v1 sitemap in `PHASE_2_INFORMATION_ARCHITECTURE.md`, keeping the primary structure to Home, About, Programs, Events, and Contact while reserving future expansion pages without promoting them into the first-release navigation too early.
+- `2.2` complete: defined the primary navigation structure in `PHASE_2_INFORMATION_ARCHITECTURE.md` and expanded `ARCHITECTURE.md` with the Phase 2 navigation baseline, keeping the header focused on Home, About, Programs, Events, and Contact while routing deeper pathway detail into page content instead of header sprawl.
 
 ## Phase 3 — Brand System
 Goal: define how the site should feel and speak.
