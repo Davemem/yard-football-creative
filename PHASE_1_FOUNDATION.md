@@ -9,12 +9,19 @@ It carries forward the emotional and structural direction established in `PHASE_
 
 Yard Football Creative is a football-based organisation that creates meaningful community and elite experiences for girls and women through storytelling, connection, and development.
 
-### Mission Statement
+### Source Vision and Mission from `assets/YARD.pdf`
+
+- Vision: "TO EMPOWER AND INSPIRE OTHERS."
+- Mission: "TO USE FOOTBALL AS THE TOOL OF BRINGING PEOPLE TOGETHER."
+- Source support statement: "WE AIM TO CREATE EXPERIENCES THAT WILL ALLOW OTHERS TO FEEL INSPIRED AND EMPOWERED, BY ENSURING STORYTELLING AND CONNECTION ARE AT THE HEART OF EVERYTHING WE DO."
+
+### Website-Ready Mission Framing
 
 Yard Football Creative uses football to bring people together and build environments where girls and women feel connected, safe, inspired, and empowered to grow.
 
 ### Why This Is the Phase 1 Baseline
 
+- It includes the exact vision and mission wording from `assets/YARD.pdf`.
 - It stays faithful to the source language in `assets/YARD.pdf`, especially the emphasis on connection, belonging, inspiration, and empowerment.
 - It clarifies that the organisation serves both community and elite spaces without turning the brand into an elite-only academy.
 - It gives the website a direct answer to the first homepage question: what is this?
@@ -155,3 +162,18 @@ Phase 1 governance is complete when these documents agree on:
 - which rules control future implementation
 
 That shared baseline is now in place and ready to support Phase 2 information architecture work.
+
+## Source Content Carry-Forward Requirement
+
+The narrative content in `assets/YARD.pdf` is canonical source material for the website.
+
+For later website phases:
+- the vision and mission must appear using the source wording from the PDF
+- the backyard memory introduction should be carried into the website
+- the "What is Yard Football Creative?" explanation should be carried into the website
+- the Mia Hamm quote and the younger-self framing should be carried into the website
+- the founder story and "Behind the Brand" material should be carried into the website
+- the early offer signals from the PDF should be reflected in the website's program and event presentation
+
+Wording may only change for minor grammar, spelling, punctuation, or formatting cleanup.
+The meaning, voice, and substance of the PDF content must be preserved.

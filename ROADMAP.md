@@ -91,7 +91,7 @@ Human review steps:
 - confirm the top conversion actions before moving into full IA
 
 Completion notes:
-- `1.1` complete: defined the one-sentence organisation description and mission statement in `PHASE_1_FOUNDATION.md`, aligned to the connection, belonging, inspiration, and empowerment language established in `assets/YARD.pdf`.
+- `1.1` complete: defined the one-sentence organisation description and captured the source vision and mission statements in `PHASE_1_FOUNDATION.md`, aligned to the connection, belonging, inspiration, and empowerment language established in `assets/YARD.pdf`.
 - `1.2` complete: defined the primary audiences, first-user priority order, and audience-specific website needs in `PHASE_1_FOUNDATION.md` and aligned `BRAND.md` to the same audience model.
 - `1.3` complete: defined the initial service and program category model in `PHASE_1_FOUNDATION.md` and `CONTENT_STRATEGY.md`, grounded in the offer signals from `assets/YARD.pdf` and the original static scaffold.
 - `1.4` complete: sharpened the brand baseline in `PHASE_1_FOUNDATION.md` and `BRAND.md` so later IA, copy, and visual-system work inherit the same grounded, football-native, story-led direction.

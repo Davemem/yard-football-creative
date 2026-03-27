@@ -86,6 +86,21 @@ Content must be:
 - aligned to the brand tone
 - free from filler
 
+## `assets/YARD.pdf` Content Preservation Rule
+
+The text and narrative material in `assets/YARD.pdf` should be treated as canonical source content for the website.
+
+The website should carry forward:
+- the vision and mission statements
+- the backyard memory introduction
+- the "What is Yard Football Creative?" explanation
+- the younger-self / Mia Hamm framing
+- the founder story
+- the early offer and experience language
+
+Edits should be limited to minor grammar, spelling, punctuation, casing, and layout adjustments needed for web readability.
+Do not rewrite the source into different marketing language or remove its core meaning.
+
 ## Contact Form Content Rules
 
 - keep labels clear and plain-language
