@@ -71,7 +71,7 @@ Sub-phases:
 - [x] 1.3 service/program categories
 - [x] 1.4 brand direction
 - [x] 1.5 website success goals
-- [ ] 1.6 governance docs complete
+- [x] 1.6 governance docs complete
 
 Deliverables:
 - mission statement
@@ -96,6 +96,8 @@ Completion notes:
 - `1.3` complete: defined the initial service and program category model in `PHASE_1_FOUNDATION.md` and `CONTENT_STRATEGY.md`, grounded in the offer signals from `assets/YARD.pdf` and the original static scaffold.
 - `1.4` complete: sharpened the brand baseline in `PHASE_1_FOUNDATION.md` and `BRAND.md` so later IA, copy, and visual-system work inherit the same grounded, football-native, story-led direction.
 - `1.5` complete: defined the v1 website success criteria and first conversion actions in `PHASE_1_FOUNDATION.md` and `README.md`, matching the roadmap requirement to know the first actions before IA begins.
+- `1.6` complete: aligned the governance document set across `README.md`, `CONTRIBUTING.md`, and `PHASE_1_FOUNDATION.md` so future contributors have one clear rules-and-direction baseline.
+- All Phase 1 sub-phases are now complete. The repository can move into Phase 2 after the required human review of mission, audiences, and conversion priorities.
 
 ## Phase 2 — Information Architecture
 Goal: design the structure of the site before deep UI work.

@@ -130,3 +130,28 @@ The first website succeeds when a new visitor can quickly understand what Yard F
 - dense navigation
 - inflated marketing claims
 - collecting more user data than needed for a response
+
+## 1.6 Governance Docs Complete
+
+### Governance Set for the Repository
+
+- `README.md` defines the project purpose, core principles, and primary website goals.
+- `LAWS.md` defines the non-negotiable product, brand, engineering, git, and safeguarding rules.
+- `ROADMAP.md` defines the canonical execution order and completion tracking.
+- `ARCHITECTURE.md` defines the current structural baseline to expand in later phases.
+- `BRAND.md` defines positioning, tone, visual direction, and theme guardrails.
+- `CONTENT_STRATEGY.md` defines page jobs, content rules, and program-content framing.
+- `CONTRIBUTING.md` defines collaborator workflow and documentation expectations.
+- `PHASE_0_DIRECTION.md` records the asset-grounded structural and visual foundation.
+- `PHASE_1_FOUNDATION.md` records the organisation definition, audiences, offer categories, brand baseline, success goals, and governance summary.
+
+### Governance Outcome
+
+Phase 1 governance is complete when these documents agree on:
+- what Yard Football Creative is
+- who the first audiences are
+- what offer categories exist at a high level
+- what the website must achieve first
+- which rules control future implementation
+
+That shared baseline is now in place and ready to support Phase 2 information architecture work.

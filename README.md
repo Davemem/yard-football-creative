@@ -34,6 +34,8 @@ The website should:
 - `CONTENT_STRATEGY.md` — page goals and content rules
 - `CONTRIBUTING.md` — workflow for future collaborators
 
+Together, these documents form the governance baseline for the project and should stay aligned as future phases are executed.
+
 ## Primary Website Goals
 
 1. Establish credibility quickly

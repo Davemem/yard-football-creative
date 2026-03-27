@@ -3,6 +3,7 @@
 ## Working Rules
 - read `LAWS.md` before making structural changes
 - read `ROADMAP.md` before adding new work
+- read `PHASE_0_DIRECTION.md` and `PHASE_1_FOUNDATION.md` before changing organisation, content, or structural direction
 - document major decisions
 - avoid scope drift
 - preserve existing working behaviour unless change is intentional
@@ -13,6 +14,20 @@
 3. propose or implement the smallest clean change
 4. confirm consistency with laws and roadmap
 5. update docs if structure changes
+
+## Governance Baseline
+
+The repository governance set is:
+- `README.md` for project purpose and core goals
+- `LAWS.md` for non-negotiable rules
+- `ROADMAP.md` for canonical execution order
+- `ARCHITECTURE.md` for structural direction
+- `BRAND.md` for positioning and brand guardrails
+- `CONTENT_STRATEGY.md` for page jobs and content rules
+- `PHASE_0_DIRECTION.md` for asset-led design direction
+- `PHASE_1_FOUNDATION.md` for mission, audiences, programs, and conversion goals
+
+Contributors should keep these documents aligned when making foundational changes.
 
 ## Commit Style
 Use clear commits, for example:
