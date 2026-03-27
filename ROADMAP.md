@@ -12,7 +12,7 @@ Sub-phases:
 - [x] 0.4 early visual theme options
 - [x] 0.5 early approach for how multiple logo-based themes could influence colour, typography, layout emphasis, and graphic treatments
 - [x] 0.6 early approach for how light and dark mode should behave across those themes
-- [ ] 0.7 rough section ordering for key journeys
+- [x] 0.7 rough section ordering for key journeys
 - [ ] 0.8 notes on how existing artifacts should influence UI decisions
 
 Completion notes:
@@ -22,6 +22,7 @@ Completion notes:
 - `0.4` complete: documented three source-grounded visual directions and recommended `Backyard Night` as the most faithful baseline to `assets/YARD.pdf`.
 - `0.5` complete: defined an early theme model where approved logos drive tokens and emphasis changes while structure, clarity, and conversion patterns remain fixed.
 - `0.6` complete: set the shared rules and per-theme-family light/dark behaviour so mode switching remains intentional, legible, and brand-consistent.
+- `0.7` complete: documented rough section order for homepage, community, elite, partner, and contact journeys so later IA and content work can stay coherent.
 
 This phase should draw on existing artifacts in the `assets/` folder, including:
 - logo files

@@ -209,3 +209,53 @@ Switching modes should not swap the brand personality out for a generic operatin
 - Decorative graphics should simplify in dark mode before text contrast is compromised.
 - The hero should remain recognisable in both modes even when the surface balance changes.
 - Human review is required before any theme ships if its dark mode feels louder than its light mode.
+
+## 0.7 Rough Section Ordering for Key Journeys
+
+### Homepage Journey
+
+1. Hero
+2. What Yard is
+3. Community and elite pathway split
+4. Founder story or mission trust block
+5. Program or experience preview
+6. Values, quote, or proof
+7. Instagram or current activity
+8. Primary contact or enquiry CTA
+9. Footer with contact and social links
+
+### Community-Focused Journey
+
+1. Audience-specific hero
+2. Who it is for
+3. What the environment feels like
+4. Program examples or formats
+5. Practical details
+6. FAQ or hesitation-removal block
+7. Enquiry CTA
+
+### Elite-Focused Journey
+
+1. Audience-specific hero
+2. Performance intent and pathway framing
+3. What players can expect
+4. Outcomes or progression support
+5. Credibility or coaching trust layer
+6. Practical details
+7. Registration interest or contact CTA
+
+### Partner or Collaborator Journey
+
+1. Hero naming collaboration intent
+2. What Yard can deliver
+3. Program formats or collaboration models
+4. Proof, founder credibility, or values fit
+5. Contact CTA
+
+### Contact Journey
+
+1. Plain-language page opener
+2. Simple explanation of enquiry purpose
+3. Minimal form
+4. Follow-up expectations
+5. Alternate contact methods and social links
