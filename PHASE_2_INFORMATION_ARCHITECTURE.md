@@ -96,3 +96,48 @@ The following items should not appear as primary navigation links in Phase 2:
 ### Navigation Outcome
 
 This structure keeps the first-release navigation simple, recognisable, and aligned to the audience priorities defined in Phase 1 while leaving room for deeper program pathways inside the page-level content.
+
+## 2.3 Page List
+
+### Top-Level Pages in the v1 Header
+
+1. `Home`
+2. `About`
+3. `Programs`
+4. `Events`
+5. `Contact`
+
+### Planned Supporting Pages in the v1 Site Structure
+
+These pages should exist in the planned architecture even though they do not need to appear as top-level header items:
+
+1. `Community`
+2. `Elite`
+
+### Why Community and Elite Stay as Supporting Pages
+
+- They are required by the later build roadmap and should therefore be part of the planned page inventory now.
+- They work best as deeper destination pages reached from `Home`, `Programs`, and CTA flows rather than as competing top-level navigation items.
+- This keeps the header simple while still giving both audience pathways their own clear landing space.
+
+### Future-Reserve Page List
+
+The following pages remain reserved for later phases and should not be treated as part of the first release page count:
+
+1. `Partnerships`
+2. `Player Stories`
+3. `Gallery / Media`
+4. `Blog / Journal`
+5. `Camps / Clinics` landing pages
+
+### Page Inventory Outcome
+
+The planned first-release page inventory is:
+
+1. `Home`
+2. `About`
+3. `Programs`
+4. `Community`
+5. `Elite`
+6. `Events`
+7. `Contact`
