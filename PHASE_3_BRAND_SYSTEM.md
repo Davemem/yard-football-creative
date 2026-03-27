@@ -300,3 +300,64 @@ The Yard spacing system should create:
 - reliable mobile comfort
 
 It keeps the future UI simple, consistent, and distinctly non-generic.
+
+## 3.5 Image Direction
+
+### Image Principle
+
+Yard imagery should prove that the organisation is real, football-rooted, and safe.
+The site should favour authentic football environments, human energy, and grounded storytelling over generic sports-marketing polish.
+
+### Photography Direction
+
+Prioritise imagery that shows:
+- girls and women actively playing, training, learning, or connecting through football
+- real football environments such as fields, community spaces, workshops, and event settings
+- moments of concentration, joy, teamwork, reflection, and progression
+- intergenerational or community context where it supports trust and belonging
+
+### Subject and Story Rules
+
+- Images should support both community belonging and elite ambition.
+- Players should look engaged and respected, not posed as generic promotional props.
+- Families, coaches, and collaborators may appear when they help explain the wider Yard environment.
+- Youth-facing imagery should remain responsible, respectful, and contextually appropriate.
+
+### Composition Direction
+
+- Prefer candid or lightly directed documentary-style moments over heavily staged team-photo energy.
+- Crop for movement, posture, ball interaction, and emotional presence rather than empty background detail.
+- Let negative space exist where the layout needs it, but do not force sterile minimalism.
+- Favour images that can work inside editorial section layouts, not just edge-to-edge hero banners.
+
+### Illustration and Graphic Use
+
+- The supplied logo family and `assets/yardfc_ball_transparent.png` are approved graphic assets.
+- Simple line, ball, or poster-style supporting graphics may appear only when derived from the approved asset language and not treated as a substitute for real photography.
+- Graphic support should remain secondary to real football imagery when trust and proof are the page job.
+
+### Colour and Editing Rules
+
+- Photo treatment should stay natural and restrained.
+- Avoid heavy filters, artificial HDR, intense duotones, or effects that flatten skin tone and football detail.
+- Colour grading may gently harmonise with the earthy Yard palette, but should never overpower the original moment.
+- Black-and-white use should be rare and purposeful.
+
+### What to Avoid
+
+- generic stock photos with no lived football specificity
+- male-dominated imagery that conflicts with the brand mission
+- overly polished academy-marketing poses
+- hyper-aggressive elite imagery that erases warmth and belonging
+- crowded collage treatments that make the site feel noisy
+
+### Phase 3 Image Outcome
+
+The image system should make Yard feel:
+- active
+- credible
+- welcoming
+- football-native
+- grounded in real people and environments
+
+It turns imagery into a trust layer, not decoration.
