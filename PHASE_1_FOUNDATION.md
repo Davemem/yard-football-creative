@@ -77,3 +77,28 @@ Yard Football Creative uses football to bring people together and build environm
 - Community and elite pathways should stay visible as the two primary audience lenses.
 - Program categories should remain simple enough for fast navigation and mobile scanning.
 - No later page or CTA should contradict the idea that Yard is both football-development-led and connection-led.
+
+## 1.4 Brand Direction
+
+### Phase 1 Brand Baseline
+
+Yard Football Creative should present as a grounded, football-native organisation with a warm but credible voice, balancing community belonging and elite ambition without slipping into generic academy or startup language.
+
+### Directional Principles
+
+- `Grounded over polished`
+  The brand should feel real, lived-in, and connected to football culture rather than over-produced.
+- `Warmth with credibility`
+  The tone should feel welcoming and human while still showing experience, standards, and intent.
+- `Story with orientation`
+  Emotional storytelling should strengthen clarity, not replace it.
+- `Community and ambition together`
+  The brand should hold space for both belonging and progression instead of forcing visitors to choose between them too early.
+- `Asset-led authenticity`
+  Later visual work should continue to follow `assets/YARD.pdf` and the approved `assets/Logos/` family rather than generic web trends.
+
+### Practical Effect on the Website
+
+- Headlines should stay short, direct, and rooted in real football language.
+- Credibility should come from lived experience, program clarity, and useful detail rather than inflated claims.
+- The homepage and core pages should lead with identity, audience fit, and action before expanding into deeper story.

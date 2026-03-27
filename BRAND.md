@@ -4,6 +4,17 @@
 Yard Football Creative should feel like a modern football organisation with a strong cultural point of view.
 It should speak with confidence, warmth, clarity, and credibility.
 
+## Phase 1 Brand Direction
+
+The Phase 1 baseline is:
+- grounded rather than over-produced
+- football-native rather than startup-styled
+- welcoming without becoming vague
+- ambitious without becoming exclusive
+- story-led without sacrificing orientation
+
+This direction should help later phases preserve the emotional truth of `assets/YARD.pdf` while still building a clear, trustworthy website.
+
 ## Brand Keywords
 - grounded
 - modern
@@ -53,12 +64,14 @@ Prefer:
 - grounded statements
 - real football language
 - clear calls to action
+- specificity that proves lived football experience
 
 Avoid:
 - empty inspirational slogans
 - jargon-heavy coaching language
 - corporate filler
 - excessive exclamation marks
+- academy hype that overpromises or excludes community audiences
 
 ## Visual Direction
 The brand should use:
