@@ -65,6 +65,14 @@ Exit criteria:
 ## Phase 1 — Foundation Alignment
 Goal: define the organisation before polishing the website.
 
+Sub-phases:
+- [x] 1.1 mission statement
+- [ ] 1.2 audience definitions
+- [ ] 1.3 service/program categories
+- [ ] 1.4 brand direction
+- [ ] 1.5 website success goals
+- [ ] 1.6 governance docs complete
+
 Deliverables:
 - mission statement
 - audience definitions
@@ -81,6 +89,9 @@ Exit criteria:
 Human review steps:
 - review mission and audience definitions with a human stakeholder
 - confirm the top conversion actions before moving into full IA
+
+Completion notes:
+- `1.1` complete: defined the one-sentence organisation description and mission statement in `PHASE_1_FOUNDATION.md`, aligned to the connection, belonging, inspiration, and empowerment language established in `assets/YARD.pdf`.
 
 ## Phase 2 — Information Architecture
 Goal: design the structure of the site before deep UI work.

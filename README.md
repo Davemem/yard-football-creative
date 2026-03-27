@@ -1,6 +1,6 @@
 # Yard Football Creative
 
-Yard Football Creative is a football-based organisation focused on building community and elite pathway programs in women's football.
+Yard Football Creative is a football-based organisation that creates meaningful community and elite experiences for girls and women through storytelling, connection, and development.
 
 This repository contains the website and supporting digital product infrastructure for the organisation.
 
@@ -8,6 +8,7 @@ This repository contains the website and supporting digital product infrastructu
 
 The website should:
 - communicate the Yard Football Creative brand clearly
+- explain the mission in plain language from the first screen
 - explain the organisation's mission, programs, and philosophy
 - support trust with players, families, coaches, and partners
 - create clear calls to action for enquiries, registrations, and partnerships
@@ -28,6 +29,7 @@ The website should:
 - `LAWS.md` — non-negotiable development rules
 - `ARCHITECTURE.md` — early structural direction and future page layout baseline
 - `PHASE_0_DIRECTION.md` — early visual and structural direction captured from the supplied assets
+- `PHASE_1_FOUNDATION.md` — organisation definition, mission, audiences, programs, and website success goals
 - `BRAND.md` — tone, positioning, and visual direction
 - `CONTENT_STRATEGY.md` — page goals and content rules
 - `CONTRIBUTING.md` — workflow for future collaborators
