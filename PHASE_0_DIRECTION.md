@@ -134,3 +134,47 @@ It is to identify credible directions already present in the approved assets.
 ### Early Recommendation
 
 `Backyard Night` should be the starting direction for the site baseline because it carries the strongest continuity with the PDF cover, preserves football credibility, and leaves the cleanest path for later theme variation.
+
+## 0.5 Early Approach for Multiple Logo-Based Themes
+
+### Theme System Principle
+
+Themes should change emphasis, not identity.
+The page structure, content order, CTA treatment, and trust signals should remain recognisably Yard across every approved logo direction.
+
+### What the Theme Layer May Influence
+
+- `Colour`
+  Theme palettes may change primary accent, surface tint, and highlight colour using combinations already visible in the approved logo family.
+- `Typography emphasis`
+  Themes may vary how often hand-drawn display type appears, but body text should remain stable and highly readable.
+- `Layout emphasis`
+  Themes may shift between a heavier circular hero, quote-led poster blocks, or simpler lime-accented content bands.
+- `Graphic treatments`
+  Themes may introduce different border weights, underline styles, field-shape motifs, or textured background moments if they remain subtle.
+
+### What Must Stay Fixed
+
+- information architecture
+- section order logic
+- button hierarchy
+- accessibility thresholds
+- clear conversion paths
+- logo integrity
+- overall football-native credibility
+
+### Proposed Early Theme Families
+
+- `Core`
+  The most neutral and dependable expression, based on the strongest PDF cover signals.
+- `Lime`
+  Brighter and more youth-forward, using lighter logo variants for campaign energy.
+- `Story`
+  Warmer and more editorial, leaning into quote, memory, and founder-story contexts.
+
+### Implementation Guidance for Later Phases
+
+- Store theme decisions as tokens, not duplicated page builds.
+- Tie each approved theme to a specific supplied logo asset rather than abstract naming alone.
+- Let the logo choice decide accent colour and decorative style, but not the page skeleton.
+- Add new themes only when a human review confirms the result still feels like one Yard product.
