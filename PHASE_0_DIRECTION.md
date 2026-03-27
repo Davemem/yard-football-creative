@@ -39,3 +39,41 @@ It uses `assets/YARD.pdf` as the baseline visual artifact and `assets/Logos/` as
 - Logo files must be used exactly as supplied with no redraws or colour edits.
 - The product should preserve a football-native, grounded tone and avoid startup polish that erases the hand-made brand edge.
 - Future UI work should treat storytelling sections, founder credibility, and pathway clarity as first-class structure, not decorative add-ons.
+
+## 0.2 Initial Homepage Structure Concept
+
+### Homepage Role
+
+The homepage should operate like a clear front gate into the Yard story:
+it introduces the organisation, proves that it is grounded in real football culture, shows the two main pathway lenses, and gives visitors an obvious next action without overloading the first view.
+
+### Proposed Homepage Structure
+
+1. `Header`
+   Early navigation should stay minimal and trust-building, with space for the approved logo, a small set of core links, and a clear contact action.
+2. `Hero`
+   A large circular logo-led composition inspired by the PDF cover, paired with a short mission-led headline and one primary call to action.
+3. `Why Yard`
+   A concise section that explains what Yard Football Creative is and why the backyard idea matters.
+4. `Pathways Snapshot`
+   A two-lane introduction to community and elite journeys so users can self-identify quickly.
+5. `Founder Story / Credibility`
+   A short founder-origin section that turns the PDF backstory into trust rather than keeping the brand abstract.
+6. `Programs or Experience Preview`
+   Simple cards or blocks introducing workshops, gala days, storytelling, all-abilities football, or future offer categories.
+7. `Proof / Values / Quote`
+   A light trust layer using values, an ethos quote, or early proof rather than inflated testimonials.
+8. `Instagram and Current Activity`
+   A social section that shows the brand is active while staying visually tidy.
+9. `Primary Conversion Strip`
+   A final section that directs visitors to contact, enquire, or register interest.
+10. `Footer`
+    Quick contact access plus Instagram and Facebook links.
+
+### Homepage Structural Rules
+
+- The hero must answer what Yard is, who it is for, and what to do next.
+- Storytelling should come early, but not before core clarity.
+- Community and elite pathways should appear before deeper supporting sections so visitors can orient fast.
+- The homepage should feel poster-like and spacious, not packed with competing cards.
+- Every section needs one clear job; no filler banding or generic metrics blocks.

@@ -7,7 +7,7 @@ Goal: define the initial UI direction early so the build has a clear visual and 
 
 Sub-phases:
 - [x] 0.1 review of current `assets/` materials
-- [ ] 0.2 initial homepage structure concept
+- [x] 0.2 initial homepage structure concept
 - [ ] 0.3 initial page layout direction for core pages
 - [ ] 0.4 early visual theme options
 - [ ] 0.5 early approach for how multiple logo-based themes could influence colour, typography, layout emphasis, and graphic treatments
@@ -17,6 +17,7 @@ Sub-phases:
 
 Completion notes:
 - `0.1` complete: reviewed `assets/YARD.pdf`, the `assets/Logos/` family, and the supporting football-ball mark; removed the stale remote scaffold so Phase 0 can proceed from the supplied brand assets instead of an outdated landing page.
+- `0.2` complete: documented the early homepage framework, from a logo-led hero through pathway orientation, founder trust, current activity, and final conversion.
 
 This phase should draw on existing artifacts in the `assets/` folder, including:
 - logo files
