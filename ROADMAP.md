@@ -248,7 +248,7 @@ Human review steps:
 
 Completion notes:
 - FAQ drafting was removed from Phase 4 by user direction on 2026-03-27 and should not be added to the v1 content set unless that decision changes later.
-- `4.1` complete: added `PHASE_4_CORE_CONTENT.md`, defined the homepage headline and subheadline directly from `assets/YARD.pdf`, and documented the copy-preservation rule for the remaining Phase 4 drafting work.
+- `4.1` complete: added `PHASE_4_CORE_CONTENT.md`, and updated the homepage lead so the headline and subheadline use the vision and mission statements directly from `assets/YARD.pdf` while preserving the earlier backyard-origin line as supporting homepage copy.
 - `4.2` complete: added three homepage value proposition blocks to `PHASE_4_CORE_CONTENT.md`, using only the vision, mission, belonging, and safety language carried directly from `assets/YARD.pdf`.
 - `4.3` complete: drafted the About page copy in `PHASE_4_CORE_CONTENT.md` using the backyard origin, belonging statement, and `Behind the Brand...` founder story from `assets/YARD.pdf`.
 - `4.4` complete: added the initial program descriptions to `PHASE_4_CORE_CONTENT.md`, preserving the exact program labels and the only broad program-description language currently present in `assets/YARD.pdf` while documenting the additional operational detail that will need human input later.

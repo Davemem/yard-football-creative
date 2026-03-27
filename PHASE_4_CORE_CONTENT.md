@@ -19,22 +19,27 @@ It preserves `assets/YARD.pdf` as the canonical source for website copy and keep
 
 ### Home Page Headline
 
-Dream Big With Us.
+To Empower and Inspire.
 
 ### Home Page Subheadline
 
-Yard Football Creative was developed from the idea of taking football back to the backyard.
+To create meaningful experiences, by ensuring storytelling and connection are at the heart of everything we do.
 
 ### Source Notes
 
-- `Dream Big With Us.` appears as the closing call in `assets/YARD.pdf`.
-- The subheadline is taken directly from the `What is Yard Football Creative?` explanation in `assets/YARD.pdf`, with only spacing and casing normalised for web use.
+- The homepage headline and subheadline are taken directly from the vision and mission statements in `assets/YARD.pdf`.
 
 ### Recommended Placeholders
 
 #### Placeholder for human-selected visual content
 
 Hero photography or a human-approved Yard action image showing girls and women in a real football environment.
+
+### Supporting Home Page Copy
+
+Dream Big With Us.
+
+Yard Football Creative was developed from the idea of taking football back to the backyard.
 
 ## 4.2 Value Proposition Blocks
 
