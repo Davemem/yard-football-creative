@@ -263,6 +263,16 @@ Completion notes:
 ## Phase 5 — Baseline UI Framework
 Goal: convert the current baseline site into a structured design system.
 
+Sub-phases:
+- [ ] 5.1 layout primitives
+- [ ] 5.2 shared section components
+- [ ] 5.3 button system
+- [ ] 5.4 card system
+- [ ] 5.5 form styles
+- [ ] 5.6 responsive navigation with icon-only social links
+- [ ] 5.7 footer component and homepage social feed section pattern
+- [ ] 5.8 theme tokens, default theme, and light/dark mode support
+
 Deliverables:
 - layout primitives
 - shared section components
@@ -289,6 +299,16 @@ Human review steps:
 - confirm the UI system reflects the approved structural and visual direction
 - review whether theme behaviour feels intentional rather than decorative
 - review whether the light/dark toggle feels useful, legible, and coherent across themes
+
+Completion notes:
+- `5.1` pending.
+- `5.2` pending.
+- `5.3` pending.
+- `5.4` pending.
+- `5.5` pending.
+- `5.6` pending.
+- `5.7` pending.
+- `5.8` pending.
 
 ## Phase 6 — Core Page Build
 Goal: complete the first usable public version.
