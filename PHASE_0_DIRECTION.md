@@ -98,3 +98,39 @@ it introduces the organisation, proves that it is grounded in real football cult
 - Contact actions should stay visible and repeatable across every page type.
 
 The companion layout baseline now lives in `ARCHITECTURE.md` and should be expanded, not replaced, in Phase 2.
+
+## 0.4 Early Visual Theme Options
+
+The goal of these options is not to invent separate brands.
+It is to identify credible directions already present in the approved assets.
+
+### Option A: Backyard Night
+
+- Basis: `assets/YARD.pdf` cover plus darker logo variants such as `LOGO-5_dark` and `LOGO-10_dark`
+- Mood: grounded, bold, memory-rich, slightly nocturnal
+- Background direction: soft cement grey, deep field green, sparse dusty yellow highlights
+- Type feeling: large hand-drawn display paired with simple, legible body copy
+- Layout emphasis: oversized circular hero, strong negative space, poster-like sections
+- Best use: default v1 direction because it feels most faithful to the PDF baseline
+
+### Option B: Acid Training Ground
+
+- Basis: lighter lime-led logo variants such as `LOGO-1_light`, `LOGO-3_light`, and `LOGO-8_light`
+- Mood: energetic, youthful, direct, more daytime and training-oriented
+- Background direction: restrained off-white or pale stone with lime-led hero moments
+- Type feeling: bold handwritten headlines with cleaner supporting text
+- Layout emphasis: stronger contrast between quiet page surfaces and loud brand moments
+- Best use: campaign or seasonal theme once the core structure is established
+
+### Option C: Rust Story Poster
+
+- Basis: variants carrying dusty yellow or rust accents, plus the quote- and memory-led pages inside the PDF
+- Mood: warm, editorial, intimate, story-forward
+- Background direction: muted clay, stone, and deep green with careful rust highlights
+- Type feeling: hand-made display moments balanced by editorial spacing
+- Layout emphasis: quote bands, founder story moments, and image or poster blocks
+- Best use: storytelling-led pages, founder content, events, and media moments
+
+### Early Recommendation
+
+`Backyard Night` should be the starting direction for the site baseline because it carries the strongest continuity with the PDF cover, preserves football credibility, and leaves the cleanest path for later theme variation.

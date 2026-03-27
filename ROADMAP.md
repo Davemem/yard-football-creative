@@ -9,7 +9,7 @@ Sub-phases:
 - [x] 0.1 review of current `assets/` materials
 - [x] 0.2 initial homepage structure concept
 - [x] 0.3 initial page layout direction for core pages
-- [ ] 0.4 early visual theme options
+- [x] 0.4 early visual theme options
 - [ ] 0.5 early approach for how multiple logo-based themes could influence colour, typography, layout emphasis, and graphic treatments
 - [ ] 0.6 early approach for how light and dark mode should behave across those themes
 - [ ] 0.7 rough section ordering for key journeys
@@ -19,6 +19,7 @@ Completion notes:
 - `0.1` complete: reviewed `assets/YARD.pdf`, the `assets/Logos/` family, and the supporting football-ball mark; removed the stale remote scaffold so Phase 0 can proceed from the supplied brand assets instead of an outdated landing page.
 - `0.2` complete: documented the early homepage framework, from a logo-led hero through pathway orientation, founder trust, current activity, and final conversion.
 - `0.3` complete: established early page families and shared layout rules in `PHASE_0_DIRECTION.md` and `ARCHITECTURE.md` without locking the later Phase 2 sitemap too early.
+- `0.4` complete: documented three source-grounded visual directions and recommended `Backyard Night` as the most faithful baseline to `assets/YARD.pdf`.
 
 This phase should draw on existing artifacts in the `assets/` folder, including:
 - logo files
