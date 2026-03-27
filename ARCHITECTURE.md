@@ -72,7 +72,7 @@ It is intentionally lightweight and should be expanded in Phase 2 when sitemap, 
 ### Pathway Structure Rule
 
 - Community and elite pathways should stay highly visible in page content and CTA flows.
-- They should not become separate top-level navigation items in the first-release header.
+- They should not become separate standalone pages in the first-release site structure.
 - Programs should remain the top-level container that explains both pathways and the wider offer model.
 
 ### Footer Relationship
@@ -84,7 +84,13 @@ It is intentionally lightweight and should be expanded in Phase 2 when sitemap, 
 
 - Home should lead with `Explore Programs` and support `Contact Yard`.
 - About should guide visitors back into Programs or Contact.
-- Programs should funnel users into Community, Elite, Events, or Contact based on fit.
-- Community and Elite pages should use pathway-specific enquiry actions.
+- Programs should funnel users into community, elite, events, or contact actions from within the page itself.
 - Events should support event-specific enquiry plus Instagram as a proof layer.
 - Contact should remain the final conversion destination for direct outreach to `contact@yardfc.com`.
+
+## Footer Structure Baseline
+
+- The footer should repeat the five-page site map: Home, About, Programs, Events, Contact.
+- Footer pathway links should point to community and elite sections inside Programs rather than separate pages.
+- The footer should include brand context, contact access, and social links in a stable shared structure.
+- Instagram and Facebook should remain the only planned footer social destinations in Phase 2.

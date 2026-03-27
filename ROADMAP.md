@@ -123,6 +123,7 @@ Deliverables:
 Suggested core pages:
 - Home
 - About
+- Programs
 - Events
 - Contact 
 
@@ -146,9 +147,10 @@ Human review steps:
 Completion notes:
 - `2.1` complete: defined the v1 sitemap in `PHASE_2_INFORMATION_ARCHITECTURE.md`, keeping the primary structure to Home, About, Programs, Events, and Contact while reserving future expansion pages without promoting them into the first-release navigation too early.
 - `2.2` complete: defined the primary navigation structure in `PHASE_2_INFORMATION_ARCHITECTURE.md` and expanded `ARCHITECTURE.md` with the Phase 2 navigation baseline, keeping the header focused on Home, About, Programs, Events, and Contact while routing deeper pathway detail into page content instead of header sprawl.
-- `2.3` complete: defined the full planned page inventory in `PHASE_2_INFORMATION_ARCHITECTURE.md`, clarifying that Community and Elite are required supporting pages in the v1 architecture even though they should sit below the top-level header rather than competing with it.
-- `2.4` complete: defined a single clear job for each planned page in `PHASE_2_INFORMATION_ARCHITECTURE.md` and aligned `CONTENT_STRATEGY.md` to the same page-purpose model so the later content and UI phases can separate overview, pathway, events, and contact roles cleanly.
-- `2.5` complete: defined the page-by-page CTA map in `PHASE_2_INFORMATION_ARCHITECTURE.md` and aligned `ARCHITECTURE.md` to the same conversion structure so each page now has a clear primary action, supporting fallback, and route into the approved `contact@yardfc.com` enquiry flow.
+- `2.3` complete: defined the full planned page inventory in `PHASE_2_INFORMATION_ARCHITECTURE.md`, confirming that the first-release site is limited to Home, About, Programs, Events, and Contact, with community and elite handled as pathway content rather than separate pages.
+- `2.4` complete: defined a single clear job for each planned page in `PHASE_2_INFORMATION_ARCHITECTURE.md` and aligned `CONTENT_STRATEGY.md` to the same five-page model so later content and UI work can separate overview, events, and contact roles without introducing extra pages.
+- `2.5` complete: defined the page-by-page CTA map in `PHASE_2_INFORMATION_ARCHITECTURE.md` and aligned `ARCHITECTURE.md` to the same conversion structure so each page now has a clear primary action, supporting fallback, and route into either the `Programs` page, `Events`, or the approved `contact@yardfc.com` enquiry flow.
+- `2.6` complete: defined the shared footer structure in `PHASE_2_INFORMATION_ARCHITECTURE.md`, `ARCHITECTURE.md`, and `CONTENT_STRATEGY.md`, keeping the footer anchored to the five-page site map while using in-page pathway links inside `Programs` instead of extra standalone pages.
 
 ## Phase 3 — Brand System
 Goal: define how the site should feel and speak.
@@ -241,8 +243,7 @@ Deliverables:
 - home page complete
 - about page complete
 - programs overview complete
-- community page complete
-- elite page complete
+- programs page pathway sections complete
 - contact / expression of interest page complete
 - footer with Instagram and Facebook icon links complete
 - email contact form complete

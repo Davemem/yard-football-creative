@@ -73,7 +73,7 @@ The primary site navigation for v1 should be:
 
 - `Programs` should be the only top-level pathway bucket in v1.
 - Community and elite pathways should be introduced immediately within the `Programs` page content and linked from homepage sections or CTA blocks.
-- Community and elite should not become separate top-level navigation items in Phase 2 because that would over-fragment the first-release header.
+- Community and elite should not become separate pages in Phase 2 because that would over-fragment the first-release structure.
 
 ### Mobile Navigation Rule
 
@@ -99,7 +99,7 @@ This structure keeps the first-release navigation simple, recognisable, and alig
 
 ## 2.3 Page List
 
-### Top-Level Pages in the v1 Header
+### Planned Pages for the v1 Site
 
 1. `Home`
 2. `About`
@@ -107,18 +107,11 @@ This structure keeps the first-release navigation simple, recognisable, and alig
 4. `Events`
 5. `Contact`
 
-### Planned Supporting Pages in the v1 Site Structure
+### Pathway Content Rule
 
-These pages should exist in the planned architecture even though they do not need to appear as top-level header items:
-
-1. `Community`
-2. `Elite`
-
-### Why Community and Elite Stay as Supporting Pages
-
-- They are required by the later build roadmap and should therefore be part of the planned page inventory now.
-- They work best as deeper destination pages reached from `Home`, `Programs`, and CTA flows rather than as competing top-level navigation items.
-- This keeps the header simple while still giving both audience pathways their own clear landing space.
+- Community and elite pathways must remain highly visible in the site structure.
+- They should live as distinct sections, cards, anchors, and CTA targets inside `Home` and `Programs`.
+- They should not become separate standalone pages in the first-release architecture.
 
 ### Future-Reserve Page List
 
@@ -137,10 +130,8 @@ The planned first-release page inventory is:
 1. `Home`
 2. `About`
 3. `Programs`
-4. `Community`
-5. `Elite`
-6. `Events`
-7. `Contact`
+4. `Events`
+5. `Contact`
 
 ## 2.4 Page Purposes
 
@@ -161,19 +152,8 @@ The planned first-release page inventory is:
 
 - act as the structured overview page for the full offer model
 - explain the difference between major program categories
-- direct visitors toward the right deeper pathway or enquiry action
-
-### Community
-
-- explain who the community pathway is for
-- describe the environment, belonging, and developmental experience
-- remove hesitation for players and families looking for a welcoming entry point
-
-### Elite
-
-- explain who the elite pathway is for
-- describe progression intent, challenge level, and football credibility
-- support confident expression of interest for higher-ambition players and families
+- explain the difference between community and elite pathways inside the page
+- direct visitors toward the right pathway section, event detail, or enquiry action
 
 ### Events
 
@@ -189,8 +169,7 @@ The planned first-release page inventory is:
 
 ### Non-Overlap Rules
 
-- `Programs` explains the whole offer model; it should not replace the deeper audience-specific jobs of `Community` or `Elite`.
-- `Community` and `Elite` focus on audience fit and pathway clarity; they should not become generic duplicate program listings.
+- `Programs` explains the whole offer model and must hold the community and elite pathway explanations without splitting into extra standalone pages.
 - `Events` handles current activity and event-led storytelling; it should not become the catch-all page for every offer.
 - `Contact` is for action and follow-up; it should not be overloaded with long-form brand explanation already handled elsewhere.
 
@@ -220,17 +199,7 @@ The planned first-release page inventory is:
 
 - primary CTA: `Find Your Pathway`
 - secondary CTA: `Contact Yard`
-- supporting CTAs: `Explore Community`, `Explore Elite`, `View Events`
-
-#### Community
-
-- primary CTA: `Enquire About Community Football`
-- secondary CTA: `Contact Yard`
-
-#### Elite
-
-- primary CTA: `Register Elite Interest`
-- secondary CTA: `Contact Yard`
+- supporting CTAs: `View Community Pathway`, `View Elite Pathway`, `View Events`
 
 #### Events
 
@@ -247,6 +216,33 @@ The planned first-release page inventory is:
 
 - `Explore Programs` should route to the `Programs` overview page.
 - `Find Your Pathway` should anchor or route visitors directly to the pathway split inside `Programs`.
-- `Explore Community` and `Explore Elite` should route to their dedicated supporting pages.
+- `View Community Pathway` and `View Elite Pathway` should jump to the relevant sections inside `Programs`.
 - `Contact Yard`, `Send Enquiry`, and direct email actions should all reinforce the approved contact workflow to `contact@yardfc.com`.
 - Social CTAs should appear where current activity is relevant, but they should remain subordinate to programme and enquiry actions.
+
+## 2.6 Footer Structure
+
+### Footer Purpose
+
+The footer should act as the consistent closing orientation layer across the five-page site.
+It should reinforce trust, provide quick discovery, and make contact and social access easy without competing with the page's main CTA.
+
+### Footer Content Blocks
+
+1. `Brand block`
+   Approved logo, short one-sentence organisation summary, and a concise mission-supporting line.
+2. `Site links`
+   Home, About, Programs, Events, Contact.
+3. `Pathway links`
+   Community pathway anchor, Elite pathway anchor, and key program-category anchors within `Programs`.
+4. `Contact block`
+   Contact page link, `contact@yardfc.com`, and a short follow-up expectation line.
+5. `Social block`
+   Instagram and Facebook links only.
+
+### Footer Structure Rules
+
+- The footer should repeat the five core pages, not introduce extra standalone pages.
+- Pathway links in the footer should point into `Programs` sections rather than separate pages.
+- Contact details should be easy to scan and clearly separated from social links.
+- The footer should appear on every page and preserve the same structure site-wide.

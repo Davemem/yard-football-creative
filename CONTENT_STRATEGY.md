@@ -43,21 +43,8 @@ The programs overview page must:
 - explain the overall Yard offer model in one place
 - show the major program categories without overwhelming visitors
 - help users choose between community, elite, event, and broader program directions
-- route visitors to the right deeper page or enquiry action
-
-## Community Page Jobs
-The community page must:
-- explain who the community pathway is for
-- make the environment feel welcoming, safe, and developmental
-- help players and families understand what participation can look like
-- create a low-friction next step for enquiry or interest
-
-## Elite Page Jobs
-The elite page must:
-- explain who the elite pathway is for
-- communicate challenge, progression, and football credibility clearly
-- distinguish elite development from the broader program overview
-- direct higher-ambition players toward the right enquiry or interest action
+- hold distinct community and elite pathway sections within the page itself
+- route visitors to the right in-page pathway section or enquiry action
 
 ## Events Page Jobs
 The events page must:
@@ -90,6 +77,8 @@ The footer must:
 - provide quick access to Instagram and Facebook
 - reinforce trust with clear contact access
 - help users reach the contact page or enquiry form from anywhere on the site
+- repeat the five core page links clearly
+- offer pathway shortcuts into the `Programs` page without introducing extra standalone pages
 
 Social links should be easy to recognise and should not compete with the primary page CTAs.
 
