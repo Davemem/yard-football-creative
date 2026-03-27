@@ -32,8 +32,9 @@ This phase should draw on existing artifacts in the `assets/` folder, including:
 - event and information documents
 - any existing visual explorations or layout references
 
-The initial visual direction should also anticipate a future theme system built from multiple brand logos stored in `assets/logo/`.
+The initial visual direction should also anticipate a future theme system built from multiple brand logos stored in `assets/Logos/`.
 That system should support both light and dark mode variants where appropriate, using the approved logo-based style options.
+Only the supplied logo files in `assets/Logos/` may be used for that system.
 
 Deliverables:
 - review of current `assets/` materials
@@ -183,7 +184,7 @@ Deliverables:
 - social icon link treatment for the footer
 - homepage social feed section pattern
 - theme tokens or styling architecture that can support toggleable logo-based themes
-- a safe default theme and a repeatable pattern for adding more themes from `assets/logo/`
+- a safe default theme and a repeatable pattern for adding more themes from approved files in `assets/Logos/`
 - light/dark mode support within the theme token system
 
 Exit criteria:
@@ -352,7 +353,7 @@ Potential work:
 - registration portal
 - coach recruitment pages
 - sponsorship / partner pages
-- expand the logo-based theme library as new approved brand assets are added to `assets/logo/`
+- expand the logo-based theme library only when new approved brand assets are added to `assets/Logos/`
 
 Rule:
 No post-launch growth work should be added without documenting the purpose in architecture and roadmap docs.

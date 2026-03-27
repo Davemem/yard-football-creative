@@ -22,19 +22,12 @@ It is intentionally lightweight and should be expanded in Phase 2 when sitemap, 
 - credibility block that explains lived football experience
 - simple closing CTA to contact or explore programs
 
-### Pathway Overview
+### Programs
 
-- concise hero that names the pathway set clearly
+- concise hero that names the program offering clearly
 - scan-friendly cards or rows for major offer groups
 - short explainer on who each option is for
 - one consistent CTA pattern for enquiry or expression of interest
-
-### Pathway Detail
-
-- focused hero naming the audience and promise
-- practical section covering who it is for, what to expect, and intended outcomes
-- operational details block for format, level, or location when known
-- direct contact or registration interest section
 
 ### Events or Current Activity
 
@@ -57,3 +50,4 @@ It is intentionally lightweight and should be expanded in Phase 2 when sitemap, 
 - Calls to action should repeat consistently, but only at meaningful decision points.
 - Story-led sections should use editorial pacing and generous spacing instead of dashboard-like density.
 - Logo, colour, and atmosphere may shift by approved theme, but page structure should remain stable across themes.
+- Early implementation may begin from a green-led baseline, but the structural docs should not be treated as locking the eventual Phase 3 palette to green.

@@ -49,6 +49,7 @@ Do not allow the project to become generic or lose its football identity.
 
 ### LAW 35 — Logo Integrity
 If a logo is provided, it must be used exactly as supplied.
+Only the supplied logo files in `assets/Logos/` may be used.
 
 Allowed:
 - resizing
@@ -61,6 +62,9 @@ Not allowed:
 - modifying shapes or geometry
 - adding effects or overlays
 - recreating or approximating the logo
+- inferring new logo variants
+- augmenting the supplied logo set
+- combining or remixing supplied logos into new marks
 
 The logo is a protected brand asset and must remain visually consistent across all uses.
 

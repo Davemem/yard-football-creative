@@ -2,6 +2,8 @@
 
 This document records the iterative outputs for Phase 0 in the exact order defined in `ROADMAP.md`.
 It uses `assets/YARD.pdf` as the baseline visual artifact and `assets/Logos/` as the supporting theme library.
+Only the supplied logo examples in `assets/Logos/` may be used.
+No inferred, augmented, remixed, or newly generated logo variants should be introduced.
 
 ## 0.1 Review of Current `assets/` Materials
 
@@ -22,21 +24,30 @@ It uses `assets/YARD.pdf` as the baseline visual artifact and `assets/Logos/` as
 ### What the Logo Library Establishes
 
 - The logo system already contains multiple approved expressions of the same brand rather than one locked wordmark.
+- Those approved expressions are limited to the supplied files in `assets/Logos/`.
 - The recurring palette centre is deep green plus acid-lime, with some variants introducing dusty yellow or rust accents.
 - The strongest family resemblance comes from imperfect hand-drawn letterforms, circular framing, and restrained colour counts.
 - Light and dark variants already exist for the logo family, which supports the roadmap direction toward theme and mode switching later.
 - Some logos are heavier and blockier, while others are more outlined and playful; that gives room for future theme variation without inventing new symbols.
 
+### Colour Caution for Later Phases
+
+- The logo library is heavily green-led, but Phase 0 should not be read as a rule that the final site palette must remain primarily green.
+- Green is a useful starting baseline for early direction work because it is the clearest shared signal in the current assets.
+- Phase 3 should remain free to define a broader or different site palette if that better serves the brand, accessibility, and overall product quality.
+- The stronger long-term requirement is brand credibility and consistency, not permanent adherence to a single dominant colour family.
+
 ### Early Design Signals
 
 - The website should feel like a modern football poster system built from story and memory, not a SaaS landing page.
 - Large hero shapes, handwritten emphasis, earthy backgrounds, and simple structural blocks are supported by the supplied assets.
-- The default direction should keep the strongest contrast pairing from the assets: muted ground, dark green structure, acid-lime brand emphasis.
+- The default direction can begin with the strongest contrast pairing from the assets: muted ground, dark green structure, acid-lime brand emphasis.
 - Supporting accent colours should stay sparse and purposeful so the green family remains the recognisable brand anchor.
 
 ### Constraints Confirmed by the Asset Review
 
 - Logo files must be used exactly as supplied with no redraws or colour edits.
+- Only the supplied examples in `assets/Logos/` may be referenced or used; no new logo variations should be inferred from them.
 - The product should preserve a football-native, grounded tone and avoid startup polish that erases the hand-made brand edge.
 - Future UI work should treat storytelling sections, founder credibility, and pathway clarity as first-class structure, not decorative add-ons.
 
@@ -134,6 +145,7 @@ It is to identify credible directions already present in the approved assets.
 ### Early Recommendation
 
 `Backyard Night` should be the starting direction for the site baseline because it carries the strongest continuity with the PDF cover, preserves football credibility, and leaves the cleanest path for later theme variation.
+It is a baseline recommendation for early build work, not a final lock on the Phase 3 palette.
 
 ## 0.5 Early Approach for Multiple Logo-Based Themes
 
@@ -141,11 +153,12 @@ It is to identify credible directions already present in the approved assets.
 
 Themes should change emphasis, not identity.
 The page structure, content order, CTA treatment, and trust signals should remain recognisably Yard across every approved logo direction.
+Phase 3 should treat the current green-led baseline as a starting point rather than a hard constraint.
 
 ### What the Theme Layer May Influence
 
 - `Colour`
-  Theme palettes may change primary accent, surface tint, and highlight colour using combinations already visible in the approved logo family.
+  Theme palettes may change primary accent, surface tint, and highlight colour using combinations suggested by the approved logo family, while still allowing Phase 3 to expand beyond a strictly green-led site palette if needed.
 - `Typography emphasis`
   Themes may vary how often hand-drawn display type appears, but body text should remain stable and highly readable.
 - `Layout emphasis`
@@ -175,9 +188,10 @@ The page structure, content order, CTA treatment, and trust signals should remai
 ### Implementation Guidance for Later Phases
 
 - Store theme decisions as tokens, not duplicated page builds.
-- Tie each approved theme to a specific supplied logo asset rather than abstract naming alone.
+- Tie each approved theme to a specific supplied logo asset from `assets/Logos/` rather than abstract naming alone.
 - Let the logo choice decide accent colour and decorative style, but not the page skeleton.
 - Add new themes only when a human review confirms the result still feels like one Yard product.
+- Do not generate, infer, or augment logo variants to fill theme gaps.
 
 ## 0.6 Early Approach for Light and Dark Mode Across Themes
 
@@ -272,8 +286,10 @@ Switching modes should not swap the brand personality out for a generic operatin
 ### `assets/Logos/`
 
 - The logo library should define the theme vocabulary for future implementation.
+- Only the supplied files in `assets/Logos/` should be mapped to approved theme presets.
 - Individual logo variants should be mapped to approved theme presets rather than chosen randomly per page.
 - Differences across logo variants should inspire accent and emphasis changes, not structural fragmentation.
+- Do not infer missing styles or create new variants from existing examples.
 - Any added theme should remain recognisably part of the existing hand-drawn Yard family.
 
 ### `assets/yardfc_ball_transparent.png`

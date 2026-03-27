@@ -68,8 +68,10 @@ Imagery should prioritise:
 
 ## Multi-Theme Brand Direction
 
-Yard Football Creative may support multiple toggleable visual themes built from a library of approved logos in `assets/logo/`.
+Yard Football Creative may support multiple toggleable visual themes built from a library of approved logos in `assets/Logos/`.
 These themes should feel like different expressions of one brand system, not different brands competing with each other.
+Only the supplied files in `assets/Logos/` should be used.
+Do not infer, augment, redraw, remix, or extend the logo set.
 
 ## Theme Rules
 
@@ -107,6 +109,18 @@ Avoid:
 - overly bright colour blocking behind long-form content
 - theme palettes that reduce text contrast or visual calm
 - decorative colour use that distracts from the programme message
+
+## Colour Flexibility
+
+The current supplied logo set is dominated by green-led variants, and that makes green a sensible baseline for early exploration.
+However, the website should not be permanently constrained to a green-dominant palette just because many of the current logos use green.
+
+For Phase 3 and later brand-system work:
+- green may remain the baseline starting point
+- the final site palette may broaden or shift if it better serves the product
+- palette decisions should be driven by clarity, trust, accessibility, and overall brand fit
+- logo usage should stay faithful to the supplied assets even if the surrounding interface palette evolves
+- logo exploration must stay within the supplied examples in `assets/Logos/`
 
 ## What Must Stay Consistent Across Themes
 
