@@ -231,3 +231,72 @@ The Yard button system should feel:
 - trustworthy enough for critical contact and enquiry flows
 
 It gives future UI work a strong CTA hierarchy without adding unnecessary component complexity.
+
+## 3.4 Spacing System
+
+### Spacing Principle
+
+Yard should feel spacious, editorial, and calm.
+The spacing system must preserve the poster-like breathing room established in `assets/YARD.pdf` while still supporting practical mobile scanning and conversion.
+
+### Base Scale
+
+Use an `8px` base rhythm with the following core steps:
+- `8`
+- `16`
+- `24`
+- `32`
+- `48`
+- `64`
+- `96`
+
+Additional `12` and `20` pixel moments may be used sparingly for tighter UI alignment, but the system should mostly stay on the core scale above.
+
+### Recommended Usage
+
+- `8-16`
+  Micro spacing for icon gaps, compact labels, and tight inline relationships.
+- `24-32`
+  Standard spacing between small UI groups, stacked actions, and compact section elements.
+- `48-64`
+  Primary section padding for most mobile layouts and standard desktop content bands.
+- `96`
+  Large hero and major section separation where the brand needs strong atmosphere and a slower storytelling pace.
+
+### Layout Rhythm Rules
+
+- Sections should feel intentionally separated rather than stacked edge-to-edge.
+- Story-led pages should prefer fewer sections with more breathing room over many compressed content bands.
+- Repeated card grids should keep internal spacing consistent so the page still feels calm.
+- CTA zones should receive extra vertical space before and after so action moments feel deliberate.
+
+### Mobile-First Guardrails
+
+- Mobile should never rely on desktop whitespace values scaled down awkwardly.
+- Core mobile sections should usually live in the `24-48` spacing range, with hero or mission moments expanding when needed.
+- Tap targets, nav rows, and form fields must maintain comfortable spacing even when the layout gets dense.
+- Copy blocks should not be squeezed to fit more modules above the fold.
+
+### Desktop Expansion Rules
+
+- Desktop spacing should increase atmosphere, not create emptiness for its own sake.
+- Wide layouts should use spacing to frame a few strong content groups rather than spreading every element apart equally.
+- Large screens should preserve clear relationships between headline, supporting copy, and CTA clusters.
+
+### What to Avoid
+
+- cramped stacked sections that make the site feel template-like
+- inconsistent margin jumps that weaken visual rhythm
+- decorative empty bands with no content job
+- overuse of very large gaps that make the site feel unfinished
+- tiny card padding that undermines readability or touch comfort
+
+### Phase 3 Spacing Outcome
+
+The Yard spacing system should create:
+- calm page rhythm
+- strong poster-like pauses
+- clear content grouping
+- reliable mobile comfort
+
+It keeps the future UI simple, consistent, and distinctly non-generic.
