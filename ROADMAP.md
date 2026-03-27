@@ -221,7 +221,7 @@ Sub-phases:
 - [x] 4.4 program descriptions
 - [x] 4.5 contact copy
 - [x] 4.6 placeholder testimonials or proof sections
-- [ ] 4.7 footer copy and header social icon plan for Instagram and Facebook
+- [x] 4.7 footer copy and header social icon plan for Instagram and Facebook
 - [ ] 4.8 contact page copy for a simple email enquiry form
 - [ ] 4.9 contact page copy aligned to `contact@yardfc.com`
 - [ ] 4.10 homepage Instagram section copy and CTA linking to the `@yardfc` account
@@ -254,6 +254,7 @@ Completion notes:
 - `4.4` complete: added the initial program descriptions to `PHASE_4_CORE_CONTENT.md`, preserving the exact program labels and the only broad program-description language currently present in `assets/YARD.pdf` while documenting the additional operational detail that will need human input later.
 - `4.5` complete: added the first contact-copy draft to `PHASE_4_CORE_CONTENT.md`, using only belonging, connection, and closing-call language from `assets/YARD.pdf` and documenting the operational contact details that will still need human input later.
 - `4.6` complete: added a proof-section draft to `PHASE_4_CORE_CONTENT.md` using the founder-story lived-experience language from `assets/YARD.pdf` instead of inventing testimonials that do not exist in the supplied source materials.
+- `4.7` complete: added footer copy and the header social icon plan to `PHASE_4_CORE_CONTENT.md`, keeping the footer wording directly sourced from `assets/YARD.pdf` while carrying forward the approved Instagram/Facebook icon-only header rules from Phase 2.
 
 ## Phase 5 — Baseline UI Framework
 Goal: convert the current baseline site into a structured design system.

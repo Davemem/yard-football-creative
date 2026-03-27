@@ -262,3 +262,39 @@ Approved testimonials, partner endorsements, event outcomes, or measurable proof
 #### Placeholder for human-selected visual content
 
 Real event or training imagery that shows the environments Yard is describing and helps the proof section feel current rather than abstract.
+
+## 4.7 Footer Copy and Header Social Icon Plan for Instagram and Facebook
+
+### Footer Brand Line
+
+To empower and inspire.
+
+### Footer Support Line
+
+To create meaningful experiences, by ensuring storytelling and connection are at the heart of everything we do.
+
+### Footer Closing Line
+
+Dream Big With Us.
+
+### Header Social Icon Plan
+
+- Use icon-only links for Instagram and Facebook in the header.
+- Keep Instagram visually primary and Facebook visually secondary, following the Phase 2 architecture rule.
+- Keep the icons clearly recognisable, accessible, and visually subordinate to the primary page navigation and Contact CTA.
+- Do not add supporting social copy in the header.
+
+### Source Notes
+
+- The footer copy is taken directly from the vision, mission, and closing call in `assets/YARD.pdf`.
+- The header social plan follows the approved structural rules already documented in `ARCHITECTURE.md` and `PHASE_2_INFORMATION_ARCHITECTURE.md`.
+
+### Recommended Placeholders
+
+#### Placeholder for human-developed text
+
+Any legal footer text, organisation location detail, or future rights language that may need to appear in the production footer once confirmed.
+
+#### Placeholder for human-selected visual content
+
+The final approved icon set and any footer-specific brand asset treatment that best fits the later UI system.
