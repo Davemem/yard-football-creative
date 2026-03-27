@@ -229,3 +229,36 @@ Plain-language contact guidance explaining what people can enquire about right n
 #### Placeholder for human-developed text
 
 Any approved safeguarding, parent-facing, or partner-facing reassurance that should appear close to the contact pathway.
+
+## 4.6 Placeholder Testimonials or Proof Sections
+
+### Proof Section Intro
+
+Among all of the amazing memories we've made and the incredible people we've met along the way, at times we found ourselves in environments that didn't feel so good.
+
+### Proof Block 1
+
+We experienced the highs and lows of life as female footballers, coaches and females working in the sporting industry.
+
+### Proof Block 2
+
+We've spent years trying to find a platform that feels meaningful to us and through Yard Football Creative, we feel that.
+
+### Proof Block 3
+
+We hope that others find our space to be somewhere they feel empowered and inspired, rather than small and unmotivated.
+
+### Source Notes
+
+- All proof-section lines are taken directly from the founder-story material in `assets/YARD.pdf`.
+- This section intentionally uses lived-experience proof instead of invented testimonials because no participant testimonials are present in the supplied source materials.
+
+### Recommended Placeholders
+
+#### Placeholder for human-developed text
+
+Approved testimonials, partner endorsements, event outcomes, or measurable proof points once Yard has current examples that can be published responsibly.
+
+#### Placeholder for human-selected visual content
+
+Real event or training imagery that shows the environments Yard is describing and helps the proof section feel current rather than abstract.
