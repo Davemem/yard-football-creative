@@ -198,3 +198,34 @@ A clearer explanation of how community, elite, events, workshops, and creative w
 #### Placeholder for human-selected visual content
 
 Program photography showing training, community environments, events, all-abilities participation, and creative-storytelling moments.
+
+## 4.5 Contact Copy
+
+### Contact Page Intro
+
+Somewhere for everyone to come, and hopefully feel they belong.
+
+### Contact Page Supporting Copy
+
+We want this to be a space for everyone to feel like that little kid again, a safe place where you feel you belong.
+
+We hope to show others how football can fuel connection in the most positive of ways.
+
+### Contact Page Closing Copy
+
+Dream Big With Us.
+
+### Source Notes
+
+- The intro and closing lines are taken directly from the closing founder-story language and the closing call in `assets/YARD.pdf`.
+- The supporting lines are taken directly from the belonging and founder-story sections in `assets/YARD.pdf`.
+
+### Recommended Placeholders
+
+#### Placeholder for human-developed text
+
+Plain-language contact guidance explaining what people can enquire about right now, who should use the page, and what kind of follow-up they can expect.
+
+#### Placeholder for human-developed text
+
+Any approved safeguarding, parent-facing, or partner-facing reassurance that should appear close to the contact pathway.

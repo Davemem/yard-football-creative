@@ -219,20 +219,18 @@ Sub-phases:
 - [x] 4.2 value proposition blocks
 - [x] 4.3 about copy
 - [x] 4.4 program descriptions
-- [ ] 4.5 FAQs
-- [ ] 4.6 contact copy
-- [ ] 4.7 placeholder testimonials or proof sections
-- [ ] 4.8 footer copy and header social icon plan for Instagram and Facebook
-- [ ] 4.9 contact page copy for a simple email enquiry form
-- [ ] 4.10 contact page copy aligned to `contact@yardfc.com`
-- [ ] 4.11 homepage Instagram section copy and CTA linking to the `@yardfc` account
+- [x] 4.5 contact copy
+- [ ] 4.6 placeholder testimonials or proof sections
+- [ ] 4.7 footer copy and header social icon plan for Instagram and Facebook
+- [ ] 4.8 contact page copy for a simple email enquiry form
+- [ ] 4.9 contact page copy aligned to `contact@yardfc.com`
+- [ ] 4.10 homepage Instagram section copy and CTA linking to the `@yardfc` account
 
 Deliverables:
 - headline and subheadline for home page
 - value proposition blocks
 - about copy
 - program descriptions
-- FAQs
 - contact copy
 - placeholder testimonials or proof sections
 - footer copy and header social icon plan for Instagram and Facebook
@@ -249,10 +247,12 @@ Human review steps:
 - confirm the copy supports the proposed page structure
 
 Completion notes:
+- FAQ drafting was removed from Phase 4 by user direction on 2026-03-27 and should not be added to the v1 content set unless that decision changes later.
 - `4.1` complete: added `PHASE_4_CORE_CONTENT.md`, defined the homepage headline and subheadline directly from `assets/YARD.pdf`, and documented the copy-preservation rule for the remaining Phase 4 drafting work.
 - `4.2` complete: added three homepage value proposition blocks to `PHASE_4_CORE_CONTENT.md`, using only the vision, mission, belonging, and safety language carried directly from `assets/YARD.pdf`.
 - `4.3` complete: drafted the About page copy in `PHASE_4_CORE_CONTENT.md` using the backyard origin, belonging statement, and `Behind the Brand...` founder story from `assets/YARD.pdf`.
 - `4.4` complete: added the initial program descriptions to `PHASE_4_CORE_CONTENT.md`, preserving the exact program labels and the only broad program-description language currently present in `assets/YARD.pdf` while documenting the additional operational detail that will need human input later.
+- `4.5` complete: added the first contact-copy draft to `PHASE_4_CORE_CONTENT.md`, using only belonging, connection, and closing-call language from `assets/YARD.pdf` and documenting the operational contact details that will still need human input later.
 
 ## Phase 5 — Baseline UI Framework
 Goal: convert the current baseline site into a structured design system.
