@@ -23,3 +23,41 @@ Yard Football Creative was developed from the idea of taking football back to th
 
 - `Dream Big With Us.` appears as the closing call in `assets/YARD.pdf`.
 - The subheadline is taken directly from the `What is Yard Football Creative?` explanation in `assets/YARD.pdf`, with only spacing and casing normalised for web use.
+
+## 4.2 Value Proposition Blocks
+
+### Value Block 1
+
+#### Heading
+
+To Empower and Inspire.
+
+#### Supporting Copy
+
+To create meaningful experiences, by ensuring storytelling and connection are at the heart of everything we do.
+
+### Value Block 2
+
+#### Heading
+
+Through connection, you feel belonging.
+
+#### Supporting Copy
+
+Through belonging you feel empowered and inspired to create.
+
+### Value Block 3
+
+#### Heading
+
+A safe place where you feel you belong.
+
+#### Supporting Copy
+
+We want this to be a space for everyone to feel like that little kid again.
+
+### Source Notes
+
+- Block 1 is taken from the vision and mission statements in `assets/YARD.pdf`.
+- Block 2 is taken directly from the belonging and empowerment explanation in `assets/YARD.pdf`, split only for web scanning.
+- Block 3 is taken directly from the `What is Yard Football Creative?` explanation in `assets/YARD.pdf`, reordered only to suit a heading-plus-support format.
