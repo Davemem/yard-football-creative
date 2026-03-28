@@ -9,13 +9,12 @@ const headerLogoStorageKey = "yard-header-logo-variant";
 const heroLogoStorageKey = "yard-hero-logo-variant";
 const modeStorageKey = "yard-mode";
 let reviewToolsDock = null;
-const logoVariantCount = 11;
+const headerLogoVariantCount = 11;
+const heroLogoVariantProbeLimit = 24;
 
-const buildExplicitLogoOptions = () =>
-  Array.from({ length: logoVariantCount }, (_, index) => {
-    const variant = String(index + 1);
-
-    return [
+const buildExplicitLogoOptions = (variants) =>
+  variants
+    .map((variant) => [
       {
         value: `${variant}-light`,
         label: `Icon ${variant} - Light mode`,
@@ -24,14 +23,38 @@ const buildExplicitLogoOptions = () =>
         value: `${variant}-dark`,
         label: `Icon ${variant} - Dark mode`,
       },
-    ];
-  }).flat();
+    ])
+    .flat();
 
 const buildSingleModeLogoOptions = () =>
-  Array.from({ length: logoVariantCount }, (_, index) => ({
+  Array.from({ length: headerLogoVariantCount }, (_, index) => ({
     value: String(index + 1),
     label: `Icon ${index + 1}`,
   }));
+
+const canLoadImage = (src) =>
+  new Promise((resolve) => {
+    const probe = new Image();
+    probe.onload = () => resolve(true);
+    probe.onerror = () => resolve(false);
+    probe.src = src;
+  });
+
+const discoverHeroLogoVariants = async () => {
+  const checks = await Promise.all(
+    Array.from({ length: heroLogoVariantProbeLimit }, async (_, index) => {
+      const variant = String(index + 1);
+      const [hasLight, hasDark] = await Promise.all([
+        canLoadImage(`assets/Logos/LOGO-${variant}_light.png`),
+        canLoadImage(`assets/Logos/LOGO-${variant}_dark.png`),
+      ]);
+
+      return hasLight && hasDark ? variant : null;
+    })
+  );
+
+  return checks.filter(Boolean);
+};
 
 const getThemeLogoKey = (theme, mode) =>
   `logo${theme
@@ -189,7 +212,7 @@ const syncHeroLogoVariant = () => {
   });
 };
 
-const buildHeroLogoSelector = () => {
+const buildHeroLogoSelector = async () => {
   if (!body || heroThemeLogos.length === 0) {
     return;
   }
@@ -207,10 +230,11 @@ const buildHeroLogoSelector = () => {
   selectorInput.className = "home-logo-selector-input";
   selectorInput.id = "home-logo-variant";
   const currentMode = body.dataset.mode || "light";
+  const discoveredVariants = await discoverHeroLogoVariants();
 
   const options = [
     { value: "match", label: "Match theme default" },
-    ...buildExplicitLogoOptions(),
+    ...buildExplicitLogoOptions(discoveredVariants),
   ];
 
   options.forEach((optionConfig) => {
@@ -293,8 +317,9 @@ if (body) {
   syncThemeLogos();
   buildHeaderLogoSelector();
   syncHeaderLogoVariant();
-  buildHeroLogoSelector();
-  syncHeroLogoVariant();
+  buildHeroLogoSelector().then(() => {
+    syncHeroLogoVariant();
+  });
   buildModeToggle();
 
   prefersDarkMode.addEventListener("change", (event) => {
