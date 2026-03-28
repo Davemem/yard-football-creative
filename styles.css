@@ -1,5 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&family=Walter+Turncoat&display=swap");
+
 :root {
   color-scheme: light dark;
+  --font-editorial: "Special Elite", "Courier New", monospace;
+  --font-display: "Walter Turncoat", "Trebuchet MS", "Segoe UI", sans-serif;
   --raw-ground-mist: #a6a6a6;
   --raw-field-depth: #2e6417;
   --raw-acid-grass: #7dd957;
@@ -55,8 +59,8 @@ body {
   --color-shadow: rgba(17, 17, 17, 0.12);
   margin: 0;
   min-width: 20rem;
-  font-family: "Public Sans", Arial, sans-serif;
-  line-height: 1.6;
+  font-family: var(--font-editorial);
+  line-height: 1.68;
   color: var(--color-ink);
   background: var(--color-ground-mist);
 }
@@ -176,6 +180,205 @@ h3 {
   padding: calc(var(--header-height) + var(--space-5)) 0 var(--space-8);
 }
 
+/* ── Scroll-snap panels (shared) ── */
+.about-scroll-container,
+.snap-scroll-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  padding: 0;
+}
+
+.about-panel,
+.snap-panel {
+  min-height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.about-panel-intro,
+.snap-panel-hero {
+  padding-top: var(--header-height);
+}
+
+.about-panel-content,
+.snap-panel-content {
+  width: 100%;
+  max-width: var(--container-max);
+  padding: var(--space-4) var(--page-gutter);
+}
+
+.about-panel-ball .about-ball-divider {
+  margin: 0 auto;
+  width: clamp(20rem, 45vw, 36rem);
+}
+
+/* ── Split brand panels (Holly + Addy) ── */
+.about-panel-holly,
+.about-panel-addy {
+  padding-top: calc(var(--header-height) + var(--space-2));
+  padding-bottom: var(--space-2);
+}
+
+.about-split-header {
+  text-align: center;
+  margin-bottom: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.about-split-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2rem, 4vw, 4rem);
+  align-items: center;
+}
+
+.about-split-copy {
+  font-family: var(--font-editorial);
+  font-size: clamp(0.95rem, 1.15vw, 1.1rem);
+  font-weight: 400;
+  line-height: 1.75;
+  color: var(--color-ink);
+}
+
+.about-split-copy p {
+  margin: 0;
+}
+
+.about-split-copy.stack-md > * + * {
+  margin-top: var(--space-3);
+}
+
+.about-split-figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-split-figure img {
+  width: 100%;
+  max-height: 55vh;
+  object-fit: contain;
+}
+
+/* Addy panel: figure on left, text on right */
+.about-split-layout-addy {
+  grid-template-columns: 1fr 1fr;
+}
+
+.about-split-layout-addy .about-split-copy {
+  text-align: right;
+}
+
+.about-panel-closing {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.about-panel-closing .about-panel-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100vh;
+  max-width: 100%;
+}
+
+.about-closing-wrap {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-panel-closing .about-brand-story-closing {
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  max-width: 52rem;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.about-panel-closing .site-footer-inline {
+  margin-top: 0;
+  padding-bottom: var(--space-5);
+}
+
+/* Panel fade transitions */
+.about-panel,
+.snap-panel {
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.about-panel.visible,
+.snap-panel.visible {
+  opacity: 1;
+}
+
+/* ── Home page snap panels ── */
+.snap-panel-hero .hero-logo-stage {
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.snap-panel-cards {
+  padding-top: var(--header-height);
+}
+
+.snap-panel-social {
+  padding-top: calc(var(--header-height) + var(--space-1));
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.snap-panel-social .snap-panel-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100vh;
+  max-width: 100%;
+  padding-top: var(--space-2);
+  padding-bottom: 0;
+}
+
+.snap-panel-social .social-feed-shell {
+  gap: clamp(1rem, 2vw, 1.5rem);
+  padding: clamp(1rem, 2vw, 1.5rem);
+}
+
+.snap-panel-social .feed-preview-grid {
+  gap: 0.5rem;
+}
+
+.snap-panel-social .feed-tile {
+  min-height: 8rem;
+}
+
+.snap-panel-social .quote-band-illustrated {
+  margin-top: clamp(0.75rem, 1.5vw, 1.25rem);
+  padding: clamp(1rem, 2vw, 1.5rem);
+  gap: clamp(1rem, 2vw, 1.5rem);
+}
+
+.snap-panel-social .quote-illustrated-text {
+  font-size: clamp(1rem, 1.4vw, 1.2rem);
+}
+
+.snap-panel-social .quote-illustration {
+  min-height: 10rem;
+}
+
+.snap-panel-social .site-footer-inline {
+  margin-top: auto;
+  padding-top: var(--space-2);
+  padding-bottom: var(--space-3);
+}
+
+.site-footer-inline {
+  margin-top: auto;
+  padding-top: var(--space-6);
+}
+
 .section-shell {
   padding: var(--space-5) 0;
 }
@@ -208,9 +411,109 @@ h3 {
   max-width: 62rem;
 }
 
+.about-what {
+  max-width: 56rem;
+  margin: 0 auto;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.about-page-title {
+  margin-bottom: 0;
+}
+
+p.section-title.about-page-title {
+  color: var(--color-warm-whistle);
+}
+
+.about-page-title + .about-what-title {
+  margin-top: 1.5rem;
+}
+
+h1.about-what-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 2.8vw, 2rem);
+  font-weight: 400;
+  line-height: 1.04;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: var(--color-field-depth);
+}
+
+.about-what-statements p {
+  margin: 0;
+  font-family: var(--font-editorial);
+  font-size: clamp(1rem, 1.6vw, 1.15rem);
+  line-height: 1.9;
+}
+
+.about-what-statements p + p {
+  margin-top: 1.5rem;
+}
+
+.about-what-statements strong {
+  display: inline;
+  margin-right: 0.25rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-field-depth);
+}
+
+.about-what-body p {
+  margin: 0;
+  font-family: var(--font-editorial);
+  font-size: clamp(0.95rem, 1.4vw, 1.05rem);
+  line-height: 1.95;
+}
+
+.about-what-body p + p {
+  margin-top: 2rem;
+}
+
+.about-what-body strong {
+  font-family: var(--font-display);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--copy, #1f1f1f);
+}
+
+.about-highlight {
+  font-weight: 700;
+  color: var(--color-field-depth);
+}
+
+
+.about-what-cta {
+  font-family: var(--font-display);
+  font-size: clamp(1.1rem, 1.8vw, 1.35rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.06em;
+  text-align: right;
+  text-transform: uppercase;
+  color: var(--color-field-depth);
+}
+
+.about-ball-divider {
+  margin: 3rem auto 1rem;
+  width: clamp(12rem, 22vw, 18rem);
+  display: flex;
+  justify-content: center;
+}
+
+.about-ball-divider img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .about-brand-story {
   display: grid;
-  gap: var(--space-5);
+  gap: clamp(2rem, 4vw, 3.5rem);
   max-width: 78rem;
   margin: 0 auto;
 }
@@ -223,90 +526,75 @@ h3 {
 .about-brand-story-title {
   margin: 0;
   padding: 0.3rem 1.05rem;
-  font-family: "Barlow Condensed", Impact, sans-serif;
+  font-family: var(--font-display);
   font-size: clamp(2.4rem, 5vw, 4.3rem);
-  font-weight: 800;
-  line-height: 0.9;
-  letter-spacing: 0.02em;
+  font-weight: 400;
+  line-height: 0.96;
+  letter-spacing: 0;
   text-transform: uppercase;
-  color: var(--color-warm-whistle);
-  background: color-mix(in srgb, var(--color-paper) 88%, transparent);
-  border-radius: 0.9rem;
-  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--color-line) 65%, transparent);
+  color: var(--color-field-depth);
 }
 
 .about-brand-story-poster {
   display: grid;
-  grid-template-columns: minmax(18rem, 31rem) minmax(24rem, 38rem);
-  gap: clamp(2.25rem, 4vw, 4.5rem);
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "copy holly"
+    "addy footer";
+  gap: clamp(1.5rem, 3vw, 3rem);
   align-items: start;
-  justify-content: center;
 }
 
 .about-brand-story-copy {
-  max-width: 31rem;
+  grid-area: copy;
 }
 
 .about-brand-story-copy p,
 .about-brand-story-footer p {
   margin: 0;
-  font-family: "Barlow Condensed", Impact, sans-serif;
-  font-size: clamp(0.98rem, 0.92vw, 1.02rem);
-  font-weight: 700;
-  line-height: 1.02;
-  letter-spacing: 0.035em;
-  text-transform: uppercase;
+  font-family: var(--font-editorial);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.88;
+}
+
+.about-brand-story-copy p + p,
+.about-brand-story-block p + p {
+  margin-top: 1.6rem;
 }
 
 .about-brand-story-block {
-  max-width: 27rem;
+  margin-top: 1.6rem;
+}
+
+.about-brand-story-footer p + p {
+  margin-top: 1.2rem;
 }
 
 .about-brand-story-collage {
-  display: grid;
-  grid-template-columns: minmax(11rem, 15rem) minmax(13rem, 18rem);
-  grid-template-areas:
-    ". holly"
-    "addy footer";
-  column-gap: clamp(1.5rem, 2vw, 2.5rem);
-  row-gap: 1.1rem;
-  align-items: start;
-  justify-content: center;
-  padding-top: 1.75rem;
+  display: contents;
 }
 
 .about-art-figure {
   margin: 0;
   display: grid;
   place-items: center;
-  overflow: hidden;
-  box-shadow: var(--shadow-soft);
   position: relative;
 }
 
 .about-art-figure-addy {
   grid-area: addy;
-  align-self: end;
-  width: min(15rem, 100%);
-  min-height: 21.5rem;
-  padding: 1rem 0.45rem 0;
-  border-radius: 1.1rem;
-  background:
-    linear-gradient(145deg, color-mix(in srgb, var(--color-pale-net) 22%, transparent), color-mix(in srgb, var(--color-field-depth) 16%, transparent)),
-    color-mix(in srgb, var(--color-field-depth) 42%, var(--color-paper));
+  align-self: start;
+  width: 100%;
+  margin-top: -12rem;
   align-items: end;
+  z-index: 1;
 }
 
 .about-art-figure-holly {
   grid-area: holly;
   align-self: start;
-  width: min(18rem, 100%);
-  min-height: 24rem;
-  padding: 0.7rem 0.35rem 0;
-  border-radius: 1.1rem;
-  background:
-    linear-gradient(145deg, color-mix(in srgb, var(--color-clay-ball) 30%, transparent), color-mix(in srgb, var(--color-clay-ball) 14%, transparent)),
-    color-mix(in srgb, var(--color-clay-ball) 76%, var(--color-field-depth));
+  width: 100%;
   align-items: end;
 }
 
@@ -320,69 +608,36 @@ h3 {
 }
 
 .about-art-figure-addy img {
-  width: 95%;
-  transform: translateY(0.35rem);
+  width: 100%;
 }
 
 .about-art-figure-holly img {
-  width: 112%;
-  max-width: none;
-  transform: translate(0.8rem, 0.45rem);
+  width: 100%;
 }
 
-.about-art-figure-addy::before,
-.about-art-figure-holly::before {
-  position: absolute;
-  font-family: "Barlow Condensed", Impact, sans-serif;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  pointer-events: none;
-}
-
-.about-art-figure-addy::before {
-  content: "Addy";
-  left: 0.7rem;
-  top: 0.95rem;
-  color: color-mix(in srgb, var(--color-clay-ball) 88%, transparent);
-  font-size: 2.3rem;
-  transform: rotate(-28deg);
-}
-
-.about-art-figure-holly::before {
-  content: "Holly";
-  left: 1.45rem;
-  bottom: 1.2rem;
-  color: color-mix(in srgb, var(--color-field-depth) 78%, var(--color-pale-net));
-  font-size: 2rem;
-}
 
 .about-brand-story-footer {
   grid-area: footer;
-  justify-self: center;
-  max-width: 18rem;
-  text-align: center;
+  text-align: right;
   padding-top: 0.4rem;
 }
 
 .about-brand-story-closing {
   margin: 0;
   justify-self: center;
-  max-width: 34rem;
-  font-family: "Barlow Condensed", Impact, sans-serif;
-  font-size: clamp(1.05rem, 1.2vw, 1.25rem);
-  font-weight: 700;
-  line-height: 1.08;
-  letter-spacing: 0.08em;
+  max-width: 42rem;
+  font-family: var(--font-editorial);
+  font-size: clamp(1.3rem, 2.4vw, 1.6rem);
+  font-weight: 400;
+  line-height: 1.7;
   text-align: center;
-  text-transform: uppercase;
   color: var(--color-field-depth);
 }
 
 .about-intro .section-kicker {
   font-size: clamp(2rem, 5vw, 3.5rem);
-  line-height: 0.96;
-  letter-spacing: 0.04em;
+  line-height: 1.08;
+  letter-spacing: 0.03em;
 }
 
 .site-header {
@@ -425,21 +680,21 @@ h3 {
 .brand-title,
 .brand-subtitle {
   display: block;
-  font-family: "Barlow Condensed", Impact, sans-serif;
-  font-weight: 700;
-  line-height: 0.95;
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: 0.94;
   text-transform: uppercase;
   color: var(--color-field-depth);
 }
 
 .brand-title {
   font-size: clamp(2rem, 4vw, 3rem);
-  letter-spacing: 0.05em;
+  letter-spacing: 0.01em;
 }
 
 .brand-subtitle {
   font-size: clamp(0.7rem, 1.1vw, 0.95rem);
-  letter-spacing: 0.18em;
+  letter-spacing: 0.03em;
 }
 
 .logo-slot {
@@ -512,11 +767,11 @@ h3 {
   background: color-mix(in srgb, var(--color-panel) 88%, transparent);
   box-shadow: var(--shadow-soft);
   backdrop-filter: blur(14px);
-  font-family: "Barlow Condensed", Impact, sans-serif;
-  font-size: 0.72rem;
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: 0.06em;
+  font-family: var(--font-display);
+  font-size: 0.76rem;
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-field-depth);
   cursor: pointer;
@@ -528,11 +783,11 @@ h3 {
 }
 
 .header-logo-selector-label {
-  font-family: "Barlow Condensed", Impact, sans-serif;
+  font-family: var(--font-display);
   font-size: 0.68rem;
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: 0.06em;
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-field-depth);
 }
@@ -550,11 +805,11 @@ h3 {
 }
 
 .home-logo-selector-label {
-  font-family: "Barlow Condensed", Impact, sans-serif;
+  font-family: var(--font-display);
   font-size: 0.68rem;
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: 0.06em;
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-field-depth);
 }
@@ -591,10 +846,10 @@ h3 {
 
 .main-nav a,
 .menu-toggle {
-  font-family: "Barlow Condensed", Impact, sans-serif;
-  font-size: 1.15rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
+  font-family: var(--font-display);
+  font-size: 1.12rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
   text-decoration: none;
   color: var(--color-field-depth);
@@ -670,31 +925,36 @@ h3 {
 }
 
 .hero-memory {
-  width: min(100%, 50rem);
+  width: min(100%, 58rem);
   justify-self: end;
   display: grid;
-  gap: clamp(1.5rem, 3vw, 2.5rem);
+  gap: clamp(1.15rem, 2.2vw, 1.85rem);
 }
 
 .hero-memory-copy {
   display: grid;
-  gap: clamp(1.25rem, 2vw, 1.75rem);
+  gap: clamp(0.95rem, 1.6vw, 1.35rem);
   justify-items: end;
 }
 
 .hero-memory p {
   margin: 0;
-  font-family: "Special Elite", "Courier New", monospace;
+  font-family: var(--font-editorial);
   font-weight: 400;
-  font-size: clamp(1rem, 1.28vw, 1.32rem);
-  line-height: 1.9;
-  letter-spacing: 0.01em;
+  font-size: clamp(1.12rem, 1.42vw, 1.5rem);
+  line-height: 1.68;
+  letter-spacing: 0;
   text-align: right;
+  text-wrap: pretty;
+  font-kerning: normal;
+  font-variant-ligatures: none;
+  word-spacing: -0.02em;
+  max-width: 100%;
 }
 
 .hero-memory-lines {
   display: grid;
-  gap: 0.45rem;
+  gap: 0.14rem;
   width: max-content;
   max-width: 100%;
 }
@@ -710,7 +970,7 @@ h3 {
 }
 
 .hero-memory-rule {
-  width: min(100%, 22rem);
+  width: min(100%, 19rem);
   margin-right: auto;
   margin-left: auto;
   border-top: 0.34rem dotted var(--color-field-depth);
@@ -718,6 +978,8 @@ h3 {
 
 .hero-memory-signoff {
   width: 100%;
+  font-size: clamp(1.2rem, 1.45vw, 1.7rem);
+  line-height: 1.2;
   text-align: right;
 }
 
@@ -749,15 +1011,15 @@ h3 {
   }
 
   .hero-memory {
-    width: min(100%, 44rem);
+    width: min(100%, 50rem);
   }
 
   .hero-memory p {
-    font-size: clamp(0.94rem, 1.1vw, 1.12rem);
+    font-size: clamp(1.02rem, 1.18vw, 1.24rem);
   }
 
   .hero-memory-rule {
-    width: min(100%, 18rem);
+    width: min(100%, 16rem);
   }
 }
 
@@ -809,10 +1071,10 @@ h3 {
 .eyebrow,
 .section-kicker,
 .contact-label {
-  font-family: "Barlow Condensed", Impact, sans-serif;
+  font-family: var(--font-display);
   font-size: 1rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
+  font-weight: 400;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
@@ -824,8 +1086,8 @@ h3 {
 .display-title,
 .section-title,
 .subheading {
-  font-family: "Barlow Condensed", Impact, sans-serif;
-  font-weight: 700;
+  font-family: var(--font-display);
+  font-weight: 400;
   line-height: 0.96;
   text-transform: uppercase;
   color: var(--color-field-depth);
@@ -838,7 +1100,7 @@ h3 {
 .about-intro .section-title {
   max-width: 12ch;
   font-size: clamp(4.75rem, 8.5vw, 7.5rem);
-  line-height: 0.9;
+  line-height: 0.98;
   color: var(--color-field-depth);
 }
 
@@ -870,11 +1132,11 @@ h3 {
   padding: 0.8rem 1.35rem;
   border-radius: 999px;
   border: 1px solid transparent;
-  font-family: "Barlow Condensed", Impact, sans-serif;
-  font-size: 1.15rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
-  line-height: 1;
+  font-family: var(--font-display);
+  font-size: 1.18rem;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 0.94;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -919,6 +1181,7 @@ body[data-mode="dark"] .button-primary {
   padding: 0;
   border: 0;
   border-radius: 0;
+  font-size: 1.06rem;
   color: var(--color-field-depth);
   justify-content: flex-start;
   text-decoration: underline;
@@ -978,15 +1241,6 @@ body[data-mode="dark"] .button-primary {
   font-size: clamp(1.4rem, 2.3vw, 2.1rem);
   line-height: 0.95;
   letter-spacing: 0.04em;
-}
-
-.statement-title {
-  font-family: "Barlow Condensed", Impact, sans-serif;
-  font-size: clamp(2rem, 4vw, 3rem);
-  font-weight: 700;
-  line-height: 0.98;
-  text-transform: uppercase;
-  color: var(--color-field-depth);
 }
 
 .card-statement > p:not(.section-kicker) {
@@ -1059,7 +1313,7 @@ body[data-mode="dark"] .button-primary {
 
 .quote-illustrated-text,
 .quote-illustrated-attribution {
-  font-family: "Indie Flower", "Comic Sans MS", "Trebuchet MS", cursive;
+  font-family: var(--font-editorial);
   color: var(--color-ink);
 }
 
@@ -1077,7 +1331,7 @@ body[data-mode="dark"] .about-highlight {
   max-width: 35ch;
   font-size: clamp(1.65rem, 2.5vw, 3rem);
   font-weight: 400;
-  line-height: 1.32;
+  line-height: 1.2;
 }
 
 .quote-illustrated-attribution {
@@ -1171,10 +1425,10 @@ body[data-mode="dark"] .about-highlight {
 }
 
 .feed-tile-label {
-  font-family: "Barlow Condensed", Impact, sans-serif;
-  font-size: 1.2rem;
-  font-weight: 600;
-  letter-spacing: 0.06em;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
   color: var(--color-chalk);
 }
@@ -1216,10 +1470,10 @@ body[data-mode="dark"] .about-highlight {
 }
 
 .field-label {
-  font-family: "Barlow Condensed", Impact, sans-serif;
+  font-family: var(--font-display);
   font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
+  font-weight: 400;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
   color: var(--color-field-depth);
 }
@@ -1279,10 +1533,10 @@ body[data-mode="dark"] .field-input {
 }
 
 .contact-link {
-  font-family: "Barlow Condensed", Impact, sans-serif;
+  font-family: var(--font-display);
   font-size: clamp(1.5rem, 4vw, 2.25rem);
-  font-weight: 700;
-  line-height: 1;
+  font-weight: 400;
+  line-height: 0.98;
   text-decoration: none;
   color: var(--color-field-depth);
 }
@@ -1310,11 +1564,21 @@ body[data-mode="dark"] .field-input {
   text-align: center;
 }
 
+.footer-legal-center {
+  display: grid;
+  justify-items: center;
+  gap: 0.3rem;
+}
+
 .footer-legal-flag {
   width: clamp(1.6rem, 2.2vw, 2rem);
   height: auto;
   justify-self: center;
   opacity: 0.88;
+}
+
+.footer-legal-flag-pride {
+  width: clamp(1.8rem, 2.6vw, 2.3rem);
 }
 
 .footer-legal-abn {
@@ -1344,9 +1608,13 @@ body[data-mode="dark"] .field-input {
     grid-template-columns: 1fr;
   }
 
-  .about-brand-story-poster,
-  .about-brand-story-collage {
+  .about-brand-story-poster {
     grid-template-columns: 1fr;
+    grid-template-areas:
+      "copy"
+      "holly"
+      "addy"
+      "footer";
   }
 
   .hero-mark {
@@ -1404,24 +1672,26 @@ body[data-mode="dark"] .field-input {
     text-align: center;
   }
 
-  .about-brand-story-collage {
-    grid-template-areas:
-      "holly"
-      "addy"
-      "footer";
-    justify-items: center;
+  .about-split-layout {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    text-align: center;
   }
 
-  .about-art-figure-addy,
-  .about-art-figure-holly,
-  .about-brand-story-footer {
-    justify-self: center;
-    transform: none;
+  .about-split-layout-addy .about-split-copy {
+    text-align: center;
+  }
+
+  .about-split-figure img {
+    max-height: 35vh;
   }
 
   .about-art-figure-addy,
   .about-art-figure-holly {
     width: min(100%, 20rem);
+    justify-self: center;
+    transform: none;
+    margin-top: 0;
   }
 
   .about-art-figure-holly img,
@@ -1432,6 +1702,7 @@ body[data-mode="dark"] .field-input {
   }
 
   .about-brand-story-footer {
+    justify-self: center;
     max-width: 28rem;
     text-align: center;
   }
@@ -1473,6 +1744,15 @@ body[data-mode="dark"] .field-input {
   .page-shell {
     padding-top: calc(var(--header-height) + var(--space-4));
   }
+
+  .about-what-statements strong {
+    margin-right: 0.4rem;
+    transform: none;
+  }
+
+  .about-what-cta {
+    transform: rotate(-2deg);
+  }
 }
 
 @media (max-width: 36rem) {
@@ -1507,8 +1787,8 @@ body[data-mode="dark"] .field-input {
   }
 
   .hero-memory p {
-    font-size: 0.94rem;
-    line-height: 1.85;
+    font-size: 1.02rem;
+    line-height: 1.72;
   }
 
   .hero-memory-responsive {
@@ -1543,6 +1823,7 @@ body[data-mode="dark"] .field-input {
   }
 
   .footer-legal-year,
+  .footer-legal-center,
   .footer-legal-brand,
   .footer-legal-abn,
   .footer-legal-flag {
@@ -1560,6 +1841,12 @@ body[data-mode="dark"] .field-input {
 
   .placeholder-card-wide {
     grid-column: auto;
+  }
+
+  .about-what-cta {
+    margin-left: 0;
+    text-align: center;
+    transform: none;
   }
 }
 
