@@ -378,6 +378,12 @@ h3 {
   color: var(--color-field-depth);
 }
 
+.about-intro .section-kicker {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 0.96;
+  letter-spacing: 0.04em;
+}
+
 .site-header {
   position: fixed;
   top: 0;
