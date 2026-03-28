@@ -664,6 +664,11 @@ h1.about-what-title {
   min-width: 0;
 }
 
+.page-home .site-header .brand-mark {
+  visibility: hidden;
+  pointer-events: none;
+}
+
 .brand-title,
 .brand-subtitle {
   display: block;
