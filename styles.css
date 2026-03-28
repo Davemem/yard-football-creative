@@ -332,9 +332,9 @@ h3 {
   aspect-ratio: 1;
   border-radius: 999px;
   background:
-    radial-gradient(circle at center, rgba(255, 255, 255, 0.16) 0, rgba(255, 255, 255, 0) 56%),
-    var(--color-acid-grass);
-  box-shadow: var(--shadow-soft);
+    radial-gradient(circle at center, color-mix(in srgb, var(--color-chalk) 34%, transparent) 0, transparent 58%),
+    radial-gradient(circle at center, color-mix(in srgb, var(--color-acid-grass) 12%, transparent) 0, transparent 78%);
+  box-shadow: 0 18px 44px color-mix(in srgb, var(--color-shadow) 55%, transparent);
 }
 
 .hero-mark img {
