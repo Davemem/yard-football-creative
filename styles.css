@@ -210,7 +210,7 @@ h3 {
 .about-brand-story {
   display: grid;
   gap: var(--space-5);
-  max-width: 72rem;
+  max-width: 78rem;
   margin: 0 auto;
 }
 
@@ -221,85 +221,109 @@ h3 {
 
 .about-brand-story-title {
   margin: 0;
-  padding: 0.2rem 0.85rem;
+  padding: 0.3rem 1.05rem;
   font-family: "Barlow Condensed", Impact, sans-serif;
-  font-size: clamp(2.1rem, 5vw, 3.8rem);
+  font-size: clamp(2.4rem, 5vw, 4.3rem);
   font-weight: 800;
   line-height: 0.9;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: var(--color-warm-whistle);
-  background: color-mix(in srgb, var(--color-paper) 84%, transparent);
+  background: color-mix(in srgb, var(--color-paper) 88%, transparent);
+  border-radius: 0.9rem;
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--color-line) 65%, transparent);
 }
 
 .about-brand-story-poster {
   display: grid;
-  grid-template-columns: minmax(0, 1.04fr) minmax(22rem, 0.96fr);
-  gap: var(--space-6);
+  grid-template-columns: minmax(19rem, 34rem) minmax(24rem, 38rem);
+  gap: clamp(2rem, 4vw, 4rem);
   align-items: start;
+  justify-content: center;
 }
 
 .about-brand-story-copy {
-  max-width: 33rem;
+  max-width: 34rem;
 }
 
 .about-brand-story-copy p,
 .about-brand-story-footer p {
   margin: 0;
   font-family: "Barlow Condensed", Impact, sans-serif;
-  font-size: clamp(0.98rem, 1.05vw, 1.1rem);
+  font-size: clamp(1rem, 0.98vw, 1.08rem);
   font-weight: 700;
-  line-height: 1.1;
-  letter-spacing: 0.04em;
+  line-height: 1.08;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
 .about-brand-story-block {
-  max-width: 30rem;
+  max-width: 31rem;
 }
 
 .about-brand-story-collage {
   display: grid;
-  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1fr);
+  grid-template-columns: 16rem 18rem;
   grid-template-areas:
     "addy holly"
-    ". footer";
-  gap: var(--space-5);
-  align-items: end;
+    "addy footer";
+  column-gap: clamp(1.5rem, 2vw, 2.25rem);
+  row-gap: 1.5rem;
+  align-items: start;
+  justify-content: center;
+  padding-top: 1rem;
 }
 
 .about-art-figure {
   margin: 0;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
 }
 
 .about-art-figure-addy {
   grid-area: addy;
   align-self: end;
-  transform: translateY(3.5rem);
+  width: 16rem;
+  min-height: 22rem;
+  padding: 1rem 0.8rem 0;
+  border-radius: 1.1rem;
+  background:
+    linear-gradient(145deg, color-mix(in srgb, var(--color-pale-net) 22%, transparent), color-mix(in srgb, var(--color-field-depth) 16%, transparent)),
+    color-mix(in srgb, var(--color-field-depth) 42%, var(--color-paper));
 }
 
 .about-art-figure-holly {
   grid-area: holly;
   align-self: start;
+  width: 18rem;
+  min-height: 24rem;
+  padding: 0.9rem 0.8rem 0;
+  border-radius: 1.1rem;
+  background:
+    linear-gradient(145deg, color-mix(in srgb, var(--color-clay-ball) 30%, transparent), color-mix(in srgb, var(--color-clay-ball) 14%, transparent)),
+    color-mix(in srgb, var(--color-clay-ball) 76%, var(--color-field-depth));
 }
 
 .about-art-figure img {
   display: block;
   width: 100%;
   height: auto;
+  object-fit: contain;
 }
 
 .about-brand-story-footer {
   grid-area: footer;
-  justify-self: end;
+  justify-self: center;
   max-width: 22rem;
-  text-align: right;
+  text-align: center;
 }
 
 .about-brand-story-closing {
   margin: 0;
   justify-self: center;
-  max-width: 34rem;
+  max-width: 38rem;
   font-family: "Barlow Condensed", Impact, sans-serif;
   font-size: clamp(1.15rem, 1.45vw, 1.45rem);
   font-weight: 700;
@@ -1154,6 +1178,7 @@ h3 {
       "holly"
       "addy"
       "footer";
+    justify-items: center;
   }
 
   .about-art-figure-addy,
@@ -1161,6 +1186,11 @@ h3 {
   .about-brand-story-footer {
     justify-self: center;
     transform: none;
+  }
+
+  .about-art-figure-addy,
+  .about-art-figure-holly {
+    width: min(100%, 20rem);
   }
 
   .about-brand-story-footer {
