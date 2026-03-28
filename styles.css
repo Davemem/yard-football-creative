@@ -904,6 +904,10 @@ h3 {
   box-shadow: var(--shadow-soft);
 }
 
+body[data-mode="dark"] .button-primary {
+  color: var(--color-paper);
+}
+
 .button-secondary {
   border-color: var(--color-field-depth);
   background: rgba(255, 255, 255, 0.36);
@@ -1026,6 +1030,16 @@ h3 {
 .quote-illustrated-attribution {
   font-family: "Indie Flower", "Comic Sans MS", "Trebuchet MS", cursive;
   color: var(--color-ink);
+}
+
+body[data-mode="dark"] .quote-illustrated-text,
+body[data-mode="dark"] .quote-illustrated-attribution {
+  color: var(--raw-ink);
+}
+
+body[data-mode="dark"] .about-what-body strong,
+body[data-mode="dark"] .about-highlight {
+  color: var(--color-field-depth);
 }
 
 .quote-illustrated-text {
@@ -1188,6 +1202,15 @@ h3 {
   background: color-mix(in srgb, var(--color-chalk) 92%, transparent);
   font: inherit;
   color: var(--color-ink);
+}
+
+body[data-mode="dark"] .field-input {
+  background: color-mix(in srgb, var(--color-paper) 88%, transparent);
+  color: var(--color-ink);
+}
+
+.field-input::placeholder {
+  color: color-mix(in srgb, var(--color-ink) 60%, transparent);
 }
 
 .field-input:focus-visible {
