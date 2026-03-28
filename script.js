@@ -9,7 +9,7 @@ const headerLogoStorageKey = "yard-header-logo-variant";
 const heroLogoStorageKey = "yard-hero-logo-variant";
 const modeStorageKey = "yard-mode";
 let reviewToolsDock = null;
-const headerLogoVariantCount = 11;
+const headerLogoVariantProbeLimit = 24;
 const heroLogoVariantProbeLimit = 24;
 
 const buildExplicitLogoOptions = (variants) =>
@@ -26,10 +26,10 @@ const buildExplicitLogoOptions = (variants) =>
     ])
     .flat();
 
-const buildSingleModeLogoOptions = () =>
-  Array.from({ length: headerLogoVariantCount }, (_, index) => ({
-    value: String(index + 1),
-    label: `Icon ${index + 1}`,
+const buildSingleModeLogoOptions = (variants) =>
+  variants.map((variant) => ({
+    value: String(variant),
+    label: `Icon ${variant}`,
   }));
 
 const canLoadImage = (src) =>
@@ -50,6 +50,18 @@ const discoverHeroLogoVariants = async () => {
       ]);
 
       return hasLight && hasDark ? variant : null;
+    })
+  );
+
+  return checks.filter(Boolean);
+};
+
+const discoverHeaderLogoVariants = async () => {
+  const checks = await Promise.all(
+    Array.from({ length: headerLogoVariantProbeLimit }, async (_, index) => {
+      const variant = String(index + 1);
+      const hasHeader = await canLoadImage(`assets/Header Logos/LOGO-${variant}_header.png`);
+      return hasHeader ? variant : null;
     })
   );
 
@@ -258,7 +270,7 @@ const syncHeaderLogoVariant = () => {
   });
 };
 
-const buildHeaderLogoSelector = () => {
+const buildHeaderLogoSelector = async () => {
   if (!body || headerThemeLogos.length === 0) {
     return;
   }
@@ -275,10 +287,11 @@ const buildHeaderLogoSelector = () => {
   const selectorInput = document.createElement("select");
   selectorInput.className = "header-logo-selector-input";
   selectorInput.id = "header-logo-variant";
+  const discoveredVariants = await discoverHeaderLogoVariants();
 
   const options = [
     { value: "match", label: "Match page logo" },
-    ...buildSingleModeLogoOptions(),
+    ...buildSingleModeLogoOptions(discoveredVariants),
   ];
 
   options.forEach((optionConfig) => {
@@ -445,8 +458,9 @@ if (body) {
   }
 
   syncThemeLogos();
-  buildHeaderLogoSelector();
-  syncHeaderLogoVariant();
+  buildHeaderLogoSelector().then(() => {
+    syncHeaderLogoVariant();
+  });
   buildHeroLogoSelector().then(() => {
     syncHeroLogoVariant();
   });
