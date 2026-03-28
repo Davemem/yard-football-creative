@@ -417,6 +417,10 @@ h3 {
   gap: 0.1rem;
 }
 
+.brand-mark {
+  min-width: 0;
+}
+
 .brand-title,
 .brand-subtitle {
   display: block;
@@ -461,6 +465,17 @@ h3 {
 
 .logo-slot-header {
   --logo-slot-size: clamp(5.75rem, 11vw, 8.25rem);
+}
+
+.logo-slot-header-mark {
+  --logo-slot-radius: 0;
+  width: clamp(7.75rem, 12vw, 10.5rem);
+  aspect-ratio: auto;
+  overflow: visible;
+}
+
+.logo-slot-header-mark img {
+  object-fit: contain;
 }
 
 .logo-slot-hero {
@@ -1312,6 +1327,10 @@ h3 {
 
   .site-header {
     padding: 0.75rem 0;
+  }
+
+  .logo-slot-header-mark {
+    width: clamp(6.5rem, 28vw, 8.5rem);
   }
 
   .section-shell {
