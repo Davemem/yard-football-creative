@@ -708,7 +708,7 @@ h3 {
   gap: 0;
   padding: clamp(1.5rem, 3vw, 2.75rem);
   padding-right: clamp(12rem, 20vw, 18rem);
-  padding-bottom: clamp(2.75rem, 5vw, 4.5rem);
+  padding-bottom: clamp(1.5rem, 2.5vw, 2.5rem);
   border: 0;
   border-radius: 2.25rem;
   background:
@@ -746,8 +746,8 @@ h3 {
 
 .quote-illustration {
   position: absolute;
-  right: clamp(1.5rem, 4vw, 4rem);
-  bottom: clamp(-4.75rem, -5vw, -2.5rem);
+  right: clamp(1rem, 3vw, 2.5rem);
+  bottom: clamp(-8.5rem, -10vw, -5.5rem);
   width: clamp(12rem, 20vw, 17rem);
   display: grid;
   align-items: end;
