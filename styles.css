@@ -27,6 +27,7 @@
   --container-max: 112rem;
   --copy-max: 40rem;
   --header-height: 5.5rem;
+  --page-gutter: clamp(1rem, 2.8vw, 3rem);
 }
 
 *,
@@ -163,12 +164,12 @@ h3 {
 }
 
 .container {
-  width: min(calc(100% - 1rem), var(--container-max));
+  width: min(calc(100% - (var(--page-gutter) * 2)), var(--container-max));
   margin: 0 auto;
 }
 
 .site-header .container {
-  width: min(calc(100% - 0.5rem), var(--container-max));
+  width: min(calc(100% - (var(--page-gutter) * 2)), var(--container-max));
 }
 
 .page-shell {
@@ -478,11 +479,19 @@ h3 {
   object-fit: contain;
 }
 
-.header-logo-selector {
+.review-tools-dock {
   position: fixed;
-  right: clamp(1rem, 2vw, 1.75rem);
-  bottom: clamp(1rem, 2vw, 1.75rem);
+  right: var(--page-gutter);
+  bottom: var(--page-gutter);
   z-index: 30;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.45rem;
+  max-width: min(calc(100vw - (var(--page-gutter) * 2)), 24rem);
+}
+
+.review-tool {
   display: grid;
   gap: 0.3rem;
   min-width: 7.25rem;
@@ -492,6 +501,30 @@ h3 {
   background: color-mix(in srgb, var(--color-panel) 88%, transparent);
   box-shadow: var(--shadow-soft);
   backdrop-filter: blur(14px);
+}
+
+.review-tool-button {
+  min-height: 1.75rem;
+  min-width: 6.75rem;
+  padding: 0.3rem 0.45rem;
+  border: 1px solid color-mix(in srgb, var(--color-line) 80%, transparent);
+  border-radius: 0.5rem;
+  background: color-mix(in srgb, var(--color-panel) 88%, transparent);
+  box-shadow: var(--shadow-soft);
+  backdrop-filter: blur(14px);
+  font-family: "Barlow Condensed", Impact, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-field-depth);
+  cursor: pointer;
+}
+
+.review-tool-button:focus-visible {
+  outline: 2px solid var(--color-field-depth);
+  outline-offset: 2px;
 }
 
 .header-logo-selector-label {
@@ -514,22 +547,6 @@ h3 {
   font-size: 0.72rem;
   line-height: 1.1;
   color: var(--color-field-depth);
-}
-
-.home-logo-selector {
-  position: fixed;
-  right: clamp(9rem, 13vw, 10.5rem);
-  bottom: clamp(1rem, 2vw, 1.75rem);
-  z-index: 30;
-  display: grid;
-  gap: 0.3rem;
-  min-width: 7.25rem;
-  padding: 0.4rem 0.45rem;
-  border: 1px solid color-mix(in srgb, var(--color-line) 80%, transparent);
-  border-radius: 0.7rem;
-  background: color-mix(in srgb, var(--color-panel) 88%, transparent);
-  box-shadow: var(--shadow-soft);
-  backdrop-filter: blur(14px);
 }
 
 .home-logo-selector-label {
@@ -1368,8 +1385,8 @@ h3 {
   .main-nav {
     position: absolute;
     top: calc(100% + 0.5rem);
-    right: 1rem;
-    left: 1rem;
+    right: var(--page-gutter);
+    left: var(--page-gutter);
     display: none;
     flex-direction: column;
     align-items: flex-start;
@@ -1397,10 +1414,6 @@ h3 {
 }
 
 @media (max-width: 36rem) {
-  .container {
-    width: min(calc(100% - 1.25rem), var(--container-max));
-  }
-
   .site-header {
     padding: 0.75rem 0;
   }
@@ -1409,18 +1422,9 @@ h3 {
     width: clamp(6.5rem, 28vw, 8.5rem);
   }
 
-  .header-logo-selector {
-    right: 0.8rem;
-    bottom: 0.8rem;
-    min-width: 6.75rem;
-    padding: 0.4rem 0.45rem;
-  }
-
-  .home-logo-selector {
-    right: 8.1rem;
-    bottom: 0.8rem;
-    min-width: 6.75rem;
-    padding: 0.4rem 0.45rem;
+  .review-tools-dock {
+    gap: 0.35rem;
+    max-width: min(calc(100vw - (var(--page-gutter) * 2)), 16rem);
   }
 
   .section-shell {

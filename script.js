@@ -8,12 +8,28 @@ const currentYearNodes = document.querySelectorAll("[data-current-year]");
 const headerLogoStorageKey = "yard-header-logo-variant";
 const heroLogoStorageKey = "yard-hero-logo-variant";
 const modeStorageKey = "yard-mode";
+let reviewToolsDock = null;
 
 const getThemeLogoKey = (theme, mode) =>
   `logo${theme
     .split("-")
     .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
     .join("")}${mode.charAt(0).toUpperCase() + mode.slice(1)}`;
+
+const getReviewToolsDock = () => {
+  if (!body) {
+    return null;
+  }
+
+  if (reviewToolsDock) {
+    return reviewToolsDock;
+  }
+
+  reviewToolsDock = document.createElement("div");
+  reviewToolsDock.className = "review-tools-dock";
+  body.append(reviewToolsDock);
+  return reviewToolsDock;
+};
 
 const syncThemeLogos = () => {
   if (!body) {
@@ -64,7 +80,7 @@ const buildHeaderLogoSelector = () => {
   }
 
   const selectorShell = document.createElement("aside");
-  selectorShell.className = "header-logo-selector";
+  selectorShell.className = "header-logo-selector review-tool";
   selectorShell.setAttribute("aria-label", "Header logo selector");
 
   const selectorLabel = document.createElement("label");
@@ -100,7 +116,7 @@ const buildHeaderLogoSelector = () => {
   });
 
   selectorShell.append(selectorLabel, selectorInput);
-  body.append(selectorShell);
+  getReviewToolsDock()?.append(selectorShell);
 };
 
 const syncHeroLogoVariant = () => {
@@ -134,7 +150,7 @@ const buildHeroLogoSelector = () => {
   }
 
   const selectorShell = document.createElement("aside");
-  selectorShell.className = "home-logo-selector";
+  selectorShell.className = "home-logo-selector review-tool";
   selectorShell.setAttribute("aria-label", "Home page logo selector");
 
   const selectorLabel = document.createElement("label");
@@ -170,7 +186,7 @@ const buildHeroLogoSelector = () => {
   });
 
   selectorShell.append(selectorLabel, selectorInput);
-  body.append(selectorShell);
+  getReviewToolsDock()?.append(selectorShell);
 };
 
 const applyMode = (nextMode, persist = true) => {
@@ -194,31 +210,9 @@ const buildModeToggle = () => {
   }
 
   const modeToggle = document.createElement("button");
+  modeToggle.className = "mode-toggle review-tool-button";
   modeToggle.type = "button";
   modeToggle.setAttribute("aria-live", "polite");
-
-  Object.assign(modeToggle.style, {
-    position: "fixed",
-    right: "0.8rem",
-    bottom: "3.2rem",
-    zIndex: "30",
-    minHeight: "1.75rem",
-    minWidth: "6.75rem",
-    padding: "0.3rem 0.45rem",
-    border: "1px solid color-mix(in srgb, var(--color-line) 80%, transparent)",
-    borderRadius: "0.5rem",
-    background: "color-mix(in srgb, var(--color-panel) 88%, transparent)",
-    boxShadow: "var(--shadow-soft)",
-    backdropFilter: "blur(14px)",
-    fontFamily: '"Barlow Condensed", Impact, sans-serif',
-    fontSize: "0.72rem",
-    fontWeight: "700",
-    lineHeight: "1",
-    letterSpacing: "0.06em",
-    textTransform: "uppercase",
-    color: "var(--color-field-depth)",
-    cursor: "pointer",
-  });
 
   const syncModeButton = () => {
     const mode = body.dataset.mode || "light";
@@ -235,7 +229,7 @@ const buildModeToggle = () => {
   });
 
   syncModeButton();
-  body.append(modeToggle);
+  getReviewToolsDock()?.append(modeToggle);
 };
 
 if (body) {
