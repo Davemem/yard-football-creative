@@ -79,83 +79,42 @@
 
     <main class="page-shell">
       <section class="section-shell page-intro-shell reveal">
-        <div class="container stack-md">
+        <div class="container simple-copy-layout stack-md">
           <p class="section-kicker">Contact</p>
-          <h1 class="section-title max-copy">Somewhere for everyone to come, and hopefully feel they belong.</h1>
-          <p class="lead-copy">We want this to be a space for everyone to feel like that little kid again, a safe place where you feel you belong.</p>
+          <h1 class="section-title">Contact</h1>
+          <p>Somewhere for everyone to come, and hopefully feel they belong.</p>
         </div>
       </section>
 
       <section class="section-shell reveal">
-        <div class="container">
-          <div class="content-grid">
-            <div class="stack-sm max-copy">
-              <p>We hope to show others how football can fuel connection in the most positive of ways.</p>
-              <p>We hope that others find our space to be somewhere they feel empowered and inspired, rather than small and unmotivated.</p>
-              <p class="footer-line">Dream Big With Us.</p>
-              <a class="contact-link" href="mailto:contact@yardfc.com">contact@yardfc.com</a>
+        <div class="container simple-copy-layout">
+          <form class="card form-shell stack-md" action="mailto:contact@yardfc.com" method="post" enctype="text/plain">
+            <div class="field-group">
+              <label class="field-label" for="storytelling">Storytelling</label>
+              <input class="field-input" id="storytelling" name="storytelling" type="text" />
             </div>
 
-            <form class="card form-shell stack-md" action="mailto:contact@yardfc.com" method="post" enctype="text/plain">
-              <p class="contact-label">Contact</p>
-              <p class="form-support">
-                To create meaningful experiences, by ensuring storytelling and connection are at the heart of everything we do.
-              </p>
+            <div class="field-group">
+              <label class="field-label" for="connection">Connection</label>
+              <input class="field-input" id="connection" name="connection" type="text" />
+            </div>
 
-              <div class="field-group">
-                <label class="field-label" for="storytelling">Storytelling</label>
-                <input class="field-input" id="storytelling" name="storytelling" type="text" />
-              </div>
+            <div class="field-group">
+              <label class="field-label" for="ideas">Ideas</label>
+              <textarea class="field-input field-textarea" id="ideas" name="ideas" rows="5"></textarea>
+            </div>
 
-              <div class="field-group">
-                <label class="field-label" for="connection">Connection</label>
-                <input class="field-input" id="connection" name="connection" type="text" />
-              </div>
-
-              <div class="field-group">
-                <label class="field-label" for="ideas">Ideas</label>
-                <textarea class="field-input field-textarea" id="ideas" name="ideas" rows="5"></textarea>
-              </div>
-
-              <button class="button button-primary" type="submit">Dream Big With Us.</button>
-            </form>
-          </div>
+            <button class="button button-primary" type="submit">Dream Big With Us.</button>
+          </form>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="container footer-layout">
-        <div class="stack-sm">
-          <a class="brand footer-brand" href="index.html" aria-label="Yard home">
-            <span class="logo-slot logo-slot-footer">
-              <img
-                class="theme-logo"
-                src="assets/Logos/LOGO-1_light.png"
-                data-logo-core-field-light="assets/Logos/LOGO-1_light.png"
-                data-logo-core-field-dark="assets/Logos/LOGO-1_dark.png"
-                data-logo-lime-signal-light="assets/Logos/LOGO-8_light.png"
-                data-logo-lime-signal-dark="assets/Logos/LOGO-8_dark.png"
-                data-logo-lavender-night-light="assets/Logos/LOGO-5_light.png"
-                data-logo-lavender-night-dark="assets/Logos/LOGO-5_dark.png"
-                alt="Yard Football Creative logo"
-              />
-            </span>
-          </a>
-          <p class="footer-line">To empower and inspire.</p>
-          <p class="footer-support">
-            To create meaningful experiences, by ensuring storytelling and connection are at the heart of everything we do.
-          </p>
-          <p class="footer-line">Dream Big With Us.</p>
-        </div>
-
-        <nav class="footer-nav" aria-label="Footer">
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="programs.html">Programs</a>
-          <a href="events.html">Events</a>
-          <a href="contact.html">Contact</a>
-        </nav>
+      <div class="container">
+        <p class="footer-legal">
+          &copy; <span data-current-year></span> Yard Football Creative. ABN 8613 7628 661
+        </p>
       </div>
     </footer>
 

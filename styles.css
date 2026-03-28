@@ -180,7 +180,7 @@ h3 {
 }
 
 .page-intro-shell {
-  padding-top: var(--space-6);
+  padding-top: calc(var(--header-height) + var(--space-4));
 }
 
 .stack-sm > * + * {
@@ -197,6 +197,10 @@ h3 {
 
 .max-copy {
   max-width: var(--copy-max);
+}
+
+.simple-copy-layout {
+  max-width: 62rem;
 }
 
 .site-header {
@@ -664,6 +668,30 @@ h3 {
   resize: vertical;
 }
 
+.placeholder-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-5);
+}
+
+.placeholder-card {
+  min-height: 13rem;
+  border: 1px dashed color-mix(in srgb, var(--color-field-depth) 30%, transparent);
+  border-radius: var(--radius-lg);
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--color-chalk) 18%, transparent), color-mix(in srgb, var(--color-chalk) 8%, transparent)),
+    color-mix(in srgb, var(--color-paper) 20%, transparent);
+}
+
+.placeholder-card-tall {
+  min-height: 18rem;
+}
+
+.placeholder-card-wide {
+  grid-column: 1 / -1;
+  min-height: 10rem;
+}
+
 .contact-link {
   font-family: "Barlow Condensed", Impact, sans-serif;
   font-size: clamp(1.5rem, 4vw, 2.25rem);
@@ -677,46 +705,12 @@ h3 {
   padding: 0 0 var(--space-7);
 }
 
-.footer-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
-  gap: var(--space-6);
-  padding: var(--space-6);
-  border: 1px solid var(--color-line);
-  border-radius: var(--radius-lg);
-  background:
-    linear-gradient(180deg, color-mix(in srgb, var(--color-chalk) 26%, transparent), color-mix(in srgb, var(--color-chalk) 12%, transparent)),
-    color-mix(in srgb, var(--color-paper) 30%, transparent);
-  box-shadow: var(--shadow-soft);
-}
-
-.footer-line {
-  font-family: "Barlow Condensed", Impact, sans-serif;
-  font-size: clamp(1.5rem, 3vw, 2rem);
-  font-weight: 700;
-  line-height: 1;
-  text-transform: uppercase;
-  color: var(--color-field-depth);
-}
-
-.footer-support {
-  max-width: 30rem;
-}
-
-.footer-nav {
-  display: grid;
-  gap: var(--space-2);
-  align-content: start;
-}
-
-.footer-nav a {
-  font-family: "Barlow Condensed", Impact, sans-serif;
-  font-size: 1.1rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: var(--color-field-depth);
+.footer-legal {
+  margin: 0;
+  padding: var(--space-5) 0;
+  border-top: 1px solid var(--color-line);
+  font-size: 0.95rem;
+  color: color-mix(in srgb, var(--color-ink) 82%, transparent);
 }
 
 .reveal {
@@ -734,10 +728,10 @@ h3 {
   .hero-layout,
   .card-grid,
   .content-grid,
+  .placeholder-grid,
   .statement-grid,
   .story-layout,
-  .social-feed-shell,
-  .footer-layout {
+  .social-feed-shell {
     grid-template-columns: 1fr;
   }
 
@@ -822,6 +816,10 @@ h3 {
 
   .button-text {
     width: auto;
+  }
+
+  .placeholder-card-wide {
+    grid-column: auto;
   }
 }
 

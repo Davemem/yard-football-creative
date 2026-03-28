@@ -2,6 +2,7 @@ const body = document.body;
 const allowedThemes = ["core-field", "lime-signal", "lavender-night"];
 const allowedModes = ["light", "dark"];
 const themeLogos = document.querySelectorAll(".theme-logo");
+const currentYearNodes = document.querySelectorAll("[data-current-year]");
 
 const syncThemeLogos = () => {
   if (!body) {
@@ -80,4 +81,8 @@ const observer = new IntersectionObserver(
 
 document.querySelectorAll(".reveal").forEach((element) => {
   observer.observe(element);
+});
+
+currentYearNodes.forEach((node) => {
+  node.textContent = String(new Date().getFullYear());
 });
