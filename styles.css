@@ -721,6 +721,11 @@ h3 {
   color: var(--color-warm-whistle);
 }
 
+.about-intro .section-title {
+  font-size: clamp(3rem, 6vw, 5rem);
+  color: var(--color-field-depth);
+}
+
 .display-title {
   max-width: 10ch;
   font-size: clamp(3.5rem, 10vw, 7rem);
