@@ -275,73 +275,6 @@ const buildModeToggle = () => {
   getReviewToolsDock()?.append(modeToggle);
 };
 
-const injectAboutEmphasisStyles = () => {
-  if (!document.querySelector(".about-what")) {
-    return;
-  }
-
-  const styleTag = document.createElement("style");
-  styleTag.textContent = `
-    .about-what-statements strong {
-      display: inline-block;
-      margin-right: 0.55rem;
-      padding: 0.22rem 0.6rem 0.3rem;
-      letter-spacing: 0.08em;
-      color: var(--color-paper);
-      background: var(--color-field-depth);
-      border-radius: 999px;
-      box-shadow: 0 0.45rem 1rem color-mix(in srgb, var(--color-shadow) 58%, transparent);
-      transform-origin: center;
-    }
-
-    .about-what-statements p:first-child strong {
-      transform: rotate(-5deg);
-    }
-
-    .about-what-statements p:last-child strong {
-      transform: rotate(4deg);
-    }
-
-    .about-what-cta {
-      display: inline-block;
-      margin-left: auto;
-      padding: 0.35rem 0.95rem 0.45rem;
-      border-radius: 999px;
-      background: color-mix(in srgb, var(--color-warm-whistle) 92%, transparent);
-      box-shadow: 0 0.6rem 1.2rem color-mix(in srgb, var(--color-shadow) 45%, transparent);
-      transform: rotate(-4deg);
-      transform-origin: right center;
-      font-family: "Barlow Condensed", Impact, sans-serif;
-      font-size: clamp(1.05rem, 1.8vw, 1.4rem);
-      line-height: 1;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: var(--raw-ink);
-    }
-
-    @media (max-width: 48rem) {
-      .about-what-statements strong {
-        margin-right: 0.4rem;
-        transform: none;
-      }
-
-      .about-what-cta {
-        transform: rotate(-2deg);
-      }
-    }
-
-    @media (max-width: 36rem) {
-      .about-what-cta {
-        margin-left: 0;
-        text-align: center;
-        transform: none;
-      }
-    }
-  `;
-
-  document.head.append(styleTag);
-};
-
 if (body) {
   const savedTheme = window.localStorage.getItem("yard-theme");
   const savedMode = window.localStorage.getItem(modeStorageKey);
@@ -363,7 +296,6 @@ if (body) {
   buildHeroLogoSelector();
   syncHeroLogoVariant();
   buildModeToggle();
-  injectAboutEmphasisStyles();
 
   prefersDarkMode.addEventListener("change", (event) => {
     if (!window.localStorage.getItem(modeStorageKey)) {
@@ -398,12 +330,44 @@ const observer = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.15 }
+  { threshold: 0.05 }
 );
 
 document.querySelectorAll(".reveal").forEach((element) => {
   observer.observe(element);
 });
+
+/* ── Scroll-snap panel transitions (about + home) ── */
+const initSnapPanels = (containerSelector, panelSelector) => {
+  const container = document.querySelector(containerSelector);
+  const panels = document.querySelectorAll(panelSelector);
+
+  if (!container || panels.length === 0) {
+    return;
+  }
+
+  const syncVisiblePanel = () => {
+    const containerRect = container.getBoundingClientRect();
+    const containerMid = containerRect.top + containerRect.height / 2;
+
+    panels.forEach((panel) => {
+      const rect = panel.getBoundingClientRect();
+      const isVisible = rect.top < containerMid && rect.bottom > containerMid;
+
+      if (isVisible) {
+        panel.classList.add("visible");
+      } else {
+        panel.classList.remove("visible");
+      }
+    });
+  };
+
+  container.addEventListener("scroll", syncVisiblePanel, { passive: true });
+  syncVisiblePanel();
+};
+
+initSnapPanels(".about-scroll-container", ".about-panel");
+initSnapPanels(".snap-scroll-container", ".snap-panel");
 
 currentYearNodes.forEach((node) => {
   node.textContent = String(new Date().getFullYear());

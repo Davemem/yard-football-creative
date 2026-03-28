@@ -326,32 +326,7 @@ h3 {
 }
 
 .snap-panel-social {
-  padding-top: calc(var(--header-height) + var(--space-1));
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-.snap-panel-social .snap-panel-content {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  min-height: 100vh;
-  max-width: 100%;
-  padding-top: var(--space-2);
-  padding-bottom: 0;
-}
-
-.snap-panel-social .social-feed-shell {
-  gap: clamp(1rem, 2vw, 1.5rem);
-  padding: clamp(1rem, 2vw, 1.5rem);
-}
-
-.snap-panel-social .feed-preview-grid {
-  gap: 0.5rem;
-}
-
-.snap-panel-social .feed-tile {
-  min-height: 8rem;
+  padding-top: var(--header-height);
 }
 
 .snap-panel-quote {
@@ -1581,6 +1556,10 @@ body[data-mode="dark"] .field-input {
   height: auto;
   justify-self: center;
   opacity: 0.88;
+}
+
+.footer-legal > .footer-legal-flag {
+  transform: translateY(-0.42rem);
 }
 
 .footer-legal-abn {
