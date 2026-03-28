@@ -4,7 +4,7 @@
   color-scheme: light dark;
   --font-editorial: "Special Elite", "Courier New", monospace;
   --font-display: "Walter Turncoat", "Trebuchet MS", "Segoe UI", sans-serif;
-  --raw-ground-mist: #a6a6a6;
+  --raw-ground-mist: #138040;
   --raw-field-depth: #2e6417;
   --raw-acid-grass: #7dd957;
   --raw-warm-whistle: #ffde58;
@@ -53,10 +53,10 @@ body {
   --color-chalk: var(--raw-chalk);
   --color-ink: var(--raw-ink);
   --color-paper: var(--raw-paper);
-  --color-panel: rgba(255, 255, 255, 0.66);
-  --color-panel-strong: rgba(255, 255, 255, 0.8);
-  --color-line: rgba(46, 100, 23, 0.18);
-  --color-shadow: rgba(17, 17, 17, 0.12);
+  --color-panel: rgba(255, 255, 255, 0.62);
+  --color-panel-strong: rgba(255, 255, 255, 0.78);
+  --color-line: rgba(19, 128, 64, 0.14);
+  --color-shadow: rgba(19, 80, 40, 0.1);
   margin: 0;
   min-width: 20rem;
   min-height: 100vh;
@@ -73,25 +73,25 @@ body > .page-shell:not(.snap-scroll-container):not(.about-scroll-container) {
 }
 
 body[data-theme="lime-signal"] {
-  --color-ground-mist: #c8d7b7;
-  --color-field-depth: #31561a;
+  --color-ground-mist: #e2ecd6;
+  --color-field-depth: #0f6e36;
   --color-acid-grass: var(--raw-lime-flood);
   --color-warm-whistle: #f5ef8c;
   --color-clay-ball: #c68457;
-  --color-panel: rgba(244, 250, 236, 0.76);
-  --color-panel-strong: rgba(248, 252, 242, 0.9);
-  --color-line: rgba(49, 86, 26, 0.18);
+  --color-panel: rgba(244, 250, 236, 0.72);
+  --color-panel-strong: rgba(248, 252, 242, 0.86);
+  --color-line: rgba(15, 110, 54, 0.15);
 }
 
 body[data-theme="lavender-night"] {
-  --color-ground-mist: #c5b4cb;
+  --color-ground-mist: #e6dee9;
   --color-field-depth: var(--raw-violet-outline);
   --color-acid-grass: #e2b6f8;
   --color-warm-whistle: #ffe58a;
   --color-clay-ball: #d8a184;
-  --color-panel: rgba(255, 255, 255, 0.62);
+  --color-panel: rgba(255, 255, 255, 0.64);
   --color-panel-strong: rgba(255, 255, 255, 0.82);
-  --color-line: rgba(130, 29, 172, 0.18);
+  --color-line: rgba(130, 29, 172, 0.15);
 }
 
 body[data-mode="dark"] {
@@ -147,7 +147,7 @@ h3 {
   z-index: -1;
   overflow: hidden;
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0)),
+    linear-gradient(160deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0) 45%, rgba(19, 128, 64, 0.06) 100%),
     var(--color-ground-mist);
 }
 
@@ -161,17 +161,17 @@ h3 {
 .page-glow-top {
   top: -8rem;
   right: -6rem;
-  width: 30rem;
-  height: 30rem;
+  width: 34rem;
+  height: 34rem;
   background: radial-gradient(circle, color-mix(in srgb, var(--color-acid-grass) 58%, transparent) 0, transparent 68%);
 }
 
 .page-glow-bottom {
   bottom: 8rem;
   left: -10rem;
-  width: 24rem;
-  height: 24rem;
-  background: radial-gradient(circle, color-mix(in srgb, var(--color-warm-whistle) 24%, transparent) 0, transparent 72%);
+  width: 28rem;
+  height: 28rem;
+  background: radial-gradient(circle, color-mix(in srgb, var(--color-warm-whistle) 32%, transparent) 0, transparent 72%);
 }
 
 .container {
@@ -815,6 +815,17 @@ h1.about-what-title {
 
 .logo-slot-hero {
   --logo-slot-size: clamp(24rem, 34vw, 38rem);
+  --logo-slot-radius: 0;
+  width: min(100%, var(--logo-slot-size));
+  aspect-ratio: auto;
+  overflow: visible;
+}
+
+.logo-slot-hero img {
+  width: 100%;
+  height: auto;
+  max-height: var(--logo-slot-size);
+  object-fit: contain;
 }
 
 .logo-slot-footer {
@@ -974,7 +985,7 @@ h1.about-what-title {
 
 h2.listing-section-heading {
   font-size: clamp(1.6rem, 2.2vw, 2rem);
-  color: var(--raw-field-depth);
+  color: var(--color-field-depth);
 }
 
 .listing-grid {
