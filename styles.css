@@ -368,6 +368,7 @@ h3 {
   display: grid;
   place-items: center;
   justify-items: start;
+  transform: translateX(clamp(-1rem, -3vw, -2.75rem));
 }
 
 .hero-mark img {
