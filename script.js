@@ -275,6 +275,73 @@ const buildModeToggle = () => {
   getReviewToolsDock()?.append(modeToggle);
 };
 
+const injectAboutEmphasisStyles = () => {
+  if (!document.querySelector(".about-what")) {
+    return;
+  }
+
+  const styleTag = document.createElement("style");
+  styleTag.textContent = `
+    .about-what-statements strong {
+      display: inline-block;
+      margin-right: 0.55rem;
+      padding: 0.22rem 0.6rem 0.3rem;
+      letter-spacing: 0.08em;
+      color: var(--color-paper);
+      background: var(--color-field-depth);
+      border-radius: 999px;
+      box-shadow: 0 0.45rem 1rem color-mix(in srgb, var(--color-shadow) 58%, transparent);
+      transform-origin: center;
+    }
+
+    .about-what-statements p:first-child strong {
+      transform: rotate(-5deg);
+    }
+
+    .about-what-statements p:last-child strong {
+      transform: rotate(4deg);
+    }
+
+    .about-what-cta {
+      display: inline-block;
+      margin-left: auto;
+      padding: 0.35rem 0.95rem 0.45rem;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--color-warm-whistle) 92%, transparent);
+      box-shadow: 0 0.6rem 1.2rem color-mix(in srgb, var(--color-shadow) 45%, transparent);
+      transform: rotate(-4deg);
+      transform-origin: right center;
+      font-family: "Barlow Condensed", Impact, sans-serif;
+      font-size: clamp(1.05rem, 1.8vw, 1.4rem);
+      line-height: 1;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--raw-ink);
+    }
+
+    @media (max-width: 48rem) {
+      .about-what-statements strong {
+        margin-right: 0.4rem;
+        transform: none;
+      }
+
+      .about-what-cta {
+        transform: rotate(-2deg);
+      }
+    }
+
+    @media (max-width: 36rem) {
+      .about-what-cta {
+        margin-left: 0;
+        text-align: center;
+        transform: none;
+      }
+    }
+  `;
+
+  document.head.append(styleTag);
+};
+
 if (body) {
   const savedTheme = window.localStorage.getItem("yard-theme");
   const savedMode = window.localStorage.getItem(modeStorageKey);
@@ -296,6 +363,7 @@ if (body) {
   buildHeroLogoSelector();
   syncHeroLogoVariant();
   buildModeToggle();
+  injectAboutEmphasisStyles();
 
   prefersDarkMode.addEventListener("change", (event) => {
     if (!window.localStorage.getItem(modeStorageKey)) {
