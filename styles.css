@@ -210,7 +210,7 @@ h3 {
 .about-brand-story {
   display: grid;
   gap: var(--space-5);
-  max-width: 70rem;
+  max-width: 72rem;
   margin: 0 auto;
 }
 
@@ -232,23 +232,22 @@ h3 {
   background: color-mix(in srgb, var(--color-paper) 84%, transparent);
 }
 
-.about-brand-story-grid {
+.about-brand-story-poster {
   display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(18rem, 0.95fr);
+  grid-template-columns: minmax(0, 1.04fr) minmax(22rem, 0.96fr);
   gap: var(--space-6);
   align-items: start;
 }
 
-.about-brand-story-copy,
-.about-brand-story-footer {
-  max-width: 41rem;
+.about-brand-story-copy {
+  max-width: 33rem;
 }
 
 .about-brand-story-copy p,
 .about-brand-story-footer p {
   margin: 0;
   font-family: "Barlow Condensed", Impact, sans-serif;
-  font-size: clamp(0.98rem, 1.15vw, 1.16rem);
+  font-size: clamp(0.98rem, 1.05vw, 1.1rem);
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: 0.04em;
@@ -256,87 +255,59 @@ h3 {
 }
 
 .about-brand-story-block {
-  max-width: 31rem;
+  max-width: 30rem;
 }
 
-.about-brand-story-art {
+.about-brand-story-collage {
   display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1fr);
+  grid-template-areas:
+    "addy holly"
+    ". footer";
   gap: var(--space-5);
   align-items: end;
-  padding-top: var(--space-3);
 }
 
-.about-art-card {
-  display: grid;
-  gap: var(--space-3);
+.about-art-figure {
+  margin: 0;
 }
 
-.about-art-card-addy {
+.about-art-figure-addy {
+  grid-area: addy;
   align-self: end;
+  transform: translateY(3.5rem);
 }
 
-.about-art-card-holly {
+.about-art-figure-holly {
+  grid-area: holly;
   align-self: start;
 }
 
-.about-art-name {
-  margin: 0;
-  font-family: "Barlow Condensed", Impact, sans-serif;
-  font-size: clamp(2rem, 4vw, 3.2rem);
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: color-mix(in srgb, var(--color-clay-ball) 85%, transparent);
-}
-
-.about-art-card-addy .about-art-name {
-  justify-self: start;
-  transform: rotate(-18deg);
-}
-
-.about-art-card-holly .about-art-name {
-  justify-self: start;
-}
-
-.about-art-placeholder {
-  min-height: 23rem;
-  display: grid;
-  place-items: center;
-  padding: var(--space-4);
-  border-radius: 1.5rem;
-  border: 2px dashed color-mix(in srgb, var(--color-ink) 22%, transparent);
-  background:
-    linear-gradient(145deg, color-mix(in srgb, var(--color-paper) 36%, transparent), color-mix(in srgb, var(--color-paper) 10%, transparent)),
-    color-mix(in srgb, var(--color-paper) 24%, transparent);
-  box-shadow: var(--shadow-soft);
-}
-
-.about-art-card-addy .about-art-placeholder {
-  background:
-    linear-gradient(145deg, color-mix(in srgb, #a5c0b2 52%, transparent), color-mix(in srgb, #7b9689 18%, transparent)),
-    #7d998b;
-}
-
-.about-art-card-holly .about-art-placeholder {
-  background:
-    linear-gradient(145deg, color-mix(in srgb, #be6a2b 48%, transparent), color-mix(in srgb, #8f4f21 18%, transparent)),
-    #a95d25;
+.about-art-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .about-brand-story-footer {
+  grid-area: footer;
   justify-self: end;
-  max-width: 28rem;
+  max-width: 22rem;
   text-align: right;
 }
 
-.about-art-placeholder span {
+.about-brand-story-closing {
+  margin: 0;
+  justify-self: center;
+  max-width: 34rem;
   font-family: "Barlow Condensed", Impact, sans-serif;
-  font-size: 1.1rem;
+  font-size: clamp(1.15rem, 1.45vw, 1.45rem);
   font-weight: 700;
+  line-height: 1.08;
   letter-spacing: 0.08em;
+  text-align: center;
   text-transform: uppercase;
-  color: color-mix(in srgb, var(--color-paper) 88%, transparent);
+  color: var(--color-field-depth);
 }
 
 .site-header {
@@ -1118,8 +1089,8 @@ h3 {
     grid-template-columns: 1fr;
   }
 
-  .about-brand-story-grid,
-  .about-brand-story-art {
+  .about-brand-story-poster,
+  .about-brand-story-collage {
     grid-template-columns: 1fr;
   }
 
@@ -1173,14 +1144,28 @@ h3 {
     margin-top: -1rem;
   }
 
-  .about-brand-story-title {
+  .about-brand-story-title,
+  .about-brand-story-closing {
     text-align: center;
   }
 
-  .about-art-card-addy .about-art-name,
-  .about-art-card-holly .about-art-name {
+  .about-brand-story-collage {
+    grid-template-areas:
+      "holly"
+      "addy"
+      "footer";
+  }
+
+  .about-art-figure-addy,
+  .about-art-figure-holly,
+  .about-brand-story-footer {
     justify-self: center;
     transform: none;
+  }
+
+  .about-brand-story-footer {
+    max-width: 28rem;
+    text-align: center;
   }
 }
 
