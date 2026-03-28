@@ -967,7 +967,7 @@ h3 {
   padding: var(--space-5) 0;
   border-top: 1px solid var(--color-line);
   font-size: 0.95rem;
-  color: color-mix(in srgb, var(--color-ink) 90%, transparent);
+  color: color-mix(in srgb, var(--color-ink) 68%, transparent);
 }
 
 .footer-legal-year {
