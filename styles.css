@@ -1293,8 +1293,9 @@ body[data-mode="dark"] .field-input {
 
 .footer-legal {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr auto auto auto 1fr;
   align-items: center;
+  gap: clamp(0.75rem, 1.8vw, 1.5rem);
   padding: var(--space-5) 0;
   border-top: 1px solid var(--color-line);
   font-size: 0.95rem;
@@ -1307,6 +1308,13 @@ body[data-mode="dark"] .field-input {
 
 .footer-legal-brand {
   text-align: center;
+}
+
+.footer-legal-flag {
+  width: clamp(1.6rem, 2.2vw, 2rem);
+  height: auto;
+  justify-self: center;
+  opacity: 0.88;
 }
 
 .footer-legal-abn {
@@ -1536,7 +1544,8 @@ body[data-mode="dark"] .field-input {
 
   .footer-legal-year,
   .footer-legal-brand,
-  .footer-legal-abn {
+  .footer-legal-abn,
+  .footer-legal-flag {
     text-align: center;
   }
 
