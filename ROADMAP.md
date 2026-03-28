@@ -314,11 +314,23 @@ Completion notes:
 ## Phase 6 — Core Page Build
 Goal: complete the first usable public version.
 
+Sub-phases:
+- [ ] 6.1 finalise the frontend structure for `Programs` and `Events` pages before external content wiring
+- [ ] 6.2 define the minimum repeatable card pattern for program and event listings in the frontend
+- [ ] 6.3 choose the initial API CMS model for v1 content-managed `Programs` and `Events`
+- [ ] 6.4 define the minimum CMS content schema for `program` and `event` entries
+- [ ] 6.5 replace static placeholders on `Programs` with API-driven program entries
+- [ ] 6.6 replace static placeholders on `Events` with API-driven event entries
+- [ ] 6.7 add loading, empty, and API-error states for `Programs` and `Events`
+- [ ] 6.8 confirm that non-technical content editing for `Programs` and `Events` is simple enough for v1 use
+
 Deliverables:
 - home page complete
 - about page complete
 - programs overview complete
 - programs page pathway sections complete
+- programs page connected to the approved API CMS for program entries
+- events page connected to the approved API CMS for event entries
 - contact / expression of interest page complete
 - header with Instagram and Facebook links complete
 - email contact form complete
@@ -336,6 +348,7 @@ Exit criteria:
 Human review steps:
 - review each completed core page for clarity, trust, and next-step logic
 - review homepage, programs pages, and contact flow on mobile and desktop
+- review the CMS-fed `Programs` and `Events` cards with a human reviewer for clarity, layout fit, and editorial ease
 - confirm visual theme consistency across the built pages
 - review the theme toggle behaviour across multiple logo-based themes before launch
 - review light/dark mode behaviour across supported themes before launch
@@ -367,6 +380,13 @@ Human review steps:
 ## Phase 8 — Technical Hardening
 Goal: make the site robust before scaling.
 
+Sub-phases:
+- [ ] 8.1 harden API fetch behaviour for CMS-fed `Programs` and `Events`
+- [ ] 8.2 verify environment-variable handling for API keys, dataset IDs, and CMS project configuration
+- [ ] 8.3 confirm safe read-only API usage for public site content fetching
+- [ ] 8.4 review webhook or rebuild strategy for CMS content publishing
+- [ ] 8.5 test fallback behaviour when the CMS API is unavailable or returns no published content
+
 Deliverables:
 - SEO foundations
 - metadata
@@ -378,6 +398,8 @@ Deliverables:
 - legal/privacy placeholders as needed
 - deployment readiness review across frontend, backend, DNS, and domain configuration
 - Instagram API integration approach confirmed against current platform constraints
+- API CMS integration for `Programs` and `Events` hardened for production-safe read behaviour
+- content publishing/rebuild workflow confirmed for CMS-managed `Programs` and `Events`
 
 Exit criteria:
 - the site is stable, fast, accessible, and measurable
@@ -386,10 +408,17 @@ Exit criteria:
 Human review steps:
 - complete human QA for accessibility, responsiveness, and visual polish
 - review form behaviour and conversion paths end-to-end
+- review the live-like CMS publishing flow with a human decision-maker before production cutover
 - review hosting, backend, and DNS decisions with a human decision-maker before production cutover
 
 ## Phase 9 — Launch
 Goal: publish a clean, focused v1.
+
+Sub-phases:
+- [ ] 9.1 connect production environment variables for the approved API CMS
+- [ ] 9.2 verify production reads for published `Programs` and `Events` entries
+- [ ] 9.3 verify production publishing flow or webhook-triggered refresh for CMS updates
+- [ ] 9.4 complete live QA for CMS-managed `Programs` and `Events` content updates
 
 Deliverables:
 - domain connected
@@ -402,6 +431,7 @@ Deliverables:
 - final QA
 - launch checklist complete
 - post-launch content update plan
+- production CMS publishing flow verified for `Programs` and `Events`
 
 Exit criteria:
 - site is live
@@ -414,6 +444,7 @@ Exit criteria:
 Human review steps:
 - final human review of launch-ready pages
 - confirm the live site still reflects the approved structure and theme
+- confirm that a non-technical editor can publish or update a `Program` and an `Event` in production without developer intervention
 - confirm the live domain, redirects, and contact flows work on real devices
 
 ## Deployment Direction
@@ -452,6 +483,8 @@ Backend guidance for v1:
 - prefer no separate backend if the site is primarily content-led
 - if forms or integrations require server-side logic, use a minimal serverless layer first
 - only introduce a separate always-on backend platform when workflows, data storage, or admin requirements clearly justify it
+- prefer a read-only API CMS integration for content-managed `Programs` and `Events` before introducing a custom admin dashboard
+- keep the initial CMS scope narrow to `Programs` and `Events` before expanding editable content to the rest of the site
 
 ## Phase 10 — Post-Launch Growth
 Goal: expand intentionally, not randomly.
