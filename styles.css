@@ -226,6 +226,7 @@ h3 {
   display: inline-flex;
   align-items: center;
   text-decoration: none;
+  margin-right: auto;
 }
 
 .brand-text {
@@ -367,8 +368,8 @@ h3 {
   min-height: 44rem;
   display: grid;
   place-items: center;
-  justify-items: start;
-  transform: translateX(clamp(-1rem, -3vw, -2.75rem));
+  justify-items: center;
+  justify-self: center;
 }
 
 .hero-mark img {
