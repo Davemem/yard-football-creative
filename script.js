@@ -316,6 +316,8 @@ const syncHeroLogoVariant = () => {
   const selectedLogo = parseLogoSelection(selectedVariant, mode);
 
   heroThemeLogos.forEach((logo) => {
+    const slot = logo.closest(".logo-slot-hero");
+
     if (selectedLogo.variant === "match") {
       const nextSrc = logo.dataset[key];
 
@@ -323,10 +325,18 @@ const syncHeroLogoVariant = () => {
         logo.src = nextSrc;
       }
 
+      if (slot) {
+        slot.dataset.logoVariant = "match";
+      }
+
       return;
     }
 
     logo.src = `assets/Logos/LOGO-${selectedLogo.variant}_${selectedLogo.mode}.png`;
+
+    if (slot) {
+      slot.dataset.logoVariant = selectedLogo.variant;
+    }
   });
 
   syncHeroLogoPresentation();

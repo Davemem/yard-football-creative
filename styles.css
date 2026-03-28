@@ -827,7 +827,7 @@ h1.about-what-title {
   --logo-trim-top: 0%;
   --logo-trim-bottom: 0%;
   --logo-scale-boost: 1;
-  --logo-optical-y: -8%;
+  --logo-optical-y: 0%;
   width: 100%;
   height: auto;
   max-height: var(--logo-slot-size);
@@ -855,6 +855,10 @@ h1.about-what-title {
   object-fit: cover;
   clip-path: none;
   transform: none;
+}
+
+.logo-slot-hero[data-logo-variant="12"][data-logo-shape="freeform"] img {
+  --logo-optical-y: -16%;
 }
 
 .logo-slot-footer {
