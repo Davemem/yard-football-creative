@@ -27,6 +27,12 @@ const buildExplicitLogoOptions = () =>
     ];
   }).flat();
 
+const buildSingleModeLogoOptions = () =>
+  Array.from({ length: logoVariantCount }, (_, index) => ({
+    value: String(index + 1),
+    label: `Icon ${index + 1}`,
+  }));
+
 const getThemeLogoKey = (theme, mode) =>
   `logo${theme
     .split("-")
@@ -95,10 +101,9 @@ const syncHeaderLogoVariant = () => {
   const mode = body.dataset.mode || "light";
   const key = getThemeLogoKey(theme, mode);
   const selectedVariant = window.localStorage.getItem(headerLogoStorageKey) || "match";
-  const selectedLogo = parseLogoSelection(selectedVariant, mode);
 
   headerThemeLogos.forEach((logo) => {
-    if (selectedLogo.variant === "match") {
+    if (selectedVariant === "match") {
       const nextSrc = logo.dataset[key];
 
       if (nextSrc) {
@@ -108,13 +113,7 @@ const syncHeaderLogoVariant = () => {
       return;
     }
 
-    const modeSpecificSrc = `assets/Header Logos/LOGO-${selectedLogo.variant}_header_${selectedLogo.mode}.png`;
-
-    logo.onerror = () => {
-      logo.onerror = null;
-      logo.src = `assets/Header Logos/LOGO-${selectedLogo.variant}_header.png`;
-    };
-    logo.src = modeSpecificSrc;
+    logo.src = `assets/Header Logos/LOGO-${selectedVariant}_header.png`;
   });
 };
 
@@ -135,11 +134,10 @@ const buildHeaderLogoSelector = () => {
   const selectorInput = document.createElement("select");
   selectorInput.className = "header-logo-selector-input";
   selectorInput.id = "header-logo-variant";
-  const currentMode = body.dataset.mode || "light";
 
   const options = [
     { value: "match", label: "Match page logo" },
-    ...buildExplicitLogoOptions(),
+    ...buildSingleModeLogoOptions(),
   ];
 
   options.forEach((optionConfig) => {
@@ -149,7 +147,11 @@ const buildHeaderLogoSelector = () => {
     selectorInput.append(option);
   });
 
-  selectorInput.value = getNormalizedLogoSelection(headerLogoStorageKey, currentMode);
+  const storedHeaderValue = window.localStorage.getItem(headerLogoStorageKey) || "match";
+  const normalizedHeaderValue =
+    storedHeaderValue === "match" ? "match" : parseLogoSelection(storedHeaderValue, "light").variant;
+
+  selectorInput.value = normalizedHeaderValue;
 
   selectorInput.addEventListener("change", (event) => {
     const nextValue = event.target.value;
