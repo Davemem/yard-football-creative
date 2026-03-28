@@ -515,6 +515,12 @@ const initSnapPanels = (containerSelector, panelSelector) => {
         panel.classList.remove("visible");
       }
     });
+
+    if (body && containerSelector === ".snap-scroll-container") {
+      const heroPanel = container.querySelector(".snap-panel-hero");
+      const heroIsVisible = heroPanel?.classList.contains("visible");
+      body.classList.toggle("home-hero-active", Boolean(heroIsVisible));
+    }
   };
 
   container.addEventListener("scroll", syncVisiblePanel, { passive: true });
