@@ -257,7 +257,10 @@ h3 {
 .main-nav {
   display: flex;
   align-items: center;
-  gap: var(--space-5);
+  justify-content: space-between;
+  gap: clamp(1.25rem, 2.8vw, 2.75rem);
+  width: min(100%, 34rem);
+  margin-left: auto;
 }
 
 .main-nav a,
