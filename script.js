@@ -3,8 +3,10 @@ const allowedThemes = ["core-field", "lime-signal", "lavender-night"];
 const allowedModes = ["light", "dark"];
 const themeLogos = document.querySelectorAll(".theme-logo");
 const headerThemeLogos = document.querySelectorAll(".logo-slot-header-mark .theme-logo");
+const heroThemeLogos = document.querySelectorAll(".logo-slot-hero .theme-logo");
 const currentYearNodes = document.querySelectorAll("[data-current-year]");
 const headerLogoStorageKey = "yard-header-logo-variant";
+const heroLogoStorageKey = "yard-hero-logo-variant";
 
 const getThemeLogoKey = (theme, mode) =>
   `logo${theme
@@ -100,6 +102,76 @@ const buildHeaderLogoSelector = () => {
   body.append(selectorShell);
 };
 
+const syncHeroLogoVariant = () => {
+  if (!body || heroThemeLogos.length === 0) {
+    return;
+  }
+
+  const theme = body.dataset.theme || "core-field";
+  const mode = body.dataset.mode || "light";
+  const key = getThemeLogoKey(theme, mode);
+  const selectedVariant = window.localStorage.getItem(heroLogoStorageKey) || "match";
+
+  heroThemeLogos.forEach((logo) => {
+    if (selectedVariant === "match") {
+      const nextSrc = logo.dataset[key];
+
+      if (nextSrc) {
+        logo.src = nextSrc;
+      }
+
+      return;
+    }
+
+    logo.src = `assets/Logos/LOGO-${selectedVariant}_${mode}.png`;
+  });
+};
+
+const buildHeroLogoSelector = () => {
+  if (!body || heroThemeLogos.length === 0) {
+    return;
+  }
+
+  const selectorShell = document.createElement("aside");
+  selectorShell.className = "home-logo-selector";
+  selectorShell.setAttribute("aria-label", "Home page logo selector");
+
+  const selectorLabel = document.createElement("label");
+  selectorLabel.className = "home-logo-selector-label";
+  selectorLabel.setAttribute("for", "home-logo-variant");
+  selectorLabel.textContent = "Home logo";
+
+  const selectorInput = document.createElement("select");
+  selectorInput.className = "home-logo-selector-input";
+  selectorInput.id = "home-logo-variant";
+
+  const options = [
+    { value: "match", label: "Match theme default" },
+    ...Array.from({ length: 11 }, (_, index) => ({
+      value: String(index + 1),
+      label: `Logo ${index + 1}`,
+    })),
+  ];
+
+  options.forEach((optionConfig) => {
+    const option = document.createElement("option");
+    option.value = optionConfig.value;
+    option.textContent = optionConfig.label;
+    selectorInput.append(option);
+  });
+
+  selectorInput.value = window.localStorage.getItem(heroLogoStorageKey) || "match";
+
+  selectorInput.addEventListener("change", (event) => {
+    const nextValue = event.target.value;
+    window.localStorage.setItem(heroLogoStorageKey, nextValue);
+    syncHeroLogoVariant();
+  });
+
+  selectorShell.append(selectorLabel, selectorInput);
+  body.append(selectorShell);
+};
+
 if (body) {
   const savedTheme = window.localStorage.getItem("yard-theme");
   const savedMode = window.localStorage.getItem("yard-mode");
@@ -118,12 +190,15 @@ if (body) {
   syncThemeLogos();
   buildHeaderLogoSelector();
   syncHeaderLogoVariant();
+  buildHeroLogoSelector();
+  syncHeroLogoVariant();
 
   prefersDarkMode.addEventListener("change", (event) => {
     if (!window.localStorage.getItem("yard-mode")) {
       body.dataset.mode = event.matches ? "dark" : "light";
       syncThemeLogos();
       syncHeaderLogoVariant();
+      syncHeroLogoVariant();
     }
   });
 }

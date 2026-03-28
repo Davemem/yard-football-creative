@@ -515,6 +515,43 @@ h3 {
   color: var(--color-field-depth);
 }
 
+.home-logo-selector {
+  position: fixed;
+  right: clamp(1rem, 2vw, 1.75rem);
+  bottom: clamp(6rem, 10vw, 7.75rem);
+  z-index: 30;
+  display: grid;
+  gap: 0.45rem;
+  min-width: 11rem;
+  padding: 0.8rem 0.9rem;
+  border: 1px solid color-mix(in srgb, var(--color-line) 80%, transparent);
+  border-radius: 1rem;
+  background: color-mix(in srgb, var(--color-panel) 88%, transparent);
+  box-shadow: var(--shadow-soft);
+  backdrop-filter: blur(14px);
+}
+
+.home-logo-selector-label {
+  font-family: "Barlow Condensed", Impact, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-field-depth);
+}
+
+.home-logo-selector-input {
+  width: 100%;
+  min-height: 2.6rem;
+  padding: 0.55rem 0.8rem;
+  border: 1px solid color-mix(in srgb, var(--color-field-depth) 24%, transparent);
+  border-radius: 0.8rem;
+  background: color-mix(in srgb, var(--color-paper) 92%, transparent);
+  font: inherit;
+  color: var(--color-field-depth);
+}
+
 .logo-slot-hero {
   --logo-slot-size: clamp(24rem, 34vw, 38rem);
 }
@@ -1373,6 +1410,13 @@ h3 {
   .header-logo-selector {
     right: 0.8rem;
     bottom: 0.8rem;
+    min-width: 9.5rem;
+    padding: 0.7rem 0.75rem;
+  }
+
+  .home-logo-selector {
+    right: 0.8rem;
+    bottom: 5.4rem;
     min-width: 9.5rem;
     padding: 0.7rem 0.75rem;
   }
