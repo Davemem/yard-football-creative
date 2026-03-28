@@ -694,11 +694,12 @@ h3 {
 
 .quote-band-illustrated {
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   display: grid;
   grid-template-columns: minmax(0, 1.2fr) minmax(14rem, 0.8fr);
   gap: clamp(1rem, 3vw, 2.5rem);
   padding: clamp(1.5rem, 3vw, 2.75rem);
+  padding-bottom: clamp(2.5rem, 4vw, 4rem);
   border: 0;
   border-radius: 2.25rem;
   background:
@@ -718,32 +719,37 @@ h3 {
 
 .quote-illustrated-text,
 .quote-illustrated-attribution {
-  font-family: "Public Sans", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Indie Flower", "Comic Sans MS", "Trebuchet MS", cursive;
   color: var(--color-ink);
 }
 
 .quote-illustrated-text {
-  max-width: 34ch;
-  font-size: clamp(1.35rem, 2.2vw, 2.35rem);
-  font-weight: 500;
-  line-height: 1.42;
+  max-width: 35ch;
+  font-size: clamp(1.65rem, 2.5vw, 3rem);
+  font-weight: 400;
+  line-height: 1.32;
 }
 
 .quote-illustrated-attribution {
-  font-size: clamp(1.6rem, 2.5vw, 2.6rem);
-  font-weight: 700;
+  font-size: clamp(2rem, 3.1vw, 3.5rem);
+  font-weight: 400;
 }
 
 .quote-illustration {
   position: relative;
-  min-height: 24rem;
+  min-height: 0;
+  width: min(100%, 19rem);
   display: grid;
   align-items: end;
   justify-items: center;
+  justify-self: end;
+  align-self: end;
+  transform: translate(clamp(0.5rem, 1.5vw, 1.25rem), clamp(2.75rem, 4vw, 4.5rem));
+  z-index: 1;
 }
 
 .quote-illustration img {
-  width: min(100%, 19rem);
+  width: 100%;
   height: auto;
   object-fit: contain;
 }
@@ -1049,6 +1055,7 @@ h3 {
     min-height: 18rem;
     width: min(100%, 18rem);
     justify-self: center;
+    transform: translateY(1.5rem);
   }
 }
 
@@ -1127,19 +1134,20 @@ h3 {
 
   .quote-band-illustrated {
     padding: 1.25rem;
+    padding-bottom: 2rem;
     border-radius: 1.75rem;
   }
 
   .quote-illustrated-text {
-    font-size: 1.2rem;
+    font-size: 1.35rem;
   }
 
   .quote-illustrated-attribution {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   .quote-illustration {
-    transform: scale(0.86);
+    transform: translateY(1rem) scale(0.86);
     transform-origin: center top;
     min-height: 15.5rem;
   }
