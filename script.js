@@ -1,6 +1,28 @@
 const body = document.body;
 const allowedThemes = ["core-field", "lime-signal", "lavender-night"];
 const allowedModes = ["light", "dark"];
+const themeLogos = document.querySelectorAll(".theme-logo");
+
+const syncThemeLogos = () => {
+  if (!body) {
+    return;
+  }
+
+  const theme = body.dataset.theme || "core-field";
+  const mode = body.dataset.mode || "light";
+
+  themeLogos.forEach((logo) => {
+    const key = `logo${theme
+      .split("-")
+      .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+      .join("")}${mode.charAt(0).toUpperCase() + mode.slice(1)}`;
+    const nextSrc = logo.dataset[key];
+
+    if (nextSrc) {
+      logo.src = nextSrc;
+    }
+  });
+};
 
 if (body) {
   const savedTheme = window.localStorage.getItem("yard-theme");
@@ -17,9 +39,12 @@ if (body) {
     body.dataset.mode = prefersDarkMode.matches ? "dark" : "light";
   }
 
+  syncThemeLogos();
+
   prefersDarkMode.addEventListener("change", (event) => {
     if (!window.localStorage.getItem("yard-mode")) {
       body.dataset.mode = event.matches ? "dark" : "light";
+      syncThemeLogos();
     }
   });
 }

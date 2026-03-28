@@ -220,9 +220,38 @@ h3 {
   text-decoration: none;
 }
 
-.brand img {
-  width: clamp(6.5rem, 12vw, 10rem);
-  height: auto;
+.logo-slot {
+  --logo-slot-size: 8rem;
+  --logo-slot-radius: 999px;
+  --logo-slot-padding: 0;
+  width: var(--logo-slot-size);
+  aspect-ratio: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--logo-slot-padding);
+  border-radius: var(--logo-slot-radius);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.logo-slot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.logo-slot-header {
+  --logo-slot-size: clamp(5.75rem, 11vw, 8.25rem);
+}
+
+.logo-slot-hero {
+  --logo-slot-size: min(82%, 24rem);
+}
+
+.logo-slot-footer {
+  --logo-slot-size: clamp(6.5rem, 13vw, 9rem);
 }
 
 .main-nav {
@@ -310,8 +339,7 @@ h3 {
 
 .hero-mark img {
   position: relative;
-  width: min(82%, 24rem);
-  height: auto;
+  z-index: 1;
 }
 
 .eyebrow,
@@ -648,10 +676,6 @@ h3 {
     linear-gradient(180deg, color-mix(in srgb, var(--color-chalk) 26%, transparent), color-mix(in srgb, var(--color-chalk) 12%, transparent)),
     color-mix(in srgb, var(--color-paper) 30%, transparent);
   box-shadow: var(--shadow-soft);
-}
-
-.footer-brand img {
-  width: clamp(7rem, 13vw, 10rem);
 }
 
 .footer-line {
