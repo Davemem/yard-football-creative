@@ -7,6 +7,7 @@ const heroThemeLogos = document.querySelectorAll(".logo-slot-hero .theme-logo");
 const currentYearNodes = document.querySelectorAll("[data-current-year]");
 const headerLogoStorageKey = "yard-header-logo-variant";
 const heroLogoStorageKey = "yard-hero-logo-variant";
+const modeStorageKey = "yard-mode";
 
 const getThemeLogoKey = (theme, mode) =>
   `logo${theme
@@ -172,9 +173,74 @@ const buildHeroLogoSelector = () => {
   body.append(selectorShell);
 };
 
+const applyMode = (nextMode, persist = true) => {
+  if (!body || !allowedModes.includes(nextMode)) {
+    return;
+  }
+
+  body.dataset.mode = nextMode;
+  syncThemeLogos();
+  syncHeaderLogoVariant();
+  syncHeroLogoVariant();
+
+  if (persist) {
+    window.localStorage.setItem(modeStorageKey, nextMode);
+  }
+};
+
+const buildModeToggle = () => {
+  if (!body) {
+    return;
+  }
+
+  const modeToggle = document.createElement("button");
+  modeToggle.type = "button";
+  modeToggle.setAttribute("aria-live", "polite");
+
+  Object.assign(modeToggle.style, {
+    position: "fixed",
+    right: "0.8rem",
+    bottom: "3.2rem",
+    zIndex: "30",
+    minHeight: "1.75rem",
+    minWidth: "6.75rem",
+    padding: "0.3rem 0.45rem",
+    border: "1px solid color-mix(in srgb, var(--color-line) 80%, transparent)",
+    borderRadius: "0.5rem",
+    background: "color-mix(in srgb, var(--color-panel) 88%, transparent)",
+    boxShadow: "var(--shadow-soft)",
+    backdropFilter: "blur(14px)",
+    fontFamily: '"Barlow Condensed", Impact, sans-serif',
+    fontSize: "0.72rem",
+    fontWeight: "700",
+    lineHeight: "1",
+    letterSpacing: "0.06em",
+    textTransform: "uppercase",
+    color: "var(--color-field-depth)",
+    cursor: "pointer",
+  });
+
+  const syncModeButton = () => {
+    const mode = body.dataset.mode || "light";
+    const nextLabel = mode === "dark" ? "Dark mode" : "Light mode";
+    modeToggle.textContent = nextLabel;
+    modeToggle.setAttribute("aria-label", `Switch to ${mode === "dark" ? "light" : "dark"} mode`);
+  };
+
+  modeToggle.addEventListener("click", () => {
+    const currentMode = body.dataset.mode || "light";
+    const nextMode = currentMode === "dark" ? "light" : "dark";
+    applyMode(nextMode);
+    syncModeButton();
+  });
+
+  syncModeButton();
+  body.append(modeToggle);
+};
+
 if (body) {
   const savedTheme = window.localStorage.getItem("yard-theme");
-  const savedMode = window.localStorage.getItem("yard-mode");
+  const savedMode = window.localStorage.getItem(modeStorageKey);
   const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)");
 
   if (allowedThemes.includes(savedTheme)) {
@@ -192,13 +258,11 @@ if (body) {
   syncHeaderLogoVariant();
   buildHeroLogoSelector();
   syncHeroLogoVariant();
+  buildModeToggle();
 
   prefersDarkMode.addEventListener("change", (event) => {
-    if (!window.localStorage.getItem("yard-mode")) {
-      body.dataset.mode = event.matches ? "dark" : "light";
-      syncThemeLogos();
-      syncHeaderLogoVariant();
-      syncHeroLogoVariant();
+    if (!window.localStorage.getItem(modeStorageKey)) {
+      applyMode(event.matches ? "dark" : "light", false);
     }
   });
 }
