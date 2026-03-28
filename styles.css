@@ -822,10 +822,38 @@ h1.about-what-title {
 }
 
 .logo-slot-hero img {
+  --logo-trim-left: 0%;
+  --logo-trim-right: 0%;
+  --logo-trim-top: 0%;
+  --logo-trim-bottom: 0%;
+  --logo-scale-boost: 1;
   width: 100%;
   height: auto;
   max-height: var(--logo-slot-size);
   object-fit: contain;
+  clip-path: inset(var(--logo-trim-top) var(--logo-trim-right) var(--logo-trim-bottom) var(--logo-trim-left));
+  transform:
+    translate(
+      calc((var(--logo-trim-left) - var(--logo-trim-right)) / 2),
+      calc((var(--logo-trim-top) - var(--logo-trim-bottom)) / 2)
+    )
+    scale(var(--logo-scale-boost));
+  transform-origin: center;
+}
+
+.logo-slot-hero[data-logo-shape="bounded"] {
+  aspect-ratio: 1;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.logo-slot-hero[data-logo-shape="bounded"] img {
+  width: 100%;
+  height: 100%;
+  max-height: none;
+  object-fit: cover;
+  clip-path: none;
+  transform: none;
 }
 
 .logo-slot-footer {

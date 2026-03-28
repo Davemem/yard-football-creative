@@ -115,6 +115,124 @@ const getNormalizedLogoSelection = (storageKey, fallbackMode) => {
   return parsed.variant === "match" ? "match" : `${parsed.variant}-${parsed.mode}`;
 };
 
+const analyzeHeroLogoAsset = (logo) => {
+  if (!logo?.naturalWidth || !logo?.naturalHeight) {
+    return null;
+  }
+
+  const canvas = document.createElement("canvas");
+  const context = canvas.getContext("2d", { willReadFrequently: true });
+
+  if (!context) {
+    return null;
+  }
+
+  const maxDimension = 512;
+  const widthScale = Math.min(1, maxDimension / logo.naturalWidth);
+  const heightScale = Math.min(1, maxDimension / logo.naturalHeight);
+  const sampleScale = Math.min(widthScale, heightScale);
+  const sampleWidth = Math.max(1, Math.round(logo.naturalWidth * sampleScale));
+  const sampleHeight = Math.max(1, Math.round(logo.naturalHeight * sampleScale));
+
+  canvas.width = sampleWidth;
+  canvas.height = sampleHeight;
+  context.drawImage(logo, 0, 0, sampleWidth, sampleHeight);
+
+  const { data } = context.getImageData(0, 0, sampleWidth, sampleHeight);
+  const alphaThreshold = 24;
+  let top = sampleHeight;
+  let left = sampleWidth;
+  let right = -1;
+  let bottom = -1;
+
+  for (let y = 0; y < sampleHeight; y += 1) {
+    for (let x = 0; x < sampleWidth; x += 1) {
+      const alpha = data[(y * sampleWidth + x) * 4 + 3];
+
+      if (alpha > alphaThreshold) {
+        top = Math.min(top, y);
+        left = Math.min(left, x);
+        right = Math.max(right, x);
+        bottom = Math.max(bottom, y);
+      }
+    }
+  }
+
+  if (right === -1 || bottom === -1) {
+    return null;
+  }
+
+  const sampleAlpha = (x, y) => data[(y * sampleWidth + x) * 4 + 3];
+  const cornerCoords = [
+    [0, 0],
+    [sampleWidth - 1, 0],
+    [0, sampleHeight - 1],
+    [sampleWidth - 1, sampleHeight - 1],
+  ];
+  const cornersOpaque = cornerCoords.every(([x, y]) => sampleAlpha(x, y) > 180);
+  const fullAspect = sampleWidth / sampleHeight;
+  const squareish = fullAspect > 0.85 && fullAspect < 1.15;
+  const shape = cornersOpaque && squareish ? "bounded" : "freeform";
+
+  const visibleWidthRatio = (right - left + 1) / sampleWidth;
+  const visibleHeightRatio = (bottom - top + 1) / sampleHeight;
+  const trimLeft = (left / sampleWidth) * 100;
+  const trimRight = ((sampleWidth - right - 1) / sampleWidth) * 100;
+  const trimTop = (top / sampleHeight) * 100;
+  const trimBottom = ((sampleHeight - bottom - 1) / sampleHeight) * 100;
+  const scaleBoost =
+    shape === "freeform"
+      ? Math.min(1.55, Math.max(1 / visibleWidthRatio, 1 / visibleHeightRatio))
+      : 1;
+
+  return {
+    shape,
+    trimLeft,
+    trimRight,
+    trimTop,
+    trimBottom,
+    scaleBoost,
+  };
+};
+
+const syncHeroLogoPresentation = () => {
+  heroThemeLogos.forEach((logo) => {
+    const slot = logo.closest(".logo-slot-hero");
+
+    if (!slot) {
+      return;
+    }
+
+    const applyPresentation = () => {
+      const analysis = analyzeHeroLogoAsset(logo);
+
+      if (!analysis) {
+        slot.dataset.logoShape = "freeform";
+        logo.style.removeProperty("--logo-trim-left");
+        logo.style.removeProperty("--logo-trim-right");
+        logo.style.removeProperty("--logo-trim-top");
+        logo.style.removeProperty("--logo-trim-bottom");
+        logo.style.removeProperty("--logo-scale-boost");
+        return;
+      }
+
+      slot.dataset.logoShape = analysis.shape;
+      logo.style.setProperty("--logo-trim-left", `${analysis.trimLeft.toFixed(2)}%`);
+      logo.style.setProperty("--logo-trim-right", `${analysis.trimRight.toFixed(2)}%`);
+      logo.style.setProperty("--logo-trim-top", `${analysis.trimTop.toFixed(2)}%`);
+      logo.style.setProperty("--logo-trim-bottom", `${analysis.trimBottom.toFixed(2)}%`);
+      logo.style.setProperty("--logo-scale-boost", analysis.scaleBoost.toFixed(3));
+    };
+
+    if (logo.complete) {
+      applyPresentation();
+      return;
+    }
+
+    logo.addEventListener("load", applyPresentation, { once: true });
+  });
+};
+
 const syncHeaderLogoVariant = () => {
   if (!body || headerThemeLogos.length === 0) {
     return;
@@ -210,6 +328,8 @@ const syncHeroLogoVariant = () => {
 
     logo.src = `assets/Logos/LOGO-${selectedLogo.variant}_${selectedLogo.mode}.png`;
   });
+
+  syncHeroLogoPresentation();
 };
 
 const buildHeroLogoSelector = async () => {
