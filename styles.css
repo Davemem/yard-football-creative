@@ -722,7 +722,9 @@ h3 {
 }
 
 .about-intro .section-title {
-  font-size: clamp(3.75rem, 7vw, 6.25rem);
+  max-width: 12ch;
+  font-size: clamp(4.75rem, 8.5vw, 7.5rem);
+  line-height: 0.9;
   color: var(--color-field-depth);
 }
 
