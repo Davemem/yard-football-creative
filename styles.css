@@ -24,7 +24,7 @@
   --radius-md: 1.5rem;
   --radius-lg: 2rem;
   --shadow-soft: 0 20px 50px var(--color-shadow);
-  --container-max: 90rem;
+  --container-max: 112rem;
   --copy-max: 40rem;
   --header-height: 5.5rem;
 }
@@ -163,7 +163,7 @@ h3 {
 }
 
 .container {
-  width: min(calc(100% - 2rem), var(--container-max));
+  width: min(calc(100% - 1rem), var(--container-max));
   margin: 0 auto;
 }
 
