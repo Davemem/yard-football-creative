@@ -236,42 +236,42 @@ h3 {
 
 .about-brand-story-poster {
   display: grid;
-  grid-template-columns: minmax(19rem, 34rem) minmax(24rem, 38rem);
-  gap: clamp(2rem, 4vw, 4rem);
+  grid-template-columns: minmax(18rem, 31rem) minmax(24rem, 38rem);
+  gap: clamp(2.25rem, 4vw, 4.5rem);
   align-items: start;
   justify-content: center;
 }
 
 .about-brand-story-copy {
-  max-width: 34rem;
+  max-width: 31rem;
 }
 
 .about-brand-story-copy p,
 .about-brand-story-footer p {
   margin: 0;
   font-family: "Barlow Condensed", Impact, sans-serif;
-  font-size: clamp(1rem, 0.98vw, 1.08rem);
+  font-size: clamp(0.98rem, 0.92vw, 1.02rem);
   font-weight: 700;
-  line-height: 1.08;
-  letter-spacing: 0.03em;
+  line-height: 1.02;
+  letter-spacing: 0.035em;
   text-transform: uppercase;
 }
 
 .about-brand-story-block {
-  max-width: 31rem;
+  max-width: 27rem;
 }
 
 .about-brand-story-collage {
   display: grid;
-  grid-template-columns: 16rem 18rem;
+  grid-template-columns: 15rem 18rem;
   grid-template-areas:
-    "addy holly"
+    ". holly"
     "addy footer";
-  column-gap: clamp(1.5rem, 2vw, 2.25rem);
-  row-gap: 1.5rem;
+  column-gap: clamp(1.5rem, 2vw, 2.5rem);
+  row-gap: 1.1rem;
   align-items: start;
   justify-content: center;
-  padding-top: 1rem;
+  padding-top: 1.75rem;
 }
 
 .about-art-figure {
@@ -280,18 +280,20 @@ h3 {
   place-items: center;
   overflow: hidden;
   box-shadow: var(--shadow-soft);
+  position: relative;
 }
 
 .about-art-figure-addy {
   grid-area: addy;
   align-self: end;
-  width: 16rem;
-  min-height: 22rem;
-  padding: 1rem 0.8rem 0;
+  width: 15rem;
+  min-height: 21.5rem;
+  padding: 1rem 0.45rem 0;
   border-radius: 1.1rem;
   background:
     linear-gradient(145deg, color-mix(in srgb, var(--color-pale-net) 22%, transparent), color-mix(in srgb, var(--color-field-depth) 16%, transparent)),
     color-mix(in srgb, var(--color-field-depth) 42%, var(--color-paper));
+  align-items: end;
 }
 
 .about-art-figure-holly {
@@ -299,33 +301,75 @@ h3 {
   align-self: start;
   width: 18rem;
   min-height: 24rem;
-  padding: 0.9rem 0.8rem 0;
+  padding: 0.7rem 0.35rem 0;
   border-radius: 1.1rem;
   background:
     linear-gradient(145deg, color-mix(in srgb, var(--color-clay-ball) 30%, transparent), color-mix(in srgb, var(--color-clay-ball) 14%, transparent)),
     color-mix(in srgb, var(--color-clay-ball) 76%, var(--color-field-depth));
+  align-items: end;
 }
 
 .about-art-figure img {
   display: block;
-  width: 100%;
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
   height: auto;
   object-fit: contain;
+}
+
+.about-art-figure-addy img {
+  width: 95%;
+  transform: translateY(0.35rem);
+}
+
+.about-art-figure-holly img {
+  width: 112%;
+  max-width: none;
+  transform: translate(0.8rem, 0.45rem);
+}
+
+.about-art-figure-addy::before,
+.about-art-figure-holly::before {
+  position: absolute;
+  font-family: "Barlow Condensed", Impact, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+
+.about-art-figure-addy::before {
+  content: "Addy";
+  left: 0.7rem;
+  top: 0.95rem;
+  color: color-mix(in srgb, var(--color-clay-ball) 88%, transparent);
+  font-size: 2.3rem;
+  transform: rotate(-28deg);
+}
+
+.about-art-figure-holly::before {
+  content: "Holly";
+  left: 1.45rem;
+  bottom: 1.2rem;
+  color: color-mix(in srgb, var(--color-field-depth) 78%, var(--color-pale-net));
+  font-size: 2rem;
 }
 
 .about-brand-story-footer {
   grid-area: footer;
   justify-self: center;
-  max-width: 22rem;
+  max-width: 18rem;
   text-align: center;
+  padding-top: 0.4rem;
 }
 
 .about-brand-story-closing {
   margin: 0;
   justify-self: center;
-  max-width: 38rem;
+  max-width: 34rem;
   font-family: "Barlow Condensed", Impact, sans-serif;
-  font-size: clamp(1.15rem, 1.45vw, 1.45rem);
+  font-size: clamp(1.05rem, 1.2vw, 1.25rem);
   font-weight: 700;
   line-height: 1.08;
   letter-spacing: 0.08em;
@@ -1191,6 +1235,13 @@ h3 {
   .about-art-figure-addy,
   .about-art-figure-holly {
     width: min(100%, 20rem);
+  }
+
+  .about-art-figure-holly img,
+  .about-art-figure-addy img {
+    width: 100%;
+    max-width: 100%;
+    transform: none;
   }
 
   .about-brand-story-footer {
