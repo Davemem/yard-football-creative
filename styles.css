@@ -207,6 +207,129 @@ h3 {
   max-width: 62rem;
 }
 
+.about-brand-story {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.about-brand-story-header {
+  display: flex;
+  justify-content: center;
+}
+
+.about-brand-story-title {
+  margin: 0;
+  padding: 0.2rem 0.85rem;
+  font-family: "Barlow Condensed", Impact, sans-serif;
+  font-size: clamp(2.1rem, 5vw, 3.8rem);
+  font-weight: 800;
+  line-height: 0.9;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--color-warm-whistle);
+  background: color-mix(in srgb, var(--color-paper) 84%, transparent);
+}
+
+.about-brand-story-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(18rem, 0.92fr);
+  gap: var(--space-6);
+  align-items: start;
+}
+
+.about-brand-story-copy,
+.about-brand-story-footer {
+  max-width: 40rem;
+}
+
+.about-brand-story-copy p,
+.about-brand-story-footer p {
+  margin: 0;
+  font-family: "Barlow Condensed", Impact, sans-serif;
+  font-size: clamp(1.02rem, 1.4vw, 1.3rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.about-brand-story-block {
+  max-width: 29rem;
+}
+
+.about-brand-story-art {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1fr);
+  gap: var(--space-5);
+  align-items: end;
+}
+
+.about-art-card {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.about-art-card-addy {
+  align-self: end;
+}
+
+.about-art-card-holly {
+  align-self: start;
+}
+
+.about-art-name {
+  margin: 0;
+  font-family: "Barlow Condensed", Impact, sans-serif;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--color-clay-ball) 85%, transparent);
+}
+
+.about-art-card-addy .about-art-name {
+  justify-self: start;
+  transform: rotate(-18deg);
+}
+
+.about-art-card-holly .about-art-name {
+  justify-self: start;
+}
+
+.about-art-placeholder {
+  min-height: 22rem;
+  display: grid;
+  place-items: center;
+  padding: var(--space-4);
+  border-radius: 1.5rem;
+  border: 2px dashed color-mix(in srgb, var(--color-ink) 22%, transparent);
+  background:
+    linear-gradient(145deg, color-mix(in srgb, var(--color-paper) 36%, transparent), color-mix(in srgb, var(--color-paper) 10%, transparent)),
+    color-mix(in srgb, var(--color-paper) 24%, transparent);
+  box-shadow: var(--shadow-soft);
+}
+
+.about-art-card-addy .about-art-placeholder {
+  background:
+    linear-gradient(145deg, color-mix(in srgb, #a5c0b2 52%, transparent), color-mix(in srgb, #7b9689 18%, transparent)),
+    #7d998b;
+}
+
+.about-art-card-holly .about-art-placeholder {
+  background:
+    linear-gradient(145deg, color-mix(in srgb, #be6a2b 48%, transparent), color-mix(in srgb, #8f4f21 18%, transparent)),
+    #a95d25;
+}
+
+.about-art-placeholder span {
+  font-family: "Barlow Condensed", Impact, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--color-paper) 88%, transparent);
+}
+
 .site-header {
   position: fixed;
   top: 0;
@@ -986,6 +1109,11 @@ h3 {
     grid-template-columns: 1fr;
   }
 
+  .about-brand-story-grid,
+  .about-brand-story-art {
+    grid-template-columns: 1fr;
+  }
+
   .hero-mark {
     min-height: 30rem;
     justify-items: center;
@@ -1034,6 +1162,16 @@ h3 {
     width: min(100%, 18rem);
     justify-self: center;
     margin-top: -1rem;
+  }
+
+  .about-brand-story-title {
+    text-align: center;
+  }
+
+  .about-art-card-addy .about-art-name,
+  .about-art-card-holly .about-art-name {
+    justify-self: center;
+    transform: none;
   }
 }
 
