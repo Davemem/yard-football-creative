@@ -282,7 +282,7 @@ h3 {
 }
 
 .logo-slot-hero {
-  --logo-slot-size: min(96vw, 42rem);
+  --logo-slot-size: min(82vw, 34rem);
 }
 
 .logo-slot-footer {
@@ -357,8 +357,8 @@ h3 {
 .hero-logo-stage {
   min-height: calc(100vh - var(--header-height) - var(--space-6));
   display: grid;
-  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
-  gap: var(--space-7);
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: clamp(3rem, 7vw, 7rem);
   align-items: center;
 }
 
@@ -376,19 +376,30 @@ h3 {
 }
 
 .hero-memory {
-  max-width: 42rem;
+  width: min(100%, 34rem);
   justify-self: end;
+  display: grid;
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.hero-memory-copy {
+  display: grid;
+  gap: clamp(1.25rem, 2vw, 1.75rem);
 }
 
 .hero-memory p {
-  font-size: clamp(1.1rem, 1.9vw, 1.65rem);
-  line-height: 1.85;
+  margin: 0;
+  font-family: "Special Elite", "Courier New", monospace;
+  font-size: clamp(1rem, 1.38vw, 1.45rem);
+  line-height: 1.95;
+  letter-spacing: 0.01em;
+  text-align: right;
 }
 
 .hero-memory-rule {
-  width: min(100%, 22rem);
-  height: 0.3rem;
-  background: var(--color-field-depth);
+  width: min(100%, 18rem);
+  margin-left: auto;
+  border-top: 0.34rem dotted var(--color-field-depth);
 }
 
 .hero-memory-signoff {
@@ -781,6 +792,21 @@ h3 {
     justify-items: center;
   }
 
+  .hero-memory {
+    width: min(100%, 40rem);
+    justify-self: center;
+  }
+
+  .hero-memory-rule {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .hero-memory p,
+  .hero-memory-signoff {
+    text-align: center;
+  }
+
   .feed-preview-grid {
     grid-template-columns: 1fr;
   }
@@ -848,6 +874,15 @@ h3 {
 
   .hero-mark {
     min-height: 22rem;
+  }
+
+  .logo-slot-hero {
+    --logo-slot-size: min(88vw, 24rem);
+  }
+
+  .hero-memory p {
+    font-size: 0.94rem;
+    line-height: 1.85;
   }
 
   .button-row,
