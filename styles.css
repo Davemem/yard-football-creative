@@ -412,6 +412,11 @@ h3 {
   white-space: nowrap;
 }
 
+.hero-memory-responsive {
+  display: none;
+  max-width: 34rem;
+}
+
 .hero-memory-rule {
   width: min(100%, 22rem);
   margin-right: auto;
@@ -422,6 +427,85 @@ h3 {
 .hero-memory-signoff {
   width: 100%;
   text-align: right;
+}
+
+@media (min-width: 90rem) {
+  .hero-logo-stage {
+    grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
+    gap: clamp(4rem, 8vw, 9rem);
+  }
+
+  .hero-mark {
+    min-height: 48rem;
+  }
+}
+
+@media (max-width: 84rem) {
+  .hero-logo-stage {
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: clamp(2rem, 4vw, 4.5rem);
+  }
+
+  .logo-slot-hero {
+    --logo-slot-size: min(72vw, 30rem);
+  }
+
+  .hero-memory {
+    width: min(100%, 44rem);
+  }
+
+  .hero-memory p {
+    font-size: clamp(0.94rem, 1.1vw, 1.12rem);
+  }
+
+  .hero-memory-rule {
+    width: min(100%, 18rem);
+  }
+}
+
+@media (max-width: 72rem) {
+  .hero-logo-stage {
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+    justify-items: center;
+  }
+
+  .hero-mark {
+    min-height: 28rem;
+    justify-self: center;
+  }
+
+  .logo-slot-hero {
+    --logo-slot-size: min(74vw, 26rem);
+  }
+
+  .hero-memory {
+    width: min(100%, 42rem);
+    justify-self: center;
+    gap: var(--space-4);
+  }
+
+  .hero-memory-copy {
+    justify-items: center;
+  }
+
+  .hero-memory-lines {
+    display: none;
+  }
+
+  .hero-memory-responsive {
+    display: block;
+    max-width: 38rem;
+  }
+
+  .hero-memory p,
+  .hero-memory-signoff {
+    text-align: center;
+  }
+
+  .hero-memory-signoff {
+    width: auto;
+  }
 }
 
 .eyebrow,
@@ -869,7 +953,7 @@ h3 {
   }
 
   .hero-memory {
-    width: min(100%, 40rem);
+    width: min(100%, 36rem);
     justify-self: center;
   }
 
@@ -881,6 +965,10 @@ h3 {
   .hero-memory p,
   .hero-memory-signoff {
     text-align: center;
+  }
+
+  .hero-memory-responsive {
+    max-width: 32rem;
   }
 
   .feed-preview-grid {
@@ -953,12 +1041,16 @@ h3 {
   }
 
   .logo-slot-hero {
-    --logo-slot-size: min(88vw, 24rem);
+    --logo-slot-size: min(86vw, 21rem);
   }
 
   .hero-memory p {
     font-size: 0.94rem;
     line-height: 1.85;
+  }
+
+  .hero-memory-responsive {
+    max-width: 28rem;
   }
 
   .button-row,
