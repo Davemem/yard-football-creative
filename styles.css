@@ -827,7 +827,7 @@ h1.about-what-title {
   --logo-trim-top: 0%;
   --logo-trim-bottom: 0%;
   --logo-scale-boost: 1;
-  --logo-optical-y: -4%;
+  --logo-optical-y: -8%;
   width: 100%;
   height: auto;
   max-height: var(--logo-slot-size);
