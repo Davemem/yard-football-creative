@@ -718,182 +718,34 @@ h3 {
 
 .quote-illustrated-text,
 .quote-illustrated-attribution {
-  font-family: "Special Elite", "Courier New", monospace;
+  font-family: "Public Sans", "Helvetica Neue", Arial, sans-serif;
   color: var(--color-ink);
 }
 
 .quote-illustrated-text {
   max-width: 34ch;
-  font-size: clamp(1.45rem, 2.4vw, 2.65rem);
-  line-height: 1.45;
+  font-size: clamp(1.35rem, 2.2vw, 2.35rem);
+  font-weight: 500;
+  line-height: 1.42;
 }
 
 .quote-illustrated-attribution {
-  font-size: clamp(1.9rem, 3vw, 3.2rem);
+  font-size: clamp(1.6rem, 2.5vw, 2.6rem);
+  font-weight: 700;
 }
 
 .quote-illustration {
   position: relative;
   min-height: 24rem;
+  display: grid;
+  align-items: end;
+  justify-items: center;
 }
 
-.quote-illustration-head {
-  position: absolute;
-  right: 3.8rem;
-  bottom: 8.4rem;
-  width: 8.5rem;
-  height: 8.5rem;
-  border: 0.35rem solid var(--color-ink);
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.72);
-}
-
-.quote-illustration-hair {
-  position: absolute;
-  bottom: 12.7rem;
-  width: 3rem;
-  height: 4.7rem;
-  border: 0.35rem solid var(--color-ink);
-  border-bottom: 0;
-  border-radius: 50% 50% 0 0;
-  background: transparent;
-}
-
-.quote-illustration-hair-left {
-  right: 11rem;
-  transform: rotate(24deg);
-}
-
-.quote-illustration-hair-right {
-  right: 2rem;
-  transform: rotate(-24deg);
-}
-
-.quote-illustration-eye {
-  position: absolute;
-  bottom: 13rem;
-  width: 0.8rem;
-  height: 0.8rem;
-  border-radius: 50%;
-  background: var(--color-ink);
-}
-
-.quote-illustration-eye-left {
-  right: 8.7rem;
-}
-
-.quote-illustration-eye-right {
-  right: 6rem;
-}
-
-.quote-illustration-smile {
-  position: absolute;
-  right: 5.35rem;
-  bottom: 10.95rem;
-  width: 4rem;
-  height: 2rem;
-  border-bottom: 0.35rem solid var(--color-ink);
-  border-radius: 0 0 3rem 3rem;
-}
-
-.quote-illustration-body {
-  position: absolute;
-  right: 5.55rem;
-  bottom: 4.35rem;
-  width: 3rem;
-  height: 5.3rem;
-  border: 0.35rem solid var(--color-ink);
-  border-radius: 1.4rem;
-  background: rgba(255, 255, 255, 0.72);
-}
-
-.quote-illustration-arm,
-.quote-illustration-leg {
-  position: absolute;
-  width: 0.35rem;
-  background: var(--color-ink);
-  transform-origin: top center;
-}
-
-.quote-illustration-arm {
-  height: 4.3rem;
-  bottom: 7.2rem;
-}
-
-.quote-illustration-arm-left {
-  right: 11.1rem;
-  transform: rotate(58deg);
-}
-
-.quote-illustration-arm-right {
-  right: 3.1rem;
-  transform: rotate(-58deg);
-}
-
-.quote-illustration-hand {
-  position: absolute;
-  width: 1.2rem;
-  height: 1.2rem;
-  border-left: 0.25rem solid var(--color-ink);
-  border-bottom: 0.25rem solid var(--color-ink);
-  transform: rotate(45deg);
-}
-
-.quote-illustration-hand-left {
-  right: 12.65rem;
-  bottom: 8.25rem;
-}
-
-.quote-illustration-hand-right {
-  right: 1.55rem;
-  bottom: 8.25rem;
-}
-
-.quote-illustration-leg {
-  height: 4.8rem;
-  bottom: 0.95rem;
-}
-
-.quote-illustration-leg-left {
-  right: 7.8rem;
-  transform: rotate(9deg);
-}
-
-.quote-illustration-leg-right {
-  right: 5.95rem;
-  transform: rotate(-9deg);
-}
-
-.quote-illustration-foot {
-  position: absolute;
-  width: 2.2rem;
-  height: 0.9rem;
-  border: 0.25rem solid var(--color-ink);
-  border-radius: 1rem;
-  background: rgba(255, 255, 255, 0.72);
-}
-
-.quote-illustration-foot-left {
-  right: 8.85rem;
-  bottom: 0;
-  transform: rotate(-8deg);
-}
-
-.quote-illustration-foot-right {
-  right: 3.55rem;
-  bottom: 0;
-  transform: rotate(8deg);
-}
-
-.quote-illustration-ball {
-  position: absolute;
-  right: 9.8rem;
-  bottom: 0.65rem;
-  width: 4rem;
-  aspect-ratio: 1;
-  border: 0.15rem solid rgba(17, 17, 17, 0.1);
-  border-radius: 50%;
-  opacity: 0.35;
+.quote-illustration img {
+  width: min(100%, 19rem);
+  height: auto;
+  object-fit: contain;
 }
 
 .social-feed-shell {
