@@ -692,24 +692,208 @@ h3 {
   box-shadow: var(--shadow-soft);
 }
 
-.quote-band .section-kicker,
-.quote-text,
-.quote-support {
-  color: var(--color-chalk);
+.quote-band-illustrated {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(14rem, 0.8fr);
+  gap: clamp(1rem, 3vw, 2.5rem);
+  padding: clamp(1.5rem, 3vw, 2.75rem);
+  border: 0;
+  border-radius: 2.25rem;
+  background:
+    radial-gradient(circle at top left, color-mix(in srgb, var(--color-acid-grass) 18%, transparent), transparent 42%),
+    linear-gradient(135deg, #e6f8d6, #d8f2c8);
+  box-shadow: var(--shadow-soft);
 }
 
-.quote-text {
-  max-width: 44rem;
-  font-family: "Barlow Condensed", Impact, sans-serif;
-  font-size: clamp(2rem, 5vw, 3.6rem);
-  font-weight: 700;
-  line-height: 1;
-  text-transform: uppercase;
+.quote-illustrated-copy {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: clamp(1.25rem, 2vw, 2rem);
+  min-height: 24rem;
+  text-align: center;
 }
 
-.quote-support {
-  max-width: 30rem;
-  font-size: 1.05rem;
+.quote-illustrated-text,
+.quote-illustrated-attribution {
+  font-family: "Special Elite", "Courier New", monospace;
+  color: var(--color-ink);
+}
+
+.quote-illustrated-text {
+  max-width: 34ch;
+  font-size: clamp(1.45rem, 2.4vw, 2.65rem);
+  line-height: 1.45;
+}
+
+.quote-illustrated-attribution {
+  font-size: clamp(1.9rem, 3vw, 3.2rem);
+}
+
+.quote-illustration {
+  position: relative;
+  min-height: 24rem;
+}
+
+.quote-illustration-head {
+  position: absolute;
+  right: 3.8rem;
+  bottom: 8.4rem;
+  width: 8.5rem;
+  height: 8.5rem;
+  border: 0.35rem solid var(--color-ink);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.quote-illustration-hair {
+  position: absolute;
+  bottom: 12.7rem;
+  width: 3rem;
+  height: 4.7rem;
+  border: 0.35rem solid var(--color-ink);
+  border-bottom: 0;
+  border-radius: 50% 50% 0 0;
+  background: transparent;
+}
+
+.quote-illustration-hair-left {
+  right: 11rem;
+  transform: rotate(24deg);
+}
+
+.quote-illustration-hair-right {
+  right: 2rem;
+  transform: rotate(-24deg);
+}
+
+.quote-illustration-eye {
+  position: absolute;
+  bottom: 13rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background: var(--color-ink);
+}
+
+.quote-illustration-eye-left {
+  right: 8.7rem;
+}
+
+.quote-illustration-eye-right {
+  right: 6rem;
+}
+
+.quote-illustration-smile {
+  position: absolute;
+  right: 5.35rem;
+  bottom: 10.95rem;
+  width: 4rem;
+  height: 2rem;
+  border-bottom: 0.35rem solid var(--color-ink);
+  border-radius: 0 0 3rem 3rem;
+}
+
+.quote-illustration-body {
+  position: absolute;
+  right: 5.55rem;
+  bottom: 4.35rem;
+  width: 3rem;
+  height: 5.3rem;
+  border: 0.35rem solid var(--color-ink);
+  border-radius: 1.4rem;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.quote-illustration-arm,
+.quote-illustration-leg {
+  position: absolute;
+  width: 0.35rem;
+  background: var(--color-ink);
+  transform-origin: top center;
+}
+
+.quote-illustration-arm {
+  height: 4.3rem;
+  bottom: 7.2rem;
+}
+
+.quote-illustration-arm-left {
+  right: 11.1rem;
+  transform: rotate(58deg);
+}
+
+.quote-illustration-arm-right {
+  right: 3.1rem;
+  transform: rotate(-58deg);
+}
+
+.quote-illustration-hand {
+  position: absolute;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-left: 0.25rem solid var(--color-ink);
+  border-bottom: 0.25rem solid var(--color-ink);
+  transform: rotate(45deg);
+}
+
+.quote-illustration-hand-left {
+  right: 12.65rem;
+  bottom: 8.25rem;
+}
+
+.quote-illustration-hand-right {
+  right: 1.55rem;
+  bottom: 8.25rem;
+}
+
+.quote-illustration-leg {
+  height: 4.8rem;
+  bottom: 0.95rem;
+}
+
+.quote-illustration-leg-left {
+  right: 7.8rem;
+  transform: rotate(9deg);
+}
+
+.quote-illustration-leg-right {
+  right: 5.95rem;
+  transform: rotate(-9deg);
+}
+
+.quote-illustration-foot {
+  position: absolute;
+  width: 2.2rem;
+  height: 0.9rem;
+  border: 0.25rem solid var(--color-ink);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.quote-illustration-foot-left {
+  right: 8.85rem;
+  bottom: 0;
+  transform: rotate(-8deg);
+}
+
+.quote-illustration-foot-right {
+  right: 3.55rem;
+  bottom: 0;
+  transform: rotate(8deg);
+}
+
+.quote-illustration-ball {
+  position: absolute;
+  right: 9.8rem;
+  bottom: 0.65rem;
+  width: 4rem;
+  aspect-ratio: 1;
+  border: 0.15rem solid rgba(17, 17, 17, 0.1);
+  border-radius: 50%;
+  opacity: 0.35;
 }
 
 .social-feed-shell {
@@ -950,7 +1134,8 @@ h3 {
   .placeholder-grid,
   .statement-grid,
   .story-layout,
-  .social-feed-shell {
+  .social-feed-shell,
+  .quote-band-illustrated {
     grid-template-columns: 1fr;
   }
 
@@ -984,6 +1169,20 @@ h3 {
 
   .display-title {
     max-width: 12ch;
+  }
+
+  .quote-illustrated-copy {
+    min-height: auto;
+  }
+
+  .quote-illustrated-text {
+    max-width: 30ch;
+  }
+
+  .quote-illustration {
+    min-height: 18rem;
+    width: min(100%, 18rem);
+    justify-self: center;
   }
 }
 
@@ -1058,6 +1257,25 @@ h3 {
 
   .hero-memory-responsive {
     max-width: 28rem;
+  }
+
+  .quote-band-illustrated {
+    padding: 1.25rem;
+    border-radius: 1.75rem;
+  }
+
+  .quote-illustrated-text {
+    font-size: 1.2rem;
+  }
+
+  .quote-illustrated-attribution {
+    font-size: 1.8rem;
+  }
+
+  .quote-illustration {
+    transform: scale(0.86);
+    transform-origin: center top;
+    min-height: 15.5rem;
   }
 
   .button-row,
