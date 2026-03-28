@@ -961,11 +961,25 @@ h3 {
 }
 
 .footer-legal {
-  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
   padding: var(--space-5) 0;
   border-top: 1px solid var(--color-line);
   font-size: 0.95rem;
-  color: color-mix(in srgb, var(--color-ink) 82%, transparent);
+  color: color-mix(in srgb, var(--color-ink) 90%, transparent);
+}
+
+.footer-legal-year {
+  text-align: left;
+}
+
+.footer-legal-brand {
+  text-align: center;
+}
+
+.footer-legal-abn {
+  text-align: right;
 }
 
 .reveal {
@@ -1128,6 +1142,18 @@ h3 {
     transform: scale(0.86);
     transform-origin: center top;
     min-height: 15.5rem;
+  }
+
+  .footer-legal {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+    text-align: center;
+  }
+
+  .footer-legal-year,
+  .footer-legal-brand,
+  .footer-legal-abn {
+    text-align: center;
   }
 
   .button-row,
