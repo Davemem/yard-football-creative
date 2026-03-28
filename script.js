@@ -54,6 +54,35 @@ const getReviewToolsDock = () => {
   return reviewToolsDock;
 };
 
+const syncReviewToolsDockOffset = () => {
+  const dock = getReviewToolsDock();
+
+  if (!dock) {
+    return;
+  }
+
+  const footers = Array.from(document.querySelectorAll(".site-footer"));
+
+  if (footers.length === 0) {
+    dock.style.setProperty("--review-tools-footer-clearance", "0px");
+    return;
+  }
+
+  const viewportHeight = window.innerHeight;
+  let maxClearance = 0;
+
+  footers.forEach((footer) => {
+    const rect = footer.getBoundingClientRect();
+    const overlap = viewportHeight - rect.top;
+
+    if (overlap > 0) {
+      maxClearance = Math.max(maxClearance, overlap + 12);
+    }
+  });
+
+  dock.style.setProperty("--review-tools-footer-clearance", `${Math.max(0, Math.round(maxClearance))}px`);
+};
+
 const syncThemeLogos = () => {
   if (!body) {
     return;
@@ -296,12 +325,28 @@ if (body) {
   buildHeroLogoSelector();
   syncHeroLogoVariant();
   buildModeToggle();
+  syncReviewToolsDockOffset();
 
   prefersDarkMode.addEventListener("change", (event) => {
     if (!window.localStorage.getItem(modeStorageKey)) {
       applyMode(event.matches ? "dark" : "light", false);
     }
   });
+
+  let reviewDockFrame = null;
+  const requestReviewDockSync = () => {
+    if (reviewDockFrame !== null) {
+      return;
+    }
+
+    reviewDockFrame = window.requestAnimationFrame(() => {
+      syncReviewToolsDockOffset();
+      reviewDockFrame = null;
+    });
+  };
+
+  window.addEventListener("scroll", requestReviewDockSync, { passive: true });
+  window.addEventListener("resize", requestReviewDockSync);
 }
 
 const menuToggle = document.querySelector(".menu-toggle");
