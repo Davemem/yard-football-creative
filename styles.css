@@ -283,7 +283,7 @@ h3 {
 }
 
 .logo-slot-hero {
-  --logo-slot-size: min(82vw, 34rem);
+  --logo-slot-size: clamp(24rem, 34vw, 38rem);
 }
 
 .logo-slot-footer {
@@ -369,7 +369,8 @@ h3 {
   display: grid;
   place-items: center;
   justify-items: center;
-  justify-self: start;
+  justify-self: center;
+  width: 100%;
 }
 
 .hero-mark img {
@@ -431,12 +432,18 @@ h3 {
 
 @media (min-width: 90rem) {
   .hero-logo-stage {
-    grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
-    gap: clamp(4rem, 8vw, 9rem);
+    grid-template-columns: minmax(0, 0.86fr) minmax(0, 1.14fr);
+    gap: clamp(4rem, 7vw, 8rem);
   }
 
   .hero-mark {
-    min-height: 48rem;
+    min-height: 50rem;
+    justify-self: center;
+    padding-left: clamp(1rem, 3vw, 3rem);
+  }
+
+  .logo-slot-hero {
+    --logo-slot-size: clamp(30rem, 36vw, 44rem);
   }
 }
 
