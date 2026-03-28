@@ -179,6 +179,10 @@ h3 {
   padding-top: var(--space-4);
 }
 
+.page-intro-shell {
+  padding-top: var(--space-6);
+}
+
 .stack-sm > * + * {
   margin-top: var(--space-2);
 }
@@ -272,6 +276,11 @@ h3 {
   text-transform: uppercase;
   text-decoration: none;
   color: var(--color-field-depth);
+}
+
+.main-nav a[aria-current="page"] {
+  text-decoration: underline;
+  text-underline-offset: 0.28em;
 }
 
 .menu-toggle {
