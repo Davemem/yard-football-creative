@@ -827,6 +827,7 @@ h1.about-what-title {
   --logo-trim-top: 0%;
   --logo-trim-bottom: 0%;
   --logo-scale-boost: 1;
+  --logo-optical-y: -4%;
   width: 100%;
   height: auto;
   max-height: var(--logo-slot-size);
@@ -835,7 +836,7 @@ h1.about-what-title {
   transform:
     translate(
       calc((var(--logo-trim-left) - var(--logo-trim-right)) / 2),
-      0%
+      var(--logo-optical-y)
     )
     scale(var(--logo-scale-boost));
   transform-origin: center;
