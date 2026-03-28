@@ -695,11 +695,14 @@ h3 {
 .quote-band-illustrated {
   position: relative;
   overflow: visible;
+  max-width: min(100%, 72rem);
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(14rem, 0.8fr);
-  gap: clamp(1rem, 3vw, 2.5rem);
+  grid-template-columns: 1fr;
+  gap: 0;
   padding: clamp(1.5rem, 3vw, 2.75rem);
-  padding-bottom: clamp(2.5rem, 4vw, 4rem);
+  padding-right: clamp(12rem, 20vw, 18rem);
+  padding-bottom: clamp(2.75rem, 5vw, 4.5rem);
   border: 0;
   border-radius: 2.25rem;
   background:
@@ -713,7 +716,7 @@ h3 {
   align-content: center;
   justify-items: center;
   gap: clamp(1.25rem, 2vw, 2rem);
-  min-height: 24rem;
+  min-height: 20rem;
   text-align: center;
 }
 
@@ -736,15 +739,13 @@ h3 {
 }
 
 .quote-illustration {
-  position: relative;
-  min-height: 0;
-  width: min(100%, 19rem);
+  position: absolute;
+  right: clamp(1.5rem, 4vw, 4rem);
+  bottom: clamp(-4.75rem, -5vw, -2.5rem);
+  width: clamp(12rem, 20vw, 17rem);
   display: grid;
   align-items: end;
   justify-items: center;
-  justify-self: end;
-  align-self: end;
-  transform: translate(clamp(0.5rem, 1.5vw, 1.25rem), clamp(2.75rem, 4vw, 4.5rem));
   z-index: 1;
 }
 
@@ -1052,10 +1053,13 @@ h3 {
   }
 
   .quote-illustration {
+    position: relative;
+    right: auto;
+    bottom: auto;
     min-height: 18rem;
     width: min(100%, 18rem);
     justify-self: center;
-    transform: translateY(1.5rem);
+    margin-top: -1rem;
   }
 }
 
@@ -1134,7 +1138,8 @@ h3 {
 
   .quote-band-illustrated {
     padding: 1.25rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1.75rem;
+    padding-right: 1.25rem;
     border-radius: 1.75rem;
   }
 
@@ -1147,7 +1152,7 @@ h3 {
   }
 
   .quote-illustration {
-    transform: translateY(1rem) scale(0.86);
+    transform: scale(0.86);
     transform-origin: center top;
     min-height: 15.5rem;
   }
