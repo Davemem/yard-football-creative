@@ -59,10 +59,17 @@ body {
   --color-shadow: rgba(17, 17, 17, 0.12);
   margin: 0;
   min-width: 20rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   font-family: var(--font-editorial);
   line-height: 1.68;
   color: var(--color-ink);
   background: var(--color-ground-mist);
+}
+
+body > .page-shell:not(.snap-scroll-container):not(.about-scroll-container) {
+  flex: 1;
 }
 
 body[data-theme="lime-signal"] {
@@ -963,6 +970,108 @@ h1.about-what-title {
   text-align: right;
 }
 
+/* ── Listing cards (events + programs) ── */
+
+h2.listing-section-heading {
+  font-size: clamp(1.6rem, 2.2vw, 2rem);
+  color: var(--raw-field-depth);
+}
+
+.listing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+  gap: var(--space-5);
+}
+
+.listing-card {
+  display: flex;
+  gap: var(--space-5);
+  padding: var(--space-5) var(--space-6);
+  background: var(--color-panel);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.listing-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 24px 56px var(--color-shadow);
+}
+
+.listing-card-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 4rem;
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-field-depth);
+  color: var(--color-chalk);
+  border-radius: 0.6rem;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.listing-card-day {
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-family: var(--font-display);
+}
+
+.listing-card-month {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.listing-card-year {
+  font-size: 0.75rem;
+  opacity: 0.8;
+}
+
+.listing-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  justify-content: center;
+}
+
+.listing-card-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.1rem, 1.3vw, 1.35rem);
+  color: var(--color-field-depth);
+}
+
+.listing-card-detail {
+  font-size: 0.92rem;
+  color: var(--color-ink);
+  opacity: 0.85;
+}
+
+.listing-card-time {
+  font-size: 0.85rem;
+  color: var(--color-ink);
+  opacity: 0.65;
+}
+
+.listing-card-past {
+  opacity: 0.6;
+}
+
+.listing-empty {
+  font-family: var(--font-editorial);
+  font-size: 1.1rem;
+  color: var(--color-ink);
+  opacity: 0.6;
+  text-align: center;
+  padding: var(--space-8) var(--space-4);
+}
+
+.listing-previous-section {
+  padding-bottom: var(--space-8);
+}
+
 @media (min-width: 90rem) {
   .hero-logo-stage {
     grid-template-columns: minmax(0, 0.86fr) minmax(0, 1.14fr);
@@ -1757,6 +1866,14 @@ body[data-mode="dark"] .field-input {
   .card,
   .story-layout {
     padding: var(--space-4);
+  }
+
+  .listing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .listing-card {
+    padding: var(--space-4) var(--space-5);
   }
 
   .hero-mark {

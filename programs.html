@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Walter+Turncoat&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=3" />
   </head>
   <body data-theme="core-field" data-mode="light">
     <div class="page-bg" aria-hidden="true">
@@ -85,16 +85,37 @@
         </div>
       </section>
 
+      <!-- Upcoming Programs -->
       <section class="section-shell reveal">
-        <div class="container">
-          <div class="placeholder-grid" aria-label="Program placeholders">
-            <div class="placeholder-card" aria-hidden="true"></div>
-            <div class="placeholder-card" aria-hidden="true"></div>
-            <div class="placeholder-card" aria-hidden="true"></div>
-            <div class="placeholder-card" aria-hidden="true"></div>
-            <div class="placeholder-card" aria-hidden="true"></div>
-            <div class="placeholder-card" aria-hidden="true"></div>
+        <div class="container stack-lg">
+          <h2 class="section-kicker listing-section-heading">Upcoming</h2>
+          <div class="listing-grid" data-listing="upcoming" data-type="programs" aria-label="Upcoming programs">
+            <!--
+              To add a program, copy this template inside the listing-grid:
+
+              <article class="listing-card" data-date="YYYY-MM-DD">
+                <div class="listing-card-date">
+                  <span class="listing-card-day">DD</span>
+                  <span class="listing-card-month">Mon</span>
+                  <span class="listing-card-year">YYYY</span>
+                </div>
+                <div class="listing-card-body">
+                  <h3 class="listing-card-title">Program Name</h3>
+                  <p class="listing-card-detail">Location or description</p>
+                  <p class="listing-card-time">Time info</p>
+                </div>
+              </article>
+            -->
+            <p class="listing-empty">Stay tuned — new programs coming soon.</p>
           </div>
+        </div>
+      </section>
+
+      <!-- Previous Programs (hidden until JS finds past-dated items) -->
+      <section class="section-shell listing-previous-section" hidden>
+        <div class="container stack-lg">
+          <h2 class="section-kicker listing-section-heading">Previous</h2>
+          <div class="listing-grid" data-listing="previous" data-type="programs" aria-label="Previous programs"></div>
         </div>
       </section>
     </main>
@@ -114,6 +135,6 @@
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=3"></script>
   </body>
 </html>

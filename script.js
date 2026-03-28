@@ -372,3 +372,63 @@ initSnapPanels(".snap-scroll-container", ".snap-panel");
 currentYearNodes.forEach((node) => {
   node.textContent = String(new Date().getFullYear());
 });
+
+/* ── Listing date sort (events / programs) ── */
+const sortListings = () => {
+  const upcomingGrids = document.querySelectorAll('[data-listing="upcoming"]');
+
+  if (upcomingGrids.length === 0) {
+    return;
+  }
+
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  upcomingGrids.forEach((upcomingGrid) => {
+    const type = upcomingGrid.dataset.type;
+    const previousSection = document.querySelector(
+      `.listing-previous-section [data-listing="previous"][data-type="${type}"]`
+    );
+
+    if (!previousSection) {
+      return;
+    }
+
+    const cards = Array.from(upcomingGrid.querySelectorAll(".listing-card[data-date]"));
+    const pastCards = [];
+
+    cards.forEach((card) => {
+      const cardDate = new Date(card.dataset.date + "T00:00:00");
+
+      if (cardDate < today) {
+        pastCards.push(card);
+      }
+    });
+
+    if (pastCards.length > 0) {
+      pastCards
+        .sort((a, b) => new Date(b.dataset.date) - new Date(a.dataset.date))
+        .forEach((card) => {
+          card.classList.add("listing-card-past");
+          previousSection.append(card);
+        });
+
+      const previousSectionShell = previousSection.closest(".listing-previous-section");
+
+      if (previousSectionShell) {
+        previousSectionShell.removeAttribute("hidden");
+      }
+    }
+
+    const remainingCards = upcomingGrid.querySelectorAll(".listing-card[data-date]");
+    const emptyMsg = upcomingGrid.querySelector(".listing-empty");
+
+    if (remainingCards.length === 0 && emptyMsg) {
+      emptyMsg.removeAttribute("hidden");
+    } else if (emptyMsg && remainingCards.length > 0) {
+      emptyMsg.hidden = true;
+    }
+  });
+};
+
+sortListings();
