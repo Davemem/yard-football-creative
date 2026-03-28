@@ -282,7 +282,7 @@ h3 {
 }
 
 .logo-slot-hero {
-  --logo-slot-size: min(82%, 24rem);
+  --logo-slot-size: min(96vw, 42rem);
 }
 
 .logo-slot-footer {
@@ -362,21 +362,9 @@ h3 {
 
 .hero-mark {
   position: relative;
-  min-height: 32rem;
+  min-height: 44rem;
   display: grid;
   place-items: center;
-}
-
-.hero-orb {
-  position: absolute;
-  inset: auto;
-  width: min(100%, 30rem);
-  aspect-ratio: 1;
-  border-radius: 999px;
-  background:
-    radial-gradient(circle at center, color-mix(in srgb, var(--color-chalk) 34%, transparent) 0, transparent 58%),
-    radial-gradient(circle at center, color-mix(in srgb, var(--color-acid-grass) 12%, transparent) 0, transparent 78%);
-  box-shadow: 0 18px 44px color-mix(in srgb, var(--color-shadow) 55%, transparent);
 }
 
 .hero-mark img {
@@ -765,7 +753,7 @@ h3 {
   }
 
   .hero-mark {
-    min-height: 20rem;
+    min-height: 30rem;
   }
 
   .feed-preview-grid {
@@ -834,7 +822,7 @@ h3 {
   }
 
   .hero-mark {
-    min-height: 16rem;
+    min-height: 22rem;
   }
 
   .button-row,
