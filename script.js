@@ -9,6 +9,23 @@ const headerLogoStorageKey = "yard-header-logo-variant";
 const heroLogoStorageKey = "yard-hero-logo-variant";
 const modeStorageKey = "yard-mode";
 let reviewToolsDock = null;
+const logoVariantCount = 11;
+
+const buildExplicitLogoOptions = () =>
+  Array.from({ length: logoVariantCount }, (_, index) => {
+    const variant = String(index + 1);
+
+    return [
+      {
+        value: `${variant}-light`,
+        label: `Icon ${variant} - Light mode`,
+      },
+      {
+        value: `${variant}-dark`,
+        label: `Icon ${variant} - Dark mode`,
+      },
+    ];
+  }).flat();
 
 const getThemeLogoKey = (theme, mode) =>
   `logo${theme
@@ -49,6 +66,26 @@ const syncThemeLogos = () => {
   });
 };
 
+const parseLogoSelection = (value, fallbackMode) => {
+  if (!value || value === "match") {
+    return { variant: "match", mode: fallbackMode };
+  }
+
+  const [variant, explicitMode] = value.split("-");
+
+  return {
+    variant,
+    mode: allowedModes.includes(explicitMode) ? explicitMode : fallbackMode,
+  };
+};
+
+const getNormalizedLogoSelection = (storageKey, fallbackMode) => {
+  const storedValue = window.localStorage.getItem(storageKey) || "match";
+  const parsed = parseLogoSelection(storedValue, fallbackMode);
+
+  return parsed.variant === "match" ? "match" : `${parsed.variant}-${parsed.mode}`;
+};
+
 const syncHeaderLogoVariant = () => {
   if (!body || headerThemeLogos.length === 0) {
     return;
@@ -58,9 +95,10 @@ const syncHeaderLogoVariant = () => {
   const mode = body.dataset.mode || "light";
   const key = getThemeLogoKey(theme, mode);
   const selectedVariant = window.localStorage.getItem(headerLogoStorageKey) || "match";
+  const selectedLogo = parseLogoSelection(selectedVariant, mode);
 
   headerThemeLogos.forEach((logo) => {
-    if (selectedVariant === "match") {
+    if (selectedLogo.variant === "match") {
       const nextSrc = logo.dataset[key];
 
       if (nextSrc) {
@@ -70,7 +108,13 @@ const syncHeaderLogoVariant = () => {
       return;
     }
 
-    logo.src = `assets/Header Logos/LOGO-${selectedVariant}_header.png`;
+    const modeSpecificSrc = `assets/Header Logos/LOGO-${selectedLogo.variant}_header_${selectedLogo.mode}.png`;
+
+    logo.onerror = () => {
+      logo.onerror = null;
+      logo.src = `assets/Header Logos/LOGO-${selectedLogo.variant}_header.png`;
+    };
+    logo.src = modeSpecificSrc;
   });
 };
 
@@ -91,13 +135,11 @@ const buildHeaderLogoSelector = () => {
   const selectorInput = document.createElement("select");
   selectorInput.className = "header-logo-selector-input";
   selectorInput.id = "header-logo-variant";
+  const currentMode = body.dataset.mode || "light";
 
   const options = [
     { value: "match", label: "Match page logo" },
-    ...Array.from({ length: 11 }, (_, index) => ({
-      value: String(index + 1),
-      label: `Logo ${index + 1}`,
-    })),
+    ...buildExplicitLogoOptions(),
   ];
 
   options.forEach((optionConfig) => {
@@ -107,7 +149,7 @@ const buildHeaderLogoSelector = () => {
     selectorInput.append(option);
   });
 
-  selectorInput.value = window.localStorage.getItem(headerLogoStorageKey) || "match";
+  selectorInput.value = getNormalizedLogoSelection(headerLogoStorageKey, currentMode);
 
   selectorInput.addEventListener("change", (event) => {
     const nextValue = event.target.value;
@@ -128,9 +170,10 @@ const syncHeroLogoVariant = () => {
   const mode = body.dataset.mode || "light";
   const key = getThemeLogoKey(theme, mode);
   const selectedVariant = window.localStorage.getItem(heroLogoStorageKey) || "match";
+  const selectedLogo = parseLogoSelection(selectedVariant, mode);
 
   heroThemeLogos.forEach((logo) => {
-    if (selectedVariant === "match") {
+    if (selectedLogo.variant === "match") {
       const nextSrc = logo.dataset[key];
 
       if (nextSrc) {
@@ -140,7 +183,7 @@ const syncHeroLogoVariant = () => {
       return;
     }
 
-    logo.src = `assets/Logos/LOGO-${selectedVariant}_${mode}.png`;
+    logo.src = `assets/Logos/LOGO-${selectedLogo.variant}_${selectedLogo.mode}.png`;
   });
 };
 
@@ -161,13 +204,11 @@ const buildHeroLogoSelector = () => {
   const selectorInput = document.createElement("select");
   selectorInput.className = "home-logo-selector-input";
   selectorInput.id = "home-logo-variant";
+  const currentMode = body.dataset.mode || "light";
 
   const options = [
     { value: "match", label: "Match theme default" },
-    ...Array.from({ length: 11 }, (_, index) => ({
-      value: String(index + 1),
-      label: `Logo ${index + 1}`,
-    })),
+    ...buildExplicitLogoOptions(),
   ];
 
   options.forEach((optionConfig) => {
@@ -177,7 +218,7 @@ const buildHeroLogoSelector = () => {
     selectorInput.append(option);
   });
 
-  selectorInput.value = window.localStorage.getItem(heroLogoStorageKey) || "match";
+  selectorInput.value = getNormalizedLogoSelection(heroLogoStorageKey, currentMode);
 
   selectorInput.addEventListener("change", (event) => {
     const nextValue = event.target.value;
