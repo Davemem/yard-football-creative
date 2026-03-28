@@ -616,10 +616,58 @@ h3 {
   box-shadow: var(--shadow-soft);
 }
 
+.social-feed-shell-placeholder {
+  align-items: stretch;
+}
+
+.instagram-placeholder-panel {
+  min-height: 18rem;
+  display: grid;
+  align-content: center;
+  gap: var(--space-3);
+  padding: var(--space-5);
+  border-radius: var(--radius-md);
+  border: 1px dashed color-mix(in srgb, var(--color-field-depth) 26%, transparent);
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--color-paper) 46%, transparent), color-mix(in srgb, var(--color-chalk) 26%, transparent)),
+    color-mix(in srgb, var(--color-paper) 38%, transparent);
+}
+
+.instagram-placeholder-chip,
+.instagram-placeholder-line {
+  display: block;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--color-field-depth) 16%, transparent);
+}
+
+.instagram-placeholder-chip {
+  width: 4.75rem;
+  height: 4.75rem;
+  margin-bottom: var(--space-2);
+}
+
+.instagram-placeholder-line {
+  width: 100%;
+  height: 1rem;
+}
+
+.instagram-placeholder-line-short {
+  width: 58%;
+}
+
+.instagram-placeholder-line-faint {
+  width: 74%;
+  opacity: 0.62;
+}
+
 .feed-preview-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: var(--space-3);
+}
+
+.feed-preview-grid-placeholder {
+  align-content: stretch;
 }
 
 .feed-tile {
@@ -643,6 +691,16 @@ h3 {
   background:
     linear-gradient(180deg, color-mix(in srgb, var(--color-warm-whistle) 16%, transparent), color-mix(in srgb, var(--color-field-depth) 58%, transparent)),
     var(--color-field-depth);
+}
+
+.feed-tile-placeholder,
+.feed-tile-placeholder:nth-child(2),
+.feed-tile-placeholder:nth-child(3) {
+  min-height: 18rem;
+  border: 1px dashed color-mix(in srgb, var(--color-field-depth) 22%, transparent);
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--color-field-depth) 8%, transparent), color-mix(in srgb, var(--color-field-depth) 18%, transparent)),
+    color-mix(in srgb, var(--color-paper) 42%, transparent);
 }
 
 .feed-tile-label {
