@@ -961,9 +961,23 @@ body[data-mode="dark"] .button-primary {
 }
 
 .card-statement {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  align-items: center;
+  text-align: center;
+  gap: clamp(1.35rem, 2.2vw, 2rem);
+  min-height: clamp(28rem, 36vw, 38rem);
+  padding: clamp(1.9rem, 2.6vw, 2.8rem) clamp(1.5rem, 2.2vw, 2.2rem) clamp(2rem, 2.8vw, 2.8rem);
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.2)),
     rgba(255, 255, 255, 0.18);
+}
+
+.card-statement .section-kicker {
+  margin: 0;
+  font-size: clamp(1.4rem, 2.3vw, 2.1rem);
+  line-height: 0.95;
+  letter-spacing: 0.04em;
 }
 
 .statement-title {
@@ -973,6 +987,23 @@ body[data-mode="dark"] .button-primary {
   line-height: 0.98;
   text-transform: uppercase;
   color: var(--color-field-depth);
+}
+
+.card-statement > p:not(.section-kicker) {
+  font-family: var(--font-display);
+  font-size: clamp(1.16rem, 1.8vw, 1.42rem);
+  line-height: 1.5;
+  letter-spacing: 0;
+  text-align: center;
+  max-width: 16ch;
+  margin-inline: auto;
+  align-self: center;
+}
+
+.card-statement .button-text {
+  align-self: center;
+  margin-top: auto;
+  font-size: clamp(1.16rem, 1.8vw, 1.42rem);
 }
 
 .story-layout {
