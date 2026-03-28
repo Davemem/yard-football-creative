@@ -167,6 +167,10 @@ h3 {
   margin: 0 auto;
 }
 
+.site-header .container {
+  width: min(calc(100% - 0.5rem), var(--container-max));
+}
+
 .page-shell {
   padding: calc(var(--header-height) + var(--space-5)) 0 var(--space-8);
 }
@@ -770,58 +774,10 @@ h3 {
   box-shadow: var(--shadow-soft);
 }
 
-.social-feed-shell-placeholder {
-  align-items: stretch;
-}
-
-.instagram-placeholder-panel {
-  min-height: 18rem;
-  display: grid;
-  align-content: center;
-  gap: var(--space-3);
-  padding: var(--space-5);
-  border-radius: var(--radius-md);
-  border: 1px dashed color-mix(in srgb, var(--color-field-depth) 26%, transparent);
-  background:
-    linear-gradient(180deg, color-mix(in srgb, var(--color-paper) 46%, transparent), color-mix(in srgb, var(--color-chalk) 26%, transparent)),
-    color-mix(in srgb, var(--color-paper) 38%, transparent);
-}
-
-.instagram-placeholder-chip,
-.instagram-placeholder-line {
-  display: block;
-  border-radius: 999px;
-  background: color-mix(in srgb, var(--color-field-depth) 16%, transparent);
-}
-
-.instagram-placeholder-chip {
-  width: 4.75rem;
-  height: 4.75rem;
-  margin-bottom: var(--space-2);
-}
-
-.instagram-placeholder-line {
-  width: 100%;
-  height: 1rem;
-}
-
-.instagram-placeholder-line-short {
-  width: 58%;
-}
-
-.instagram-placeholder-line-faint {
-  width: 74%;
-  opacity: 0.62;
-}
-
 .feed-preview-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: var(--space-3);
-}
-
-.feed-preview-grid-placeholder {
-  align-content: stretch;
 }
 
 .feed-tile {
@@ -847,14 +803,30 @@ h3 {
     var(--color-field-depth);
 }
 
-.feed-tile-placeholder,
-.feed-tile-placeholder:nth-child(2),
-.feed-tile-placeholder:nth-child(3) {
-  min-height: 18rem;
-  border: 1px dashed color-mix(in srgb, var(--color-field-depth) 22%, transparent);
+
+.feed-tile-field,
+.feed-tile-field:nth-child(2),
+.feed-tile-field:nth-child(3) {
+  min-height: 12rem;
+  border: 1px solid color-mix(in srgb, var(--color-field-depth) 24%, transparent);
   background:
-    linear-gradient(180deg, color-mix(in srgb, var(--color-field-depth) 8%, transparent), color-mix(in srgb, var(--color-field-depth) 18%, transparent)),
-    color-mix(in srgb, var(--color-paper) 42%, transparent);
+    radial-gradient(circle at center, transparent 0 2.6rem, rgba(255, 255, 255, 0.8) 2.6rem 2.85rem, transparent 2.85rem),
+    linear-gradient(90deg, transparent 49.3%, rgba(255, 255, 255, 0.8) 49.3% 50.7%, transparent 50.7%),
+    linear-gradient(180deg, transparent 6%, rgba(255, 255, 255, 0.82) 6% 7.4%, transparent 7.4% 92.6%, rgba(255, 255, 255, 0.82) 92.6% 94%, transparent 94%),
+    repeating-linear-gradient(
+      90deg,
+      #2f8f35 0%,
+      #2f8f35 16.66%,
+      #389d3c 16.66%,
+      #389d3c 33.32%
+    );
+  background-size: auto, auto, auto, 100% 100%;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.feed-tile-field:hover,
+.feed-tile-field:focus-visible {
+  transform: translateY(-2px);
 }
 
 .feed-tile-label {
