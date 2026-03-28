@@ -127,7 +127,7 @@ const getNormalizedLogoSelection = (storageKey, fallbackMode) => {
   return parsed.variant === "match" ? "match" : `${parsed.variant}-${parsed.mode}`;
 };
 
-const analyzeHeroLogoAsset = (logo) => {
+const analyzeLogoAsset = (logo) => {
   if (!logo?.naturalWidth || !logo?.naturalHeight) {
     return null;
   }
@@ -216,7 +216,7 @@ const syncHeroLogoPresentation = () => {
     }
 
     const applyPresentation = () => {
-      const analysis = analyzeHeroLogoAsset(logo);
+      const analysis = analyzeLogoAsset(logo);
 
       if (!analysis) {
         slot.dataset.logoShape = "freeform";
@@ -229,6 +229,36 @@ const syncHeroLogoPresentation = () => {
       }
 
       slot.dataset.logoShape = analysis.shape;
+      logo.style.setProperty("--logo-trim-left", `${analysis.trimLeft.toFixed(2)}%`);
+      logo.style.setProperty("--logo-trim-right", `${analysis.trimRight.toFixed(2)}%`);
+      logo.style.setProperty("--logo-trim-top", `${analysis.trimTop.toFixed(2)}%`);
+      logo.style.setProperty("--logo-trim-bottom", `${analysis.trimBottom.toFixed(2)}%`);
+      logo.style.setProperty("--logo-scale-boost", analysis.scaleBoost.toFixed(3));
+    };
+
+    if (logo.complete) {
+      applyPresentation();
+      return;
+    }
+
+    logo.addEventListener("load", applyPresentation, { once: true });
+  });
+};
+
+const syncHeaderLogoPresentation = () => {
+  headerThemeLogos.forEach((logo) => {
+    const applyPresentation = () => {
+      const analysis = analyzeLogoAsset(logo);
+
+      if (!analysis) {
+        logo.style.removeProperty("--logo-trim-left");
+        logo.style.removeProperty("--logo-trim-right");
+        logo.style.removeProperty("--logo-trim-top");
+        logo.style.removeProperty("--logo-trim-bottom");
+        logo.style.removeProperty("--logo-scale-boost");
+        return;
+      }
+
       logo.style.setProperty("--logo-trim-left", `${analysis.trimLeft.toFixed(2)}%`);
       logo.style.setProperty("--logo-trim-right", `${analysis.trimRight.toFixed(2)}%`);
       logo.style.setProperty("--logo-trim-top", `${analysis.trimTop.toFixed(2)}%`);
@@ -268,6 +298,8 @@ const syncHeaderLogoVariant = () => {
 
     logo.src = `assets/Header Logos/LOGO-${selectedVariant}_header.png`;
   });
+
+  syncHeaderLogoPresentation();
 };
 
 const buildHeaderLogoSelector = async () => {
