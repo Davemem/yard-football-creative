@@ -401,11 +401,13 @@ h3 {
 .hero-memory-lines {
   display: grid;
   gap: 0.45rem;
-  width: 100%;
+  width: max-content;
+  max-width: 100%;
 }
 
 .hero-memory-lines span {
   display: block;
+  white-space: nowrap;
 }
 
 .hero-memory-rule {
