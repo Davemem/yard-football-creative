@@ -385,21 +385,23 @@ h3 {
 .hero-memory-copy {
   display: grid;
   gap: clamp(1.25rem, 2vw, 1.75rem);
-  justify-items: center;
+  justify-items: end;
 }
 
 .hero-memory p {
   margin: 0;
   font-family: "Special Elite", "Courier New", monospace;
+  font-weight: 400;
   font-size: clamp(1rem, 1.28vw, 1.32rem);
   line-height: 1.9;
   letter-spacing: 0.01em;
-  text-align: center;
+  text-align: right;
 }
 
 .hero-memory-lines {
   display: grid;
   gap: 0.45rem;
+  width: 100%;
 }
 
 .hero-memory-lines span {
