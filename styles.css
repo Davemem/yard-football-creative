@@ -24,7 +24,7 @@
   --radius-md: 1.5rem;
   --radius-lg: 2rem;
   --shadow-soft: 0 20px 50px var(--color-shadow);
-  --container-max: 72rem;
+  --container-max: 90rem;
   --copy-max: 40rem;
   --header-height: 5.5rem;
 }
@@ -358,7 +358,7 @@ h3 {
 .hero-logo-stage {
   min-height: calc(100vh - var(--header-height) - var(--space-6));
   display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  grid-template-columns: minmax(0, 0.84fr) minmax(0, 1.16fr);
   gap: clamp(3rem, 7vw, 7rem);
   align-items: center;
 }
@@ -369,7 +369,7 @@ h3 {
   display: grid;
   place-items: center;
   justify-items: center;
-  justify-self: center;
+  justify-self: start;
 }
 
 .hero-mark img {
