@@ -354,24 +354,29 @@ h3 {
   min-height: 8rem;
 }
 
-.snap-panel-social .quote-band-illustrated {
-  margin-top: clamp(0.75rem, 1.5vw, 1.25rem);
-  padding: clamp(1rem, 2vw, 1.5rem);
-  gap: clamp(1rem, 2vw, 1.5rem);
+.snap-panel-quote {
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
-.snap-panel-social .quote-illustrated-text {
-  font-size: clamp(1rem, 1.4vw, 1.2rem);
+.snap-panel-content-quote {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100vh;
+  max-width: 100%;
 }
 
-.snap-panel-social .quote-illustration {
-  min-height: 10rem;
+.snap-quote-wrap {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.snap-panel-social .site-footer-inline {
-  margin-top: auto;
-  padding-top: var(--space-2);
-  padding-bottom: var(--space-3);
+.snap-panel-quote .site-footer-inline {
+  margin-top: 0;
+  padding-bottom: var(--space-5);
 }
 
 .site-footer-inline {
@@ -1567,18 +1572,15 @@ body[data-mode="dark"] .field-input {
 .footer-legal-center {
   display: grid;
   justify-items: center;
-  gap: 0.3rem;
+  align-items: center;
+  gap: 0.2rem;
 }
 
 .footer-legal-flag {
-  width: clamp(1.6rem, 2.2vw, 2rem);
+  width: clamp(1.15rem, 1.7vw, 1.45rem);
   height: auto;
   justify-self: center;
   opacity: 0.88;
-}
-
-.footer-legal-flag-pride {
-  width: clamp(1.8rem, 2.6vw, 2.3rem);
 }
 
 .footer-legal-abn {
