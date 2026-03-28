@@ -228,6 +228,33 @@ h3 {
   text-decoration: none;
 }
 
+.brand-text {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.1rem;
+}
+
+.brand-title,
+.brand-subtitle {
+  display: block;
+  font-family: "Barlow Condensed", Impact, sans-serif;
+  font-weight: 700;
+  line-height: 0.95;
+  text-transform: uppercase;
+  color: var(--color-field-depth);
+}
+
+.brand-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: 0.05em;
+}
+
+.brand-subtitle {
+  font-size: clamp(0.7rem, 1.1vw, 0.95rem);
+  letter-spacing: 0.18em;
+}
+
 .logo-slot {
   --logo-slot-size: 8rem;
   --logo-slot-radius: 999px;
