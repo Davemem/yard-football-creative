@@ -835,7 +835,7 @@ h1.about-what-title {
   transform:
     translate(
       calc((var(--logo-trim-left) - var(--logo-trim-right)) / 2),
-      calc((var(--logo-trim-top) - var(--logo-trim-bottom)) / 2)
+      0%
     )
     scale(var(--logo-scale-boost));
   transform-origin: center;
