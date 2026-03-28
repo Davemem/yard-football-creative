@@ -376,7 +376,7 @@ h3 {
 }
 
 .hero-memory {
-  width: min(100%, 34rem);
+  width: min(100%, 50rem);
   justify-self: end;
   display: grid;
   gap: clamp(1.5rem, 3vw, 2.5rem);
@@ -385,24 +385,36 @@ h3 {
 .hero-memory-copy {
   display: grid;
   gap: clamp(1.25rem, 2vw, 1.75rem);
+  justify-items: center;
 }
 
 .hero-memory p {
   margin: 0;
   font-family: "Special Elite", "Courier New", monospace;
-  font-size: clamp(1rem, 1.38vw, 1.45rem);
-  line-height: 1.95;
+  font-size: clamp(1rem, 1.28vw, 1.32rem);
+  line-height: 1.9;
   letter-spacing: 0.01em;
-  text-align: right;
+  text-align: center;
+}
+
+.hero-memory-lines {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.hero-memory-lines span {
+  display: block;
 }
 
 .hero-memory-rule {
-  width: min(100%, 18rem);
+  width: min(100%, 22rem);
+  margin-right: auto;
   margin-left: auto;
   border-top: 0.34rem dotted var(--color-field-depth);
 }
 
 .hero-memory-signoff {
+  width: 100%;
   text-align: right;
 }
 
