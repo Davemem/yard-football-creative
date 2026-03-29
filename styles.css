@@ -1747,6 +1747,14 @@ body[data-mode="dark"] .about-highlight {
   max-width: 30rem;
 }
 
+.form-status {
+  padding: var(--space-4);
+  border: 1px solid color-mix(in srgb, var(--color-field-depth) 18%, transparent);
+  border-radius: var(--radius-sm);
+  background: color-mix(in srgb, var(--color-paper) 68%, transparent);
+  color: var(--color-ink);
+}
+
 .field-group {
   display: grid;
   gap: 0.5rem;
@@ -1791,6 +1799,14 @@ body[data-mode="dark"] .field-input {
   resize: vertical;
 }
 
+.form-honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 .placeholder-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1822,6 +1838,12 @@ body[data-mode="dark"] .field-input {
   line-height: 0.98;
   text-decoration: none;
   color: var(--color-field-depth);
+}
+
+.contact-inline-link {
+  min-height: auto;
+  display: inline;
+  padding: 0;
 }
 
 .site-footer {

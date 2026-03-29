@@ -109,3 +109,4 @@ It is intentionally lightweight and should be expanded in Phase 2 when sitemap, 
 - If forms, Instagram API access, or other integrations require server-side behaviour, add the smallest possible backend layer.
 - A lightweight Render web service is acceptable if required, but should not be introduced before the static-site path is proven insufficient.
 - Avoid adding persistent backend complexity until real product needs justify it.
+- The contact page may use a static form-post workflow to `contact@yardfc.com` before a custom backend is justified, provided the user-facing form remains clear about what is being submitted and where it goes.

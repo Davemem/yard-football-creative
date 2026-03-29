@@ -93,21 +93,55 @@
 
       <section class="section-shell reveal">
         <div class="container simple-copy-layout">
-          <form class="card form-shell stack-md" action="mailto:contact@yardfc.com" method="post" enctype="text/plain">
+          <form
+            class="card form-shell stack-md"
+            data-contact-form
+            action="https://formsubmit.co/contact@yardfc.com"
+            method="post"
+          >
+            <div class="stack-sm form-support">
+              <p>
+                Somewhere for everyone to come, and hopefully feel they belong.
+              </p>
+              <p>
+                This form sends your name, email, and message to Yard so we can reply through
+                <a class="button button-text contact-inline-link" href="mailto:contact@yardfc.com">contact@yardfc.com</a>.
+              </p>
+            </div>
+
+            <input type="hidden" name="_subject" value="New Yard website enquiry" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="true" />
+            <input type="hidden" name="_next" value="" data-contact-next />
+            <input type="hidden" name="_url" value="" data-contact-url />
+
             <div class="field-group">
               <label class="field-label" for="name">Name</label>
-              <input class="field-input" id="name" name="name" type="text" />
+              <input class="field-input" id="name" name="name" type="text" autocomplete="name" required />
             </div>
 
             <div class="field-group">
               <label class="field-label" for="email">Email</label>
-              <input class="field-input" id="email" name="email" type="email" />
+              <input class="field-input" id="email" name="email" type="email" autocomplete="email" required />
             </div>
 
             <div class="field-group">
               <label class="field-label" for="message">Message</label>
-              <textarea class="field-input field-textarea" id="message" name="message" rows="5"></textarea>
+              <textarea class="field-input field-textarea" id="message" name="message" rows="5" required></textarea>
             </div>
+
+            <div class="field-group form-honeypot" aria-hidden="true">
+              <label class="field-label" for="website">Website</label>
+              <input class="field-input" id="website" name="_honey" type="text" tabindex="-1" autocomplete="off" />
+            </div>
+
+            <p class="form-support">
+              After you submit, the form will return you to this page with a confirmation message.
+            </p>
+
+            <p class="form-status" data-contact-success hidden>
+              Thanks. Your message has been sent to Yard.
+            </p>
 
             <button class="button button-primary" type="submit">Send</button>
           </form>

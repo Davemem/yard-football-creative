@@ -768,3 +768,35 @@ hydrateSanityListing({
   type: "events",
   fetchEntries: () => window.YardSanity?.fetchEvents?.() || Promise.resolve([]),
 });
+
+const initContactForm = () => {
+  const form = document.querySelector("[data-contact-form]");
+
+  if (!(form instanceof HTMLFormElement)) {
+    return;
+  }
+
+  const nextInput = form.querySelector("[data-contact-next]");
+  const urlInput = form.querySelector("[data-contact-url]");
+  const successNode = form.querySelector("[data-contact-success]");
+  const currentUrl = new URL(window.location.href);
+
+  if (successNode instanceof HTMLElement && currentUrl.searchParams.get("sent") === "1") {
+    successNode.hidden = false;
+  }
+
+  currentUrl.searchParams.delete("sent");
+  currentUrl.hash = "";
+
+  if (nextInput instanceof HTMLInputElement) {
+    const nextUrl = new URL(currentUrl.toString());
+    nextUrl.searchParams.set("sent", "1");
+    nextInput.value = nextUrl.toString();
+  }
+
+  if (urlInput instanceof HTMLInputElement) {
+    urlInput.value = currentUrl.toString();
+  }
+};
+
+initContactForm();
