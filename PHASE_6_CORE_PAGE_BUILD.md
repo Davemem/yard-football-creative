@@ -117,3 +117,17 @@ The minimum `event` schema should include:
 
 - If Sanity project configuration is not present yet, the frontend should fail quietly for now and leave the listings area untouched.
 - Clear loading, empty, and API-error messaging will be formalised in Phase `6.7`.
+
+## 6.6 `Events` Connected to API-Driven Event Entries
+
+### Frontend Wiring
+
+- The `Events` page should load the same Sanity client used by `Programs`.
+- The page should query published `event` documents through the read-only Sanity API.
+- The Events listing area should now be populated from API data rather than static placeholder markup when Sanity configuration is available.
+
+### Rendering Contract
+
+- Event entries should use the same Phase `6.2` card template as program entries.
+- The frontend should map each event into category, status, title, summary, meta row, and CTA fields.
+- Event dates should remain available to the shared sorting logic so previous items can move into the past section when date values exist.

@@ -726,3 +726,28 @@ const hydrateProgramsFromSanity = async () => {
 };
 
 hydrateProgramsFromSanity();
+
+const hydrateEventsFromSanity = async () => {
+  const upcomingGrid = document.querySelector('[data-listing="upcoming"][data-type="events"]');
+  const template = document.querySelector("[data-listing-card-template]");
+  const client = window.YardSanity;
+
+  if (!upcomingGrid || !template || !client?.fetchEvents) {
+    return;
+  }
+
+  try {
+    const events = await client.fetchEvents();
+
+    if (events.length === 0) {
+      return;
+    }
+
+    upcomingGrid.replaceChildren(...events.map((entry) => renderListingCard(template, entry)).filter(Boolean));
+    sortListings();
+  } catch (error) {
+    console.error("Unable to load events from Sanity.", error);
+  }
+};
+
+hydrateEventsFromSanity();

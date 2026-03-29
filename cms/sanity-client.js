@@ -107,6 +107,18 @@
     primaryCtaUrl: entry.primaryCtaUrl || "contact.html",
   });
 
+  const normalizeEvent = (entry) => ({
+    id: entry._id,
+    date: entry.startDate || "",
+    category: categoryLabels[entry.category] || humanize(entry.category),
+    statusLabel: entry.statusLabel || "",
+    title: entry.title || "",
+    summary: entry.summary || "",
+    meta: [entry.location || "", formatDateLabel(entry.startDate), entry.timeLabel || ""].filter(Boolean),
+    primaryCtaLabel: entry.primaryCtaLabel || "Enquire About Events",
+    primaryCtaUrl: entry.primaryCtaUrl || "contact.html",
+  });
+
   const fetchPrograms = async () => {
     const query = `*[_type == "program"] | order(startDate asc, displayOrder asc){
       _id,
@@ -126,7 +138,26 @@
     return result.map(normalizeProgram);
   };
 
+  const fetchEvents = async () => {
+    const query = `*[_type == "event"] | order(startDate asc, displayOrder asc){
+      _id,
+      title,
+      category,
+      statusLabel,
+      summary,
+      location,
+      startDate,
+      timeLabel,
+      primaryCtaLabel,
+      primaryCtaUrl
+    }`;
+
+    const result = await runQuery(query);
+    return result.map(normalizeEvent);
+  };
+
   window.YardSanity = {
+    fetchEvents,
     fetchPrograms,
     hasConfig,
   };
