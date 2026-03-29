@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Events placeholder page for future Yard Football Creative posts."
+      content="Follow current Yard Football Creative activity, gala days, collaborations, and featured football moments."
     />
     <title>Events | Yard Football Creative</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -85,43 +85,106 @@
     </header>
 
     <main class="page-shell">
-      <section class="section-shell page-intro-shell reveal">
-        <div class="container simple-copy-layout stack-md">
-          <h1 class="section-title">Events</h1>
+      <section class="section-shell page-intro-shell page-hero-shell reveal">
+        <div class="container page-hero-layout">
+          <div class="page-hero-copy stack-md">
+            <p class="section-kicker">Events</p>
+            <h1 class="section-title">Current Activity, Gala Days, and Football Moments.</h1>
+            <p class="lead-copy">
+              We hope to show others how football can fuel connection in the most positive of ways.
+            </p>
+            <p class="max-copy">
+              The Events page should keep Yard active, visible, and connected to real football environments without turning into a dense calendar product.
+            </p>
+            <div class="button-row">
+              <a class="button button-primary" href="#event-listings">View Events</a>
+              <a class="button button-secondary" href="contact.html">Enquire About Events</a>
+            </div>
+          </div>
+
+          <aside class="card page-anchor-card stack-sm" aria-label="Events page jumps">
+            <p class="section-kicker">Page Guide</p>
+            <nav class="pathway-jump-nav" aria-label="Events sections">
+              <a href="#featured-activity">Featured Activity</a>
+              <a href="#event-listings">Event Listings</a>
+              <a href="#event-enquiry">Event Enquiry</a>
+            </nav>
+          </aside>
         </div>
       </section>
 
-      <!-- Upcoming Events -->
-      <section class="section-shell reveal">
-        <div class="container stack-lg">
-          <h2 class="section-kicker listing-section-heading">Upcoming</h2>
-          <div class="listing-grid" data-listing="upcoming" data-type="events" aria-label="Upcoming events">
-            <!--
-              To add an event, copy this template inside the listing-grid:
+      <section class="section-shell reveal" id="featured-activity">
+        <div class="container content-grid pathway-grid">
+          <article class="card pathway-panel stack-md">
+            <p class="section-kicker">Featured Activity</p>
+            <p>
+              Events should highlight current activity, gala days, collaborations, and featured football moments.
+            </p>
+            <p>
+              They should show that Yard is active and connected to real environments while keeping the structure calm, editorial, and easy to scan on mobile.
+            </p>
+          </article>
 
-              <article class="listing-card" data-date="YYYY-MM-DD">
-                <div class="listing-card-date">
-                  <span class="listing-card-day">DD</span>
-                  <span class="listing-card-month">Mon</span>
-                  <span class="listing-card-year">YYYY</span>
-                </div>
-                <div class="listing-card-body">
-                  <h3 class="listing-card-title">Event Name</h3>
-                  <p class="listing-card-detail">Location or description</p>
-                  <p class="listing-card-time">Time info</p>
-                </div>
-              </article>
-            -->
-            <p class="listing-empty">Stay tuned — new events coming soon.</p>
+          <article class="card pathway-panel stack-md">
+            <p class="section-kicker">Instagram Layer</p>
+            <p>
+              Instagram remains the primary social proof destination for current activity and should support the page without replacing the main event CTA.
+            </p>
+            <a
+              class="button button-text"
+              href="https://instagram.com/yardfootballcreative"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Follow Yard on Instagram
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell reveal" id="event-listings">
+        <div class="container stack-lg">
+          <div class="section-heading stack-sm">
+            <p class="section-kicker">Event Listings</p>
+            <h2 class="section-title">Current and previous activity will live inside one shared listing structure.</h2>
+          </div>
+
+          <div class="listing-shell stack-lg">
+            <div class="stack-md">
+              <h3 class="listing-section-heading">Upcoming</h3>
+              <div class="listing-grid" data-listing="upcoming" data-type="events" aria-label="Upcoming events">
+                <p class="listing-empty">Event entries will appear here once the first API feed is connected.</p>
+              </div>
+            </div>
+
+            <section class="stack-md listing-previous-section" hidden>
+              <h3 class="listing-section-heading">Previous</h3>
+              <div class="listing-grid" data-listing="previous" data-type="events" aria-label="Previous events"></div>
+            </section>
           </div>
         </div>
       </section>
 
-      <!-- Previous Events (hidden until JS finds past-dated items) -->
-      <section class="section-shell listing-previous-section" hidden>
-        <div class="container stack-lg">
-          <h2 class="section-kicker listing-section-heading">Previous</h2>
-          <div class="listing-grid" data-listing="previous" data-type="events" aria-label="Previous events"></div>
+      <section class="section-shell reveal" id="event-enquiry">
+        <div class="container">
+          <div class="card page-cta-band stack-md">
+            <p class="section-kicker">Event Enquiry</p>
+            <h2 class="section-title">Ask about attendance, collaboration, or future football activity.</h2>
+            <p class="max-copy">
+              Contact should remain the clearest conversion point for event-led follow-up while Instagram supports proof that Yard is active and current.
+            </p>
+            <div class="button-row">
+              <a class="button button-primary" href="contact.html">Contact Yard</a>
+              <a
+                class="button button-secondary"
+                href="https://instagram.com/yardfootballcreative"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Follow Instagram
+              </a>
+            </div>
+          </div>
         </div>
       </section>
     </main>

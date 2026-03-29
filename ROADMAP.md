@@ -315,7 +315,7 @@ Completion notes:
 Goal: complete the first usable public version.
 
 Sub-phases:
-- [ ] 6.1 finalise the frontend structure for `Programs` and `Events` pages before external content wiring
+- [x] 6.1 finalise the frontend structure for `Programs` and `Events` pages before external content wiring
 - [ ] 6.2 define the minimum repeatable card pattern for program and event listings in the frontend
 - [ ] 6.3 choose the initial API CMS model for v1 content-managed `Programs` and `Events`
 - [ ] 6.4 define the minimum CMS content schema for `program` and `event` entries
@@ -353,6 +353,9 @@ Human review steps:
 - review the theme toggle behaviour across multiple logo-based themes before launch
 - review light/dark mode behaviour across supported themes before launch
 - review the homepage Instagram section for usefulness, performance, and visual fit
+
+Completion notes:
+- `6.1` complete: restructured `programs.html` and `events.html` around the approved Phase 2 page jobs before API wiring, adding clear hero orientation, pathway or activity framing, section-jump navigation, stable listing shells, and direct contact/event CTAs while keeping the existing static frontend architecture simple and mobile-first.
 
 ## Phase 7 — Trust and Conversion Layer
 Goal: increase legitimacy and make action easy.

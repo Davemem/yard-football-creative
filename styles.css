@@ -378,6 +378,69 @@ h3 {
   padding-top: calc(var(--header-height) + var(--space-4));
 }
 
+.page-hero-shell {
+  padding-bottom: var(--space-6);
+}
+
+.page-hero-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(18rem, 0.8fr);
+  gap: var(--space-5);
+  align-items: start;
+}
+
+.page-hero-copy {
+  max-width: 48rem;
+}
+
+.page-anchor-card {
+  position: sticky;
+  top: calc(var(--header-height) + var(--space-4));
+}
+
+.pathway-jump-nav {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.pathway-jump-nav a {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  line-height: 1.15;
+  text-decoration: none;
+  color: var(--color-field-depth);
+}
+
+.pathway-jump-nav a:hover,
+.pathway-jump-nav a:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 0.22em;
+}
+
+.pathway-grid {
+  align-items: stretch;
+}
+
+.pathway-panel {
+  min-height: 100%;
+}
+
+.listing-shell {
+  padding: var(--space-5);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-lg);
+  background: color-mix(in srgb, var(--color-panel) 88%, transparent);
+  box-shadow: var(--shadow-soft);
+}
+
+.page-cta-band {
+  text-align: center;
+}
+
+.page-cta-band .button-row {
+  justify-content: center;
+}
+
 .stack-sm > * + * {
   margin-top: var(--space-2);
 }
@@ -1179,6 +1242,14 @@ h2.listing-section-heading {
 }
 
 @media (max-width: 72rem) {
+  .page-hero-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .page-anchor-card {
+    position: static;
+  }
+
   .hero-logo-stage {
     grid-template-columns: 1fr;
     gap: var(--space-5);
