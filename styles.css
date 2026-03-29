@@ -1886,18 +1886,25 @@ body[data-mode="dark"] .field-input {
   display: grid;
   justify-items: center;
   align-items: center;
-  gap: 0.2rem;
+  align-self: start;
+  gap: 0.3rem;
 }
 
 .footer-legal-flag {
-  width: clamp(1.15rem, 1.7vw, 1.45rem);
-  height: auto;
+  width: clamp(1.35rem, 1.8vw, 1.6rem);
+  height: clamp(0.9rem, 1.2vw, 1.05rem);
+  object-fit: contain;
   justify-self: center;
   opacity: 0.88;
 }
 
-.footer-legal > .footer-legal-flag {
-  transform: translateY(-0.68rem);
+.footer-legal-flag-side {
+  align-self: start;
+  transform: translateY(0.08rem);
+}
+
+.footer-legal-flag-pride {
+  align-self: start;
 }
 
 .footer-legal-abn {
@@ -2155,6 +2162,10 @@ body[data-mode="dark"] .field-input {
   .footer-legal-abn,
   .footer-legal-flag {
     text-align: center;
+  }
+
+  .footer-legal-flag-side {
+    transform: none;
   }
 
   .button-row,
