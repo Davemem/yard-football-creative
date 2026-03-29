@@ -1,0 +1,86 @@
+export default {
+  name: "event",
+  title: "Event",
+  type: "document",
+  fields: [
+    {
+      name: "title",
+      title: "Title",
+      type: "string",
+      validation: (Rule) => Rule.required(),
+    },
+    {
+      name: "category",
+      title: "Category",
+      type: "string",
+      options: {
+        list: [
+          { title: "Event", value: "event" },
+          { title: "Gala Day", value: "gala-day" },
+          { title: "Workshop", value: "workshop" },
+          { title: "Collaboration", value: "collaboration" },
+          { title: "Current Activity", value: "current-activity" },
+        ],
+      },
+      validation: (Rule) => Rule.required(),
+    },
+    {
+      name: "statusLabel",
+      title: "Status Label",
+      type: "string",
+      description: "Short pill text such as Upcoming, Featured, Sold Out, or Past.",
+      validation: (Rule) => Rule.required().max(32),
+    },
+    {
+      name: "summary",
+      title: "Summary",
+      type: "text",
+      rows: 3,
+      validation: (Rule) => Rule.required().max(240),
+    },
+    {
+      name: "location",
+      title: "Location",
+      type: "string",
+      validation: (Rule) => Rule.required(),
+    },
+    {
+      name: "startDate",
+      title: "Start Date",
+      type: "date",
+      validation: (Rule) => Rule.required(),
+    },
+    {
+      name: "endDate",
+      title: "End Date",
+      type: "date",
+    },
+    {
+      name: "timeLabel",
+      title: "Time Label",
+      type: "string",
+      description: "Short readable time range used in the card meta row.",
+    },
+    {
+      name: "primaryCtaLabel",
+      title: "Primary CTA Label",
+      type: "string",
+      initialValue: "Enquire About Events",
+      validation: (Rule) => Rule.required().max(40),
+    },
+    {
+      name: "primaryCtaUrl",
+      title: "Primary CTA URL",
+      type: "url",
+      description: "Use an approved contact or registration destination only.",
+      validation: (Rule) => Rule.required(),
+    },
+    {
+      name: "displayOrder",
+      title: "Display Order",
+      type: "number",
+      description: "Lower numbers appear first when dates are equal.",
+      initialValue: 50,
+    },
+  ],
+};

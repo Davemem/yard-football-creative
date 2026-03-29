@@ -39,3 +39,62 @@ The initial API CMS model for v1 should be:
 
 - The CMS choice is approved only because it keeps editing focused and simple for non-technical users.
 - If the configured studio, fields, or publishing flow become confusing in practice, that should be treated as a product problem to fix in later phases.
+
+## 6.4 Minimum CMS Content Schema for `program` and `event` Entries
+
+### Schema Files
+
+- `cms/schemas/program.js`
+- `cms/schemas/event.js`
+- `cms/schemas/index.js`
+
+### Minimum Shared Contract
+
+Both schema types should support:
+
+- a clear listing title
+- a short category label
+- a short status label for the card pill
+- a summary line suitable for card rendering
+- date information for ordering and previous/upcoming separation
+- one approved primary CTA label and URL
+- a low-complexity display-order field for manual tie-breaking
+
+### `program` Entry Fields
+
+The minimum `program` schema should include:
+
+- `title`
+- `category`
+- `pathway`
+- `statusLabel`
+- `summary`
+- `audience`
+- `location`
+- `startDate`
+- `endDate`
+- `primaryCtaLabel`
+- `primaryCtaUrl`
+- `displayOrder`
+
+### `event` Entry Fields
+
+The minimum `event` schema should include:
+
+- `title`
+- `category`
+- `statusLabel`
+- `summary`
+- `location`
+- `startDate`
+- `endDate`
+- `timeLabel`
+- `primaryCtaLabel`
+- `primaryCtaUrl`
+- `displayOrder`
+
+### Schema Restraint Rule
+
+- The schema should stay narrowly focused on the Phase 6 listing-card requirements.
+- Rich body content, galleries, testimonials, partners, or deeper program-page modules should not be added at this stage.
+- Any later schema expansion should be justified by a documented page job or roadmap phase rather than added speculatively.

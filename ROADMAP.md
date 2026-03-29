@@ -318,7 +318,7 @@ Sub-phases:
 - [x] 6.1 finalise the frontend structure for `Programs` and `Events` pages before external content wiring
 - [x] 6.2 define the minimum repeatable card pattern for program and event listings in the frontend
 - [x] 6.3 choose the initial API CMS model for v1 content-managed `Programs` and `Events`
-- [ ] 6.4 define the minimum CMS content schema for `program` and `event` entries
+- [x] 6.4 define the minimum CMS content schema for `program` and `event` entries
 - [ ] 6.5 replace static placeholders on `Programs` with API-driven program entries
 - [ ] 6.6 replace static placeholders on `Events` with API-driven event entries
 - [ ] 6.7 add loading, empty, and API-error states for `Programs` and `Events`
@@ -358,6 +358,7 @@ Completion notes:
 - `6.1` complete: restructured `programs.html` and `events.html` around the approved Phase 2 page jobs before API wiring, adding clear hero orientation, pathway or activity framing, section-jump navigation, stable listing shells, and direct contact/event CTAs while keeping the existing static frontend architecture simple and mobile-first.
 - `6.2` complete: defined the first shared listing-card contract in `programs.html`, `events.html`, and `styles.css`, including a reusable template shape with category, status, title, summary, meta, and CTA slots so future program and event entries can render through one repeatable frontend pattern instead of separate one-off card markup.
 - `6.3` complete: added `PHASE_6_CORE_PAGE_BUILD.md` and chose Sanity Content Lake with its read-only CDN API as the initial v1 CMS model for `Programs` and `Events`, keeping the site static-first, limiting CMS scope to those two content types, and aligning the documentation baseline in `README.md` and `CONTRIBUTING.md` to the new Phase 6 decision record.
+- `6.4` complete: defined the minimum `program` and `event` schema contract in `cms/schemas/`, then documented the same field baseline in `PHASE_6_CORE_PAGE_BUILD.md` so the upcoming frontend fetch work can target one small, explicit content model without speculative extra fields.
 
 ## Phase 7 — Trust and Conversion Layer
 Goal: increase legitimacy and make action easy.
