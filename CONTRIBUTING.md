@@ -29,6 +29,7 @@ The repository governance set is:
 - `PHASE_2_INFORMATION_ARCHITECTURE.md` for the five-page v1 sitemap, navigation, page-purpose, CTA, and footer baseline
 - `PHASE_3_BRAND_SYSTEM.md` for the brand-system decisions that translate the asset library into website-ready colour, typography, component, spacing, image, voice, and theme rules
 - `PHASE_4_CORE_CONTENT.md` for the sequential Phase 4 copy drafting that preserves `assets/YARD.pdf` as the canonical website-content source
+- `PHASE_6_CORE_PAGE_BUILD.md` for the Phase 6 frontend, CMS-model, and content-entry decisions for `Programs` and `Events`
 
 Contributors should keep these documents aligned when making foundational changes.
 
