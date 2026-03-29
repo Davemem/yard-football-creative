@@ -316,7 +316,7 @@ Goal: complete the first usable public version.
 
 Sub-phases:
 - [x] 6.1 finalise the frontend structure for `Programs` and `Events` pages before external content wiring
-- [ ] 6.2 define the minimum repeatable card pattern for program and event listings in the frontend
+- [x] 6.2 define the minimum repeatable card pattern for program and event listings in the frontend
 - [ ] 6.3 choose the initial API CMS model for v1 content-managed `Programs` and `Events`
 - [ ] 6.4 define the minimum CMS content schema for `program` and `event` entries
 - [ ] 6.5 replace static placeholders on `Programs` with API-driven program entries
@@ -356,6 +356,7 @@ Human review steps:
 
 Completion notes:
 - `6.1` complete: restructured `programs.html` and `events.html` around the approved Phase 2 page jobs before API wiring, adding clear hero orientation, pathway or activity framing, section-jump navigation, stable listing shells, and direct contact/event CTAs while keeping the existing static frontend architecture simple and mobile-first.
+- `6.2` complete: defined the first shared listing-card contract in `programs.html`, `events.html`, and `styles.css`, including a reusable template shape with category, status, title, summary, meta, and CTA slots so future program and event entries can render through one repeatable frontend pattern instead of separate one-off card markup.
 
 ## Phase 7 — Trust and Conversion Layer
 Goal: increase legitimacy and make action easy.

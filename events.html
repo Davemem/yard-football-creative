@@ -165,6 +165,23 @@
         </div>
       </section>
 
+      <template data-listing-card-template>
+        <article class="listing-card">
+          <div class="listing-card-header">
+            <p class="listing-card-eyebrow" data-field="category"></p>
+            <p class="listing-card-pill" data-field="status"></p>
+          </div>
+          <div class="listing-card-main stack-sm">
+            <h3 class="listing-card-title" data-field="title"></h3>
+            <p class="listing-card-summary" data-field="summary"></p>
+          </div>
+          <div class="listing-card-meta" data-field="meta"></div>
+          <div class="listing-card-actions">
+            <a class="button button-text listing-card-link" data-field="primary-link" href="contact.html"></a>
+          </div>
+        </article>
+      </template>
+
       <section class="section-shell reveal" id="event-enquiry">
         <div class="container">
           <div class="card page-cta-band stack-md">

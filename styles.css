@@ -1113,9 +1113,9 @@ h2.listing-section-heading {
 }
 
 .listing-card {
-  display: flex;
-  gap: var(--space-5);
-  padding: var(--space-5) var(--space-6);
+  display: grid;
+  gap: var(--space-4);
+  padding: var(--space-5);
   background: var(--color-panel);
   border: 1px solid var(--color-line);
   border-radius: var(--radius-sm);
@@ -1128,18 +1128,52 @@ h2.listing-section-heading {
   box-shadow: 0 24px 56px var(--color-shadow);
 }
 
-.listing-card-date {
+.listing-card-header {
   display: flex;
-  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.listing-card-eyebrow {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  line-height: 1;
+  text-transform: uppercase;
+  color: var(--color-warm-whistle);
+}
+
+.listing-card-pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2rem;
+  padding: 0.25rem 0.7rem;
+  border: 1px solid color-mix(in srgb, var(--color-field-depth) 18%, transparent);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--color-paper) 78%, transparent);
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  line-height: 1;
+  text-transform: uppercase;
+  color: var(--color-field-depth);
+}
+
+.listing-card-main {
+  min-height: 100%;
+}
+
+.listing-card-date,
+.listing-card-meta-item {
+  display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 4rem;
+  min-height: 2.35rem;
   padding: var(--space-3) var(--space-4);
-  background: var(--color-field-depth);
-  color: var(--color-chalk);
-  border-radius: 0.6rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--color-field-depth) 10%, transparent);
+  color: var(--color-field-depth);
   text-align: center;
-  line-height: 1.2;
+  line-height: 1;
 }
 
 .listing-card-day {
@@ -1159,29 +1193,34 @@ h2.listing-section-heading {
   opacity: 0.8;
 }
 
-.listing-card-body {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-2);
-  justify-content: center;
-}
-
 .listing-card-title {
   font-family: var(--font-display);
   font-size: clamp(1.1rem, 1.3vw, 1.35rem);
   color: var(--color-field-depth);
 }
 
-.listing-card-detail {
+.listing-card-summary {
   font-size: 0.92rem;
   color: var(--color-ink);
   opacity: 0.85;
 }
 
-.listing-card-time {
-  font-size: 0.85rem;
-  color: var(--color-ink);
-  opacity: 0.65;
+.listing-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.listing-card-meta-item {
+  justify-content: flex-start;
+  font-size: 0.84rem;
+  opacity: 0.88;
+}
+
+.listing-card-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .listing-card-past {
