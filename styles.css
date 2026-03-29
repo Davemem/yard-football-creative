@@ -1755,6 +1755,10 @@ body[data-mode="dark"] .about-highlight {
   color: var(--color-ink);
 }
 
+.form-status-error {
+  border-color: color-mix(in srgb, var(--color-clay-ball) 60%, transparent);
+}
+
 .field-group {
   display: grid;
   gap: 0.5rem;

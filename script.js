@@ -776,27 +776,71 @@ const initContactForm = () => {
     return;
   }
 
-  const nextInput = form.querySelector("[data-contact-next]");
   const urlInput = form.querySelector("[data-contact-url]");
+  const pendingNode = form.querySelector("[data-contact-pending]");
   const successNode = form.querySelector("[data-contact-success]");
+  const errorNode = form.querySelector("[data-contact-error]");
+  const submitButton = form.querySelector("[data-contact-submit]");
   const currentUrl = new URL(window.location.href);
-
-  if (successNode instanceof HTMLElement && currentUrl.searchParams.get("sent") === "1") {
-    successNode.hidden = false;
-  }
-
-  currentUrl.searchParams.delete("sent");
-  currentUrl.hash = "";
-
-  if (nextInput instanceof HTMLInputElement) {
-    const nextUrl = new URL(currentUrl.toString());
-    nextUrl.searchParams.set("sent", "1");
-    nextInput.value = nextUrl.toString();
-  }
 
   if (urlInput instanceof HTMLInputElement) {
     urlInput.value = currentUrl.toString();
   }
+
+  const setContactState = (state) => {
+    if (pendingNode instanceof HTMLElement) {
+      pendingNode.hidden = state !== "pending";
+    }
+
+    if (successNode instanceof HTMLElement) {
+      successNode.hidden = state !== "success";
+    }
+
+    if (errorNode instanceof HTMLElement) {
+      errorNode.hidden = state !== "error";
+    }
+
+    if (submitButton instanceof HTMLButtonElement) {
+      submitButton.disabled = state === "pending";
+      submitButton.textContent = state === "pending" ? "Sending..." : "Send";
+    }
+  };
+
+  setContactState("idle");
+
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    if (!form.reportValidity()) {
+      return;
+    }
+
+    setContactState("pending");
+
+    try {
+      const response = await fetch(form.action, {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+        },
+        body: new FormData(form),
+      });
+
+      if (!response.ok) {
+        throw new Error(`Form submission failed with ${response.status}`);
+      }
+
+      setContactState("success");
+      form.reset();
+
+      if (urlInput instanceof HTMLInputElement) {
+        urlInput.value = currentUrl.toString();
+      }
+    } catch (error) {
+      console.error("Unable to submit the contact form.", error);
+      setContactState("error");
+    }
+  });
 };
 
 initContactForm();

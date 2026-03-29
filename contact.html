@@ -96,7 +96,7 @@
           <form
             class="card form-shell stack-md"
             data-contact-form
-            action="https://formsubmit.co/contact@yardfc.com"
+            action="https://formsubmit.co/ajax/contact@yardfc.com"
             method="post"
           >
             <div class="stack-sm form-support">
@@ -111,8 +111,7 @@
 
             <input type="hidden" name="_subject" value="New Yard website enquiry" />
             <input type="hidden" name="_template" value="table" />
-            <input type="hidden" name="_captcha" value="true" />
-            <input type="hidden" name="_next" value="" data-contact-next />
+            <input type="hidden" name="_captcha" value="false" />
             <input type="hidden" name="_url" value="" data-contact-url />
 
             <div class="field-group">
@@ -136,14 +135,20 @@
             </div>
 
             <p class="form-support">
-              After you submit, the form will return you to this page with a confirmation message.
+              Submit sends your enquiry without leaving this page.
             </p>
 
+            <p class="form-status" data-contact-pending hidden>
+              Sending your message...
+            </p>
             <p class="form-status" data-contact-success hidden>
               Thanks. Your message has been sent to Yard.
             </p>
+            <p class="form-status form-status-error" data-contact-error hidden>
+              We couldn't send your message right now. Please email contact@yardfc.com directly.
+            </p>
 
-            <button class="button button-primary" type="submit">Send</button>
+            <button class="button button-primary" type="submit" data-contact-submit>Send</button>
           </form>
         </div>
       </section>
