@@ -153,3 +153,26 @@ Both CMS-fed listing areas should now support:
 
 - State copy should stay calm, direct, and useful.
 - Error states should still point users toward the approved contact path rather than leaving them with a dead end.
+
+## 6.8 Non-Technical Content Editing Confirmed for v1 Use
+
+### Confirmation Basis
+
+The Phase 6 Sanity editing flow is considered simple enough for v1 because:
+
+- only two content types are editable
+- each type has a short, card-first field set
+- the schemas are grouped into `Editorial`, `Details`, and `CTA`
+- the document preview surfaces title, category, and status at a glance
+- `cms/EDITOR_GUIDE.md` provides a short publish checklist in plain language
+
+### Editing Boundary
+
+- Editors do not need to edit site files to publish `Programs` or `Events`.
+- Editors only need to fill the fields already mapped into the public listing cards.
+- Optional fields can stay empty when they are not ready, which reduces pressure to guess or overfill entries.
+
+### v1 Editorial Standard
+
+- If an editor can add one `Program` and one `Event` without developer help, the Phase 6 CMS-editing baseline is good enough for v1.
+- Any later friction should be treated as a schema or documentation problem to fix, not as a reason to bypass the CMS.

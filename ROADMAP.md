@@ -322,7 +322,7 @@ Sub-phases:
 - [x] 6.5 replace static placeholders on `Programs` with API-driven program entries
 - [x] 6.6 replace static placeholders on `Events` with API-driven event entries
 - [x] 6.7 add loading, empty, and API-error states for `Programs` and `Events`
-- [ ] 6.8 confirm that non-technical content editing for `Programs` and `Events` is simple enough for v1 use
+- [x] 6.8 confirm that non-technical content editing for `Programs` and `Events` is simple enough for v1 use
 
 Deliverables:
 - home page complete
@@ -362,6 +362,7 @@ Completion notes:
 - `6.5` complete: added `cms/sanity-client.js`, wired `programs.html` to load it before the main site script, and updated `script.js` so the `Programs` listing grid now renders published Sanity `program` entries through the shared Phase 6.2 card template whenever project configuration is present.
 - `6.6` complete: extended `cms/sanity-client.js` with `event` queries, wired `events.html` to the same Sanity client, and updated `script.js` so the `Events` listing grid now renders published Sanity `event` entries through the shared listing-card template whenever project configuration is present.
 - `6.7` complete: added explicit loading, empty, and error message states to the `Programs` and `Events` listing shells, then refactored `script.js` so both Sanity-fed pages now move between those states predictably based on configuration presence, empty query results, success, and API failure.
+- `6.8` complete: grouped the Sanity schemas into editor-friendly sections, added document previews, created `cms/EDITOR_GUIDE.md`, and aligned `README.md`, `CONTRIBUTING.md`, and `PHASE_6_CORE_PAGE_BUILD.md` so the Phase 6 publishing flow now has a small enough field set and clear enough guidance for non-technical v1 content editing.
 
 ## Phase 7 — Trust and Conversion Layer
 Goal: increase legitimacy and make action easy.
