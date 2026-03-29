@@ -777,17 +777,23 @@ const initContactForm = () => {
   }
 
   const urlInput = form.querySelector("[data-contact-url]");
+  const validationNode = form.querySelector("[data-contact-validation]");
   const pendingNode = form.querySelector("[data-contact-pending]");
   const successNode = form.querySelector("[data-contact-success]");
   const errorNode = form.querySelector("[data-contact-error]");
   const submitButton = form.querySelector("[data-contact-submit]");
   const currentUrl = new URL(window.location.href);
+  const requiredFields = Array.from(form.querySelectorAll("[name='name'], [name='email'], [name='message']"));
 
   if (urlInput instanceof HTMLInputElement) {
     urlInput.value = currentUrl.toString();
   }
 
   const setContactState = (state) => {
+    if (validationNode instanceof HTMLElement) {
+      validationNode.hidden = state !== "validation";
+    }
+
     if (pendingNode instanceof HTMLElement) {
       pendingNode.hidden = state !== "pending";
     }
@@ -806,12 +812,53 @@ const initContactForm = () => {
     }
   };
 
+  const validateField = (field) => {
+    const group = field.closest(".field-group");
+    const errorNodeForField = form.querySelector(`[data-field-error="${field.name}"]`);
+    let valid = true;
+
+    if (field.name === "email") {
+      valid = Boolean(field.value.trim()) && field.validity.valid;
+    } else {
+      valid = Boolean(field.value.trim());
+    }
+
+    if (group) {
+      group.classList.toggle("has-error", !valid);
+    }
+
+    if (errorNodeForField instanceof HTMLElement) {
+      errorNodeForField.hidden = valid;
+    }
+
+    return valid;
+  };
+
+  const validateForm = () => requiredFields.every((field) => validateField(field));
+
   setContactState("idle");
+
+  requiredFields.forEach((field) => {
+    field.addEventListener("input", () => {
+      validateField(field);
+
+      if (validationNode instanceof HTMLElement && !validationNode.hidden) {
+        const allValid = requiredFields.every((currentField) => validateField(currentField));
+
+        if (allValid) {
+          setContactState("idle");
+        }
+      }
+    });
+  });
 
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
 
-    if (!form.reportValidity()) {
+    const formIsValid = validateForm();
+
+    if (!formIsValid) {
+      setContactState("validation");
       return;
     }
 

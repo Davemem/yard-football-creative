@@ -1764,6 +1764,10 @@ body[data-mode="dark"] .about-highlight {
   gap: 0.5rem;
 }
 
+.field-group.has-error .field-input {
+  border-color: color-mix(in srgb, var(--color-clay-ball) 70%, transparent);
+}
+
 .field-label {
   font-family: var(--font-display);
   font-size: 1rem;
@@ -1801,6 +1805,11 @@ body[data-mode="dark"] .field-input {
 .field-textarea {
   min-height: 8rem;
   resize: vertical;
+}
+
+.field-error {
+  font-size: 0.9rem;
+  color: color-mix(in srgb, var(--color-clay-ball) 88%, var(--color-ink));
 }
 
 .form-honeypot {

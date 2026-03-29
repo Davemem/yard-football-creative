@@ -98,6 +98,7 @@
             data-contact-form
             action="https://formsubmit.co/ajax/contact@yardfc.com"
             method="post"
+            novalidate
           >
             <div class="stack-sm form-support">
               <p>
@@ -117,16 +118,19 @@
             <div class="field-group">
               <label class="field-label" for="name">Name</label>
               <input class="field-input" id="name" name="name" type="text" autocomplete="name" required />
+              <p class="field-error" data-field-error="name" hidden>Please enter your name.</p>
             </div>
 
             <div class="field-group">
               <label class="field-label" for="email">Email</label>
               <input class="field-input" id="email" name="email" type="email" autocomplete="email" required />
+              <p class="field-error" data-field-error="email" hidden>Please enter a valid email address.</p>
             </div>
 
             <div class="field-group">
               <label class="field-label" for="message">Message</label>
               <textarea class="field-input field-textarea" id="message" name="message" rows="5" required></textarea>
+              <p class="field-error" data-field-error="message" hidden>Please enter a message.</p>
             </div>
 
             <div class="field-group form-honeypot" aria-hidden="true">
@@ -138,6 +142,9 @@
               Submit sends your enquiry without leaving this page.
             </p>
 
+            <p class="form-status form-status-error" data-contact-validation hidden>
+              Please complete the highlighted fields before sending.
+            </p>
             <p class="form-status" data-contact-pending hidden>
               Sending your message...
             </p>
