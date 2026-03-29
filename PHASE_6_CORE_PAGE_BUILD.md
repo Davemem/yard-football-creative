@@ -131,3 +131,25 @@ The minimum `event` schema should include:
 - Event entries should use the same Phase `6.2` card template as program entries.
 - The frontend should map each event into category, status, title, summary, meta row, and CTA fields.
 - Event dates should remain available to the shared sorting logic so previous items can move into the past section when date values exist.
+
+## 6.7 Loading, Empty, and API-Error States for `Programs` and `Events`
+
+### State Model
+
+Both CMS-fed listing areas should now support:
+
+- `loading`
+- `empty`
+- `error`
+
+### Behaviour Rules
+
+- `loading` should appear while the page is waiting on Sanity.
+- `empty` should appear when Sanity is not configured yet or when the query returns no published entries.
+- `error` should appear when a Sanity request fails after configuration is present.
+- Successful results should hide the status messaging and render the cards instead.
+
+### UX Rule
+
+- State copy should stay calm, direct, and useful.
+- Error states should still point users toward the approved contact path rather than leaving them with a dead end.

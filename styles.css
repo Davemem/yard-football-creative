@@ -433,6 +433,24 @@ h3 {
   box-shadow: var(--shadow-soft);
 }
 
+.listing-status-stack {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.listing-status {
+  padding: var(--space-4);
+  border: 1px solid color-mix(in srgb, var(--color-field-depth) 12%, transparent);
+  border-radius: var(--radius-sm);
+  background: color-mix(in srgb, var(--color-paper) 68%, transparent);
+  font-size: 0.95rem;
+  color: var(--color-ink);
+}
+
+.listing-status[data-state="error"] {
+  border-color: color-mix(in srgb, var(--color-clay-ball) 60%, transparent);
+}
+
 .page-cta-band {
   text-align: center;
 }
@@ -1225,15 +1243,6 @@ h2.listing-section-heading {
 
 .listing-card-past {
   opacity: 0.6;
-}
-
-.listing-empty {
-  font-family: var(--font-editorial);
-  font-size: 1.1rem;
-  color: var(--color-ink);
-  opacity: 0.6;
-  text-align: center;
-  padding: var(--space-8) var(--space-4);
 }
 
 .listing-previous-section {

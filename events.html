@@ -152,8 +152,12 @@
           <div class="listing-shell stack-lg">
             <div class="stack-md">
               <h3 class="listing-section-heading">Upcoming</h3>
+              <div class="listing-status-stack" data-listing-status="events">
+                <p class="listing-status" data-state="loading">Loading events from Sanity...</p>
+                <p class="listing-status" data-state="empty" hidden>No published events are available yet.</p>
+                <p class="listing-status" data-state="error" hidden>We couldn't load events right now. Please contact Yard directly.</p>
+              </div>
               <div class="listing-grid" data-listing="upcoming" data-type="events" aria-label="Upcoming events">
-                <p class="listing-empty">Event entries will appear here once the first API feed is connected.</p>
               </div>
             </div>
 

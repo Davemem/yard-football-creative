@@ -702,52 +702,69 @@ const renderListingCard = (template, entry) => {
   return card;
 };
 
-const hydrateProgramsFromSanity = async () => {
-  const upcomingGrid = document.querySelector('[data-listing="upcoming"][data-type="programs"]');
+const setListingState = (type, nextState) => {
+  const stateShell = document.querySelector(`[data-listing-status="${type}"]`);
+
+  if (!stateShell) {
+    return;
+  }
+
+  stateShell.querySelectorAll(".listing-status").forEach((node) => {
+    node.hidden = node.dataset.state !== nextState;
+  });
+};
+
+const hideListingStates = (type) => {
+  const stateShell = document.querySelector(`[data-listing-status="${type}"]`);
+
+  if (!stateShell) {
+    return;
+  }
+
+  stateShell.querySelectorAll(".listing-status").forEach((node) => {
+    node.hidden = true;
+  });
+};
+
+const hydrateSanityListing = async ({ type, fetchEntries }) => {
+  const upcomingGrid = document.querySelector(`[data-listing="upcoming"][data-type="${type}"]`);
   const template = document.querySelector("[data-listing-card-template]");
   const client = window.YardSanity;
 
-  if (!upcomingGrid || !template || !client?.fetchPrograms) {
+  if (!upcomingGrid || !template || !client || typeof fetchEntries !== "function") {
+    return;
+  }
+
+  setListingState(type, "loading");
+
+  if (!client.hasConfig?.()) {
+    setListingState(type, "empty");
     return;
   }
 
   try {
-    const programs = await client.fetchPrograms();
+    const entries = await fetchEntries();
 
-    if (programs.length === 0) {
+    if (entries.length === 0) {
+      setListingState(type, "empty");
       return;
     }
 
-    upcomingGrid.replaceChildren(...programs.map((entry) => renderListingCard(template, entry)).filter(Boolean));
+    upcomingGrid.replaceChildren(...entries.map((entry) => renderListingCard(template, entry)).filter(Boolean));
+    hideListingStates(type);
     sortListings();
   } catch (error) {
-    console.error("Unable to load programs from Sanity.", error);
+    console.error(`Unable to load ${type} from Sanity.`, error);
+    setListingState(type, "error");
   }
 };
 
-hydrateProgramsFromSanity();
+hydrateSanityListing({
+  type: "programs",
+  fetchEntries: () => window.YardSanity?.fetchPrograms?.() || Promise.resolve([]),
+});
 
-const hydrateEventsFromSanity = async () => {
-  const upcomingGrid = document.querySelector('[data-listing="upcoming"][data-type="events"]');
-  const template = document.querySelector("[data-listing-card-template]");
-  const client = window.YardSanity;
-
-  if (!upcomingGrid || !template || !client?.fetchEvents) {
-    return;
-  }
-
-  try {
-    const events = await client.fetchEvents();
-
-    if (events.length === 0) {
-      return;
-    }
-
-    upcomingGrid.replaceChildren(...events.map((entry) => renderListingCard(template, entry)).filter(Boolean));
-    sortListings();
-  } catch (error) {
-    console.error("Unable to load events from Sanity.", error);
-  }
-};
-
-hydrateEventsFromSanity();
+hydrateSanityListing({
+  type: "events",
+  fetchEntries: () => window.YardSanity?.fetchEvents?.() || Promise.resolve([]),
+});
