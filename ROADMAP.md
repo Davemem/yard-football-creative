@@ -319,7 +319,7 @@ Sub-phases:
 - [x] 6.2 define the minimum repeatable card pattern for program and event listings in the frontend
 - [x] 6.3 choose the initial API CMS model for v1 content-managed `Programs` and `Events`
 - [x] 6.4 define the minimum CMS content schema for `program` and `event` entries
-- [ ] 6.5 replace static placeholders on `Programs` with API-driven program entries
+- [x] 6.5 replace static placeholders on `Programs` with API-driven program entries
 - [ ] 6.6 replace static placeholders on `Events` with API-driven event entries
 - [ ] 6.7 add loading, empty, and API-error states for `Programs` and `Events`
 - [ ] 6.8 confirm that non-technical content editing for `Programs` and `Events` is simple enough for v1 use
@@ -359,6 +359,7 @@ Completion notes:
 - `6.2` complete: defined the first shared listing-card contract in `programs.html`, `events.html`, and `styles.css`, including a reusable template shape with category, status, title, summary, meta, and CTA slots so future program and event entries can render through one repeatable frontend pattern instead of separate one-off card markup.
 - `6.3` complete: added `PHASE_6_CORE_PAGE_BUILD.md` and chose Sanity Content Lake with its read-only CDN API as the initial v1 CMS model for `Programs` and `Events`, keeping the site static-first, limiting CMS scope to those two content types, and aligning the documentation baseline in `README.md` and `CONTRIBUTING.md` to the new Phase 6 decision record.
 - `6.4` complete: defined the minimum `program` and `event` schema contract in `cms/schemas/`, then documented the same field baseline in `PHASE_6_CORE_PAGE_BUILD.md` so the upcoming frontend fetch work can target one small, explicit content model without speculative extra fields.
+- `6.5` complete: added `cms/sanity-client.js`, wired `programs.html` to load it before the main site script, and updated `script.js` so the `Programs` listing grid now renders published Sanity `program` entries through the shared Phase 6.2 card template whenever project configuration is present.
 
 ## Phase 7 — Trust and Conversion Layer
 Goal: increase legitimacy and make action easy.

@@ -98,3 +98,22 @@ The minimum `event` schema should include:
 - The schema should stay narrowly focused on the Phase 6 listing-card requirements.
 - Rich body content, galleries, testimonials, partners, or deeper program-page modules should not be added at this stage.
 - Any later schema expansion should be justified by a documented page job or roadmap phase rather than added speculatively.
+
+## 6.5 `Programs` Connected to API-Driven Program Entries
+
+### Frontend Wiring
+
+- The `Programs` page should load entries through a dedicated Sanity client script.
+- The page should render only published `program` documents returned by the read-only Sanity query.
+- The existing static placeholder should no longer be the only source of truth for the listings area.
+
+### Rendering Contract
+
+- Program entries should render through the shared listing-card template defined in Phase `6.2`.
+- The frontend should map Sanity fields into the card's category, status, title, summary, meta row, and CTA.
+- Date values should remain available to the existing upcoming or previous sorting logic when they are present in Sanity.
+
+### Safety Rule
+
+- If Sanity project configuration is not present yet, the frontend should fail quietly for now and leave the listings area untouched.
+- Clear loading, empty, and API-error messaging will be formalised in Phase `6.7`.

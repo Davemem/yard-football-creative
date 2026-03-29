@@ -639,3 +639,90 @@ const sortListings = () => {
 };
 
 sortListings();
+
+const renderListingCard = (template, entry) => {
+  if (!(template instanceof HTMLTemplateElement)) {
+    return null;
+  }
+
+  const fragment = template.content.cloneNode(true);
+  const card = fragment.querySelector(".listing-card");
+
+  if (!card) {
+    return null;
+  }
+
+  if (entry.date) {
+    card.dataset.date = entry.date;
+  }
+
+  const categoryNode = card.querySelector('[data-field="category"]');
+  const statusNode = card.querySelector('[data-field="status"]');
+  const titleNode = card.querySelector('[data-field="title"]');
+  const summaryNode = card.querySelector('[data-field="summary"]');
+  const metaNode = card.querySelector('[data-field="meta"]');
+  const linkNode = card.querySelector('[data-field="primary-link"]');
+
+  if (categoryNode) {
+    categoryNode.textContent = entry.category || "";
+  }
+
+  if (statusNode) {
+    statusNode.textContent = entry.statusLabel || "";
+
+    if (!entry.statusLabel) {
+      statusNode.hidden = true;
+    }
+  }
+
+  if (titleNode) {
+    titleNode.textContent = entry.title || "";
+  }
+
+  if (summaryNode) {
+    summaryNode.textContent = entry.summary || "";
+  }
+
+  if (metaNode) {
+    metaNode.replaceChildren();
+
+    (entry.meta || []).forEach((value) => {
+      const item = document.createElement("p");
+      item.className = "listing-card-meta-item";
+      item.textContent = value;
+      metaNode.append(item);
+    });
+  }
+
+  if (linkNode) {
+    linkNode.textContent = entry.primaryCtaLabel || "Contact Yard";
+    linkNode.href = entry.primaryCtaUrl || "contact.html";
+  }
+
+  return card;
+};
+
+const hydrateProgramsFromSanity = async () => {
+  const upcomingGrid = document.querySelector('[data-listing="upcoming"][data-type="programs"]');
+  const template = document.querySelector("[data-listing-card-template]");
+  const client = window.YardSanity;
+
+  if (!upcomingGrid || !template || !client?.fetchPrograms) {
+    return;
+  }
+
+  try {
+    const programs = await client.fetchPrograms();
+
+    if (programs.length === 0) {
+      return;
+    }
+
+    upcomingGrid.replaceChildren(...programs.map((entry) => renderListingCard(template, entry)).filter(Boolean));
+    sortListings();
+  } catch (error) {
+    console.error("Unable to load programs from Sanity.", error);
+  }
+};
+
+hydrateProgramsFromSanity();
