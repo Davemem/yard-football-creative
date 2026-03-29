@@ -1,0 +1,182 @@
+# PHASE_1_FOUNDATION.md
+
+This document records the iterative outputs for Phase 1 in the exact order defined in `ROADMAP.md`.
+It carries forward the emotional and structural direction established in `PHASE_0_DIRECTION.md` and grounds the organisation definition in the supplied language from `assets/YARD.pdf`.
+
+## 1.1 Mission Statement
+
+### One-Sentence Organisation Definition
+
+Yard Football Creative is a football-based organisation that creates meaningful community and elite experiences for girls and women through storytelling, connection, and development.
+
+### Source Vision and Mission Block from `assets/YARD.pdf`
+
+- Vision: "TO EMPOWER AND INSPIRE."
+- Mission: "TO CREATE MEANINGFUL EXPERIENCES, BY ENSURING STORYTELLING AND CONNECTION ARE AT THE HEART OF EVERYTHING WE DO."
+
+### Website-Ready Mission Framing
+
+Yard Football Creative uses football to bring people together and build environments where girls and women feel connected, safe, inspired, and empowered to grow.
+
+### Why This Is the Phase 1 Baseline
+
+- It includes the full mission block from `assets/YARD.pdf`, with the requested vision wording update.
+- It stays faithful to the source language in `assets/YARD.pdf`, especially the emphasis on connection, belonging, inspiration, and empowerment.
+- It clarifies that the organisation serves both community and elite spaces without turning the brand into an elite-only academy.
+- It gives the website a direct answer to the first homepage question: what is this?
+- It leaves room for workshops, events, storytelling, and development programs without locking the organisation into a single format too early.
+
+## 1.2 Audience Definitions
+
+### Primary Audiences
+
+1. Girls and young women looking for a welcoming football environment
+2. Players seeking community participation, confidence, and belonging
+3. Players seeking elite progression, challenge, and higher-performance support
+4. Parents and families assessing whether Yard feels safe, credible, and worthwhile
+5. Coaches, clubs, schools, councils, and collaborators looking for football-led programs or events
+
+### Audience Needs the Website Must Serve First
+
+- `Players and families` need fast clarity on what Yard is, who it is for, and how to enquire.
+- `Community-focused visitors` need evidence that the environment is welcoming, developmental, and low-friction to join.
+- `Elite-focused visitors` need confidence that ambition, structure, and lived football credibility are real.
+- `Partners and collaborators` need to understand what kinds of activations, workshops, or experiences Yard can deliver.
+
+### First-User Priority Order for v1
+
+1. girls and women considering a Yard program or experience
+2. parents and families supporting that decision
+3. clubs, schools, and partners exploring collaboration
+
+### Why These Audiences Come First
+
+- They align with the clearest groups named across `BRAND.md`, the original scaffold, and `assets/YARD.pdf`.
+- They match the early website jobs of explaining the organisation, clarifying community and elite pathways, and creating clear enquiry paths.
+- They define the first decision points the site has to support before any later expansion into media, campaigns, or deeper program pages.
+
+## 1.3 Service and Program Categories
+
+### Core Offer Categories
+
+1. `Community football experiences`
+   Sessions, gatherings, and football environments designed to build belonging, confidence, and connection.
+2. `Elite pathway development`
+   Higher-ambition environments for players seeking challenge, progression, and credible football guidance.
+3. `Workshops and education`
+   Learning-led sessions covering development, wellbeing, leadership, and practical football topics.
+4. `Events and gala days`
+   Football-centred activations that bring clubs, schools, communities, or partners together.
+5. `All-abilities and inclusive football`
+   Experiences designed to widen access and create meaningful participation.
+6. `Storytelling, art, and creative projects`
+   Football-led cultural experiences that use story, reflection, and creative expression to deepen connection.
+
+### Supporting Offer Signals from the Current Materials
+
+- `assets/YARD.pdf` names workshops, gala days, all-abilities football, art, storytelling, and ideas as early program signals.
+- The original static scaffold introduces education, wellbeing, research translation, community collaboration, and football memory sessions.
+- Together, those materials support a service model that blends participation, development, and cultural storytelling rather than behaving like a standard academy-only offer stack.
+
+### Category Rules for Later Phases
+
+- Community and elite pathways should stay visible as the two primary audience lenses.
+- Program categories should remain simple enough for fast navigation and mobile scanning.
+- No later page or CTA should contradict the idea that Yard is both football-development-led and connection-led.
+
+## 1.4 Brand Direction
+
+### Phase 1 Brand Baseline
+
+Yard Football Creative should present as a grounded, football-native organisation with a warm but credible voice, balancing community belonging and elite ambition without slipping into generic academy or startup language.
+
+### Directional Principles
+
+- `Grounded over polished`
+  The brand should feel real, lived-in, and connected to football culture rather than over-produced.
+- `Warmth with credibility`
+  The tone should feel welcoming and human while still showing experience, standards, and intent.
+- `Story with orientation`
+  Emotional storytelling should strengthen clarity, not replace it.
+- `Community and ambition together`
+  The brand should hold space for both belonging and progression instead of forcing visitors to choose between them too early.
+- `Asset-led authenticity`
+  Later visual work should continue to follow `assets/YARD.pdf` and the approved `assets/Logos/` family rather than generic web trends.
+
+### Practical Effect on the Website
+
+- Headlines should stay short, direct, and rooted in real football language.
+- Credibility should come from lived experience, program clarity, and useful detail rather than inflated claims.
+- The homepage and core pages should lead with identity, audience fit, and action before expanding into deeper story.
+
+## 1.5 Website Success Goals
+
+### Core Success Definition for v1
+
+The first website succeeds when a new visitor can quickly understand what Yard Football Creative is, recognise whether it is relevant to them, and take a confident next step without confusion.
+
+### Primary Success Goals
+
+1. Explain the organisation clearly in one sentence above the fold.
+2. Help visitors self-identify into community, elite, or collaboration pathways.
+3. Build trust through founder truth, football credibility, and clear program framing.
+4. Make enquiry and expression-of-interest actions easy to find and easy to understand.
+5. Create a calm foundation that can grow into future pages, programs, events, and media without restructuring the brand.
+
+### First Conversion Actions
+
+- enquire about a program, event, or collaboration
+- register interest in a community or elite opportunity
+- contact Yard directly for follow-up at `contact@yardfc.com`
+- visit the official Instagram presence to confirm current activity and brand legitimacy
+
+### What Success Should Not Depend On
+
+- high-complexity features
+- dense navigation
+- inflated marketing claims
+- collecting more user data than needed for a response
+
+## 1.6 Governance Docs Complete
+
+### Governance Set for the Repository
+
+- `README.md` defines the project purpose, core principles, and primary website goals.
+- `LAWS.md` defines the non-negotiable product, brand, engineering, git, and safeguarding rules.
+- `ROADMAP.md` defines the canonical execution order and completion tracking.
+- `ARCHITECTURE.md` defines the current structural baseline to expand in later phases.
+- `BRAND.md` defines positioning, tone, visual direction, and theme guardrails.
+- `CONTENT_STRATEGY.md` defines page jobs, content rules, and program-content framing.
+- `CONTRIBUTING.md` defines collaborator workflow and documentation expectations.
+- `PHASE_0_DIRECTION.md` records the asset-grounded structural and visual foundation.
+- `PHASE_1_FOUNDATION.md` records the organisation definition, audiences, offer categories, brand baseline, success goals, and governance summary.
+
+### Governance Outcome
+
+Phase 1 governance is complete when these documents agree on:
+- what Yard Football Creative is
+- who the first audiences are
+- what offer categories exist at a high level
+- what the website must achieve first
+- which rules control future implementation
+
+That shared baseline is now in place and ready to support Phase 2 information architecture work.
+
+## Source Content Carry-Forward Requirement
+
+The narrative content in `assets/YARD.pdf` is canonical source material for the website.
+
+For later website phases:
+- the vision and mission must appear using the source wording from the PDF
+- the backyard memory introduction should be carried into the website
+- the "What is Yard Football Creative?" explanation should be carried into the website
+- the Mia Hamm quote and the younger-self framing should be carried into the website
+- the founder story and "Behind the Brand" material should be carried into the website
+- the early offer signals from the PDF should be reflected in the website's program and event presentation
+
+Wording may only change for minor grammar, spelling, punctuation, or formatting cleanup.
+The meaning, voice, and substance of the PDF content must be preserved.
+
+## Contact Workflow Baseline
+
+Until a different workflow is explicitly approved, all website contact and enquiry forms should direct submissions to `contact@yardfc.com`.
