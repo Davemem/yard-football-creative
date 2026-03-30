@@ -227,3 +227,19 @@ The v1 proof layer should therefore use:
 ### Implementation Rule
 
 Proof sections should make Yard feel active and legitimate without claiming outcomes, participant numbers, or quotes that are not currently supported by the source material.
+
+## 7.6 Safeguarding and Values Guidance Where It Materially Improves Trust
+
+### Source Boundary
+
+The repository does not yet include a formal safeguarding policy or approved detailed safeguarding procedure page.
+
+### v1 Guidance Rule
+
+The trust layer should therefore use:
+
+- approved safety language from the existing Yard story
+- belonging and connection values from the canonical source copy
+- clear, practical placement close to enquiry pathways
+
+This keeps the site youth-aware and trustworthy without overstating operational policy detail that has not been approved for publication.

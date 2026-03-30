@@ -373,7 +373,7 @@ Sub-phases:
 - [x] 7.3 add a registration-interest form flow for programs and pathway enquiries
 - [x] 7.4 strengthen trust with coach or staff bios grounded in approved source material
 - [x] 7.5 add testimonials or social-proof sections using only approved proof signals
-- [ ] 7.6 add safeguarding and values guidance where it materially improves trust
+- [x] 7.6 add safeguarding and values guidance where it materially improves trust
 - [ ] 7.7 clarify contact methods and direct contact options across core conversion pages
 - [ ] 7.8 add map or location context only where it is relevant and supported by approved information
 
@@ -412,6 +412,7 @@ Completion notes:
 - `7.3` complete: updated `programs.html`, `script.js`, and `PHASE_7_TRUST_AND_CONVERSION.md` so the Programs page now includes a dedicated registration-interest section, routes core pathway CTAs into that form, keeps the field set intentionally small, reuses the shared enquiry-form behaviour, and preserves `contact@yardfc.com` as the destination for program-interest follow-up.
 - `7.4` complete: updated `about.html`, `styles.css`, and `PHASE_7_TRUST_AND_CONVERSION.md` so the About page now includes a founder-credibility section grounded in the approved source story, using only the documented sisters/female-footballers/coaches material instead of inventing unsupported individual biographies or credentials.
 - `7.5` complete: updated `index.html`, `styles.css`, and `PHASE_7_TRUST_AND_CONVERSION.md` so the homepage now includes a social-proof grid built from approved trust signals only, combining founder lived experience, visible current activity, and a direct path into programs, events, and Instagram instead of inventing testimonials or unsupported metrics.
+- `7.6` complete: updated `contact.html` and `PHASE_7_TRUST_AND_CONVERSION.md` so the contact journey now includes a visible values-and-safety layer built from approved safe-environment, belonging, connection, and meaningful-experience language, while avoiding unsupported safeguarding-policy claims that are not yet documented in the repository.
 
 ## Phase 8 — Technical Hardening
 Goal: make the site robust before scaling.
