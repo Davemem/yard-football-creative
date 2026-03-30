@@ -930,6 +930,7 @@ h1.about-what-title {
   --logo-trim-top: 0%;
   --logo-trim-bottom: 0%;
   --logo-scale-boost: 1;
+  --logo-optical-scale: 1;
   --logo-optical-y: 0%;
   width: 100%;
   height: auto;
@@ -941,7 +942,8 @@ h1.about-what-title {
       calc((var(--logo-trim-left) - var(--logo-trim-right)) / 2),
       var(--logo-optical-y)
     )
-    scale(var(--logo-scale-boost));
+    scale(var(--logo-scale-boost))
+    scale(var(--logo-optical-scale));
   transform-origin: center;
 }
 
@@ -949,6 +951,11 @@ h1.about-what-title {
   aspect-ratio: 1;
   border-radius: 999px;
   overflow: hidden;
+}
+
+.logo-slot-hero[data-logo-variant="12"][data-logo-shape="freeform"] {
+  width: min(100%, calc(var(--logo-slot-size) * 0.9));
+  transform: translateY(-1.5rem);
 }
 
 .logo-slot-hero[data-logo-shape="bounded"] img {
@@ -961,7 +968,8 @@ h1.about-what-title {
 }
 
 .logo-slot-hero[data-logo-variant="12"][data-logo-shape="freeform"] img {
-  --logo-optical-y: -16%;
+  --logo-optical-y: 0%;
+  --logo-optical-scale: 1;
 }
 
 .logo-slot-footer {

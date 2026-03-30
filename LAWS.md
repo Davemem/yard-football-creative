@@ -133,6 +133,21 @@ A phase cannot be considered complete if:
 ### LAW 23 — Commit Clarity
 Commits must clearly describe intent and reference phases.
 
+### LAW 36 — No Duplicate Codebase Folders
+Git workflow must not create new top-level codebase folders such as merge clones, phase clones, or alternate project copies.
+
+Allowed:
+- working in the canonical repository folder
+- using branches, commits, tags, and remotes for git management
+- creating temporary build artifacts that are already ignored by git
+
+Not allowed:
+- creating sibling project folders to manage merges or phase work
+- leaving multiple live codebase copies in `/Documents/Projects` for the same repository
+- treating copied folders as part of the normal git workflow
+
+If isolation is required, use branches, worktrees, or remotes instead of duplicating the codebase directory.
+
 ---
 
 ## Roadmap Enforcement Laws
