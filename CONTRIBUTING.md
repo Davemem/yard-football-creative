@@ -31,6 +31,7 @@ The repository governance set is:
 - `PHASE_4_CORE_CONTENT.md` for the sequential Phase 4 copy drafting that preserves `assets/YARD.pdf` as the canonical website-content source
 - `PHASE_6_CORE_PAGE_BUILD.md` for the Phase 6 frontend, CMS-model, and content-entry decisions for `Programs` and `Events`
 - `cms/EDITOR_GUIDE.md` for the editor-facing checklist that keeps Sanity publishing simple for non-technical users
+- `sanity.config.ts`, `sanity.cli.ts`, and `scripts/seed-sanity-test-content.mjs` for the Sanity Studio, CLI, and repeatable test-content workflow
 
 Contributors should keep these documents aligned when making foundational changes.
 

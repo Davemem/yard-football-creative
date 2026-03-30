@@ -6,11 +6,19 @@ It covers only the two content types approved for v1:
 - `Program`
 - `Event`
 
+## Studio Setup
+
+- The local Studio uses the root-level `sanity.config.ts` and `sanity.cli.ts` files.
+- The default project is `e2l5fqsu` on the `production` dataset.
+- Set `SANITY_STUDIO_PROJECT_ID` and `SANITY_STUDIO_DATASET` only if you need to override that default before running `npm run sanity:dev`.
+- If the website is being previewed locally in a browser, add your local preview origin to Sanity CORS settings before testing the frontend fetches.
+
 ## Editing Rule
 
 - Only publish content that is ready to appear on the public website.
 - Keep each entry short enough to fit the listing cards cleanly.
 - Use the approved contact or registration URL for the primary CTA.
+- Relative site links such as `contact.html` are allowed when the CTA should stay on the Yard website.
 
 ## `Program` Entry Checklist
 

@@ -4,7 +4,7 @@
   color-scheme: light dark;
   --font-editorial: "Special Elite", "Courier New", monospace;
   --font-display: "Walter Turncoat", "Trebuchet MS", "Segoe UI", sans-serif;
-  --raw-ground-mist: #138040;
+  --raw-ground-mist: #14663a;
   --raw-field-depth: #2e6417;
   --raw-acid-grass: #7dd957;
   --raw-warm-whistle: #ffde58;
@@ -46,24 +46,26 @@ html {
 
 body {
   --color-ground-mist: var(--raw-ground-mist);
-  --color-field-depth: var(--raw-field-depth);
-  --color-acid-grass: var(--raw-acid-grass);
-  --color-warm-whistle: var(--raw-warm-whistle);
-  --color-clay-ball: var(--raw-clay-ball);
-  --color-chalk: var(--raw-chalk);
-  --color-ink: var(--raw-ink);
-  --color-paper: var(--raw-paper);
-  --color-panel: rgba(255, 255, 255, 0.62);
-  --color-panel-strong: rgba(255, 255, 255, 0.78);
-  --color-line: rgba(19, 128, 64, 0.14);
-  --color-shadow: rgba(19, 80, 40, 0.1);
+  --color-field-depth: #c6f0b8;
+  --color-acid-grass: #9eed82;
+  --color-warm-whistle: #ffde58;
+  --color-clay-ball: #efb18a;
+  --color-chalk: #ffffff;
+  --color-ink: #f7f7f2;
+  --color-paper: #0d5c2e;
+  --color-panel: rgba(0, 40, 18, 0.38);
+  --color-panel-strong: rgba(0, 40, 18, 0.52);
+  --color-line: rgba(198, 240, 184, 0.16);
+  --color-shadow: rgba(0, 0, 0, 0.22);
   margin: 0;
   min-width: 20rem;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   font-family: var(--font-editorial);
-  line-height: 1.68;
+  font-size: 1.0625rem;
+  line-height: 1.78;
+  letter-spacing: 0.01em;
   color: var(--color-ink);
   background: var(--color-ground-mist);
 }
@@ -73,25 +75,25 @@ body > .page-shell:not(.snap-scroll-container):not(.about-scroll-container) {
 }
 
 body[data-theme="lime-signal"] {
-  --color-ground-mist: #e2ecd6;
-  --color-field-depth: #0f6e36;
+  --color-ground-mist: #125e34;
+  --color-field-depth: #d4ffc2;
   --color-acid-grass: var(--raw-lime-flood);
   --color-warm-whistle: #f5ef8c;
-  --color-clay-ball: #c68457;
-  --color-panel: rgba(244, 250, 236, 0.72);
-  --color-panel-strong: rgba(248, 252, 242, 0.86);
-  --color-line: rgba(15, 110, 54, 0.15);
+  --color-clay-ball: #efb18a;
+  --color-panel: rgba(0, 36, 14, 0.4);
+  --color-panel-strong: rgba(0, 36, 14, 0.55);
+  --color-line: rgba(212, 255, 194, 0.16);
 }
 
 body[data-theme="lavender-night"] {
-  --color-ground-mist: #e6dee9;
-  --color-field-depth: var(--raw-violet-outline);
-  --color-acid-grass: #e2b6f8;
+  --color-ground-mist: #115a36;
+  --color-field-depth: #e2c6f8;
+  --color-acid-grass: #d4a8f0;
   --color-warm-whistle: #ffe58a;
-  --color-clay-ball: #d8a184;
-  --color-panel: rgba(255, 255, 255, 0.64);
-  --color-panel-strong: rgba(255, 255, 255, 0.82);
-  --color-line: rgba(130, 29, 172, 0.15);
+  --color-clay-ball: #efb18a;
+  --color-panel: rgba(20, 10, 30, 0.35);
+  --color-panel-strong: rgba(20, 10, 30, 0.5);
+  --color-line: rgba(226, 198, 248, 0.16);
 }
 
 body[data-mode="dark"] {
@@ -101,7 +103,7 @@ body[data-mode="dark"] {
   --color-warm-whistle: #ffe58a;
   --color-clay-ball: #efb18a;
   --color-chalk: #f7f7f2;
-  --color-ink: #f3f2ec;
+  --color-ink: #f7f7f2;
   --color-paper: #142012;
   --color-panel: rgba(20, 32, 18, 0.78);
   --color-panel-strong: rgba(20, 32, 18, 0.92);
@@ -147,7 +149,9 @@ h3 {
   z-index: -1;
   overflow: hidden;
   background:
-    linear-gradient(160deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0) 45%, rgba(19, 128, 64, 0.06) 100%),
+    radial-gradient(ellipse 120% 80% at 85% 10%, rgba(255, 255, 255, 0.06) 0%, transparent 60%),
+    radial-gradient(ellipse 100% 70% at 10% 90%, rgba(0, 0, 0, 0.12) 0%, transparent 55%),
+    linear-gradient(175deg, rgba(255, 255, 255, 0.05) 0%, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0.14) 100%),
     var(--color-ground-mist);
 }
 
@@ -155,6 +159,10 @@ h3 {
   position: absolute;
   border-radius: 999px;
   filter: blur(10px);
+  opacity: 0;
+}
+
+body[data-mode="dark"] .page-glow {
   opacity: 0.9;
 }
 
@@ -163,7 +171,7 @@ h3 {
   right: -6rem;
   width: 34rem;
   height: 34rem;
-  background: radial-gradient(circle, color-mix(in srgb, var(--color-acid-grass) 58%, transparent) 0, transparent 68%);
+  background: radial-gradient(circle, color-mix(in srgb, var(--color-acid-grass) 40%, transparent) 0, transparent 68%);
 }
 
 .page-glow-bottom {
@@ -171,7 +179,7 @@ h3 {
   left: -10rem;
   width: 28rem;
   height: 28rem;
-  background: radial-gradient(circle, color-mix(in srgb, var(--color-warm-whistle) 32%, transparent) 0, transparent 72%);
+  background: radial-gradient(circle, color-mix(in srgb, var(--color-warm-whistle) 22%, transparent) 0, transparent 72%);
 }
 
 .container {
@@ -244,10 +252,11 @@ h3 {
 
 .about-split-copy {
   font-family: var(--font-editorial);
-  font-size: clamp(0.95rem, 1.15vw, 1.1rem);
+  font-size: clamp(1.05rem, 1.25vw, 1.2rem);
   font-weight: 400;
-  line-height: 1.75;
-  color: var(--color-ink);
+  line-height: 1.9;
+  letter-spacing: 0.02em;
+  color: var(--color-chalk);
 }
 
 .about-split-copy p {
@@ -512,8 +521,9 @@ h1.about-what-title {
 .about-what-statements p {
   margin: 0;
   font-family: var(--font-editorial);
-  font-size: clamp(1rem, 1.6vw, 1.15rem);
-  line-height: 1.9;
+  font-size: clamp(1.05rem, 1.6vw, 1.2rem);
+  line-height: 1.95;
+  letter-spacing: 0.015em;
 }
 
 .about-what-statements p + p {
@@ -533,8 +543,9 @@ h1.about-what-title {
 .about-what-body p {
   margin: 0;
   font-family: var(--font-editorial);
-  font-size: clamp(0.95rem, 1.4vw, 1.05rem);
-  line-height: 1.95;
+  font-size: clamp(1.05rem, 1.4vw, 1.15rem);
+  line-height: 2;
+  letter-spacing: 0.02em;
 }
 
 .about-what-body p + p {
@@ -546,7 +557,7 @@ h1.about-what-title {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.03em;
-  color: var(--copy, #1f1f1f);
+  color: var(--color-ink);
 }
 
 .about-highlight {
@@ -695,9 +706,9 @@ h1.about-what-title {
   justify-self: center;
   max-width: 42rem;
   font-family: var(--font-editorial);
-  font-size: clamp(1.3rem, 2.4vw, 1.6rem);
+  font-size: clamp(1.35rem, 2.4vw, 1.65rem);
   font-weight: 400;
-  line-height: 1.7;
+  line-height: 1.75;
   text-align: center;
   color: var(--color-field-depth);
 }
@@ -989,9 +1000,9 @@ h1.about-what-title {
 .main-nav a,
 .menu-toggle {
   font-family: var(--font-display);
-  font-size: 1.12rem;
+  font-size: 1.15rem;
   font-weight: 400;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
   color: var(--color-field-depth);
@@ -1007,7 +1018,7 @@ h1.about-what-title {
   padding: 0.65rem 1rem;
   border: 1px solid var(--color-line);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.5);
+  background: var(--color-panel);
   cursor: pointer;
 }
 
@@ -1083,10 +1094,11 @@ h1.about-what-title {
   margin: 0;
   font-family: var(--font-editorial);
   font-weight: 400;
-  font-size: clamp(1.12rem, 1.42vw, 1.5rem);
-  line-height: 1.68;
-  letter-spacing: 0;
+  font-size: clamp(1.15rem, 1.42vw, 1.5rem);
+  line-height: 1.82;
+  letter-spacing: 0.015em;
   text-align: right;
+  color: var(--color-chalk);
   text-wrap: pretty;
   font-kerning: normal;
   font-variant-ligatures: none;
@@ -1226,9 +1238,9 @@ h2.listing-section-heading {
 }
 
 .listing-card-summary {
-  font-size: 0.92rem;
+  font-size: 0.95rem;
   color: var(--color-ink);
-  opacity: 0.85;
+  opacity: 0.9;
 }
 
 .listing-card-meta {
@@ -1239,8 +1251,8 @@ h2.listing-section-heading {
 
 .listing-card-meta-item {
   justify-content: flex-start;
-  font-size: 0.84rem;
-  opacity: 0.88;
+  font-size: 0.88rem;
+  opacity: 0.9;
 }
 
 .listing-card-actions {
@@ -1354,9 +1366,9 @@ h2.listing-section-heading {
 .section-kicker,
 .contact-label {
   font-family: var(--font-display);
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-weight: 400;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
 }
 
@@ -1397,7 +1409,9 @@ h2.listing-section-heading {
 
 .lead-copy {
   max-width: 32rem;
-  font-size: clamp(1.15rem, 2.2vw, 1.5rem);
+  font-size: clamp(1.2rem, 2.2vw, 1.5rem);
+  line-height: 1.85;
+  letter-spacing: 0.015em;
 }
 
 .button-row {
@@ -1454,7 +1468,7 @@ body[data-mode="dark"] .button-primary {
 
 .button-secondary {
   border-color: var(--color-field-depth);
-  background: rgba(255, 255, 255, 0.36);
+  background: rgba(255, 255, 255, 0.18);
   color: var(--color-field-depth);
 }
 
@@ -1495,8 +1509,12 @@ body[data-mode="dark"] .button-primary {
   padding: var(--space-5);
   border: 1px solid var(--color-line);
   border-radius: var(--radius-lg);
-  background: var(--color-panel);
-  box-shadow: var(--shadow-soft);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, transparent 40%),
+    var(--color-panel);
+  box-shadow:
+    var(--shadow-soft),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
 }
 
 .statement-grid {
@@ -1514,8 +1532,10 @@ body[data-mode="dark"] .button-primary {
   min-height: clamp(18rem, 22vw, 23.5rem);
   padding: clamp(1.15rem, 1.6vw, 1.55rem) clamp(1.15rem, 1.7vw, 1.6rem) clamp(1.2rem, 1.8vw, 1.6rem);
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.2)),
-    rgba(255, 255, 255, 0.18);
+    linear-gradient(180deg, var(--color-panel-strong), var(--color-panel));
+  box-shadow:
+    var(--shadow-soft),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
 }
 
 .card-statement .section-kicker {
@@ -1527,9 +1547,9 @@ body[data-mode="dark"] .button-primary {
 
 .card-statement > p:not(.section-kicker) {
   font-family: var(--font-display);
-  font-size: clamp(1.16rem, 1.8vw, 1.42rem);
-  line-height: 1.42;
-  letter-spacing: 0;
+  font-size: clamp(1.2rem, 1.8vw, 1.45rem);
+  line-height: 1.5;
+  letter-spacing: 0.01em;
   text-align: center;
   max-width: 16ch;
   margin-inline: auto;
@@ -1579,8 +1599,8 @@ body[data-mode="dark"] .button-primary {
   border: 0;
   border-radius: 2.25rem;
   background:
-    radial-gradient(circle at top left, color-mix(in srgb, var(--color-acid-grass) 18%, transparent), transparent 42%),
-    linear-gradient(135deg, #e6f8d6, #d8f2c8);
+    radial-gradient(circle at top left, color-mix(in srgb, var(--color-acid-grass) 14%, transparent), transparent 42%),
+    linear-gradient(135deg, var(--color-panel-strong), var(--color-panel));
   box-shadow: var(--shadow-soft);
 }
 
@@ -1597,11 +1617,6 @@ body[data-mode="dark"] .button-primary {
 .quote-illustrated-attribution {
   font-family: var(--font-editorial);
   color: var(--color-ink);
-}
-
-body[data-mode="dark"] .quote-illustrated-text,
-body[data-mode="dark"] .quote-illustrated-attribution {
-  color: var(--raw-ink);
 }
 
 body[data-mode="dark"] .about-what-body strong,
@@ -1647,9 +1662,11 @@ body[data-mode="dark"] .about-highlight {
   border: 1px solid var(--color-line);
   border-radius: var(--radius-lg);
   background:
-    linear-gradient(135deg, color-mix(in srgb, var(--color-chalk) 32%, transparent), color-mix(in srgb, var(--color-chalk) 14%, transparent)),
-    color-mix(in srgb, var(--color-paper) 36%, transparent);
-  box-shadow: var(--shadow-soft);
+    linear-gradient(180deg, rgba(255, 255, 255, 0.03) 0%, transparent 30%),
+    linear-gradient(135deg, var(--color-panel-strong), var(--color-panel));
+  box-shadow:
+    var(--shadow-soft),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
 }
 
 .social-feed-shell .stack-md > * + * {
@@ -1789,10 +1806,12 @@ body[data-mode="dark"] .about-highlight {
   width: 100%;
   min-height: 3.25rem;
   padding: 0.9rem 1rem;
-  border: 1px solid color-mix(in srgb, var(--color-field-depth) 24%, transparent);
+  border: 1px solid var(--color-line);
   border-radius: 1rem;
-  background: color-mix(in srgb, var(--color-chalk) 92%, transparent);
+  background: var(--color-panel-strong);
   font: inherit;
+  font-size: 1.05rem;
+  letter-spacing: 0.01em;
   color: var(--color-ink);
 }
 
@@ -1802,7 +1821,7 @@ body[data-mode="dark"] .field-input {
 }
 
 .field-input::placeholder {
-  color: color-mix(in srgb, var(--color-ink) 60%, transparent);
+  color: color-mix(in srgb, var(--color-ink) 50%, transparent);
 }
 
 .field-input:focus-visible {
@@ -1878,8 +1897,9 @@ body[data-mode="dark"] .field-input {
   gap: clamp(0.75rem, 1.8vw, 1.5rem);
   padding: var(--space-5) 0;
   border-top: 1px solid var(--color-line);
-  font-size: 0.95rem;
-  color: color-mix(in srgb, var(--color-ink) 68%, transparent);
+  font-size: 0.98rem;
+  letter-spacing: 0.01em;
+  color: color-mix(in srgb, var(--color-ink) 82%, transparent);
 }
 
 .footer-legal-year {

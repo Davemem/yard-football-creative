@@ -2,3 +2,8 @@
 yard-page-*.png
 yard-preview.png
 .venv-pdf/
+.env
+.env.local
+node_modules/
+dist/
+.sanity/

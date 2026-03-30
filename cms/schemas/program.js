@@ -101,9 +101,9 @@ export default {
     {
       name: "primaryCtaUrl",
       title: "Primary CTA URL",
-      type: "url",
+      type: "string",
       group: "cta",
-      description: "Use an approved contact or registration destination only.",
+      description: "Use an approved contact or registration destination only, including relative site links like contact.html.",
       validation: (Rule) => Rule.required(),
     },
     {

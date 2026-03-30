@@ -35,6 +35,9 @@ The website should:
 - `PHASE_4_CORE_CONTENT.md` — sequential Phase 4 website copy drafting grounded in `assets/YARD.pdf`
 - `PHASE_6_CORE_PAGE_BUILD.md` — Phase 6 decisions for the first CMS-fed `Programs` and `Events` implementation
 - `cms/EDITOR_GUIDE.md` — editor-facing checklist for publishing `Program` and `Event` entries in Sanity
+- `sanity.config.ts` / `sanity.cli.ts` — local Sanity Studio and CLI configuration
+- default Sanity project ID: `e2l5fqsu` with dataset `production`
+- `scripts/seed-sanity-test-content.mjs` — deterministic test fixtures for `Programs` and `Events`
 - `BRAND.md` — tone, positioning, and visual direction
 - `CONTENT_STRATEGY.md` — page goals and content rules
 - `CONTRIBUTING.md` — workflow for future collaborators
