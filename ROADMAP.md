@@ -371,7 +371,7 @@ Sub-phases:
 - [x] 7.1 define the shared enquiry-form model for v1 trust and conversion flows
 - [x] 7.2 implement the primary email enquiry form and align it to the agreed contact workflow
 - [x] 7.3 add a registration-interest form flow for programs and pathway enquiries
-- [ ] 7.4 strengthen trust with coach or staff bios grounded in approved source material
+- [x] 7.4 strengthen trust with coach or staff bios grounded in approved source material
 - [ ] 7.5 add testimonials or social-proof sections using only approved proof signals
 - [ ] 7.6 add safeguarding and values guidance where it materially improves trust
 - [ ] 7.7 clarify contact methods and direct contact options across core conversion pages
@@ -410,6 +410,7 @@ Completion notes:
 - `7.1` complete: added `PHASE_7_TRUST_AND_CONVERSION.md` and defined the shared v1 enquiry-form contract covering scope, field restraint, contact routing to `contact@yardfc.com`, shared validation and status behaviour, CTA separation between direct contact and registration interest, and the requirement that forms sit alongside visible trust content instead of acting as isolated widgets.
 - `7.2` complete: updated `contact.html`, `script.js`, and `styles.css` so the primary contact flow now explains its purpose more clearly, adds lightweight enquiry-type routing context, preserves delivery to `contact@yardfc.com`, uses a shared enquiry-form handler with validation and status states, and keeps a direct email fallback visible on the page.
 - `7.3` complete: updated `programs.html`, `script.js`, and `PHASE_7_TRUST_AND_CONVERSION.md` so the Programs page now includes a dedicated registration-interest section, routes core pathway CTAs into that form, keeps the field set intentionally small, reuses the shared enquiry-form behaviour, and preserves `contact@yardfc.com` as the destination for program-interest follow-up.
+- `7.4` complete: updated `about.html`, `styles.css`, and `PHASE_7_TRUST_AND_CONVERSION.md` so the About page now includes a founder-credibility section grounded in the approved source story, using only the documented sisters/female-footballers/coaches material instead of inventing unsupported individual biographies or credentials.
 
 ## Phase 8 — Technical Hardening
 Goal: make the site robust before scaling.

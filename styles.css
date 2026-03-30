@@ -231,6 +231,18 @@ body[data-mode="dark"] .page-glow {
   width: clamp(20rem, 45vw, 36rem);
 }
 
+.about-panel-founders {
+  padding-top: calc(var(--header-height) + var(--space-4));
+}
+
+.about-trust-heading {
+  text-align: center;
+}
+
+.about-trust-grid {
+  align-items: stretch;
+}
+
 /* ── Split brand panels (Holly + Addy) ── */
 .about-panel-holly,
 .about-panel-addy {

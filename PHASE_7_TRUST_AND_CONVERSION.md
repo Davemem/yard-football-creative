@@ -190,3 +190,24 @@ The form should:
 - deliver to `contact@yardfc.com`
 - reuse the shared enquiry-form behaviour for validation and status messaging
 - keep a direct fallback path to the main contact page for broader collaboration or non-program contact
+
+## 7.4 Trust Through Coach or Staff Bios Grounded in Approved Source Material
+
+### Source Boundary
+
+The current approved source material does not provide full individual bios for a wider staff group.
+It does provide enough to add a legitimate founder-credibility layer drawn from the existing Yard story.
+
+### v1 Trust Approach
+
+The first trust implementation should therefore use:
+
+- a combined founder profile
+- lived football and coaching experience
+- the existing safe-environment motivation
+
+This is a safer v1 move than inventing individual credentials, clubs, or role histories that have not been approved.
+
+### Page Placement
+
+The founder-credibility layer should strengthen `about.html` because that page already carries the source story and is the clearest place for visitors to evaluate who is behind Yard.
