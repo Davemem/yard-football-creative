@@ -372,7 +372,7 @@ Sub-phases:
 - [x] 7.2 implement the primary email enquiry form and align it to the agreed contact workflow
 - [x] 7.3 add a registration-interest form flow for programs and pathway enquiries
 - [x] 7.4 strengthen trust with coach or staff bios grounded in approved source material
-- [ ] 7.5 add testimonials or social-proof sections using only approved proof signals
+- [x] 7.5 add testimonials or social-proof sections using only approved proof signals
 - [ ] 7.6 add safeguarding and values guidance where it materially improves trust
 - [ ] 7.7 clarify contact methods and direct contact options across core conversion pages
 - [ ] 7.8 add map or location context only where it is relevant and supported by approved information
@@ -411,6 +411,7 @@ Completion notes:
 - `7.2` complete: updated `contact.html`, `script.js`, and `styles.css` so the primary contact flow now explains its purpose more clearly, adds lightweight enquiry-type routing context, preserves delivery to `contact@yardfc.com`, uses a shared enquiry-form handler with validation and status states, and keeps a direct email fallback visible on the page.
 - `7.3` complete: updated `programs.html`, `script.js`, and `PHASE_7_TRUST_AND_CONVERSION.md` so the Programs page now includes a dedicated registration-interest section, routes core pathway CTAs into that form, keeps the field set intentionally small, reuses the shared enquiry-form behaviour, and preserves `contact@yardfc.com` as the destination for program-interest follow-up.
 - `7.4` complete: updated `about.html`, `styles.css`, and `PHASE_7_TRUST_AND_CONVERSION.md` so the About page now includes a founder-credibility section grounded in the approved source story, using only the documented sisters/female-footballers/coaches material instead of inventing unsupported individual biographies or credentials.
+- `7.5` complete: updated `index.html`, `styles.css`, and `PHASE_7_TRUST_AND_CONVERSION.md` so the homepage now includes a social-proof grid built from approved trust signals only, combining founder lived experience, visible current activity, and a direct path into programs, events, and Instagram instead of inventing testimonials or unsupported metrics.
 
 ## Phase 8 — Technical Hardening
 Goal: make the site robust before scaling.

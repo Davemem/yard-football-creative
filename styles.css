@@ -472,6 +472,13 @@ body[data-mode="dark"] .page-glow {
   border-color: color-mix(in srgb, var(--color-clay-ball) 60%, transparent);
 }
 
+.proof-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-4);
+  margin-top: var(--space-5);
+}
+
 .page-cta-band {
   text-align: center;
 }
@@ -1997,6 +2004,7 @@ body[data-mode="dark"] .field-input {
   .card-grid,
   .content-grid,
   .placeholder-grid,
+  .proof-grid,
   .statement-grid,
   .story-layout,
   .social-feed-shell,

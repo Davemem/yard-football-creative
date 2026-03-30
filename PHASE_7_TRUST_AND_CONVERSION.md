@@ -211,3 +211,19 @@ This is a safer v1 move than inventing individual credentials, clubs, or role hi
 ### Page Placement
 
 The founder-credibility layer should strengthen `about.html` because that page already carries the source story and is the clearest place for visitors to evaluate who is behind Yard.
+
+## 7.5 Testimonials or Social-Proof Sections Using Only Approved Proof Signals
+
+### Proof Rule
+
+The current repository still does not include approved participant testimonials.
+The v1 proof layer should therefore use:
+
+- founder lived experience
+- visible current activity
+- access to current programs and events
+- Instagram as the primary current-activity proof destination
+
+### Implementation Rule
+
+Proof sections should make Yard feel active and legitimate without claiming outcomes, participant numbers, or quotes that are not currently supported by the source material.
