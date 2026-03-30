@@ -367,6 +367,16 @@ Completion notes:
 ## Phase 7 — Trust and Conversion Layer
 Goal: increase legitimacy and make action easy.
 
+Sub-phases:
+- [x] 7.1 define the shared enquiry-form model for v1 trust and conversion flows
+- [ ] 7.2 implement the primary email enquiry form and align it to the agreed contact workflow
+- [ ] 7.3 add a registration-interest form flow for programs and pathway enquiries
+- [ ] 7.4 strengthen trust with coach or staff bios grounded in approved source material
+- [ ] 7.5 add testimonials or social-proof sections using only approved proof signals
+- [ ] 7.6 add safeguarding and values guidance where it materially improves trust
+- [ ] 7.7 clarify contact methods and direct contact options across core conversion pages
+- [ ] 7.8 add map or location context only where it is relevant and supported by approved information
+
 Deliverables:
 - enquiry forms
 - registration interest form
@@ -386,6 +396,18 @@ Human review steps:
 - review trust sections, forms, and staff/program presentation with a human reviewer
 - confirm the site feels credible to players, families, and partners
 - confirm the header social links and contact form feel useful, visible, and trustworthy
+
+Completion notes:
+- Phase 7 sub-phases were added on 2026-03-29 so the trust and conversion work can now be executed in a canonical order without inventing implementation steps outside the roadmap.
+- `7.1` should lock the shared form contract, field restraint, and CTA routing before additional trust or registration flows are implemented.
+- `7.2` should cover the main contact conversion path to `contact@yardfc.com` and preserve the existing transparency requirements around what is submitted and why.
+- `7.3` should introduce the distinct registration-interest flow required by the phase deliverables without replacing the direct-contact pathway.
+- `7.4` should focus on legitimate founder, coach, or staff credibility only when the supporting material is approved and available.
+- `7.5` should treat lived experience, current activity, and approved proof content as the preferred proof layer unless human-approved testimonials are later supplied.
+- `7.6` should keep safeguarding and values content practical, visible, and relevant to girls, young women, and family trust.
+- `7.7` should make it easier to reach Yard from core pages through clear contact methods without adding unnecessary complexity.
+- `7.8` should only add location or map context when it improves clarity and does not imply unsupported operating details.
+- `7.1` complete: added `PHASE_7_TRUST_AND_CONVERSION.md` and defined the shared v1 enquiry-form contract covering scope, field restraint, contact routing to `contact@yardfc.com`, shared validation and status behaviour, CTA separation between direct contact and registration interest, and the requirement that forms sit alongside visible trust content instead of acting as isolated widgets.
 
 ## Phase 8 — Technical Hardening
 Goal: make the site robust before scaling.

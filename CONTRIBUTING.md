@@ -30,6 +30,7 @@ The repository governance set is:
 - `PHASE_3_BRAND_SYSTEM.md` for the brand-system decisions that translate the asset library into website-ready colour, typography, component, spacing, image, voice, and theme rules
 - `PHASE_4_CORE_CONTENT.md` for the sequential Phase 4 copy drafting that preserves `assets/YARD.pdf` as the canonical website-content source
 - `PHASE_6_CORE_PAGE_BUILD.md` for the Phase 6 frontend, CMS-model, and content-entry decisions for `Programs` and `Events`
+- `PHASE_7_TRUST_AND_CONVERSION.md` for the Phase 7 enquiry-form, trust-layer, and contact-method decisions
 - `cms/EDITOR_GUIDE.md` for the editor-facing checklist that keeps Sanity publishing simple for non-technical users
 - `sanity.config.ts`, `sanity.cli.ts`, and `scripts/seed-sanity-test-content.mjs` for the Sanity Studio, CLI, and repeatable test-content workflow
 
