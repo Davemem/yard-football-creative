@@ -243,3 +243,19 @@ The trust layer should therefore use:
 - clear, practical placement close to enquiry pathways
 
 This keeps the site youth-aware and trustworthy without overstating operational policy detail that has not been approved for publication.
+
+## 7.7 Contact Methods and Direct Contact Options Across Core Conversion Pages
+
+### Core Rule
+
+The main conversion pages should each offer a clear direct-contact fallback so users do not have to rely on a single form pattern.
+
+### v1 Contact-Method Set
+
+The core direct-contact options should be:
+
+- the main contact form
+- direct email to `contact@yardfc.com`
+- Instagram as the current-activity social destination
+
+Programs may also route visitors into the dedicated registration-interest form because that is now part of the approved Phase 7 conversion model.
