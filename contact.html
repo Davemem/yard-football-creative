@@ -87,7 +87,15 @@
     <main class="page-shell">
       <section class="section-shell page-intro-shell reveal">
         <div class="container simple-copy-layout stack-md">
-          <h1 class="section-title">Contact</h1>
+          <p class="section-kicker">Contact</p>
+          <h1 class="section-title">Reach Out to Yard</h1>
+          <p class="lead-copy">
+            Somewhere for everyone to come, and hopefully feel they belong.
+          </p>
+          <p class="max-copy">
+            Use this form for program questions, event follow-up, collaboration ideas, or general contact.
+            Your enquiry goes to <code>contact@yardfc.com</code> so Yard can reply directly.
+          </p>
         </div>
       </section>
 
@@ -95,41 +103,57 @@
         <div class="container simple-copy-layout">
           <form
             class="card form-shell stack-md"
-            data-contact-form
+            data-enquiry-form="contact"
             action="https://formsubmit.co/ajax/contact@yardfc.com"
             method="post"
             novalidate
           >
             <div class="stack-sm form-support">
+              <p class="form-intro-title">Send an enquiry</p>
               <p>
-                Somewhere for everyone to come, and hopefully feel they belong.
+                This form is for direct contact with Yard about programs, events, or collaboration.
               </p>
               <p>
-                This form sends your name, email, and message to Yard so we can reply through
+                We only ask for the information needed to understand your message and reply through
                 <a class="button button-text contact-inline-link" href="mailto:contact@yardfc.com">contact@yardfc.com</a>.
+              </p>
+              <p class="form-note">
+                After you submit, Yard can follow up by email. If the form does not send, use the email link above.
               </p>
             </div>
 
-            <input type="hidden" name="_subject" value="New Yard website enquiry" />
+            <input type="hidden" name="_subject" value="Yard website enquiry" data-enquiry-subject />
             <input type="hidden" name="_template" value="table" />
             <input type="hidden" name="_captcha" value="false" />
             <input type="hidden" name="_url" value="" data-contact-url />
 
             <div class="field-group">
               <label class="field-label" for="name">Name</label>
-              <input class="field-input" id="name" name="name" type="text" autocomplete="name" required />
+              <input class="field-input" id="name" name="name" type="text" autocomplete="name" required data-required-field />
               <p class="field-error" data-field-error="name" hidden>Please enter your name.</p>
             </div>
 
             <div class="field-group">
               <label class="field-label" for="email">Email</label>
-              <input class="field-input" id="email" name="email" type="email" autocomplete="email" required />
+              <input class="field-input" id="email" name="email" type="email" autocomplete="email" required data-required-field />
               <p class="field-error" data-field-error="email" hidden>Please enter a valid email address.</p>
             </div>
 
             <div class="field-group">
+              <label class="field-label" for="enquiry-type">What is this about?</label>
+              <select class="field-input" id="enquiry-type" name="enquiryType" required data-required-field data-enquiry-type>
+                <option value="">Select one</option>
+                <option value="Program enquiry">Program enquiry</option>
+                <option value="Event enquiry">Event enquiry</option>
+                <option value="Collaboration enquiry">Collaboration enquiry</option>
+                <option value="General enquiry">General enquiry</option>
+              </select>
+              <p class="field-error" data-field-error="enquiryType" hidden>Please choose what your enquiry is about.</p>
+            </div>
+
+            <div class="field-group">
               <label class="field-label" for="message">Message</label>
-              <textarea class="field-input field-textarea" id="message" name="message" rows="5" required></textarea>
+              <textarea class="field-input field-textarea" id="message" name="message" rows="5" required data-required-field></textarea>
               <p class="field-error" data-field-error="message" hidden>Please enter a message.</p>
             </div>
 
@@ -138,24 +162,32 @@
               <input class="field-input" id="website" name="_honey" type="text" tabindex="-1" autocomplete="off" />
             </div>
 
-            <p class="form-support">
-              Submit sends your enquiry without leaving this page.
+            <p class="form-note">
+              Submit sends your name, email, enquiry type, and message to Yard without leaving this page.
             </p>
 
-            <p class="form-status form-status-error" data-contact-validation hidden>
+            <p class="form-status form-status-error" data-form-state="validation" hidden>
               Please complete the highlighted fields before sending.
             </p>
-            <p class="form-status" data-contact-pending hidden>
+            <p class="form-status" data-form-state="pending" hidden>
               Sending your message...
             </p>
-            <p class="form-status" data-contact-success hidden>
-              Thanks. Your message has been sent to Yard.
+            <p class="form-status" data-form-state="success" hidden>
+              Thanks. Your message has been sent to Yard through <code>contact@yardfc.com</code>.
             </p>
-            <p class="form-status form-status-error" data-contact-error hidden>
+            <p class="form-status form-status-error" data-form-state="error" hidden>
               We couldn't send your message right now. Please email contact@yardfc.com directly.
             </p>
 
-            <button class="button button-primary" type="submit" data-contact-submit>Send</button>
+            <button
+              class="button button-primary"
+              type="submit"
+              data-form-submit
+              data-submit-label="Send enquiry"
+              data-submit-pending-label="Sending enquiry..."
+            >
+              Send enquiry
+            </button>
           </form>
         </div>
       </section>

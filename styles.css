@@ -1768,8 +1768,21 @@ body[data-mode="dark"] .about-highlight {
   gap: var(--space-4);
 }
 
+.form-intro-title {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: var(--color-field-depth);
+}
+
 .form-support {
   max-width: 30rem;
+}
+
+.form-note {
+  max-width: 38rem;
+  font-size: 0.95rem;
 }
 
 .form-status {
@@ -1813,6 +1826,19 @@ body[data-mode="dark"] .about-highlight {
   font-size: 1.05rem;
   letter-spacing: 0.01em;
   color: var(--color-ink);
+}
+
+.field-input:is(select) {
+  appearance: none;
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--color-field-depth) 50%),
+    linear-gradient(135deg, var(--color-field-depth) 50%, transparent 50%);
+  background-position:
+    calc(100% - 1.35rem) calc(50% - 0.18rem),
+    calc(100% - 0.95rem) calc(50% - 0.18rem);
+  background-size: 0.42rem 0.42rem, 0.42rem 0.42rem;
+  background-repeat: no-repeat;
+  padding-right: 3rem;
 }
 
 body[data-mode="dark"] .field-input {

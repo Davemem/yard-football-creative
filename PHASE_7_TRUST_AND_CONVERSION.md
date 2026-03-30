@@ -114,3 +114,43 @@ The implementation should reuse one frontend form pattern across pages wherever 
 - shared submit-button behaviour
 
 This keeps the system consistent without over-abstracting it into a framework.
+
+## 7.2 Primary Email Enquiry Form Aligned to the Agreed Contact Workflow
+
+### Page Scope
+
+The primary email enquiry flow should live on `contact.html` as the clearest direct-contact destination for the site.
+
+### Contact Form Contract
+
+The primary contact form should now include:
+
+- `name`
+- `email`
+- `enquiryType`
+- `message`
+
+This keeps the form small while giving Yard enough context to reply clearly.
+
+### Workflow Alignment
+
+The contact form should:
+
+- submit through the existing static AJAX workflow
+- keep `contact@yardfc.com` as the delivery destination
+- show visible validation, pending, success, and error states
+- explain that the enquiry is sent by email
+- provide a direct email fallback on the page itself
+
+### Copy and Transparency Rules
+
+The contact page should clearly state:
+
+- what kinds of messages belong here
+- what information is submitted
+- that Yard can reply by email after submission
+- that users can email directly if the form fails
+
+### Frontend Reuse Rule
+
+The JavaScript should move toward a shared enquiry-form handler rather than a contact-page-only implementation so the later registration-interest form can reuse the same behaviour without duplicating validation logic.

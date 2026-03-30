@@ -769,125 +769,152 @@ hydrateSanityListing({
   fetchEntries: () => window.YardSanity?.fetchEvents?.() || Promise.resolve([]),
 });
 
-const initContactForm = () => {
-  const form = document.querySelector("[data-contact-form]");
+const initEnquiryForms = () => {
+  const forms = document.querySelectorAll("[data-enquiry-form]");
 
-  if (!(form instanceof HTMLFormElement)) {
+  if (forms.length === 0) {
     return;
   }
 
-  const urlInput = form.querySelector("[data-contact-url]");
-  const validationNode = form.querySelector("[data-contact-validation]");
-  const pendingNode = form.querySelector("[data-contact-pending]");
-  const successNode = form.querySelector("[data-contact-success]");
-  const errorNode = form.querySelector("[data-contact-error]");
-  const submitButton = form.querySelector("[data-contact-submit]");
-  const currentUrl = new URL(window.location.href);
-  const requiredFields = Array.from(form.querySelectorAll("[name='name'], [name='email'], [name='message']"));
-
-  if (urlInput instanceof HTMLInputElement) {
-    urlInput.value = currentUrl.toString();
-  }
-
-  const setContactState = (state) => {
-    if (validationNode instanceof HTMLElement) {
-      validationNode.hidden = state !== "validation";
-    }
-
-    if (pendingNode instanceof HTMLElement) {
-      pendingNode.hidden = state !== "pending";
-    }
-
-    if (successNode instanceof HTMLElement) {
-      successNode.hidden = state !== "success";
-    }
-
-    if (errorNode instanceof HTMLElement) {
-      errorNode.hidden = state !== "error";
-    }
-
-    if (submitButton instanceof HTMLButtonElement) {
-      submitButton.disabled = state === "pending";
-      submitButton.textContent = state === "pending" ? "Sending..." : "Send";
-    }
-  };
-
-  const validateField = (field) => {
-    const group = field.closest(".field-group");
-    const errorNodeForField = form.querySelector(`[data-field-error="${field.name}"]`);
-    let valid = true;
-
-    if (field.name === "email") {
-      valid = Boolean(field.value.trim()) && field.validity.valid;
-    } else {
-      valid = Boolean(field.value.trim());
-    }
-
-    if (group) {
-      group.classList.toggle("has-error", !valid);
-    }
-
-    if (errorNodeForField instanceof HTMLElement) {
-      errorNodeForField.hidden = valid;
-    }
-
-    return valid;
-  };
-
-  const validateForm = () => requiredFields.every((field) => validateField(field));
-
-  setContactState("idle");
-
-  requiredFields.forEach((field) => {
-    field.addEventListener("input", () => {
-      validateField(field);
-
-      if (validationNode instanceof HTMLElement && !validationNode.hidden) {
-        const allValid = requiredFields.every((currentField) => validateField(currentField));
-
-        if (allValid) {
-          setContactState("idle");
-        }
-      }
-    });
-  });
-
-  form.addEventListener("submit", async (event) => {
-    event.preventDefault();
-
-    const formIsValid = validateForm();
-
-    if (!formIsValid) {
-      setContactState("validation");
+  forms.forEach((form) => {
+    if (!(form instanceof HTMLFormElement)) {
       return;
     }
 
-    setContactState("pending");
+    const urlInput = form.querySelector("[data-contact-url]");
+    const submitButton = form.querySelector("[data-form-submit]");
+    const subjectInput = form.querySelector("[data-enquiry-subject]");
+    const enquiryTypeInput = form.querySelector("[data-enquiry-type]");
+    const currentUrl = new URL(window.location.href);
+    const requiredFields = Array.from(form.querySelectorAll("[data-required-field]"));
+    const baseSubmitLabel =
+      submitButton instanceof HTMLButtonElement
+        ? submitButton.dataset.submitLabel || submitButton.textContent.trim() || "Send"
+        : "Send";
+    const pendingSubmitLabel =
+      submitButton instanceof HTMLButtonElement
+        ? submitButton.dataset.submitPendingLabel || "Sending..."
+        : "Sending...";
 
-    try {
-      const response = await fetch(form.action, {
-        method: "POST",
-        headers: {
-          Accept: "application/json",
-        },
-        body: new FormData(form),
+    const syncSubject = () => {
+      if (!(subjectInput instanceof HTMLInputElement)) {
+        return;
+      }
+
+      const selectedType =
+        enquiryTypeInput instanceof HTMLSelectElement ? enquiryTypeInput.value.trim() : "";
+      const subjectPrefix = form.dataset.enquiryForm === "contact" ? "Yard website enquiry" : "Yard enquiry";
+
+      subjectInput.value = selectedType ? `${subjectPrefix}: ${selectedType}` : subjectPrefix;
+    };
+
+    const setFormState = (state) => {
+      form.querySelectorAll("[data-form-state]").forEach((node) => {
+        if (node instanceof HTMLElement) {
+          node.hidden = node.dataset.formState !== state;
+        }
       });
 
-      if (!response.ok) {
-        throw new Error(`Form submission failed with ${response.status}`);
+      if (submitButton instanceof HTMLButtonElement) {
+        submitButton.disabled = state === "pending";
+        submitButton.textContent = state === "pending" ? pendingSubmitLabel : baseSubmitLabel;
+      }
+    };
+
+    const validateField = (field) => {
+      const group = field.closest(".field-group");
+      const errorNode = form.querySelector(`[data-field-error="${field.name}"]`);
+      let valid = true;
+
+      if (field instanceof HTMLInputElement && field.type === "email") {
+        valid = Boolean(field.value.trim()) && field.validity.valid;
+      } else if (field instanceof HTMLSelectElement) {
+        valid = Boolean(field.value.trim());
+      } else {
+        valid = Boolean(field.value.trim());
       }
 
-      setContactState("success");
-      form.reset();
-
-      if (urlInput instanceof HTMLInputElement) {
-        urlInput.value = currentUrl.toString();
+      if (group) {
+        group.classList.toggle("has-error", !valid);
       }
-    } catch (error) {
-      console.error("Unable to submit the contact form.", error);
-      setContactState("error");
+
+      if (errorNode instanceof HTMLElement) {
+        errorNode.hidden = valid;
+      }
+
+      return valid;
+    };
+
+    const validateForm = () => requiredFields.every((field) => validateField(field));
+
+    if (urlInput instanceof HTMLInputElement) {
+      urlInput.value = currentUrl.toString();
     }
+
+    syncSubject();
+    setFormState("idle");
+
+    requiredFields.forEach((field) => {
+      const eventName = field instanceof HTMLSelectElement ? "change" : "input";
+
+      field.addEventListener(eventName, () => {
+        validateField(field);
+
+        if (field === enquiryTypeInput) {
+          syncSubject();
+        }
+
+        const validationNode = form.querySelector('[data-form-state="validation"]');
+
+        if (validationNode instanceof HTMLElement && !validationNode.hidden) {
+          const allValid = requiredFields.every((currentField) => validateField(currentField));
+
+          if (allValid) {
+            setFormState("idle");
+          }
+        }
+      });
+    });
+
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+
+      syncSubject();
+
+      if (!validateForm()) {
+        setFormState("validation");
+        return;
+      }
+
+      setFormState("pending");
+
+      try {
+        const response = await fetch(form.action, {
+          method: "POST",
+          headers: {
+            Accept: "application/json",
+          },
+          body: new FormData(form),
+        });
+
+        if (!response.ok) {
+          throw new Error(`Form submission failed with ${response.status}`);
+        }
+
+        setFormState("success");
+        form.reset();
+
+        if (urlInput instanceof HTMLInputElement) {
+          urlInput.value = currentUrl.toString();
+        }
+
+        syncSubject();
+      } catch (error) {
+        console.error(`Unable to submit the ${form.dataset.enquiryForm || "enquiry"} form.`, error);
+        setFormState("error");
+      }
+    });
   });
 };
 
-initContactForm();
+initEnquiryForms();

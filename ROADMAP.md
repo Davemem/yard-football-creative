@@ -369,7 +369,7 @@ Goal: increase legitimacy and make action easy.
 
 Sub-phases:
 - [x] 7.1 define the shared enquiry-form model for v1 trust and conversion flows
-- [ ] 7.2 implement the primary email enquiry form and align it to the agreed contact workflow
+- [x] 7.2 implement the primary email enquiry form and align it to the agreed contact workflow
 - [ ] 7.3 add a registration-interest form flow for programs and pathway enquiries
 - [ ] 7.4 strengthen trust with coach or staff bios grounded in approved source material
 - [ ] 7.5 add testimonials or social-proof sections using only approved proof signals
@@ -408,6 +408,7 @@ Completion notes:
 - `7.7` should make it easier to reach Yard from core pages through clear contact methods without adding unnecessary complexity.
 - `7.8` should only add location or map context when it improves clarity and does not imply unsupported operating details.
 - `7.1` complete: added `PHASE_7_TRUST_AND_CONVERSION.md` and defined the shared v1 enquiry-form contract covering scope, field restraint, contact routing to `contact@yardfc.com`, shared validation and status behaviour, CTA separation between direct contact and registration interest, and the requirement that forms sit alongside visible trust content instead of acting as isolated widgets.
+- `7.2` complete: updated `contact.html`, `script.js`, and `styles.css` so the primary contact flow now explains its purpose more clearly, adds lightweight enquiry-type routing context, preserves delivery to `contact@yardfc.com`, uses a shared enquiry-form handler with validation and status states, and keeps a direct email fallback visible on the page.
 
 ## Phase 8 — Technical Hardening
 Goal: make the site robust before scaling.
