@@ -803,7 +803,9 @@ const initEnquiryForms = () => {
 
       const selectedType =
         enquiryTypeInput instanceof HTMLSelectElement ? enquiryTypeInput.value.trim() : "";
-      const subjectPrefix = form.dataset.enquiryForm === "contact" ? "Yard website enquiry" : "Yard enquiry";
+      const subjectPrefix =
+        form.dataset.subjectPrefix ||
+        (form.dataset.enquiryForm === "contact" ? "Yard website enquiry" : "Yard enquiry");
 
       subjectInput.value = selectedType ? `${subjectPrefix}: ${selectedType}` : subjectPrefix;
     };

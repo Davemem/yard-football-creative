@@ -154,3 +154,39 @@ The contact page should clearly state:
 ### Frontend Reuse Rule
 
 The JavaScript should move toward a shared enquiry-form handler rather than a contact-page-only implementation so the later registration-interest form can reuse the same behaviour without duplicating validation logic.
+
+## 7.3 Registration-Interest Form Flow for Programs and Pathway Enquiries
+
+### Page Scope
+
+The registration-interest flow should live on `programs.html` so visitors can act directly from the pathway page instead of being forced back to general contact for every next step.
+
+### Form Contract
+
+The registration-interest form should include:
+
+- `name`
+- `email`
+- `interestType`
+- `message`
+
+This matches the shared field-restraint rule while giving just enough context for Yard to reply meaningfully.
+
+### Routing Rule
+
+The `Programs` page should route:
+
+- hero CTA into the registration-interest section
+- community-pathway interest CTA into the same section
+- elite-pathway next-step CTA into the same section
+
+This creates one clear pathway-specific conversion destination instead of scattering users across multiple competing actions.
+
+### Workflow Rule
+
+The form should:
+
+- submit through the same static email workflow as the main contact form
+- deliver to `contact@yardfc.com`
+- reuse the shared enquiry-form behaviour for validation and status messaging
+- keep a direct fallback path to the main contact page for broader collaboration or non-program contact

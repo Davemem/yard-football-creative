@@ -98,7 +98,7 @@
             </p>
             <div class="button-row">
               <a class="button button-primary" href="#program-listings">View Programs</a>
-              <a class="button button-secondary" href="contact.html">Contact Yard</a>
+              <a class="button button-secondary" href="#registration-interest">Register Interest</a>
             </div>
           </div>
 
@@ -108,6 +108,7 @@
               <a href="#community-pathway">Community Pathway</a>
               <a href="#elite-pathway">Elite Pathway</a>
               <a href="#program-categories">Offer Categories</a>
+              <a href="#registration-interest">Registration Interest</a>
               <a href="#program-listings">Program Listings</a>
             </nav>
           </aside>
@@ -136,7 +137,7 @@
               <p>
                 Girls and young women looking for a welcoming football environment, plus families seeking a clear and credible place to start.
               </p>
-              <a class="button button-text" href="contact.html">Register Interest</a>
+              <a class="button button-text" href="#registration-interest">Register Interest</a>
             </article>
           </div>
         </div>
@@ -164,7 +165,7 @@
               <p>
                 Players, families, clubs, and collaborators should be able to identify the right program direction quickly and then move into direct enquiry without friction.
               </p>
-              <a class="button button-text" href="contact.html">Contact Yard</a>
+              <a class="button button-text" href="#registration-interest">Register Interest</a>
             </article>
           </div>
         </div>
@@ -202,6 +203,119 @@
               <p class="section-kicker">Storytelling, Art, and Creative Projects</p>
               <p>Football-led cultural experiences that deepen connection through story, memory, and expression.</p>
             </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell reveal" id="registration-interest">
+        <div class="container stack-lg">
+          <div class="section-heading stack-sm">
+            <p class="section-kicker">Registration Interest</p>
+            <h2 class="section-title">Let Yard know which pathway or program direction you want to hear more about.</h2>
+            <p class="max-copy">
+              This form is for people exploring a Yard program, pathway, or football opportunity and wanting a follow-up by email.
+            </p>
+          </div>
+
+          <div class="content-grid enquiry-layout">
+            <form
+              class="card form-shell stack-md"
+              data-enquiry-form="registration-interest"
+              data-subject-prefix="Yard registration interest"
+              action="https://formsubmit.co/ajax/contact@yardfc.com"
+              method="post"
+              novalidate
+            >
+              <div class="stack-sm form-support">
+                <p class="form-intro-title">Register interest</p>
+                <p>
+                  Share the program direction you are interested in and Yard can follow up through <a class="button button-text contact-inline-link" href="mailto:contact@yardfc.com">contact@yardfc.com</a>.
+                </p>
+                <p class="form-note">
+                  We only ask for the details needed to understand your interest and reply clearly.
+                </p>
+              </div>
+
+              <input type="hidden" name="_subject" value="Yard registration interest" data-enquiry-subject />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_url" value="" data-contact-url />
+
+              <div class="field-group">
+                <label class="field-label" for="registration-name">Name</label>
+                <input class="field-input" id="registration-name" name="name" type="text" autocomplete="name" required data-required-field />
+                <p class="field-error" data-field-error="name" hidden>Please enter your name.</p>
+              </div>
+
+              <div class="field-group">
+                <label class="field-label" for="registration-email">Email</label>
+                <input class="field-input" id="registration-email" name="email" type="email" autocomplete="email" required data-required-field />
+                <p class="field-error" data-field-error="email" hidden>Please enter a valid email address.</p>
+              </div>
+
+              <div class="field-group">
+                <label class="field-label" for="interest-type">What are you interested in?</label>
+                <select class="field-input" id="interest-type" name="interestType" required data-required-field data-enquiry-type>
+                  <option value="">Select one</option>
+                  <option value="Community pathway">Community pathway</option>
+                  <option value="Elite pathway">Elite pathway</option>
+                  <option value="Workshops and education">Workshops and education</option>
+                  <option value="Events and gala days">Events and gala days</option>
+                  <option value="All-abilities football">All-abilities football</option>
+                  <option value="Storytelling, art, and creative projects">Storytelling, art, and creative projects</option>
+                </select>
+                <p class="field-error" data-field-error="interestType" hidden>Please choose a program direction.</p>
+              </div>
+
+              <div class="field-group">
+                <label class="field-label" for="registration-message">Message</label>
+                <textarea class="field-input field-textarea" id="registration-message" name="message" rows="5" required data-required-field></textarea>
+                <p class="field-error" data-field-error="message" hidden>Please enter a message.</p>
+              </div>
+
+              <div class="field-group form-honeypot" aria-hidden="true">
+                <label class="field-label" for="registration-website">Website</label>
+                <input class="field-input" id="registration-website" name="_honey" type="text" tabindex="-1" autocomplete="off" />
+              </div>
+
+              <p class="form-note">
+                Submit sends your name, email, interest area, and message to Yard without leaving this page.
+              </p>
+
+              <p class="form-status form-status-error" data-form-state="validation" hidden>
+                Please complete the highlighted fields before sending.
+              </p>
+              <p class="form-status" data-form-state="pending" hidden>
+                Sending your interest...
+              </p>
+              <p class="form-status" data-form-state="success" hidden>
+                Thanks. Your registration interest has been sent to Yard.
+              </p>
+              <p class="form-status form-status-error" data-form-state="error" hidden>
+                We couldn't send your interest right now. Please email contact@yardfc.com directly.
+              </p>
+
+              <button
+                class="button button-primary"
+                type="submit"
+                data-form-submit
+                data-submit-label="Register interest"
+                data-submit-pending-label="Sending interest..."
+              >
+                Register interest
+              </button>
+            </form>
+
+            <aside class="card stack-md">
+              <p class="section-kicker">Who This Helps</p>
+              <p>
+                Use this pathway if you are exploring a community program, an elite pathway, a workshop, an event, or a broader Yard football opportunity.
+              </p>
+              <p>
+                If you would rather make direct contact about collaboration or something outside the listed pathways, use the main contact page.
+              </p>
+              <a class="button button-text" href="contact.html">Go to Contact</a>
+            </aside>
           </div>
         </div>
       </section>
@@ -256,7 +370,7 @@
             <p class="section-kicker">Need More Detail?</p>
             <h2 class="section-title">Contact Yard to ask about programs, pathways, events, or collaboration.</h2>
             <div class="button-row">
-              <a class="button button-primary" href="contact.html">Contact Yard</a>
+              <a class="button button-primary" href="#registration-interest">Register Interest</a>
               <a class="button button-secondary" href="events.html">View Events</a>
             </div>
           </div>
@@ -281,6 +395,6 @@
 
     <script src="cms/sanity.runtime.config.js"></script>
     <script src="cms/sanity-client.js"></script>
-    <script src="script.js?v=4"></script>
+    <script src="script.js?v=5"></script>
   </body>
 </html>
