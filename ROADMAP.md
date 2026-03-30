@@ -375,7 +375,7 @@ Sub-phases:
 - [x] 7.5 add testimonials or social-proof sections using only approved proof signals
 - [x] 7.6 add safeguarding and values guidance where it materially improves trust
 - [x] 7.7 clarify contact methods and direct contact options across core conversion pages
-- [ ] 7.8 add map or location context only where it is relevant and supported by approved information
+- [x] 7.8 add map or location context only where it is relevant and supported by approved information
 
 Deliverables:
 - enquiry forms
@@ -414,6 +414,8 @@ Completion notes:
 - `7.5` complete: updated `index.html`, `styles.css`, and `PHASE_7_TRUST_AND_CONVERSION.md` so the homepage now includes a social-proof grid built from approved trust signals only, combining founder lived experience, visible current activity, and a direct path into programs, events, and Instagram instead of inventing testimonials or unsupported metrics.
 - `7.6` complete: updated `contact.html` and `PHASE_7_TRUST_AND_CONVERSION.md` so the contact journey now includes a visible values-and-safety layer built from approved safe-environment, belonging, connection, and meaningful-experience language, while avoiding unsupported safeguarding-policy claims that are not yet documented in the repository.
 - `7.7` complete: updated `programs.html`, `events.html`, `contact.html`, and `PHASE_7_TRUST_AND_CONVERSION.md` so the core conversion pages now surface direct email, contact-form, Instagram, and registration-interest routes more clearly, reducing friction for visitors who want a simple, trustworthy way to reach Yard.
+- `7.8` complete: updated `contact.html` and `PHASE_7_TRUST_AND_CONVERSION.md` so the site now gives visitors honest location context without inventing a fixed venue map, explaining instead that program and event locations should be confirmed directly because the current approved source set does not yet document one public location list.
+- All Phase 7 sub-phases are now complete. The trust and conversion layer now includes a shared enquiry-form model, a clarified primary contact workflow, a dedicated registration-interest flow, founder credibility, approved social proof, values-and-safety content, clearer contact methods, and supported location guidance without inventing unsupported operational detail.
 
 ## Phase 8 — Technical Hardening
 Goal: make the site robust before scaling.

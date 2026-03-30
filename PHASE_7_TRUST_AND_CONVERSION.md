@@ -259,3 +259,19 @@ The core direct-contact options should be:
 - Instagram as the current-activity social destination
 
 Programs may also route visitors into the dedicated registration-interest form because that is now part of the approved Phase 7 conversion model.
+
+## 7.8 Map or Location Context Only Where It Is Relevant and Supported by Approved Information
+
+### Support Boundary
+
+The repository does not currently contain one approved fixed venue list or a published map dataset for Yard.
+
+### v1 Location Rule
+
+The site may still add helpful location context by:
+
+- explaining that location details should be confirmed directly
+- avoiding any invented venue names or suburbs
+- avoiding a decorative or misleading embedded map
+
+This preserves clarity without implying operational detail that the current source set does not support.
